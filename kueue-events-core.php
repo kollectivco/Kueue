@@ -6,6 +6,7 @@
  * Version:           1.1.1
  * Author:            Antigravity
  * Author URI:        https://antigravity.ai/
+ * Update URI:        https://github.com/kollectivco/Kueue
  * License:           GPL-2.0+
  * Text Domain:       kueue-events-core
  * Domain Path:       /languages
