@@ -10,10 +10,10 @@ $config = [];
 $is_enabled = 1;
 $is_default = 0;
 
-if ( isset( $account ) && $account ) {
+if ( isset( $account ) && is_object( $account ) ) {
     $account_name = isset( $account->account_name ) ? $account->account_name : '';
     $provider_slug = isset( $account->provider ) ? $account->provider : '';
-    $config = isset( $account->config ) ? $account->config : [];
+    $config = isset( $account->config ) ? (array) $account->config : [];
     $is_enabled = isset( $account->is_enabled ) ? (int) $account->is_enabled : 0;
     $is_default = isset( $account->is_default ) ? (int) $account->is_default : 0;
 }

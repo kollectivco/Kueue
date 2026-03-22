@@ -96,6 +96,8 @@ class FrontendController {
         ob_start();
         include KQ_PLUGIN_DIR . 'includes/frontend/views/organizer-dashboard.php';
         return ob_get_clean();
+    }
+
     /**
      * Register GDPR Exporter
      */
