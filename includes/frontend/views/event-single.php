@@ -1,4 +1,5 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
+<?php if ( ! isset( $event ) || ! is_object( $event ) ) return; ?>
 
 <div class="kq-event-single">
     <style>

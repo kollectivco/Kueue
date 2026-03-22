@@ -85,7 +85,7 @@ class Main {
 
         // WP-CLI
         if ( defined( 'WP_CLI' ) && WP_CLI ) {
-            require_once KQ_PLUGIN_DIR . 'includes/core/CliCommands.php';
+            require_once KQ_PLUGIN_DIR . 'includes/Core/CliCommands.php';
         }
 
         // 5) Payments & Checkout

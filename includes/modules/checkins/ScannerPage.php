@@ -63,6 +63,6 @@ class ScannerPage {
             ] ) : [];
         }
 
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/scanner-page-view.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/scanner-page-view.php';
     }
 }

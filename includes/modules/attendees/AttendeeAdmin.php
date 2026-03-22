@@ -24,7 +24,7 @@ class AttendeeAdmin {
         }
 
         $attendees = AttendeeRepository::get_all( $organizer_id );
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/attendee-list.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/attendee-list.php';
     }
 
     private function render_form( $action, $organizer_id ) {
@@ -53,7 +53,7 @@ class AttendeeAdmin {
         }
         $events = get_posts( $events_args );
 
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/attendee-form.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/attendee-form.php';
     }
 
     private function handle_save( $id, $organizer_id ) {

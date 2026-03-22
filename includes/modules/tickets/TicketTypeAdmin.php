@@ -21,7 +21,7 @@ class TicketTypeAdmin {
         }
 
         $ticket_types = TicketTypeRepository::get_all( $organizer_id );
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/ticket-type-list.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-type-list.php';
     }
 
     private function render_form( $action, $organizer_id ) {
@@ -54,7 +54,7 @@ class TicketTypeAdmin {
         }
         $events = get_posts( $events_args );
 
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/ticket-type-form.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-type-form.php';
     }
 
     private function handle_save( $id, $organizer_id ) {

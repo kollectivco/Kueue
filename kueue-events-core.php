@@ -26,24 +26,21 @@ define( 'KQ_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
  * PSR-4 Autoloader for the plugin.
  */
 spl_autoload_register( function ( $class ) {
-	$prefix = 'KueueEvents\\Core\\';
-	$base_dir = KQ_PLUGIN_DIR . 'includes/';
+    $prefix = 'KueueEvents\\Core\\';
+    if ( strpos( $class, $prefix ) !== 0 ) {
+        return;
+    }
 
-	$len = strlen( $prefix );
-	if ( strncmp( $prefix, $class, $len ) !== 0 ) {
-		return;
-	}
+    $relative_class = substr( $class, strlen( $prefix ) );
+    $file = KQ_PLUGIN_DIR . 'includes/' . str_replace( '\\', '/', $relative_class ) . '.php';
 
-	$relative_class = substr( $class, $len );
-	$file = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
-
-	if ( file_exists( $file ) ) {
-		require $file;
-	}
+    if ( file_exists( $file ) ) {
+        require_once $file;
+    }
 } );
 
 // Load global helpers
-require_once KQ_PLUGIN_DIR . 'includes/helpers/GeneralHelpers.php';
+require_once KQ_PLUGIN_DIR . 'includes/Helpers/GeneralHelpers.php';
 
 /**
  * Initialize the plugin.

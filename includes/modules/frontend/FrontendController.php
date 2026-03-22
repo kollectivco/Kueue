@@ -25,7 +25,7 @@ class FrontendController {
     public function render_events_list( $atts ) {
         $events = get_posts( [ 'post_type' => 'kq_event', 'posts_per_page' => -1 ] );
         ob_start();
-        include KQ_PLUGIN_DIR . 'includes/frontend/views/events-list.php';
+        include KQ_PLUGIN_DIR . 'includes/Frontend/views/events-list.php';
         return ob_get_clean();
     }
 
@@ -40,7 +40,7 @@ class FrontendController {
         $ticket_types = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_event( $id );
         
         ob_start();
-        include KQ_PLUGIN_DIR . 'includes/frontend/views/event-single.php';
+        include KQ_PLUGIN_DIR . 'includes/Frontend/views/event-single.php';
         return ob_get_clean();
     }
 
@@ -94,7 +94,7 @@ class FrontendController {
         $payouts = \KueueEvents\Core\Modules\Payouts\PayoutRepository::get_by_organizer($organizer->id);
         
         ob_start();
-        include KQ_PLUGIN_DIR . 'includes/frontend/views/organizer-dashboard.php';
+        include KQ_PLUGIN_DIR . 'includes/Frontend/views/organizer-dashboard.php';
         return ob_get_clean();
     }
 

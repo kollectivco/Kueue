@@ -25,7 +25,7 @@ class GatewayAdminController {
         }
 
         $accounts = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table WHERE channel = %s", $channel ) );
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/gateway-list.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/gateway-list.php';
     }
 
     private function render_form( $action, $channel ) {
@@ -45,7 +45,7 @@ class GatewayAdminController {
             return;
         }
 
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/gateway-form.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/gateway-form.php';
     }
 
     private function handle_save( $id, $channel ) {

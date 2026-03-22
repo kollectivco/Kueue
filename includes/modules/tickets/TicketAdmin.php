@@ -32,7 +32,7 @@ class TicketAdmin {
         }
 
         $tickets = TicketRepository::get_all( $organizer_id );
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/ticket-list.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-list.php';
     }
 
     private function render_issue_form( $organizer_id ) {
@@ -51,7 +51,7 @@ class TicketAdmin {
         }
         $events = get_posts( $events_args );
 
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/ticket-issue-form.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-issue-form.php';
     }
 
     private function handle_manual_issue( $organizer_id ) {
