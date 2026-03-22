@@ -57,7 +57,7 @@ class EventMetaBoxes {
         $sms_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'sms' );
         $whatsapp_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'whatsapp' );
 
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/event-meta-box.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Events/views/event-meta-box.php';
     }
 
     public function save_events_meta( $post_id, $post ) {

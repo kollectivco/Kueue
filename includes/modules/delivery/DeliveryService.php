@@ -68,9 +68,9 @@ class DeliveryService {
         $renderer = new \KueueEvents\Core\Modules\Tickets\TemplateRenderer();
         $renderer->set_ticket_data( $ticket );
         
-        $template_path = KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-email-template.php';
+        $template_path = KQ_PLUGIN_DIR . 'includes/Modules/Tickets/views/ticket-email-template.php';
         if ( ! file_exists( $template_path ) ) {
-            $template_path = KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-web-view.php'; // Fallback
+            $template_path = KQ_PLUGIN_DIR . 'includes/Modules/Tickets/views/ticket-web-view.php'; // Fallback
         }
 
         $html = $renderer->render( $template_path );

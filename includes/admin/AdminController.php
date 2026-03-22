@@ -243,7 +243,7 @@ class AdminController {
             __( '— Finance', 'kueue-events-core' ),
             'manage_kq_reports',
             'kq-finance',
-            [ $this, 'render_placeholder' ]
+            [ $this, 'render_finance' ]
         );
 
         // 13) POS
@@ -281,7 +281,7 @@ class AdminController {
      * Render Dashboard
      */
     public function render_dashboard() {
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/dashboard.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php';
     }
 
     /**
@@ -313,7 +313,7 @@ class AdminController {
      */
     public function render_pos() {
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/pos-view.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/POS/views/pos-view.php';
     }
 
     /**
@@ -329,7 +329,7 @@ class AdminController {
      * Render Seating Management
      */
     public function render_seating() {
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/seating-view.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Seating/views/seating-view.php';
     }
 
     /**
@@ -337,7 +337,7 @@ class AdminController {
      */
     public function render_bookings() {
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/bookings-view.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Bookings/views/bookings-view.php';
     }
 
     /**
@@ -345,7 +345,14 @@ class AdminController {
      */
     public function render_reports() {
         $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary();
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/reports-view.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/reports-view.php';
+    }
+
+    /**
+     * Render Finance Dashboard
+     */
+    public function render_finance() {
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Finance/views/finance-view.php';
     }
 
     /**
@@ -353,7 +360,7 @@ class AdminController {
      */
     public function render_checkin_logs() {
         $logs = \KueueEvents\Core\Modules\Checkins\CheckinRepository::get_all( 100 );
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/checkin-log-list.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Checkins/views/checkin-log-list.php';
     }
 
     /**

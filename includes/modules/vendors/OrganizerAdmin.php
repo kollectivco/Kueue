@@ -24,7 +24,7 @@ class OrganizerAdmin {
         }
 
         $organizers = OrganizerRepository::get_all();
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/organizer-list.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Vendors/views/organizer-list.php';
     }
 
     private function render_form( $action ) {
@@ -42,7 +42,7 @@ class OrganizerAdmin {
         }
 
         $all_users = get_users( [ 'fields' => [ 'ID', 'user_login', 'display_name' ] ] );
-        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/organizer-form.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Modules/Vendors/views/organizer-form.php';
     }
 
     private function handle_save( $id ) {

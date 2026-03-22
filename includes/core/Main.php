@@ -98,7 +98,14 @@ class Main {
         $frontend = new \KueueEvents\Core\Modules\Frontend\FrontendController();
         $frontend->run();
 
-        // 7) Self-Update System
+        $events_front = new \KueueEvents\Core\Modules\Frontend\EventsController();
+        $events_front->run();
+
+        // 7) Organizer Dashboard
+        $dashboard = new \KueueEvents\Core\Modules\Dashboard\FrontendDashboard();
+        $dashboard->run();
+
+        // 8) Self-Update System
         $updater = new \KueueEvents\Core\Core\GitHubUpdater();
         $updater->run();
     }

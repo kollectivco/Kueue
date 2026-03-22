@@ -15,15 +15,24 @@ class WooCommerceService {
      * Process tickets when WC order is completed.
      */
     public function process_tickets_on_completion( $order_id ) {
+        error_log( "[Kueue] Processing order $order_id for ticket generation." );
         $order = wc_get_order( $order_id );
-        if ( ! $order ) return;
+        if ( ! $order ) {
+            error_log( "[Kueue] Error: Order $order_id not found." );
+            return;
+        }
 
         foreach ( $order->get_items() as $item_id => $item ) {
             $product_id = $item->get_product_id();
             
             // Find matched ticket type
             $ticket_type = $this->get_ticket_type_by_product( $product_id );
-            if ( ! $ticket_type ) continue;
+            if ( ! $ticket_type ) {
+                error_log( "[Kueue] No ticket type mapped to product $product_id." );
+                continue;
+            }
+
+            error_log( "[Kueue] Issuing " . $item->get_quantity() . " tickets for type " . $ticket_type->name );
 
             $qty = $item->get_quantity();
             $attendee_data = $item->get_meta( '_kq_attendee_data' );
