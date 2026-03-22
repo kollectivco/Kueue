@@ -3,7 +3,7 @@
  * Plugin Name:       Kueue Events Core
  * Plugin URI:        https://kueue.com/
  * Description:       Full event marketplace system for ticket management, bookings, and multi-vendor support.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Author:            Antigravity
  * Author URI:        https://antigravity.ai/
  * License:           GPL-2.0+
@@ -17,13 +17,13 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Define Plugin Constants
-define( 'KQ_VERSION', '1.1.0' );
+define( 'KQ_VERSION', '1.1.1' );
 define( 'KQ_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'KQ_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'KQ_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
 /**
- * PSR-4 Autoloader for the plugin.
+ * Robust PSR-4 Autoloader with Case-Sensitivity Handling (for Linux Support).
  */
 spl_autoload_register( function ( $class ) {
     $prefix = 'KueueEvents\\Core\\';
@@ -32,39 +32,85 @@ spl_autoload_register( function ( $class ) {
     }
 
     $relative_class = substr( $class, strlen( $prefix ) );
-    $file = KQ_PLUGIN_DIR . 'includes/' . str_replace( '\\', '/', $relative_class ) . '.php';
+    $parts = explode( '\\', $relative_class );
+    
+    // Attempt path construction
+    $base = KQ_PLUGIN_DIR . 'includes/';
+    $path = $base;
+    
+    foreach ( $parts as $i => $part ) {
+        if ( $i === count( $parts ) - 1 ) {
+            $path .= $part . '.php'; // Class name must match case
+        } else {
+            // Check Capitalized folder, then lowercase folder
+            if ( is_dir( $path . $part ) ) {
+                $path .= $part . '/';
+            } elseif ( is_dir( $path . strtolower( $part ) ) ) {
+                $path .= strtolower( $part ) . '/';
+            } else {
+                $path .= $part . '/'; // Default to original for file_exists check below
+            }
+        }
+    }
 
-    if ( file_exists( $file ) ) {
-        require_once $file;
+    if ( file_exists( $path ) ) {
+        require_once $path;
     }
 } );
 
-// Load global helpers
-require_once KQ_PLUGIN_DIR . 'includes/Helpers/GeneralHelpers.php';
-
 /**
- * Initialize the plugin.
+ * Load global helpers with safety checks.
  */
-function run_kueue_events_core() {
-	$plugin = new \KueueEvents\Core\Core\Main();
-	$plugin->run();
+function kq_load_helpers() {
+    $potential_paths = [
+        KQ_PLUGIN_DIR . 'includes/Helpers/GeneralHelpers.php',
+        KQ_PLUGIN_DIR . 'includes/helpers/GeneralHelpers.php'
+    ];
+    
+    foreach ( $potential_paths as $p ) {
+        if ( file_exists( $p ) ) {
+            require_once $p;
+            return true;
+        }
+    }
+    return false;
+}
+
+if ( ! kq_load_helpers() ) {
+    // Graceful error if helpers missing
+    if ( is_admin() ) {
+        add_action( 'admin_notices', function() {
+            echo '<div class="error"><p>Kueue Events Error: Helpers file not found. Case-sensitivity mismatch?</p></div>';
+        });
+    }
 }
 
 /**
- * Activation Hook
+ * Start the plugin
  */
-register_activation_hook( __FILE__, function() {
-    $activator = new \KueueEvents\Core\Core\Activator();
-    $activator->activate();
-} );
+function run_kueue_events_core() {
+    if ( class_exists( 'KueueEvents\\Core\\Core\\Main' ) ) {
+        $plugin = new \KueueEvents\Core\Core\Main();
+        $plugin->run();
+    }
+}
+
+// Initialize
+run_kueue_events_core();
 
 /**
- * Deactivation Hook
+ * Hooks
  */
-register_deactivation_hook( __FILE__, function() {
-    $deactivator = new \KueueEvents\Core\Core\Deactivator();
-    $deactivator->deactivate();
+register_activation_hook( __FILE__, function() {
+    if ( class_exists( 'KueueEvents\\Core\\Core\\Activator' ) ) {
+        $activator = new \KueueEvents\Core\Core\Activator();
+        $activator->activate();
+    }
 } );
 
-// Start the plugin
-run_kueue_events_core();
+register_deactivation_hook( __FILE__, function() {
+    if ( class_exists( 'KueueEvents\\Core\\Core\\Deactivator' ) ) {
+        $deactivator = new \KueueEvents\Core\Core\Deactivator();
+        $deactivator->deactivate();
+    }
+} );

@@ -47,6 +47,6 @@ class SettingsController {
      * Render the settings page.
      */
     public function render_settings() {
-        include_once KQ_PLUGIN_DIR . 'includes/admin/views/settings.php';
+        include_once KQ_PLUGIN_DIR . 'includes/Admin/views/settings.php';
     }
 }

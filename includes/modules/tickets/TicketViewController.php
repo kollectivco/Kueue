@@ -60,7 +60,7 @@ class TicketViewController {
         $renderer = new TemplateRenderer();
         $renderer->set_ticket_data( $ticket );
         
-        $template_path = KQ_PLUGIN_DIR . 'includes/admin/views/ticket-web-view.php';
+        $template_path = KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-web-view.php';
         if ( ! file_exists( $template_path ) ) {
             wp_die( __( 'Ticket template missing.', 'kueue-events-core' ) );
         }

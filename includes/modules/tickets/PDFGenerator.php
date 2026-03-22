@@ -11,7 +11,7 @@ class PDFGenerator {
         $renderer = new TemplateRenderer();
         $renderer->set_ticket_data( $ticket );
         
-        $template_path = KQ_PLUGIN_DIR . 'includes/admin/views/ticket-web-view.php';
+        $template_path = KQ_PLUGIN_DIR . 'includes/Admin/views/ticket-web-view.php';
         if ( ! file_exists( $template_path ) ) {
             wp_die( __( 'Ticket template missing.', 'kueue-events-core' ) );
         }
@@ -19,8 +19,8 @@ class PDFGenerator {
         $html = $renderer->render( $template_path );
 
         // Fallback for missing library - Load from vendor if exists
-        if ( file_exists( KQ_PLUGIN_DIR . 'includes/vendor/dompdf/autoload.inc.php' ) ) {
-            require_once KQ_PLUGIN_DIR . 'includes/vendor/dompdf/autoload.inc.php';
+        if ( file_exists( KQ_PLUGIN_DIR . 'includes/Vendor/dompdf/autoload.inc.php' ) ) {
+            require_once KQ_PLUGIN_DIR . 'includes/Vendor/dompdf/autoload.inc.php';
         }
 
         if ( class_exists( '\Dompdf\Dompdf' ) ) {
