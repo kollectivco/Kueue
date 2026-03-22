@@ -15,6 +15,31 @@ class POSController {
                 'permission_callback' => [ $this, 'permissions_check' ],
             ],
         ] );
+
+        register_rest_route( 'kq/v1', '/tickets/types', [
+            [
+                'methods'             => \WP_REST_Server::READABLE,
+                'callback'            => [ $this, 'get_ticket_types' ],
+                'permission_callback' => [ $this, 'permissions_check' ],
+            ],
+        ] );
+    }
+
+    /**
+     * Get ticket types for an event.
+     */
+    public function get_ticket_types( $request ) {
+        $event_id = $request->get_param( 'event_id' );
+        if ( ! $event_id ) return [];
+
+        $types = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_event( $event_id );
+        
+        // Add currency for the UI
+        foreach ( $types as &$t ) {
+            $t->currency = 'EGP'; // Default for Cairo context, could be setting-based
+        }
+
+        return $types;
     }
 
     /**

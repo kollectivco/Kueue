@@ -20,8 +20,11 @@ class AdminController {
         $scanner = new \KueueEvents\Core\Modules\Checkins\ScannerPage();
         $scanner->run();
 
-        // POS
+        // POS & Bookings
         add_action( 'rest_api_init', [ $this, 'register_pos_routes' ] );
+
+        // Seating
+        add_action( 'rest_api_init', [ $this, 'register_seating_routes' ] );
 
         // Simple background trigger for queue processing in admin
         if ( is_admin() ) {
@@ -40,6 +43,60 @@ class AdminController {
     public function register_pos_routes() {
         $pos = new \KueueEvents\Core\Modules\POS\POSController();
         $pos->register_routes();
+
+        // Also Bookings routes
+        register_rest_route( 'kq/v1', '/bookings/slots', [
+            [
+                'methods'             => \WP_REST_Server::READABLE,
+                'callback'            => [ $this, 'get_booking_slots' ],
+                'permission_callback' => [ $this, 'permissions_check' ],
+            ],
+            [
+                'methods'             => \WP_REST_Server::CREATABLE,
+                'callback'            => [ $this, 'add_booking_slot' ],
+                'permission_callback' => [ $this, 'permissions_check' ],
+            ],
+        ] );
+    }
+
+    public function permissions_check() {
+        return current_user_can( 'manage_kq_events' );
+    }
+
+    public function get_booking_slots( $request ) {
+        $event_id = $request->get_param( 'event_id' );
+        if ( ! $event_id ) return [];
+        return \KueueEvents\Core\Modules\Bookings\BookingRepository::get_by_event( $event_id );
+    }
+
+    public function add_booking_slot( $request ) {
+        $data = $request->get_json_params();
+        return \KueueEvents\Core\Modules\Bookings\BookingRepository::create_slot( $data );
+    }
+
+    // Seating Routes
+    public function register_seating_routes() {
+        register_rest_route( 'kq/v1', '/seating/maps', [
+            [
+                'methods'             => \WP_REST_Server::READABLE,
+                'callback'            => [ $this, 'get_seating_maps' ],
+                'permission_callback' => [ $this, 'permissions_check' ],
+            ],
+            [
+                'methods'             => \WP_REST_Server::CREATABLE,
+                'callback'            => [ $this, 'save_seating_map' ],
+                'permission_callback' => [ $this, 'permissions_check' ],
+            ],
+        ] );
+    }
+
+    public function get_seating_maps() {
+        return \KueueEvents\Core\Modules\Seating\SeatingRepository::get_all_maps();
+    }
+
+    public function save_seating_map( $request ) {
+        $data = $request->get_json_params();
+        return \KueueEvents\Core\Modules\Seating\SeatingRepository::save_map( $data );
     }
 
     /**
@@ -156,7 +213,7 @@ class AdminController {
             __( '— Bookings', 'kueue-events-core' ),
             'manage_kq_events',
             'kq-bookings',
-            [ $this, 'render_placeholder' ]
+            [ $this, 'render_bookings' ]
         );
 
         // 10) Seating
@@ -166,7 +223,7 @@ class AdminController {
             __( '— Seating', 'kueue-events-core' ),
             'manage_kq_events',
             'kq-seating',
-            [ $this, 'render_placeholder' ]
+            [ $this, 'render_seating' ]
         );
 
         // 11) Reports
@@ -176,7 +233,7 @@ class AdminController {
             __( '— Reports', 'kueue-events-core' ),
             'manage_kq_reports',
             'kq-reports',
-            [ $this, 'render_placeholder' ]
+            [ $this, 'render_reports' ]
         );
 
         // 12) Finance
@@ -196,7 +253,7 @@ class AdminController {
             __( '— POS', 'kueue-events-core' ),
             'manage_kq_tickets',
             'kq-pos',
-            [ $this, 'render_placeholder' ]
+            [ $this, 'render_pos' ]
         );
 
         // 14) Settings
@@ -252,11 +309,11 @@ class AdminController {
     }
 
     /**
-     * Render Tickets
+     * Render POS / Box Office
      */
-    public function render_tickets() {
-        $module = new \KueueEvents\Core\Modules\Tickets\TicketAdmin();
-        $module->render_list();
+    public function render_pos() {
+        $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
+        include_once KQ_PLUGIN_DIR . 'includes/admin/views/pos-view.php';
     }
 
     /**
@@ -266,6 +323,29 @@ class AdminController {
         // This will be handled by the Gateways Module Controller
         $module = new \KueueEvents\Core\Modules\Gateways\GatewayAdminController();
         $module->render_list();
+    }
+
+    /**
+     * Render Seating Management
+     */
+    public function render_seating() {
+        include_once KQ_PLUGIN_DIR . 'includes/admin/views/seating-view.php';
+    }
+
+    /**
+     * Render Bookings Management
+     */
+    public function render_bookings() {
+        $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
+        include_once KQ_PLUGIN_DIR . 'includes/admin/views/bookings-view.php';
+    }
+
+    /**
+     * Render Reports Dashboard
+     */
+    public function render_reports() {
+        $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary();
+        include_once KQ_PLUGIN_DIR . 'includes/admin/views/reports-view.php';
     }
 
     /**

@@ -96,5 +96,50 @@ class FrontendController {
         ob_start();
         include KQ_PLUGIN_DIR . 'includes/frontend/views/organizer-dashboard.php';
         return ob_get_clean();
+    /**
+     * Register GDPR Exporter
+     */
+    public function register_gdpr_exporter( $exporters ) {
+        $exporters['kq-events'] = [
+            'exporter_friendly_name' => __( 'Kueue Events Data', 'kueue-events-core' ),
+            'callback'               => [ $this, 'kq_personal_data_exporter' ],
+        ];
+        return $exporters;
+    }
+
+    public function kq_personal_data_exporter( $email_address, $page = 1 ) {
+        $attendees = \KueueEvents\Core\Modules\Attendees\AttendeeRepository::get_by_email( $email_address );
+        $data = [];
+        foreach ( $attendees as $att ) {
+            $data[] = [
+                'group_id'    => 'kq-events',
+                'group_label' => __( 'Event Bookings', 'kueue-events-core' ),
+                'item_id'     => 'att-' . $att->id,
+                'data'        => [
+                    [ 'name' => __( 'First Name', 'kueue-events-core' ), 'value' => $att->first_name ],
+                    [ 'name' => __( 'Last Name', 'kueue-events-core' ), 'value' => $att->last_name ],
+                    [ 'name' => __( 'Ticket Type', 'kueue-events-core' ), 'value' => $att->ticket_type_id ],
+                ],
+            ];
+        }
+        return [ 'data' => $data, 'done' => true ];
+    }
+
+    /**
+     * Register GDPR Eraser
+     */
+    public function register_gdpr_eraser( $erasers ) {
+        $erasers['kq-events'] = [
+            'eraser_friendly_name' => __( 'Kueue Events Data', 'kueue-events-core' ),
+            'callback'             => [ $this, 'kq_personal_data_eraser' ],
+        ];
+        return $erasers;
+    }
+
+    public function kq_personal_data_eraser( $email_address, $page = 1 ) {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_attendees';
+        $items_removed = $wpdb->delete( $table, [ 'email' => $email_address ] );
+        return [ 'items_removed' => $items_removed, 'items_retained' => 0, 'messages' => [], 'done' => true ];
     }
 }

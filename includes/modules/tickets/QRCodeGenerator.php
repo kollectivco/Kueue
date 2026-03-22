@@ -30,6 +30,12 @@ class QRCodeGenerator {
      * Get Local QR Path (SVG).
      */
     public static function get_svg_image( $token ) {
+        // 1. Try Local Generator (SimpleQR)
+        if ( class_exists( '\KueueEvents\Core\Vendor\SimpleQR' ) ) {
+            return \KueueEvents\Core\Vendor\SimpleQR::generate_svg( $token );
+        }
+
+        // 2. Fallback to Remote API
         $url = self::generate_svg_url( $token );
         return '<img src="' . esc_attr( $url ) . '" alt="QR Code" />';
     }

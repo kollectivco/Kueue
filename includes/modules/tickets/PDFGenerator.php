@@ -18,17 +18,22 @@ class PDFGenerator {
 
         $html = $renderer->render( $template_path );
 
-        // If dompdf is available (assuming it would be included by the user via composer)
+        // Fallback for missing library - Load from vendor if exists
+        if ( file_exists( KQ_PLUGIN_DIR . 'includes/vendor/dompdf/autoload.inc.php' ) ) {
+            require_once KQ_PLUGIN_DIR . 'includes/vendor/dompdf/autoload.inc.php';
+        }
+
         if ( class_exists( '\Dompdf\Dompdf' ) ) {
             $dompdf = new \Dompdf\Dompdf([ 'isRemoteEnabled' => true ]);
             $dompdf->loadHtml( $html );
             $dompdf->setPaper( 'A4', 'portrait' );
             $dompdf->render();
-            $dompdf->stream( 'ticket-' . $ticket->ticket_number . '.pdf', [ 'Attachment' => true ] );
+            $dompdf->stream( 'ticket-' . $ticket->ticket_number . '.pdf', [ 'Attachment' => false ] );
             return;
         }
 
-        // Fallback or debug mode (for now)
-        wp_die( __( 'PDF Generator library (Dompdf) not found. Please install it with composer to enable PDF tickets.', 'kueue-events-core' ) );
+        // Final UI Fallback: Browser Print
+        echo $html;
+        echo '<script>window.print();</script>';
     }
 }
