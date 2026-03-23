@@ -1,1 +1,0 @@
-<?php return array('dependencies' => array('dokan-react-components', 'react', 'react-dom', 'react-jsx-runtime', 'wp-api-fetch', 'wp-dom-ready', 'wp-element', 'wp-i18n'), 'version' => '6d88d2bc54008071e787');

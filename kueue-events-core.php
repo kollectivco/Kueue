@@ -3,7 +3,7 @@
  * Plugin Name:       Kueue Events Core
  * Plugin URI:        https://kueue.com/
  * Description:       Full event marketplace system for ticket management, bookings, and multi-vendor support.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Author:            Antigravity
  * Author URI:        https://antigravity.ai/
  * Update URI:        https://github.com/kollectivco/Kueue
@@ -18,7 +18,8 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Define Plugin Constants
-define( 'KQ_VERSION', '1.1.1' );
+define( 'KQ_VERSION', '1.1.2' );
+define( 'KQ_PLUGIN_FILE', __FILE__ );
 define( 'KQ_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'KQ_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'KQ_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );

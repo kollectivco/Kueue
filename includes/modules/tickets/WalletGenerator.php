@@ -14,6 +14,7 @@ class WalletGenerator {
         }
 
         require_once $library_path;
+        require_once KQ_PLUGIN_DIR . 'includes/Vendor/php-pkpass/src/PKPassException.php';
         // PKPass also needs its other files, but PKPass.php might not use an autoloader.
         // The Vendor/php-pkpass/src/ folder has them.
         
