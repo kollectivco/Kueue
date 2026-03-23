@@ -1,0 +1,10 @@
+#fooevents_bookings_message {
+	display: none;
+	font-style: italic;
+}
+
+#fooevents_bookings_slot_val__trans_field,
+#fooevents_bookings_date_val__trans_field,
+#fooevents_bookings_slot_date_val_trans_field {
+	margin-bottom:10px !important;	
+}

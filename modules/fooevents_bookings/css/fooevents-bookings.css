@@ -1,0 +1,430 @@
+body::before {
+    content: url("../images/loading.gif");
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+    opacity: 0;
+  }
+  
+#woocommerce-coupon-data ul.wc-tabs li.custom_tab_booking_options a::before, #woocommerce-product-data ul.wc-tabs li.custom_tab_booking_options a::before, .woocommerce ul.wc-tabs li.custom_tab_booking_options a::before {
+    font-family: "dashicons";
+    content: "\f524";
+    margin-right: .618em;
+}
+
+.dashicons-arrow-up {
+    font-family: "dashicons";
+    content: "\f141";
+    margin-right: .618em;
+    color:#676c71;
+}
+
+.dashicons-arrow-down {
+    font-family: "dashicons";
+    margin-right: .618em;
+    content: "\f140";
+    color:#676c71;
+}
+
+.dashicons-copy {
+    font-family: "dashicons";
+    margin-right: .618em;
+    content: "\f105";
+}
+
+.dashicons-trash {
+    font-family: "dashicons";
+    margin-right: .618em;
+    content: "\f105";
+}
+
+.dashicons-admin-settings {
+    font-family: "dashicons";
+    margin-right: .618em;
+    content: "\f105";
+}
+
+.fooevents_bookings_copy {
+    margin-left:1em !important
+}
+
+.dashicons-trash,
+.fooevents_bookings_copy {
+    color:#0073aa !important;
+}
+
+.fooevents_custom_attendee_fields_wrap {
+    padding:0;    
+}
+
+#fooevents_bookings_options_table {
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+#fooevents_bookings_options_table th {
+    font-weight: bold; 
+    text-align: left;
+    color:#333;
+    border-bottom: solid 1px #eee;
+    padding:15px 0;
+    margin:0;    
+}  
+
+#fooevents_bookings_options_table tr.fooevents_bookings_option.ui-sortable-helper {
+    background-color:rgba(255,255,255,0.9);
+}
+
+#fooevents_bookings_options_table td {
+    border-bottom: solid 1px #eee;
+    padding:0 0;
+    margin:0;      
+    vertical-align: top; 
+}   
+
+#fooevents_bookings_options_table td td {
+    padding:15px 0;
+    border-top: solid 1px #eee;
+    border-bottom: 0;
+}
+
+#fooevents_bookings_options_table td input.fooevents_custom_attendee_fields_label,
+#fooevents_bookings_options_table td input.fooevents_custom_attendee_fields_options,
+#fooevents_bookings_options_table td select{
+    width:100%     
+}    
+
+.fooevents_bookings_add_date_table {
+    clear: both;    
+    width:100%;
+}   
+
+.fooevents_bookings_add_date_table td  {
+    background:#f9f9f9;
+}
+
+#fooevents_bookings_options_table a {
+    text-decoration:none;
+}
+
+.fooevents_bookings_add_date_table .fooevents_bookings_handle {
+    margin:0 10px 0 !important;
+} 
+
+.fooevents_bookings_handle_container {
+    text-align: right
+}
+
+.fooevents_bookings_none { 
+    padding:2em 1.5em !important;  
+}
+
+#fooevents_bookings_info {
+    padding:15px 15px; 
+}
+
+.fooevents_bookings_top {
+    padding:15px !important;  
+    font-size: 12px;
+}
+
+.fooevents_bookings_view_options {
+    text-align: right; 
+    line-height: 2em
+}
+
+.fooevents_bookings_label {
+    width:95% !important;
+}
+
+.fooevents_booking_col_time select {
+    width:55px !important;
+    max-width:30%;
+    margin-right:2px !important;
+}
+
+.fooevents_add_time_label,
+.fooevents_zoom_id_label {
+    color:#0073aa;
+    float: none !important;
+    width: auto !important;
+    margin:0 .5em 0.5em !important;
+}
+
+.fooevents_add_time_label:hover,
+.fooevents_zoom_id_label:hover {
+    color:#00a0d2
+}
+
+.fooevents_booking_col {
+    float: left;
+    width: 50%;
+    padding:15px 0;
+}
+
+.fooevents_booking_col .fooevents_booking_col {
+    padding:0;
+}
+
+.fooevents_booking_col_1 {
+    width: 10%;
+}
+
+.fooevents_booking_col_2 {
+    width: 25%;
+}
+
+.fooevents_booking_col_3 {
+    width: 40%;
+}
+
+.fooevents_booking_col_5 {
+    float: left;
+    width: auto;  
+}
+
+.fooevents_booking_col_6 {
+    float: right;
+    width: auto;  
+}
+
+.fooevents_booking_options_column {
+    position: relative;
+    text-align: right
+}
+
+.booking_options {
+    background:#fff; 
+    text-align: right; 
+    display: none;
+    position: absolute;
+    top:0;
+    padding:15px 0 !important;
+    right:5em;
+    width:21.5em;
+}  
+
+.booking_options_new {
+    right:2.7em;
+}
+
+.fooevents_bookings_date {
+    background:#fff url(../images/cal.png) no-repeat center right !important;
+    
+    width:30% !important;
+}
+
+.fooevents_bookings_zoom_id_container {
+    float:left;
+}
+
+.fooevents_bookings_date_stock,
+.fooevents_bookings_zoom_id_container {
+    max-width:170px !important;
+    width:30% !important;
+    margin-left:10px !important;
+}
+
+.fooevents_bookings_zoom_id_container .select2 {
+    width:100% !important;
+}
+
+.fooevents_bookings_date_remove,
+.fooevents_bookings_copy,
+.fooevents_bookings_remove {
+    margin:0 0 0 .2em;
+    line-height:2em;
+}
+
+.fooevents-bookings-listing-nav {
+    margin:1em 0;
+}
+
+#fooevents-bookings-listing .fooevents-bookings-admin-date {
+    margin-top:0; 
+}
+
+#fooevents-bookings-listing select#fooevents-bookings-product,
+#fooevents-bookings-listing select#fooevents-bookings-slot {
+    margin-top:-3px
+}
+
+.check-in-status span {
+    display: inline-flex;
+    line-height: 1em;
+    height:1em;
+    width:1em;
+    background: #dadada;
+    display: inline-block;
+    border-radius: 1em;
+    margin-right:.5em
+}
+
+.check-in-status.checked-in span {
+    background:#35aa4f;
+}
+
+.check-in-status.canceled span {
+    background:#ca7247;
+}
+
+.check-in-status.unpaid span {
+    background:#ca474c;
+}
+
+.indent {
+    margin-left:20px;
+}
+
+.fooevents-dialog-add-dates-container {
+    position: relative;
+}
+
+#fooevents-dialog-add-dates h4 {
+    margin:.5em 0 1em
+}
+
+#fooevents-dialog-add-dates .fooevents-dialog-add-dates-row {
+    margin-bottom:1em
+}
+
+#fooevents-dialog-add-dates .fooevents-dialog-add-dates-column {
+    float: left;
+    width:50%;
+}
+
+#fooevents-dialog-add-dates .fooevents_bookings_date,
+#fooevents-dialog-add-dates #fooevents_wizard_stock {
+    width:95% !important;
+    max-width:95% !important
+}
+
+#fooevents-dialog-add-dates .fooevents-dialog-add-dates-weeek-day {
+    margin-right:10px;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-titlebar {
+    margin:1em 1em .4em;
+}
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-content {
+    margin:0 1.5em;
+}
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-buttonpane {
+    margin:0 2.2em 1.3em;
+}
+
+.fooevents-dialog-add-dates-container .ui-dialog-titlebar {
+    background:transparent;
+    padding:0;
+    margin:0;
+    border:0;
+    height: auto;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: left;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-buttonpane button {
+    float: right !important
+}
+
+.fooevents-dialog-add-dates-container .ui-widget-content {
+    border:0;
+}
+
+.fooevents-dialog-add-dates-container .ui-button.ui-dialog-titlebar-close {
+    color: #2271b1;
+    border:0;
+    background:transparent;
+}
+
+.fooevents-dialog-add-dates-container .ui-dialog-titlebar-close:before {
+    font: normal 20px/1 dashicons;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    width: 36px;
+    height: 36px;
+    content: "\f158";
+}
+
+.fooevents-dialog-add-dates-container .ui-dialog .ui-dialog-titlebar-close span {
+    display: none;
+}
+
+.fooevents-dialog-add-dates-container .ui-dialog-titlebar-close::before  {
+    margin-left:0 !important;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-title {
+	font-weight: bold !important;
+	font-size:18px !important;
+    padding: 0.4em ;
+    position: relative;
+} 
+
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-titlebar-close span {
+  display: none;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-titlebar-close::before {
+  line-height: 19px;
+  margin-left: -2px;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog .ui-dialog-titlebar-close::before {
+    line-height: 19px;
+    margin-left: -2px;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog {
+  	max-width: 950px;
+  	z-index: 1000 !important;
+	box-shadow: 0 3px 6px rgba(0,0,0,.3);
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog[aria-describedby="fooevents_seating_dialog"]
+.ui-dialog-titlebar-close {
+    color: transparent !important;
+}
+
+.fooevents-dialog-add-dates-container.ui-dialog[aria-describedby="fooevents_seating_dialog"]
+.ui-dialog-titlebar-close::before {
+    color: #333333 !important;
+}
+
+.fooevents-dialog-add-dates-container #fooevents-or-text {
+    border:0;
+    background: transparent;
+    font-weight: bold;
+    color:#222;
+    box-shadow: none;
+}
+
+.fooevents-dialog-add-dates-loading {
+    background:rgba(255,255,255,0.85) url(../images/loading.gif) no-repeat center center !important;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    display: none;
+}
+
+/* Responsive Styles */
+    @media screen and (max-width: 80em) { 
+        .fooevents_booking_options_column .booking_options { 
+
+        } 
+        .fooevents_bookings_date_remove,
+        .fooevents_bookings_copy,
+        .fooevents_bookings_remove {
+            margin:0 0 0em;
+            line-height:2em;
+            font-size:1em;
+        }         
+    }
+
+
+    

@@ -1,72 +1,88 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
-
-<div class="kq-organizer-dashboard">
-    <style>
-        .kq-dashboard-header { background: #fff; padding: 25px; border-radius: 12px; border: 1px solid #eee; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; }
-        .kq-stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .kq-stat-card { background: #fff; padding: 20px; border-radius: 12px; border: 1px solid #eee; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
-        .kq-stat-card .label { color: #666; font-size: 0.9em; margin-bottom: 5px; display: block; }
-        .kq-stat-card .value { font-size: 1.8em; font-weight: bold; color: #0073aa; }
-        
-        .kq-dashboard-section { background: #fff; padding: 25px; border-radius: 12px; border: 1px solid #eee; margin-bottom: 25px; }
-        .kq-data-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        .kq-data-table th, .kq-data-table td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
-        .kq-data-table th { color: #888; font-weight: 600; font-size: 0.85em; text-transform: uppercase; }
-        
-        .kq-btn { background: #0073aa; color: #fff; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block; transition: background 0.2s; }
-        .kq-btn:hover { background: #005a87; }
-        .kq-btn-outline { background: transparent; border: 1px solid #0073aa; color: #0073aa; }
-    </style>
-
-    <div class="kq-dashboard-header">
-        <div>
-            <h1><?php printf( __( 'Welcome, %s', 'kueue-events-core' ), $organizer->name ); ?></h1>
-            <p><?php _e( 'Overview of your events and earnings.', 'kueue-events-core' ); ?></p>
-        </div>
-        <a href="<?php echo esc_url( add_query_arg( 'action', 'new_event' ) ); ?>" class="kq-btn"><?php _e( '+ Create New Event', 'kueue-events-core' ); ?></a>
+<div class="kq-dashboard-container" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+    
+    <!-- Welcome Section -->
+    <div style="margin-bottom: 40px;">
+        <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 8px;">Welcome, <?php echo esc_html( $organizer->company_name ); ?></h2>
+        <p style="color: #888;">Manage your events, sales, and payouts in one central hub.</p>
     </div>
 
-    <div class="kq-stats-grid">
-        <div class="kq-stat-card">
-            <span class="label"><?php _e( 'Total Sales', 'kueue-events-core' ); ?></span>
-            <span class="value"><?php echo number_format( $stats['total_revenue'] ?? 0, 2 ); ?> EGP</span>
+    <!-- Bento Stats Grid -->
+    <div class="kq-grid">
+        <div class="kq-card">
+            <span class="kq-stat-label">Gross Revenue</span>
+            <span class="kq-stat-value"><?php echo kq_price( $stats->gross ?? 0 ); ?></span>
         </div>
-        <div class="kq-stat-card">
-            <span class="label"><?php _e( 'Tickets Issued', 'kueue-events-core' ); ?></span>
-            <span class="value"><?php echo (int) ( $stats['total_tickets'] ?? 0 ); ?></span>
+        <div class="kq-card">
+            <span class="kq-stat-label">Commission Fee</span>
+            <span class="kq-stat-value" style="color: #ff3131;">-<?php echo kq_price( $stats->commission ?? 0 ); ?></span>
         </div>
-        <div class="kq-stat-card">
-            <span class="label"><?php _e( 'Net Earnings', 'kueue-events-core' ); ?></span>
-            <span class="value"><?php echo number_format( $stats['net_earnings'] ?? 0, 2 ); ?> EGP</span>
+        <div class="kq-card">
+            <span class="kq-stat-label">Net Earnings</span>
+            <span class="kq-stat-value" style="color: #4cd137;"><?php echo kq_price( $stats->net ?? 0 ); ?></span>
         </div>
     </div>
 
-    <div class="kq-dashboard-section">
-        <h3><?php _e( 'Recent Payout Requests', 'kueue-events-core' ); ?></h3>
-        <?php if ( empty( $payouts ) ) : ?>
-            <p><?php _e( 'No payout requests found.', 'kueue-events-core' ); ?></p>
-        <?php else : ?>
-            <table class="kq-data-table">
-                <thead>
-                    <tr>
-                        <th><?php _e( 'Date', 'kueue-events-core' ); ?></th>
-                        <th><?php _e( 'Amount', 'kueue-events-core' ); ?></th>
-                        <th><?php _e( 'Status', 'kueue-events-core' ); ?></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ( $payouts as $p ) : ?>
-                        <tr>
-                            <td><?php echo date( 'M d, Y', strtotime( $p->created_at ) ); ?></td>
-                            <td><?php echo number_format( $p->amount, 2 ); ?> EGP</td>
-                            <td><span class="status-badge <?php echo esc_attr( $p->status ); ?>"><?php echo ucfirst( $p->status ); ?></span></td>
+    <!-- Dashboard Main Content -->
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-top: 40px;">
+        
+        <!-- My Events Section -->
+        <div class="kq-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h3 style="margin:0;">My Events</h3>
+                <a href="#" class="kq-btn kq-btn-outline" style="font-size: 13px;">View All</a>
+            </div>
+            
+            <div class="kq-event-table-container">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="text-align: left; background: #fafafa; border-bottom: 1px solid #eee;">
+                            <th style="padding: 12px;">Event</th>
+                            <th style="padding: 12px;">Date</th>
+                            <th style="padding: 12px;">Sold</th>
+                            <th style="padding: 12px;">Status</th>
                         </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
-        <?php endif; ?>
-        <div style="margin-top: 20px;">
-            <a href="#" class="kq-btn kq-btn-outline"><?php _e( 'Request Payout', 'kueue-events-core' ); ?></a>
+                    </thead>
+                    <tbody>
+                        <?php 
+                        $my_events = get_posts([ 'post_type' => 'kq_event', 'author' => $user_id, 'numberposts' => 5 ]);
+                        if ( $my_events ) : foreach ( $my_events as $ev ) : 
+                            $summary = \KueueEvents\Core\Modules\Reports\ReportsService::get_event_summary( $ev->ID );
+                        ?>
+                        <tr style="border-bottom: 1px solid #f9f9f9;">
+                            <td style="padding: 12px;"><strong><?php echo esc_html( $ev->post_title ); ?></strong></td>
+                            <td style="padding: 12px; font-size: 14px;"><?php echo get_post_meta($ev->ID, '_kq_start_date', true); ?></td>
+                            <td style="padding: 12px;"><?php echo $summary['active_tickets']; ?></td>
+                            <td style="padding: 12px;"><span style="background: rgba(76, 209, 55, 0.1); color: #4cd137; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 700;">Active</span></td>
+                        </tr>
+                        <?php endforeach; else : ?>
+                        <tr><td colspan="4" style="padding: 20px; text-align: center; color: #888;">No events created yet.</td></tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Payouts Sidebar -->
+        <div class="kq-card" style="background: var(--kq-dark); color: #fff;">
+            <h3 style="margin-top:0; color: #fff;">Payout Status</h3>
+            <p style="color: #666; font-size: 14px; margin-bottom: 24px;">Track your earnings and pending withdrawal requests.</p>
+            
+            <?php if ( ! empty( $payouts ) ) : foreach ( $payouts as $p ) : ?>
+            <div style="background: #1a1a1c; padding: 16px; border-radius: 12px; margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-weight: 700;"><?php echo kq_price( $p->amount ); ?></span>
+                    <span style="font-size: 11px; text-transform: uppercase; color: #aaa;"><?php echo $p->status; ?></span>
+                </div>
+                <div style="font-size: 12px; color: #666; margin-top: 4px;"><?php echo date_i18n( get_option('date_format'), strtotime($p->created_at) ); ?></div>
+            </div>
+            <?php endforeach; else : ?>
+            <div style="text-align: center; padding: 20px; border: 1px dashed #333; border-radius: 12px; color: #666;">
+                No payout history.
+            </div>
+            <?php endif; ?>
+
+            <a href="#" class="kq-btn kq-btn-primary" style="width: 100%; margin-top: 20px;">Request Payout</a>
         </div>
     </div>
 </div>

@@ -99,26 +99,22 @@ class DeliveryService {
         if ( ! $attendee || ! $attendee->phone ) return false;
 
         $event_id = $ticket->event_id;
-        $event = get_post($event_id);
         $gateway_id = get_post_meta( $event_id, '_kq_whatsapp_gateway_id', true );
 
         if ( ! $gateway_id ) {
-            // Get default account if none set
             $default_account = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_default_account( 'whatsapp' );
             $gateway_id = $default_account ? $default_account->id : null;
         }
 
         if ( ! $gateway_id ) return false;
 
-        $ticket_url = home_url( '/kq-ticket/' . $ticket->secure_token );
-        $message = sprintf(
-            __( "Hello %s,\nYour ticket for %s is confirmed!\n\nDate: %s\nTicket #: %s\nView Ticket: %s", 'kueue-events-core' ),
-            $attendee->first_name,
-            $event->post_title,
-            get_post_meta($event_id, '_kq_start_date', true),
-            $ticket->ticket_number,
-            $ticket_url
-        );
+        // Custom template or default
+        $template = get_post_meta( $event_id, '_kq_whatsapp_template', true );
+        if ( empty( $template ) ) {
+            $template = __( "Hello {first_name},\nYour ticket for {event_name} is confirmed!\n\nTicket #: {ticket_number}\nView Ticket: {ticket_link}", 'kueue-events-core' );
+        }
+
+        $message = MessagePlaceholder::process( $template, $ticket->id );
 
         return DeliveryManager::add_to_queue( 'whatsapp', $gateway_id, [
             'to'      => $attendee->phone,
@@ -134,7 +130,6 @@ class DeliveryService {
         if ( ! $attendee || ! $attendee->phone ) return false;
 
         $event_id = $ticket->event_id;
-        $event = get_post($event_id);
         $gateway_id = get_post_meta( $event_id, '_kq_sms_gateway_id', true );
 
         if ( ! $gateway_id ) {
@@ -144,12 +139,12 @@ class DeliveryService {
 
         if ( ! $gateway_id ) return false;
 
-        $ticket_url = home_url( '/kq-ticket/' . $ticket->secure_token );
-        $message = sprintf(
-            __( "Your ticket for %s: %s", 'kueue-events-core' ),
-            $event->post_title,
-            $ticket_url
-        );
+        $template = get_post_meta( $event_id, '_kq_sms_template', true );
+        if ( empty( $template ) ) {
+            $template = __( "Your ticket for {event_name}: {ticket_link}", 'kueue-events-core' );
+        }
+
+        $message = MessagePlaceholder::process( $template, $ticket->id );
 
         return DeliveryManager::add_to_queue( 'sms', $gateway_id, [
             'to'      => $attendee->phone,

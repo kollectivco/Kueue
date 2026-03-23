@@ -32,7 +32,7 @@ class Main {
      * Initialize core components
      */
     private function init_core() {
-        // Helper classes can be initialized here
+        require_once KQ_PLUGIN_DIR . 'includes/Core/Helpers.php';
     }
 
     /**
@@ -92,6 +92,9 @@ class Main {
         if ( class_exists( 'WooCommerce' ) ) {
             $wc = new \KueueEvents\Core\Modules\Payments\WooCommerceService();
             $wc->run();
+
+            $checkout = new \KueueEvents\Core\Modules\Attendees\CheckoutHandler();
+            $checkout->run();
         }
 
         // 6) Public Frontend

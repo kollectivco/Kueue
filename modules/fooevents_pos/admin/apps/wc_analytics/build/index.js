@@ -1,0 +1,1 @@
+!function(){"use strict";var s=window.wp.hooks;window.wp.i18n,(0,s.addFilter)("woocommerce_admin_orders_report_filters","fooeventspos",(s=>[{label:fooeventsposPhrases.title_sales_channel,staticParams:[],param:"fooeventspos_sales_channel",showFilters:()=>!0,defaultValue:"all",filters:[...wcSettings.fooeventsposSalesChannel||[]]},...s]))}();

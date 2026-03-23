@@ -8,12 +8,31 @@ class GitHubUpdater {
     private $cache_key = 'kq_gh_release_latest';
 
     public function run() {
-        // Hooks for WordPress update transient
-        add_filter( 'pre_set_site_transient_update_plugins', [ $this, 'inject_update_info' ] );
-        add_filter( 'plugins_api', [ $this, 'inject_plugin_info' ], 10, 3 );
-        add_filter( 'upgrader_source_selection', [ $this, 'upgrader_source_selection' ], 10, 3 );
-        add_action( 'upgrader_process_complete', [ $this, 'clear_transients' ], 10, 2 );
+        $library_path = KQ_PLUGIN_DIR . 'includes/Vendor/plugin-update-checker/plugin-update-checker.php';
+        
+        if ( file_exists( $library_path ) ) {
+            require_once $library_path;
+            
+            $update_checker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
+                'https://github.com/' . $this->repo,
+                KQ_PLUGIN_FILE,
+                'kueue-events-core'
+            );
+
+            // Optional: Set the branch that contains the stable code
+            $update_checker->setBranch('main');
+        } else {
+            // Fallback: use manual implementation if library is missing
+            add_filter( 'pre_set_site_transient_update_plugins', [ $this, 'inject_update_info' ] );
+            add_filter( 'plugins_api', [ $this, 'inject_plugin_info' ], 10, 3 );
+            add_filter( 'upgrader_source_selection', [ $this, 'upgrader_source_selection' ], 10, 3 );
+            add_action( 'upgrader_process_complete', [ $this, 'clear_transients' ], 10, 2 );
+        }
     }
+
+    /**
+     * Manual Fallback Implementation below
+     */
 
     /**
      * Check GitHub for updates and inject into the WordPress update transient.

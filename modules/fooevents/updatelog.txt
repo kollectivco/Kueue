@@ -1,0 +1,1015 @@
+
+UPDATE LOG
+
+------------------
+1.20.24
+FIXED: Expiration bug with tickets created in admin.
+FIXED: Various security updates.
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.9.1 and WooCommerce 10.5.0.
+
+1.20.23
+ADDED: Support Google maps iframe and JavaScript embed.
+FIXED: Various security updates. 
+FIXED: Various stationary builder fixes and updates.
+FIXED: Updated attendee names on WooCommerce order email bug.
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.9 and WooCommerce 10.4.3.
+
+1.20.21
+FIXED: Reports page JavaScript conflict. 
+FIXED: Various PHP warnings. 
+FIXED: 'Any' variation selection bug.
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.8.3 and WooCommerce 10.3.5.
+
+1.20.20
+FIXED: Removed legacy JWT authentication for Zoom API.
+FIXED: Support for multi-day select global time on ticket.
+FIXED: Update all AddToWallet passes when AddToWallet event fields are updated.
+FIXED: Fix bug on order page where can't resend tickets that were imported.
+FIXED: Display out of stock message on event listings.
+TESTED ON: WordPress 6.8.3 and WooCommerce 10.3.3.
+
+1.20.16
+FIXED: Remve test code on orders page. 
+FIXED: Make Stripe Apple Pay / Google Pay warning notice dismissable. 
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.8.2 and WooCommerce 10.1.1.
+
+1.20.15
+FIXED: Import tickets extra meta removed.
+FIXED: Ticket preview PHP warnings.
+FIXED: Added ICS Microsoft timezone parameter to support older Outlook versions.
+FIXED: Added attendee telephone to AutomateWoo variables.
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.8.2 and WooCommerce 10.1.1.
+
+1.20.7
+ADDED: 'Add to wallet' support using addtowallet.co
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.8.1 and WooCommerce 9.8.5.
+
+1.20.5 
+FIXED: Potential security vulnerability. 
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.8.1 and WooCommerce 9.8.5.
+
+1.20.4
+FIXED: Text domain compatibility.
+FIXED: Issue with uploading ticket themes on some servers. 
+FIXED: Various other small bugs and performance updates.
+TESTED ON: WordPress 6.8.1 and WooCommerce 9.8.3.
+
+1.20.3
+FIXED: Bug with display booking slot and date on new product.
+TESTED ON: WordPress 6.7.2 and WooCommerce 9.7.1.
+
+1.20.2
+ADDED: Partial support for ticket generation from new WooCommerce checkout block.
+FIXED: Calendar alert bugs.
+FIXED: Event listing block compact template support translations.
+FIXED: Ticket listing event sorting bug. 
+FIXED: Various other small bugs and performance updates.
+TESTED ON: WordPress 6.7.2 and WooCommerce 9.7.1.
+
+1.19.55
+FIXED: Global variation bug.
+FIXED: ICS alert bug when removing all alerts in product.
+FIXED: Terminology bug.
+FIXED: Various other small bugs and performance updates.
+TESTED ON: WordPress 6.7.2 and WooCommerce 9.6.2.
+
+1.19.53
+FIXED: License key not set error bug.
+TESTED ON: WordPress 6.7.1 and WooCommerce 9.6.0.
+
+1.19.52
+FIXED: Thank you page PHP warning.
+FIXED: AutomateWoo additional plaintext date variables.
+FIXED: Various stationary editior bugs.
+FIXED: Custom attendee empty bug on checkout page.
+FIXED: Various other small bugs and performance updates.
+TESTED ON: WordPress 6.7.1 and WooCommerce 9.5.2.
+
+1.19.46
+FIXED: Wordpress 6.7 load text domain compatibility.
+FIXED: Product description not showing bug.
+FIXED: Various other small bugs and performance updates.
+TESTED ON: WordPress 6.7.1 and WooCommerce 9.4.2.
+
+1.19.44
+FIXED: Various small bugs and performance updates.
+TESTED ON: WordPress 6.7 and WooCommerce 9.4.1.
+
+1.19.43
+FIXED: Support for special characters on checkout.
+FIXED: Empty ticket trash fatal error.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.6.2 and WooCommerce 9.3.3.
+
+1.19.38
+NEW: FooEvents Attendee Listing block.
+UPDATED: Various ticket importing styling.
+UPDATED: Import tickets batch size option.
+FIXED: Various PHP warnings.
+FIXED: Link imported tickets on orders page.
+FIXED: Imported booking tickets not displaying in app bug.
+FIXED: Event listing block compact view date bug.
+FIXED: Various other small bugs.
+TESTED ON: Wordpress 6.6.2 and WooCommerce 9.3.3.
+
+
+1.19.33
+FIXED: Moved block CSS styles.
+FIXED: Google Maps key bug.
+FIXED: Seatings bug.
+TESTED ON: WordPress 6.6.1 and WooCommerce 9.2.3.
+
+1.19.32
+FIXED: Timezone display on product page. 
+FIXED: Added end date and timezone to event listing block.
+FIXED: Query performance on checkout.
+FIXED: Theme security updates.
+FIXED: Various PHP warning outputs.
+FIXED: Only display front end CSS on event products.
+FIXED: Imported tickets booking date bug.
+FIXED: Day title CSV export bug.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.6.1 and WooCommerce 9.2.3.
+
+1.19.22
+FIXED: Potential security vulnerability. 
+FIXED: Event settings timezone display bug.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.5.4 and WooCommerce 8.9.3.
+
+1.19.20
+FIXED: Potential security vulnerability 
+FIXED: Event listing block month seperator
+FIXED: French language attendee export bug
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.5.4 and WooCommerce 8.9.3.
+
+1.19.14
+FIXED: Warning on new order email when booking plugin is not active.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.5.3 and WooCommerce 8.9.1.
+
+1.19.12
+UPDATED: Product event settings look and feel. 
+FIXED: Import tickets with empty order ID bug.
+FIXED: Make seats available on order status 'Cancelled' and 'Failed'.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.5.3 and WooCommerce 8.9.1.
+
+1.19.9
+ADDED: New event listing block.
+FIXED: Global 'Day' terminology bug.
+FIXED: HPOS reporting bugs. 
+TESTED ON: WordPress 6.5.0 and WooCommerce 8.7.0.
+
+1.19.7
+ADDED: Support for Express Check-in sounds.
+ADDED: AutomateWoo barcode_url variable.
+FIXED: Only add send ticket meta to event products.
+FIXED: Ticket listing multi-day changing to single day event bug.
+FIXED: AutomateWoo bug when checking out as guest.
+FIXED: Remove query causing long page loads in admin.
+FIXED: Various app optimizations.
+FIXED: Optimize report list query. 
+TESTED ON: WordPress 6.4.3 and WooCommerce 8.6.1.
+
+1.19.0
+ADDED: Support for AutomateWoo.
+ADDED: New plugin translations.
+FIXED: HPOS resend ticket bug.
+FIXED: Order page HPOS bug.
+FIXED: Multi-date selected day output on WooCommerce emails.
+FIXED: Variation on checkout output bug.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.4.2 and WooCommerce 8.5.1.
+
+1.18.53
+FIXED: JavaScript Select2 conflict.
+FIXED: Booking terminology bug.
+FIXED: Various other small bugs.
+FIXED: Goolge Maps warning.
+FIXED: Chinese character bug in admin and tickets.
+FIXED: Global start/end times bug.
+FIXED: Imported tickets deleted order warning bug.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.4.2 and WooCommerce 8.3.1.
+
+1.18.48
+FIXED: Daylight savings bug on edit ticket page. 
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.4.1 and WooCommerce 8.2.2
+
+1.18.47
+FIXED: Daylight saving month name translation bug.
+TESTED ON: WordPress 6.3.2 and WooCommerce 8.2.1
+
+1.18.46
+FIXED: Fatal error on edit ticket page on certain servers.
+FIXED: 'Any' variation in product bug.
+FIXED: Various PHP 8.2 errors and warnings.
+ADDED: Merge field variables to the .ics file. 
+ADDED: Order ID support to ticket importing.
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.3.2 and WooCommerce 8.2.1
+
+1.18.39
+FIXED: Fatal error on thank you page on some servers.
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.3 and WooCommerce 8.0.2
+
+1.18.37
+FIXED: Ticket incrementing bug on some servers.
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.3 and WooCommerce 8.0.1
+
+1.18.32
+ADDED: New ticket incrementing functionality
+ADDED: Improved app authentication
+FIXED: Multi-day .ics bug
+FIXED: Admin ticket create email bug
+FIXED: Product variation 'any' bug
+FIXED: Admin order page variation output
+FIXED: Preview ticket bugs
+FIXED: Blank email sent to no address bug
+FIXED: Timezone variable available in Follow-up Emails plugin
+FIXED: Various date format bugs
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.2.2 and WooCommerce 7.9.0
+
+1.18.26
+FIXED: PHP warnings on some servers
+FIXED: Unpaid ticket booking information not displaying on CSV
+FIXED: Thank you page FATAL ERROR on some themes 
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.2.2 and WooCommerce 7.7.2
+
+1.18.23
+ADDED: WooCommerce HPOS support
+FIXED: Report page title bug
+FIXED: German language date bugs
+FIXED: Dutch language date bugs
+FIXED: New order email ticket bugs
+FIXED: Imported tickets variation bugs
+FIXED: Imported tickets app bugs
+FIXED: Multi-day global time output bug
+FIXED: Unique email on checkout bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.2.2 and WooCommerce 7.7.2
+
+1.18.14
+ADDED: Support for BOCA printer wristbands and 5.5" ticket sizes
+ADDED: Zoom OAuth support
+FIXED: Imported ticket resend ticket bug
+FIXED: Follow up emails multiday bug
+FIXED: Bug on some themes causing autocomplete to not work
+FIXED: Various WooCommerce depreciated warnings
+FIXED: Email copy of ticket to recipient bug  
+FIXED: ICS multiday global times bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.2 and WooCommerce 7.6.0
+
+1.18.6
+ADDED: Capture person who checked-in attendee on edit ticket and report pages
+ADDED: New ticket subject variables. Added support for variables in ticket email
+FIXED: Ticket import variation support 
+FIXED: Barcode generation when importing Tickets
+FIXED: Various ticket importing bugs
+FIXED: Unpaid tickets CSV export bug
+FIXED: Follow-up emails category bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.4.1
+
+1.18.0
+ADDED: CSV Ticket import feature
+FIXED: Various security updates
+FIXED: j. n. Y date format support
+FIXED: Suppress admin email notification bug 
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.3.0
+
+1.17.8
+ADDED: Purchased tickets now visible on My Account -> Order page
+ADDED: If adding ticket in admin and user has already purchased use billing details
+FIXED: Various small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.1.0
+
+1.17.4
+FIXED: Admin menu bug on translated sites
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.1.0
+
+1.17.3
+FIXED: Admin menu bug
+FIXED: Create ticket PHP warning
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.1.0
+
+1.17.0
+ADDED: Support for FooEvents POS (Coming soon)
+ADDED: New default ticket theme
+ADDED: Support for FooEvents Seating terminology overrides
+FIXED: Follow-up email default field bug
+FIXED: Support for Lithuanian month names
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.0 and WooCommerce 7.0.1
+
+1.16.2
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.0.2 and WooCommerce 7.0.0
+
+1.16.0
+ADDED: Option to resend tickets from orders page
+ADDED: Option to capture attendee name and email address individually 
+ADDED: Support for new Bookings Admin features
+FIXED: Multi-day outputs in generated .ics file
+FIXED: Conflict with disabling order confirmation notification in admin
+FIXED: Variation products bug on add tickets page
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.0.2 and WooCommerce 6.9.4
+
+1.15.12
+UPDATED: Various security updates
+FIXED: Various small bugs
+TESTED ON: WordPress 6.0.1 and WooCommerce 6.7.0
+
+1.15.11
+UPDATED: Various security updates
+FIXED: Various small bugs
+TESTED ON: WordPress 6.0.1 and WooCommerce 6.7.0
+
+1.15.10
+ADDED: Option to disable order confirmation on admin created tickets
+ADDED: Additional order information in CSV export
+FIXED: App improved performance ticket loading
+FIXED: WPML export attendee unpaid order bug
+FIXED: Various translation bugs
+FIXED: Google Maps depreciated code
+FIXED: Various stationary builder bugs
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.0.1 and WooCommerce 6.7.0
+
+1.15.6
+FIXED: Ticket preview send bug
+FIXED: Expired posts if admin bug
+FIXED: WPML translation bug
+FIXED: WPML export attendee bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.0.0 and WooCommerce 6.6.0
+
+1.15.2
+FIXED: Ticket resend not working bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9.3 and WooCommerce 6.5.1
+
+1.15.0
+ADDED: Support for Follow-Up Emails plugin
+ADDED: Functionality to select which order status ticket should be generated on
+ADDED: Option to automatically copy purchaser details to attendee on checkout
+ADDED: Option to override send copy of email on product level
+FIXED: Update message on plugin page even though running latest Version
+FIXED: Untrashed ticket set to Draft
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9.3 and WooCommerce 6.5.1
+
+1.14.45
+FIXED: Reporting date bug
+FIXED: Various Mailchimp integration bugs
+FIXED: Multi-day times in product event tab
+FIXED: Terminology bug on tickets
+FIXED: Various Zoom bugs
+FIXED: New order email formating bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9.3 and WooCommerce 6.4.1
+
+1.14.35
+ADDED: Mailchimp support
+FIXED: Various small bugs
+TESTED ON: WordPress 5.9.2 and WooCommerce 6.3.1
+
+1.14.31
+ADDED: PNG and JPG barcode generation option
+FIXED: App empty user bug
+FIXED: Report precision bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9.1 and WooCommerce 6.2.1
+
+1.14.28
+ADDED: Support for bookings display options
+ADDED: Support for multi-day start end times
+FIXED: Terminology bugs
+FIXED: App empty first name, last name bug
+FIXED: m/d/Y expiration bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9 and WooCommerce 6.2.0
+
+1.14.23
+FIXED: Admin menu bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8.3 and WooCommerce 6.1.0
+
+1.14.22
+ADDED: Support for offline check-in imports
+FIXED: Fix event sort order bug
+FIXED: Redirect bug on add ticket
+FIXED: 24 hour timestamp generation bug
+FIXED: PHP 8.0 warnings
+FIXED: CSV translation bugs
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8.3 and WooCommerce 6.1.0
+
+1.14.15
+FIXED: App check-in bug 
+FIXED: Custom attendee fields in stationary builder
+FIXED: Change add to cart text bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8.2 and WooCommerce 6.0.0
+
+1.14.12
+FIXED: Various small bugs
+TESTED ON: WordPress 5.8.2 and WooCommerce 5.9.0
+
+1.14.10
+FIXED: Barcode path generation bug
+FIXED: Thank you page formatting bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8.2 and WooCommerce 5.9.0
+
+1.14.8
+FIXED: Fatal error on orders page
+TESTED ON: WordPress 5.8.2 and WooCommerce 5.9.0
+
+1.14.7
+UPDATED: Various security updates
+FIXED: Expiration bug with Languages that have Unicode characters
+FIXED: Expiration on products in the WooCommerce shortcode
+FIXED: Expiration on related products
+FIXED: Various translation bugs
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8.2 and WooCommerce 5.9.0
+
+1.12.48
+FIXED: Removed jpg barcode generation causing error on some servers
+FIXED: User list on add ticket page
+FIXED: Bookings information on orders page
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8.1 and WooCommerce 5.6.0
+
+1.12.44
+FIXED: Permanently delete checked-in ticket bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8 and WooCommerce 5.6.0
+
+1.12.40
+FIXED: Translated tickets not pulled through on event listing in app
+FIXED: Search for user email on add ticket page
+FIXED: Support for D F j date format
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8 and WooCommerce 5.5.2
+
+1.12.39
+ADDED: Attendee phone, company and designation to ticket admin page
+FIXED: Bug with multiple events that have the same name
+FIXED: Event and attendee details displaying in new order email even though option set to off
+FIXED: Seating data bug
+FIXED: Bug with multi-day dates on new order email
+TESTED ON: WordPress 5.7.2 and WooCommerce 5.5.1
+
+1.12.36
+ADDED: Event details option for 'New Order' email
+FIXED: Bug with large amount of users on 'Add Ticket' page
+FIXED: Cancelled order conflict with FooEvents Seating plugin 
+FIXED: Reporting bug cause by certain date formats
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.7.2 and WooCommerce 5.3.0
+
+1.12.31
+ADDED: Options to include data on 'New Order' email
+ADDED: Check-in logging data on 'Edit Ticket' and 'Report' pages
+ADDED: Cater for Zoom session offset in ICS
+ADDED: Telephone and Company copy from purchaser on checkout
+FIXED: Bug where couldn't save ticket as Unpaid
+FIXED: Conflict with 'Add Media' button
+FIXED: Variable product PHP warning on HTML ticket
+FIXED: CSV UTF8 export
+FIXED: Variation bug with colons
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.7.2 and WooCommerce 5.3.0
+
+1.12.23
+FIXED: Zoom bug on non-bookable events
+FIXED: Timestamp equal to 0 bug
+FIXED: Variation product special character bug
+FIXED: Various other small bugs
+UPDATED: Use wp_remote_post() instead of CURL
+TESTED ON: WordPress 5.7 and WooCommerce 5.1.0
+
+1.12.18
+FIXED: Various small bugs
+TESTED ON: WordPress 5.7 and WooCommerce 5.1.0
+
+1.12.16
+ADDED: Support for FooEvents Bookings date then slot output
+ADDED: Support for FooEvents Bookings Zoom integration
+ADDED: Support hide date on FooEvents Bookings dropdown selection
+ADDED: Support for FooEvents Seating updates
+ADDED: Option to validate unique order attendee email address on checkout
+FIXED: CSV export failure caused by deleted orders
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.6.1 and WooCommerce 5.0.0
+
+1.12.14
+ADDED: Order notes to CSV export
+FIXED: SQL ticket generation optimizations
+FIXED: Multi-day conflicts
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.6 and WooCommerce 4.9.1
+
+1.12.7
+FIXED: Event filter only on products
+FIXED: Character output on variations in some languages
+UPDATED: Stationary builder updates
+FIXED: Various small bugs
+TESTED ON: WordPress 5.6 and WooCommerce 4.8.0
+
+1.12.3
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5.3 and WooCommerce 4.7.0
+
+1.12.1
+FIXED: Legacy multi-day event bug
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5.3 and WooCommerce 4.6.2
+
+1.12.0
+ADDED: Bookings support
+ADDED: Various layout updates
+ADDED: Event filter on ticket listing page
+ADDED: app_event_magic_tickets capability
+FIXED: Expiration timestamp bug
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5.3 and WooCommerce 4.6.1
+
+1.11.53
+FIXED: Issue where seating chart not displaying on checkout
+TESTED ON: WordPress 5.5.1 and WooCommerce 4.5.2
+
+1.11.51
+FIXED: CSS validation bug causing plugin conflicts
+TESTED ON: WordPress 5.5.1 and WooCommerce 4.5.2
+
+1.11.50
+ADDED: Added global setting to disable ticket generation if WooCommerce Subscriptions is active
+ADDED: Event expiration functionality 
+FIXED: CSV export bug with unpaid tickets
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5.1 and WooCommerce 4.5.2
+
+1.11.45
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5 and WooCommerce 4.3.2
+
+1.11.44
+ADDED: New Default 2020 theme
+FIXED: Plugins page view details update log
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5 and WooCommerce 4.3.2
+
+1.11.38
+ADDED: Copy details from purchaser option on checkout
+FIXED: App event listing bug
+FIXED: Other small bugs
+TESTED ON: WordPress 5.4.2 and WooCommerce 4.3.0
+
+1.11.35
+ADDED: Support for updated Check-ins app
+FIXED: Server resource limit bug
+FIXED: Stationary Builder bugs and updated copy
+FIXED: Other small bugs
+TESTED ON: WordPress 5.4.2 and WooCommerce 4.2.2
+
+1.11.32
+FIXED: Various small bugs 
+TESTED ON: WordPress 5.4.2 and WooCommerce 4.2.0
+
+1.11.31
+ADDED: Ticket and badge print builder functionality
+FIXED: ICS generation and date bugs
+FIXED: Duplicated ticket details admin page information 
+FIXED: Various admin add ticket bugs 
+FIXED: Various Zoom meeting bugs
+FIXED: Various other small bugs 
+TESTED ON: WordPress 5.4.1 and WooCommerce 4.2.0
+
+1.11.28
+UPDATED: Zoom integration features
+ADDED: Option to add .ics to ticket
+ADDED: Support for CJK text in PDF tickets
+FIXED: Various small bugs
+TESTED ON: WordPress 5.4 and WooCommerce 4.0.1
+
+1.11.27
+UPDATED: Zoom integration features
+FIXED: Various small bugs
+TESTED ON: WordPress 5.4 and WooCommerce 4.0.1
+
+1.11.26
+ADDED: Zoom webinars integration 
+ADDED: Option to choose which events should display in app
+ADDED: Timezone option for events
+FIXED: Various small bugs
+
+1.11.23
+FIXED: Fatal error on WooCommerce deactivation
+FIXED: Various other small bugs
+
+1.11.21
+FIXED: Report query tweaks 
+FIXED: Admin create tickets bug
+
+1.11.17
+ADDED: Sorting and filter updates to products
+ADDED: Order ID to tickets listing page
+FIXED: Wrong settings link on plugins page
+FIXED: Missing phone number from csv export
+FIXED: REST database bug
+FIXED: Fatal error on change product to event
+FIXED: Missing JavaScript warnings on exports
+FIXED: Revenue 0 bug on reports
+FIXED: Various other small bugs
+
+1.11.12
+ADDED: Support for REST communication with check-ins app
+ADDED: QR code support
+ADDED: Add ticket search on event and purchaser list
+FIXED: Various small bugs
+
+1.11.10
+UPDATED: Event settings options and layout
+FIXED: Various small bugs 
+
+1.11.7
+FIXED: Multi-day check-in bug using apps
+FIXED: Sale price bug in apps
+FIXED: Ticket theme admin bugs
+FIXED: Cancel order stock bug
+
+
+1.11.4
+FIXED: Bug where optional attendee fields are still format validated
+FIXED: Media control conflict
+FIXED: Upload and preview theme bugs
+FIXED: Bug on variation stock management variable vs product level
+
+
+1.11.2
+ADDED: Support for seating settings page
+
+1.11.0
+ADDED: New event report features
+ADDED: New settings page
+FIXED: Various small bugs 
+
+1.10.5
+FIXED: Attendee fields required field bug
+FIXED: Various other small bugs
+
+1.10.3
+FIXED: Ticket theme count bug
+FIXED: Custom attendee reference bug
+FIXED: Various other small bugs
+
+1.10.1
+ADDED: Support for PDF themes
+FIXED: Various small bugs
+
+1.9.7
+FIXED: WooCommerce 3.7.0 setting conflict
+
+1.9.6
+FIXED: Conflict with WPML compatibility and CSV attendee exports
+
+1.9.5
+ADDED: First name, last name and email address fields no longer required for custom attendee fields
+
+1.9.3
+ROLLBACK: PDF theme updates
+
+1.9.0
+ADDED: Support for FooEvents Custom Attendee Updates
+
+1.8.23
+ADDED: Out-the-box compatibility with WPML
+ADDED: Compatibility with new FooEvents Seating updates
+FIXED: Removed tickets with unpaid status from CSV
+FIXED: Various small bugs
+
+1.8.20
+FIXED: Updated translations
+FIXED: Various small bugs
+
+1.8.18
+FIXED: Replace sanitization method for 'Ticket text', 'Thank you page text', 'Event details tab text'
+FIXED: Revert config base URL path for better compatibility on various server configs
+FIXED: Seating chart incorrectly set to not required when 'Capture individual attendee details' is not set.
+
+1.8.17
+FIXED: Various small bugs
+
+1.8.16
+ADDED: Various compliance updates
+FIXED: Bug with seating chart selection
+FIXED: Timestamp equal 0 bug
+FIXED: Various other small bugs 
+
+1.8.9
+ADDED: Option to print all event tickets
+ADDED: Support to display seating chart on checkout
+FIXED: Various bugs
+
+1.8.7
+FIXED: Bug with selecting background color for event on calendar
+
+1.8.6
+ADDED: New FooEvents Calendar feature support
+FIXED: .ics generation bugs
+FIXED: Admin add new ticket bugs
+FIXED: Various small bugs
+
+
+1.8.0
+ADDED: Attendee badge functionality
+ADDED: Multi-day support in ICS export 
+FIXED: Various small bugs
+
+1.7.32
+FIXED: CSV export bug
+FIXED: Various small bugs
+
+1.7.26
+ADDED: Support for FooEvents Seating
+FIXED: Timestamp being set to 0 bug on certain servers
+
+1.7.25
+FIXED: Multi-day event date bug on date selection 
+FIXED: Various small bugs
+
+1.7.23
+ADDED: Functionality to include/exclude custom attendee details on tickets 
+UPDATED: Introduction page
+FIXED: Empty new order notification email when creating a ticket via the Wordpress admin
+FIXED: Various small bugs
+
+1.7.22
+FIXED: CSV export bug
+FIXED: Various small bugs
+
+1.7.19
+UPDATED: Only admin role can now login to app by default
+UPDATED: Documentation
+UPDATED: Plugin option clean-up on delete 
+FIXED: Various small bugs
+
+1.7.15
+FIXED: Terminology new site bug
+FIXED: Email template PHP warning
+FIXED: Various other small bugs
+
+1.7.12
+ADDED: Terminology override feature
+
+1.7.11
+FIXED: Update notification service bug
+
+1.7.10
+FIXED: Image header ticket theme bug 
+
+1.7.9
+ADDED: Ticket header image upload option
+ADDED: Multi-day check-in statuses to CSV
+FIXED: Wordpress MU password reset bug
+FIXED: Google Maps API bug when key not set
+FIXED: Various other small bugs
+
+1.7.7 
+ADDED: Support for selected FooEvents Multi-Day event days 
+ADDED: Support For colored events on FooEvents Calendar
+ADDED: Added telephone, company and designation attendee fields to app 
+ADDED: Purchaser phone number to csv 
+FIXED: Option to not send tickets bug
+FIXED: CSV unpaid tickets bug
+
+1.7.3
+FIXED: Barcode path bug
+
+1.7.2
+FIXED: Barcode path bug
+
+1.7.1
+UPDATED: Security updates
+
+1.7.0
+NEW: Moved barcodes and email themes to the Wordpress uploads directory
+ADDED: Support for HTML email ticket themes
+UPDATED: Translations
+
+1.6.6
+FIXED: Various small bugs
+
+1.6.1
+ADDED: Auto update functionality
+
+1.5.32
+ADDED: User role support for Wordpress ticket management
+FIXED: Out-of-stock book tickets button 
+FIXED: Date format bug on product page
+FIXED: Various small bugs
+
+1.5.19
+FIXED: Custom attendee multiple event bug
+FIXED: Billing error on ticket admin page
+ADDED: Theme option to use placeholders
+
+1.5.15
+FIXED: CSV variations bug
+FIXED: Ticket meta variations bug
+FIXED: Version update number bug
+FIXED: 10+ attendee bug
+
+1.5.5
+FIXED: Event details tab PHP warning
+
+1.5.4 
+-FIXED: App login bug
+-FIXED: Various small bugs
+
+1.5.1
+- Multi-day support update
+
+1.5.0
+-ADDED: Multiday extension ready
+-FIXED: Various small bugs
+
+1.4.4
+-FIXED: More Wordpress 4.8 bugs that may affect sending tickets
+-FIXED: Duplicate ticket bug with certain payment gateways
+
+1.3.12
+-FIXED: Wordpress 4.8 bug causing tickets not to be sent out on order completion
+-FIXED: CSV export bug
+-FIXED: Various other small bugs
+-FIXED: Updated translations
+
+1.3.8
+
+-ADDED: FooEvents dashboard widget
+-ADDED: Download ticket from ticket admin
+-ADDED: Export CSV enhancements 
+-FIXED: WooCommerce 3 warning messages
+-FIXED: Ticket purchaser name missing bug 
+-FIXED: Various other small bugs  
+
+
+1.3.3
+
+-FIXED: Bulk ticket resend bug  
+-FIXED: Purchaser name missing bug
+-FIXED: Various other small bugs  
+
+
+1.3.0
+
+-FIXED: WooCommerce 3 warning messages 
+-ADDED: Overwride PDF ticket email 
+-ADDED: Export CSV enhancements 
+-ADDED: Edit ticket subject
+
+1.2.17
+
+-FIXED: App bug with certain currency symbols
+-FIXED: Email ticket bug on first install
+-FIXED: Wordpress MU activate plugin bug
+-ADDED: Custom attendee fields to CSV export
+ 
+
+1.2.16
+
+-FIXED: Barcode directory not writable bug
+
+1.2.15
+
+- ADDED: FooEvents Custom Attendee Fields support
+- FIXED: Various minor bugs
+
+1.2.11
+
+- FIXED: Admin menu bug
+
+1.2.10
+
+- FIXED: Critical bug update
+
+1.2.8
+
+- FIXED: Plugin activation warning
+- FIXED: Blank event list when manually adding tickets
+- ADDED: Directions to tickets
+- ADDED: Company, designation, telephone number to tickets
+- ADDED: Price to apps
+- ADDED: Plugin update notification
+
+1.2.6
+
+- ADDED: Option to hide unpaid tickets in admin
+- ADDED: Check if barcodes directory writable
+- FIXED: Removed "Auto Draft" references in ticket admin
+- FIXED: Bug where adding tickets might not link to created user
+- FIXED: Hide start and end date on event details tab
+- FIXED: Override template bug
+
+1.2.4
+- Fixed: Variation bug where only first tickets variation is saved
+- Fixed: Javascript DatePicker localization
+- Fixed: Various other small bugs
+- Added: Sort by additional fields in ticket admin
+
+1.2.2
+
+- NEW: .JPG barcode generation for PDF Ticket plugin
+- FIXED: Google Map pointer
+- REMOVED: Date picker translations. Buggy, will look at a different implementation.
+
+1.2.1
+- NEW: Compatibility update for the new Events Pro app offline support (http://www.fooevents.com/apps/)
+- NEW: Compatibility with the FooEvents PDF Tickets plugin support (http://www.fooevents.com/product/fooevents-pdf-tickets/)
+- NEW: Filter by event name, order ID and status on admin ticket listing
+- NEW: Time formats for am-pm
+- UPDATED: New Google Maps API support
+- UPDATED: Translations on date picker
+- UPDATED: Send location to .ics
+- FIXED: Fixed admin HTTPS warning
+
+1.2.0
+- New: Event Check-ins Pro iOS App integration - See http://www.fooevents.com/apps/
+- New: Event Check-ins Pro iOS App - Auto Check-ins (Fast, effortless checkins)
+- New: Event Check-ins Pro iOS App - Custom Branding (Set your own color scheme and logo)
+- Updated: Documentation
+- Fixed: .ics postal code bug
+- Fixed: Add new ticket permission bug
+
+1.1.17
+- Added manual ticket management functionality in WordPress admin.
+- Various small bug fixes and enhancements.
+
+1.1.14
+- App integration bulk edit support
+- Insert custom message on thank you page
+- Addition of various optional attendee registration fields
+- Various bug fixes
+
+1.1.11
+- Various bug fixes
+
+1.1.8
+- .po and .mo language file support
+- Option to not send ticket emails
+- Various bug fixes
+
+1.1.5
+- Various bug fixes
+
+1.1.4
+- Enhanced admin search
+- Resolved ticket and event listing bug in App
+- Various other small bug fixes
+
+1.1.2
+- Various bug fixes
+
+1.10
+- Capture Attendee details on checkout
+- Option to email attendees their tickets
+- Cary through attributes/variations to tickets and ticket details
+- Option to change "Add to cart" to "Book ticket"
+- Support for iOS App (Launch imminent!)
+- Various bug fixes
+
+1.0.8
+- Conflict with WooCommerce image uploads.
+
+1.0.6
+- Added additional options to control ticket output
+- Fixed bug where certain non-event products would send out tickets
+- Fixed various other small bugs
+
+1.0.3
+- Fixed display bug with Google Maps
+- Fixed bug with attendee not displaying on ticket
+- Fixed bug where admin user is displayed as the ticket owner
+- Various other small bugs

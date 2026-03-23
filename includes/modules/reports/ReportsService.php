@@ -66,4 +66,22 @@ class ReportsService {
             $params
         ) );
     }
+
+    /**
+     * Get top selling events.
+     */
+    public static function get_top_selling_events( $limit = 5 ) {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_tickets';
+        
+        return $wpdb->get_results( $wpdb->prepare(
+            "SELECT event_id, COUNT(id) as total_sold 
+             FROM $table 
+             WHERE ticket_status = 'active'
+             GROUP BY event_id 
+             ORDER BY total_sold DESC 
+             LIMIT %d",
+            $limit
+        ) );
+    }
 }

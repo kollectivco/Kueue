@@ -23,6 +23,13 @@ class OrganizerRepository {
     }
 
     /**
+     * Get organizer ID for a given event.
+     */
+    public static function get_organizer_id_by_event( $event_id ) {
+        return (int) get_post_meta( $event_id, '_kq_organizer_id', true );
+    }
+
+    /**
      * Get all organizers.
      */
     public static function get_all() {

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "woocommerce-events/fooevents-event-attendees",
+  "version": "0.1.0",
+  "title": "FooEvents Attendee Listing",
+  "category": "woocommerce",
+  "icon": "tickets",
+  "description": "Display a list of attendees for one or more events.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fooevents-event-attendees",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "numberOfAttendees": {
+      "type": "number",
+      "default": 20
+    },
+    "productIDs": {
+      "type": "array",
+      "default": []
+    },
+    "layout": {
+      "type": "string",
+      "default": "grid"
+    },
+    "sortAttendeeBy": {
+      "type": "string",
+      "default": "firstname"
+    },
+    "sortAttendeeOrder": {
+      "type": "string",
+      "default": "asc"
+    },
+    "limitNumAttendees": {
+      "type": "boolean",
+      "default": false
+    },
+    "uniqueAttendees": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableShowMore": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableShowName": {
+      "type": "boolean",
+      "default": true
+    },
+    "nameFormat": {
+      "type": "string",
+      "default": "full_name"
+    },
+    "enableShowGravatar": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableShowEmail": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableShowPhone": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableShowDesignation": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableShowCompany": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableTotalAttendees": {
+      "type": "boolean",
+      "default": true
+    },
+    "profilePictureSize": {
+      "type": "string",
+      "default": "small"
+    },
+    "numberOfGridItems": {
+      "type": "number",
+      "default": 4
+    }
+  }
+}

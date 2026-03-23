@@ -1,0 +1,42 @@
+#woocommerce-coupon-data ul.wc-tabs li.custom_tab_custom_attendee_options a::before, #woocommerce-product-data ul.wc-tabs li.custom_tab_custom_attendee_options a::before, .woocommerce ul.wc-tabs li.custom_tab_custom_attendee_options a::before {
+    font-family: "dashicons";
+    content: "\f524";
+    margin-right: .618em;
+}
+
+.fooevents_bookings_wrap {
+    padding:0;    
+}
+
+#fooevents_custom_attendee_fields_options_table {
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+#fooevents_custom_attendee_fields_options_table th {
+    font-weight: strong; 
+    text-align: left;
+    coloir:#333;
+    border-bottom: solid 1px #eee;
+    padding:15px;
+    margin:0;    
+}  
+
+#fooevents_custom_attendee_fields_options_table td {
+    border-bottom: solid 1px #eee;
+    padding:15px;
+    margin:0;      
+    vertical-align: top;
+    background: #fff;
+}   
+
+#fooevents_custom_attendee_fields_options_table td input.fooevents_custom_attendee_fields_label,
+#fooevents_custom_attendee_fields_options_table td input.fooevents_custom_attendee_fields_options,
+#fooevents_custom_attendee_fields_options_table td select{
+    width:100%     
+}    
+
+#fooevents_custom_attendee_fields_info {
+    margin:5px;
+}

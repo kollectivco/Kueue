@@ -1,0 +1,617 @@
+/* General Layout and Introduction ================================================= */
+.fooeventspos-introduction {
+  width: 100%;
+}
+.fooeventspos-introduction .fooeventspos-connect {
+  padding: 0 0 2em;
+}
+.fooeventspos-introduction .fooeventspos-connect h1 {
+  font-weight: bold;
+}
+.fooeventspos-introduction .fooeventspos-connect h3 {
+  margin: 0 0 0.5em;
+  padding: 0;
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+.fooeventspos-introduction .fooeventspos-connect p {
+  font-size: 1.2em;
+  width: 52em;
+  max-width: 100%;
+}
+.fooeventspos-introduction .fooeventspos-health {
+  margin-bottom: 10px;
+}
+
+/* Settings Container ============================================================== */
+#fooeventspos_settings_container {
+  background: #fff;
+  padding: 0.5em 3em 2em;
+  border: solid 1px #c3c4c7;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border-top: 0;
+}
+#fooeventspos_settings_container .fooeventspos-settings {
+  max-width: 1000px;
+}
+#fooeventspos_settings_container .fooeventspos-settings.fooeventspos-settings-general,
+#fooeventspos_settings_container .fooeventspos-settings.fooeventspos-settings-status,
+#fooeventspos_settings_container .fooeventspos-settings.fooeventspos-setting-fullwidth {
+  max-width: 100%;
+}
+
+/* Links */
+#fooeventspos_settings_container a,
+#fooeventspos-settings-page p.fooeventspos-nav-links a {
+  color: #b4458d !important;
+}
+#fooeventspos_settings_container a:hover,
+#fooeventspos-settings-page p.fooeventspos-nav-links a:hover {
+  color: #963975 !important;
+}
+#fooeventspos_settings_container a:focus,
+#fooeventspos-settings-page p.fooeventspos-nav-links a:focus {
+  box-shadow: 0 0 0 1px #963975, 0 0 2px 1px #963975 !important;
+}
+
+/* Navigation Tabs ================================================================== */
+#fooeventspos-settings-page .nav-tab-wrapper a:focus {
+  box-shadow: 0 0 0 1px #963975, 0 0 2px 1px #963975 !important;
+}
+#fooeventspos-settings-page .nav-tab-active {
+  background: #fff;
+  border-bottom: solid 1px #fff;
+}
+.nav-tab-wrapper span.amount {
+  background: #cb2929;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 11px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Buttons =========================================================================== */
+#fooeventspos_settings_container .button {
+  color: #b4458d !important;
+  border-color: #b4458d !important;
+}
+#fooeventspos_settings_container .button:hover {
+  color: #963975 !important;
+  border-color: #963975 !important;
+}
+#fooeventspos_settings_container .button:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #963975 !important;
+}
+#fooeventspos_settings_container .button.disabled {
+  color: #777777 !important;
+  border-color: #777777 !important;
+}
+#fooeventspos_settings_container .button-primary {
+  background: #b4458d !important;
+  border-color: #b4458d !important;
+  color: #ffffff !important;
+}
+#fooeventspos_settings_container .button-primary:hover {
+  background: #963975 !important;
+  border-color: #963975 !important;
+  color: #ffffff !important;
+}
+.upload_image_button_fooeventspos.button {
+  margin-top: 0;
+}
+
+/* Form Inputs ========================================================================= */
+#fooeventspos_settings_container input[type="radio"]:checked::before {
+  background-color: #b4458d !important;
+}
+#fooeventspos_settings_container input[type="checkbox"]:checked::before {
+  filter: hue-rotate(90deg) !important;
+}
+#fooeventspos_settings_container select:hover {
+  color: #b4458d !important;
+}
+#fooeventspos_settings_container input[type="checkbox"]:focus,
+#fooeventspos_settings_container input[type="color"]:focus,
+#fooeventspos_settings_container input[type="date"]:focus,
+#fooeventspos_settings_container input[type="datetime-local"]:focus,
+#fooeventspos_settings_container input[type="datetime"]:focus,
+#fooeventspos_settings_container input[type="email"]:focus,
+#fooeventspos_settings_container input[type="month"]:focus,
+#fooeventspos_settings_container input[type="number"]:focus,
+#fooeventspos_settings_container input[type="password"]:focus,
+#fooeventspos_settings_container input[type="radio"]:focus,
+#fooeventspos_settings_container input[type="search"]:focus,
+#fooeventspos_settings_container input[type="tel"]:focus,
+#fooeventspos_settings_container input[type="text"]:focus,
+#fooeventspos_settings_container input[type="time"]:focus,
+#fooeventspos_settings_container input[type="url"]:focus,
+#fooeventspos_settings_container input[type="week"]:focus,
+#fooeventspos_settings_container select:focus,
+#fooeventspos_settings_container textarea:focus {
+  border-color: #b4458d !important;
+  box-shadow: 0 0 0 1px #b4458d !important;
+}
+/* POS Settings Form */
+#fooeventspos_pos_settings select,
+#fooeventspos_pos_settings input[type="text"],
+#fooeventspos_pos_settings input[type="number"] {
+  width: 50% !important;
+}
+#fooeventspos_pos_settings.woocommerce_options_panel h2,
+#poststuff #fooeventspos_pos_settings.woocommerce_options_panel h2 {
+  font-weight: bold;
+  border-bottom: solid 1px #eee;
+  padding: 1em;
+  font-size: 1.1em;
+}
+#fooeventspos_pos_settings.woocommerce_options_panel p.form-field {
+  padding: 5px 20px 5px 325px !important;
+}
+#fooeventspos_pos_settings.woocommerce_options_panel label {
+  width: 310px !important;
+  margin: 0 0 0 -310px !important;
+}
+
+/* Connection Status ================================================================== */
+.fooeventspos-connection-status-yes {
+  color: #008422;
+}
+.fooeventspos-connection-status-no {
+  color: #cb2929;
+}
+.fooeventspos-connection-status-yes .pulse-circle {
+  background-color: #00a62b;
+  box-shadow: 0 0 0 rgba(0, 166, 43, 0.95);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+.fooeventspos-connection-status-no .pulse-circle {
+  background-color: #cb2929;
+  box-shadow: 0 0 0 rgba(203, 41, 41, 0.95);
+  animation: pulse 0.4s ease-in-out infinite;
+}
+.pulse-circle {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: 0.9em;
+  margin: 0 0.2em -1px 0;
+}
+
+/* Payment Types ====================================================================== */
+th.column-fooeventspos_column_type,
+.fooeventspos_column_type {
+  text-align: right !important;
+}
+.fooeventspos_type_split {
+  background: #b4ddf4 !important;
+}
+.fooeventspos_type_cash {
+  background: #d9e6cd !important;
+}
+.order-status.fooeventspos_type_card {
+  background: #c0dfe1 !important;
+}
+.order-status.fooeventspos_type_direct_bank_transfer {
+  background: #d8dbed !important;
+}
+.order-status.fooeventspos_type_check_payment {
+  background: #edd9ed !important;
+}
+.order-status.fooeventspos_type_cash_on_delivery {
+  background: #e1d5c0 !important;
+}
+.order-status.fooeventspos_type_square {
+  background: #c1d0e1 !important;
+}
+.order-status.fooeventspos_type_stripe {
+  background: #c6c4e3 !important;
+}
+.order-status.fooeventspos_type_other {
+  background: #f5f5f5 !important;
+}
+
+/* Tooltips =========================================================================== */
+.fooeventspos-tooltip {
+  vertical-align: text-top;
+}
+.fooeventspos-tooltip-box {
+  background: transparent !important;
+  color: #fff !important;
+  max-width: 150px;
+  border: 0 !important;
+  font-size: 0.8em !important;
+}
+.fooeventspos-tooltip-box .ui-tooltip-content {
+  background: #333 !important;
+  color: #fff !important;
+  max-width: 150px;
+  text-align: center;
+  border-radius: 3px;
+  padding: 0.618em 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  margin-left: -50%;
+}
+.fooeventspos-tooltip-box::before {
+  content: " ";
+  border: 6px solid transparent;
+  border-bottom-color: #333;
+  height: 0;
+  width: 0;
+  margin-top: -12px;
+  margin-left: 3px;
+  position: absolute;
+}
+
+/* Health Notices ==================================================================== */
+.fooeventspos-health .fooeventspos-health-notices {
+  border: solid 1px #dedede;
+  border-left: 0;
+  border-bottom: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+.fooeventspos-health .fooeventspos-health-notice p {
+  border-bottom: solid 1px #dedede;
+  padding: 1.5em;
+  margin: 0;
+  line-height: 1em;
+}
+.fooeventspos-health .fooeventspos-health-notice a {
+  white-space: nowrap;
+}
+.fooeventspos-health .fooeventspos-health-notice-notice {
+  border-left: solid 4px #ffd339;
+  background: #fffdf7 !important;
+}
+.fooeventspos-health .fooeventspos-health-notice-none {
+  border-left: solid 4px #008422;
+  background: #f5fff8 !important;
+}
+.fooeventspos-health .fooeventspos-health-notice-critical {
+  border-left: solid 4px #cb2929;
+  background: #fff8f8 !important;
+}
+.fooeventspos-health .fooeventspos-health-notice ul {
+  margin: 10px 0 0 !important;
+}
+.fooeventspos-health .fooeventspos-health-notice ul li {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+/* Marks and Notices ================================================================== */
+mark.fooeventspos-mark {
+  background: transparent;
+  padding: 5px 7px;
+  display: inline-block;
+}
+mark.fooeventspos-mark.yes {
+  color: #008422;
+}
+mark.fooeventspos-mark.error {
+  color: #cb2929;
+}
+.fooeventspos-notice {
+  border-left-color: #b4458d !important;
+}
+.fooeventspos-notice a {
+  color: #b4458d !important;
+}
+
+/* Trial Signup Interface ============================================================ */
+.fooeventspos-setting-general h3 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+.fooeventspos-setting-general p {
+  font-size: 1.3em;
+}
+.fooeventspos-setting-general form {
+  margin: 0 0 1em;
+}
+.fooeventspos-setting-general input#email.regular-text {
+  padding: 0.55em 1em;
+  max-width: 22em;
+  width: 100%;
+  font-weight: 400;
+}
+.fooeventspos-setting-general input#email.regular-text::placeholder {
+  color: #999;
+  font-style: italic;
+}
+.fooeventspos-setting-general .progress-container {
+  width: 300px;
+  height: 8px;
+  background-color: #f0f0f1;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto 1em;
+}
+.fooeventspos-setting-general .progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #4a8fd6;
+  border-radius: 4px;
+  animation: fillBar 5s ease-out forwards;
+}
+.fooeventspos-setting-general .foo-more {
+  font-weight: normal;
+  font-size: 1em;
+}
+#fooeventspos-trial-signup {
+  text-align: center;
+  max-width: 42em;
+  margin: 0 auto 6em;
+}
+#fooeventspos-trial-signup p.desc {
+  font-size: 1.1em;
+  line-height: 1.2;
+  font-style: italic;
+  color: #666;
+}
+.fooeventspos-trial-intro-standalone {
+  margin-bottom: 2.5em;
+}
+.fooeventspos-trial-intro p {
+  max-width: 50em;
+  width: 100%;
+}
+.fooeventspos-trial-details {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  margin-top: 2em;
+}
+#fooeventspos_settings_container .fooeventspos-trial-details .button {
+  margin: 0.5em;
+}
+.fooeventspos-trial-status,
+.fooeventspos-trial-buy,
+.fooeventspos-trial-launch {
+  float: left;
+}
+.fooeventspos-trial-status {
+  margin: 0.8em 0.3em 0.3em 1em;
+}
+.fooeventspos-trial-status small {
+  font-weight: normal;
+}
+.fooeventspos-trial-launch a.button {
+  margin-right: 1em;
+}
+.fooeventspos-trial-buy a.button-secondary,
+.fooeventspos-trial-launch a.button-secondary {
+  background: #fff;
+}
+#fooeventspos_settings_container .fooeventspos-trial-buy a.button-secondary:hover {
+  background: #b4458d;
+  color: #fff !important;
+}
+#fooeventspos_settings_container .fooeventspos-trial-processing,
+#fooeventspos_settings_container .fooeventspos-trial-complete,
+#fooeventspos_settings_container .fooeventspos-trial-error {
+  display: none;
+}
+.progress-notes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.progress-notes li {
+  display: none;
+  color: #999;
+  font-weight: 300;
+}
+
+/* Logo */
+h1.fooeventspos-logo {
+  background: url("../images/fooeventspos-logo.png") no-repeat center center;
+  text-indent: -9999px;
+  width: 120px;
+  height: 56px;
+  display: block;
+  float: left;
+  margin: 0 0 0.8em;
+  background-size: contain;
+}
+.fooeventspos-setting-general-trial h1.fooeventspos-logo {
+  width: 160px;
+  height: 78px;
+  margin: 2em auto 1em;
+  float: none;
+}
+
+/* Features Grid ====================================================================== */
+.foo-features-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+.foo-features-container .foo-features {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+.foo-features-container .foo-features h2 {
+  margin: 0 0 0.3em;
+  padding: 0;
+  font-size: 1.2em;
+}
+.foo-features-container .foo-features p {
+  font-size: 1em;
+  padding: 0;
+  margin: 0 0 0.8em;
+}
+.foo-features-container .foo-features .feature-status {
+  background: #e9e9e9;
+  color: #555;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 2em;
+  padding: 0.4em 0.8em;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 0 0 1em;
+  display: block;
+  float: right;
+}
+.foo-features-container .foo-features .feature-active {
+  background: #b4458d;
+  color: #fff;
+  transition: background 0.2s ease-in-out, color 0.2s;
+  font-weight: 500;
+}
+
+/* Miscellaneous ========================================================================= */
+#fooeventspos-settings-page p {
+  font-weight: normal;
+  margin-top: 0;
+}
+#fooeventspos-settings-page .text {
+  display: inline-block;
+  width: 400px;
+}
+#fooeventspos-settings-page textarea {
+  height: 100px;
+  vertical-align: text-top;
+}
+#fooeventspos-settings-page select[multiple] {
+  vertical-align: text-top;
+}
+#fooeventspos-settings-page ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.upload_reset_fooeventspos {
+  line-height: 30px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.fooeventspos-hidden {
+  display: none;
+}
+.fooeventspos-right-link {
+  float: right;
+  margin-left: 8px;
+}
+#fooeventspos_stripe_short_secret {
+  max-width: 600px;
+}
+img.fooeventspos-ajax-spinner {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin: 0 0 0 7px;
+}
+img.fooeventspos-uploaded-image {
+  display: block;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* Payments Meta Table */
+table.fooeventspos-payments-meta-table {
+  width: 100%;
+}
+table.fooeventspos-payments-meta-table th {
+  text-align: left;
+}
+table.fooeventspos-payments-meta-table td {
+  padding: 0.5em 0;
+}
+
+/* WooCommerce Tabs */
+#woocommerce-coupon-data ul.wc-tabs li.custom_tab_pos_settings a::before,
+#woocommerce-product-data ul.wc-tabs li.custom_tab_pos_settings a::before,
+.woocommerce ul.wc-tabs li.custom_tab_pos_settings a::before {
+  font-family: "dashicons";
+  content: "\f524";
+  margin-right: 0.618em;
+}
+
+/* Variation Fields */
+p[class^="fooeventspos_variation_show_in_pos"],
+p[class*=" fooeventspos_variation_show_in_pos"] {
+  clear: both;
+  max-width: 335px;
+}
+p[class^="fooeventspos_variation_show_in_pos"] .woocommerce-help-tip,
+p[class*=" fooeventspos_variation_show_in_pos"] .woocommerce-help-tip {
+  float: right;
+}
+p[class^="fooeventspos_variation_show_in_pos"] .fooeventspos_variation_show_in_pos,
+p[class*=" fooeventspos_variation_show_in_pos"] .fooeventspos_variation_show_in_pos {
+  margin-left: 5px;
+}
+
+/* Gateway Table */
+table.wc_gateways tr[data-gateway_id^="fooeventspos"] td.name {
+  background-image: url(../images/fooeventspos-favicon.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: 0.9em 1em;
+  padding-left: 3.2em !important;
+}
+
+/* Animations ======================================================================== */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+/* Media Queries ==================================================================== */
+@media screen and (max-width: 40em) {
+  .fooeventspos-introduction .fooeventspos-connect {
+    padding: 20px;
+    padding-right: 0;
+  }
+  .fooeventspos-introduction .fooeventspos-connect::before {
+    display: none;
+  }
+  .foo-features-container .foo-features {
+    padding: 1.5em 5% 2em;
+    width: 88%;
+  }
+  .fooeventspos-setting-general input#email.regular-text,
+  .fooeventspos-setting-general input#submit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .foo-features-container {
+    grid-template-columns: 1fr;
+  }
+}

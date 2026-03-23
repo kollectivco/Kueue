@@ -1,0 +1,67 @@
+/* Admin-Specific Overrides and Layouts */
+.kq-admin-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kq-admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.kq-admin-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.kq-table-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.wp-list-table.kq-table {
+    border: none;
+    box-shadow: none;
+}
+
+.wp-list-table.kq-table thead tr th {
+	background: #fdfdfd;
+	padding: 15px 12px;
+	border-bottom: 2px solid #f1f1f1;
+}
+
+.wp-list-table.kq-table tbody tr td {
+	padding: 15px 12px;
+}
+
+.wp-list-table.kq-table tbody tr:hover {
+	background: #fafafa;
+}
+
+/* Dashboard Widgets */
+.kq-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.kq-dashboard-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.kq-dashboard-card .dashicons {
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+    margin-bottom: 12px;
+    color: #ff3131;
+}

@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fooevents_pdf_tickets\n"
+"POT-Creation-Date: 2026-02-09 12:20+0200\n"
+"PO-Revision-Date: 2026-02-09 12:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-pdf-tickets.php:214
+msgid "The FooEvents PDF Tickets plugin requires FooEvents for WooCommerce to be installed."
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:226
+msgid "GD libraries is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:232
+msgid "The setting allow_url_fopen is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:238
+msgid "The PHP MBstring module is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:256
+msgid "Important FooEvents PDF Ticket Update:"
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:257
+msgid "On 9 March 2026, we will release an update to the FooEvents PDF Tickets plugin that includes a newer version of DOMPDF (the library used to generate PDFs). Some ticket themes require a minor update to avoid display issues. Please see the full details below."
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:259
+msgid "Read more."
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:306
+msgid " PDF Tickets"
+msgstr ""
+
+#: class-fooevents-pdf-tickets.php:646 templates/my-account-ticket-list.php:10
+msgid "Tickets"
+msgstr ""
+
+#: classes/updatehelper.php:300
+msgid "Important:"
+msgstr ""
+
+#: classes/updatehelper.php:313
+msgid "Please backup your files and database before updates!"
+msgstr ""
+
+#: templates/global-settings-pdf.php:13
+msgid "PDF Tickets"
+msgstr ""
+
+#: templates/global-settings-pdf.php:18
+msgid "Enable PDF tickets"
+msgstr ""
+
+#: templates/global-settings-pdf.php:21
+msgid "Adds PDF ticket attachments to ticket emails."
+msgstr ""
+
+#: templates/global-settings-pdf.php:25
+msgid "Enable PDF ticket downloads"
+msgstr ""
+
+#: templates/global-settings-pdf.php:28
+msgid "Allows purchasers to download a copy of their PDF tickets from the My Account page."
+msgstr ""
+
+#: templates/global-settings-pdf.php:32
+msgid "Attach PDF ticket to HTML ticket email"
+msgstr ""
+
+#: templates/global-settings-pdf.php:35
+msgid "Attaches the PDF ticket to the HTML ticket email when sent."
+msgstr ""
+
+#: templates/global-settings-pdf.php:39
+msgid "Enable RTL character support"
+msgstr ""
+
+#: templates/global-settings-pdf.php:42
+msgid "Displays righ-to-left characters (e.g. Arabic, Hebrew) in PDF tickets"
+msgstr ""
+
+#: templates/global-settings-pdf.php:46
+msgid "Font"
+msgstr ""
+
+#: templates/global-settings-pdf.php:52
+msgid "DejaVu Sans is the default PDF font. Firefly Sung supports CJK (Chinese, Japanese, Korean) characters. Noto Sans JP supports Japanese characters."
+msgstr ""
+
+#: templates/my-account-ticket-list.php:36
+msgid "Download"
+msgstr ""
+
+#: templates/my-account-ticket-list.php:40
+msgid "Add to wallet"
+msgstr ""
+
+#: templates/product-pdf-ticket-options.php:10
+msgid "PDF Settings"
+msgstr ""
+
+#: templates/product-pdf-ticket-options.php:13
+msgid "Email text:"
+msgstr ""
+
+#: templates/product-pdf-ticket-options.php:19
+msgid "Ticket footer text:"
+msgstr ""
+
+#: templates/product-pdf-ticket-theme-options.php:12
+msgid "PDF ticket theme:"
+msgstr ""
+
+#: templates/product-pdf-ticket-theme-options.php:18
+msgid "Select the PDF compatible ticket theme that will be used to style the PDF tickets that are attached to ticket emails."
+msgstr ""
+
+#: templates/tickets-edit-ticket-pdf-link.php:12
+msgid "Download PDF Ticket"
+msgstr ""

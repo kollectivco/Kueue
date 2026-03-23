@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title><?php _e( 'Kueue Ticket Scanner', 'kueue-events-core' ); ?></title>
     <!-- HTML5 QRCode Scanner Library -->
-    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="<?php echo KQ_PLUGIN_URL . 'includes/Vendor/html5-qrcode.min.js'; ?>" type="text/javascript"></script>
     <!-- Dexie JS for easy IndexedDB management -->
-    <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+    <script src="<?php echo KQ_PLUGIN_URL . 'includes/Vendor/dexie.js'; ?>"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #121212; color: #fff; margin: 0; padding: 0; padding-bottom: 20px; }
         .container { max-width: 600px; margin: 0 auto; padding: 15px; }

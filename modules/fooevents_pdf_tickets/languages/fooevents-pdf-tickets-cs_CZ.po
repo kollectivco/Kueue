@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fooevents_pdf_tickets\n"
+"POT-Creation-Date: 2025-01-16 22:40-0800\n"
+"PO-Revision-Date: 2025-01-16 22:40-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-pdf-tickets.php:211
+msgid "The FooEvents PDF Tickets plugin requires FooEvents for WooCommerce to be installed."
+msgstr "Plugin FooEvents PDF Vstupenky vyžaduje instalaci FooEvents for WooCommerce."
+
+#: class-fooevents-pdf-tickets.php:223
+msgid "GD libraries is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Na vašem serveru nejsou povoleny knihovny GD. Toto je požadavek na FooEvents PDF Vstupenky. Chcete-li to povolit, kontaktujte svého hostitele."
+
+#: class-fooevents-pdf-tickets.php:229
+msgid "The setting allow_url_fopen is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Nastavení allow_url_fopen není na vašem serveru povoleno. Toto je požadavek na FooEvents PDF Vstupenky. Chcete-li to povolit, kontaktujte svého hostitele."
+
+#: class-fooevents-pdf-tickets.php:235
+msgid "The PHP MBstring module is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Na vašem serveru není povolen modul PHP MBstring. Toto je požadavek na FooEvents PDF Vstupenky. Chcete-li to povolit, kontaktujte svého hostitele."
+
+#: class-fooevents-pdf-tickets.php:262
+msgid " PDF Tickets"
+msgstr " Vstupenky ve formátu PDF"
+
+#: class-fooevents-pdf-tickets.php:586 templates/my-account-ticket-list.php:10
+msgid "Tickets"
+msgstr "Vstupenky"
+
+#: classes/updatehelper.php:300
+msgid "Important:"
+msgstr "Důležité:"
+
+#: classes/updatehelper.php:313
+msgid "Please backup your files and database before updates!"
+msgstr "Prosím zálohujte své soubory a databázi před aktualizacemi!"
+
+#: templates/global-settings-pdf.php:13
+msgid "PDF Tickets"
+msgstr "PDF Vstupenky"
+
+#: templates/global-settings-pdf.php:18
+msgid "Enable PDF tickets"
+msgstr "Povolit vstupenky ve formátu PDF"
+
+#: templates/global-settings-pdf.php:21
+msgid "Adds PDF ticket attachments to ticket emails."
+msgstr "Přidává přílohy PDF vstupenek do e-mailů."
+
+#: templates/global-settings-pdf.php:25
+msgid "Enable PDF ticket downloads"
+msgstr "Povolit stahování vstupenek ve formátu PDF"
+
+#: templates/global-settings-pdf.php:28
+msgid "Allows purchasers to download a copy of their PDF tickets from the My Account page."
+msgstr "Umožňuje kupujícím stáhnout si kopii vstupenek ve formátu PDF ze stránky Můj účet."
+
+#: templates/global-settings-pdf.php:32
+msgid "Attach PDF ticket to HTML ticket email"
+msgstr "Připojte PDF vstupenek k e-mailu vstupenky"
+
+#: templates/global-settings-pdf.php:35
+msgid "Attaches the PDF ticket to the HTML ticket email when sent."
+msgstr "Při odeslání vstupenek ve formátu PDF je připojí k e-mailu vstupenky."
+
+#: templates/global-settings-pdf.php:39
+msgid "Enable RTL character support"
+msgstr "Povolit podporu znaků RTL"
+
+#: templates/global-settings-pdf.php:42
+msgid "Displays righ-to-left characters (e.g. Arabic, Hebrew) in PDF tickets"
+msgstr "Zobrazuje v PDF vstupenkách znaky zprava doleva (např. arabština, hebrejština)"
+
+#: templates/global-settings-pdf.php:46
+msgid "Font"
+msgstr "Písmo"
+
+#: templates/global-settings-pdf.php:52
+msgid "DejaVu Sans is the default PDF font. Firefly Sung supports CJK (Chinese, Japanese, Korean) characters. Noto Sans JP supports Japanese characters."
+msgstr "DejaVu Sans je výchozím písmem pro PDF. Firefly Sung podporuje znaky CJK (čínské, japonské, korejské). Noto Sans JP podporuje japonské znaky."
+
+#: templates/my-account-ticket-list.php:25
+msgid "Download"
+msgstr "Stáhnout"
+
+#: templates/product-pdf-ticket-options.php:10
+msgid "PDF Settings"
+msgstr "Nastavení PDF"
+
+#: templates/product-pdf-ticket-options.php:13
+msgid "Email text:"
+msgstr "Text e-mailu:"
+
+#: templates/product-pdf-ticket-options.php:19
+msgid "Ticket footer text:"
+msgstr "Text zápatí vstupenky:"
+
+#: templates/product-pdf-ticket-theme-options.php:12
+msgid "PDF ticket theme:"
+msgstr "Šablona vstupenky ve formátu PDF:"
+
+#: templates/product-pdf-ticket-theme-options.php:18
+msgid "Select the PDF compatible ticket theme that will be used to style the PDF tickets that are attached to ticket emails."
+msgstr "Vyberte šablonu vstupenky kompatibilní s PDF, který bude použit pro stylování vstupenek PDF, které jsou připojeny k e-mailům vstupenek."
+
+#: templates/tickets-edit-ticket-pdf-link.php:12
+msgid "Download PDF Ticket"
+msgstr "Stáhnout vstupenku ve formátu PDF"

@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fooevents_pdf_tickets\n"
+"POT-Creation-Date: 2025-01-16 22:40-0800\n"
+"PO-Revision-Date: 2025-01-16 22:40-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-pdf-tickets.php:211
+msgid "The FooEvents PDF Tickets plugin requires FooEvents for WooCommerce to be installed."
+msgstr "Le plugin FooEvents PDF Tickets nécessite l'installation de FooEvents for WooCommerce."
+
+#: class-fooevents-pdf-tickets.php:223
+msgid "GD libraries is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Les bibliothèques GD ne sont pas activées sur votre serveur. C'est une exigence pour les billets PDF FooEvents. Veuillez contacter votre hébergeur pour les activer."
+
+#: class-fooevents-pdf-tickets.php:229
+msgid "The setting allow_url_fopen is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Le paramètre allow_url_fopen n'est pas activé sur votre serveur. C'est une exigence pour les billets PDF FooEvents. Veuillez contacter votre hébergeur pour l'activer."
+
+#: class-fooevents-pdf-tickets.php:235
+msgid "The PHP MBstring module is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Le module PHP MBstring n'est pas activé sur votre serveur. C'est une exigence pour les billets PDF FooEvents. Veuillez contacter votre hébergeur pour l'activer."
+
+#: class-fooevents-pdf-tickets.php:262
+msgid " PDF Tickets"
+msgstr "Billets PDF"
+
+#: class-fooevents-pdf-tickets.php:586 templates/my-account-ticket-list.php:10
+msgid "Tickets"
+msgstr "Billets"
+
+#: classes/updatehelper.php:300
+msgid "Important:"
+msgstr "Important:"
+
+#: classes/updatehelper.php:313
+msgid "Please backup your files and database before updates!"
+msgstr "Veuillez sauvegarder vos fichiers et votre base de données avant les mises à jour!"
+
+#: templates/global-settings-pdf.php:13
+msgid "PDF Tickets"
+msgstr "Billets PDF"
+
+#: templates/global-settings-pdf.php:18
+msgid "Enable PDF tickets"
+msgstr "Activer les billets PDF"
+
+#: templates/global-settings-pdf.php:21
+msgid "Adds PDF ticket attachments to ticket emails."
+msgstr "Ajoute des pièces jointes de billets au format PDF aux e-mails de billets."
+
+#: templates/global-settings-pdf.php:25
+msgid "Enable PDF ticket downloads"
+msgstr "Activer le téléchargement des billets au format PDF"
+
+#: templates/global-settings-pdf.php:28
+msgid "Allows purchasers to download a copy of their PDF tickets from the My Account page."
+msgstr "Permet aux acheteurs de télécharger une copie de leurs billets PDF depuis la page Mon compte."
+
+#: templates/global-settings-pdf.php:32
+msgid "Attach PDF ticket to HTML ticket email"
+msgstr "Joindre un billet PDF à l'email du billet HTML"
+
+#: templates/global-settings-pdf.php:35
+msgid "Attaches the PDF ticket to the HTML ticket email when sent."
+msgstr "Joindre le billet PDF à l'e-mail du billet HTML lors de l'envoi."
+
+#: templates/global-settings-pdf.php:39
+msgid "Enable RTL character support"
+msgstr "Activer la prise en charge des caractères RTL"
+
+#: templates/global-settings-pdf.php:42
+msgid "Displays righ-to-left characters (e.g. Arabic, Hebrew) in PDF tickets"
+msgstr "Affiche les caractères de droite à gauche (par exemple, l'arabe, l'hébreu) dans les billets PDF"
+
+#: templates/global-settings-pdf.php:46
+msgid "Font"
+msgstr "Police de caractères"
+
+#: templates/global-settings-pdf.php:52
+msgid "DejaVu Sans is the default PDF font. Firefly Sung supports CJK (Chinese, Japanese, Korean) characters. Noto Sans JP supports Japanese characters."
+msgstr "DejaVu Sans est la police de caractères par défaut pour les PDF. Firefly Sung prend en charge les caractères CJK (chinois, japonais, coréen). Noto Sans JP prend en charge les caractères japonais."
+
+#: templates/my-account-ticket-list.php:25
+msgid "Download"
+msgstr "Télécharger"
+
+#: templates/product-pdf-ticket-options.php:10
+msgid "PDF Settings"
+msgstr "Paramètres PDF"
+
+#: templates/product-pdf-ticket-options.php:13
+msgid "Email text:"
+msgstr "Texte de l'email:"
+
+#: templates/product-pdf-ticket-options.php:19
+msgid "Ticket footer text:"
+msgstr "Texte du pied de page du billet:"
+
+#: templates/product-pdf-ticket-theme-options.php:12
+msgid "PDF ticket theme:"
+msgstr "Thème du billet PDF:"
+
+#: templates/product-pdf-ticket-theme-options.php:18
+msgid "Select the PDF compatible ticket theme that will be used to style the PDF tickets that are attached to ticket emails."
+msgstr "Sélectionnez le thème de billet compatible PDF qui sera utilisé pour styliser les billets PDF attachés aux e-mails de billets."
+
+#: templates/tickets-edit-ticket-pdf-link.php:12
+msgid "Download PDF Ticket"
+msgstr "Télécharger le billet PDF"

@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fooevents_pdf_tickets\n"
+"POT-Creation-Date: 2025-01-16 22:40-0800\n"
+"PO-Revision-Date: 2025-01-16 22:40-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-pdf-tickets.php:211
+msgid "The FooEvents PDF Tickets plugin requires FooEvents for WooCommerce to be installed."
+msgstr "El complement FooEvents PDF Tickets requereix que s'instal·li el complement FooEvents per a WooCommerce."
+
+#: class-fooevents-pdf-tickets.php:223
+msgid "GD libraries is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Les biblioteques GD no estan habilitades al teu servidor. Això és un requisit per als tiquets PDF de FooEvents. Si us plau, posa't en contacte amb el teu proveïdor d'allotjament per habilitar-ho."
+
+#: class-fooevents-pdf-tickets.php:229
+msgid "The setting allow_url_fopen is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "La configuració allow_url_fopen no està activada al teu servidor. Això és un requisit per als tiquets PDF de FooEvents. Si us plau, posa't en contacte amb el teu proveïdor d'allotjament per activar-ho."
+
+#: class-fooevents-pdf-tickets.php:235
+msgid "The PHP MBstring module is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "El mòdul PHP MBstring no està habilitat al teu servidor. Això és un requisit per als tiquets PDF de FooEvents. Si us plau, posa't en contacte amb el teu proveïdor d'allotjament per habilitar-ho."
+
+#: class-fooevents-pdf-tickets.php:262
+msgid " PDF Tickets"
+msgstr "Entrades en PDF"
+
+#: class-fooevents-pdf-tickets.php:586 templates/my-account-ticket-list.php:10
+msgid "Tickets"
+msgstr "Entrades"
+
+#: classes/updatehelper.php:300
+msgid "Important:"
+msgstr "Important:"
+
+#: classes/updatehelper.php:313
+msgid "Please backup your files and database before updates!"
+msgstr "Si us plau, fes una còpia de seguretat dels teus fitxers i base de dades abans de les actualitzacions!"
+
+#: templates/global-settings-pdf.php:13
+msgid "PDF Tickets"
+msgstr "Entrades en PDF"
+
+#: templates/global-settings-pdf.php:18
+msgid "Enable PDF tickets"
+msgstr "Habilita els tiquets en format PDF"
+
+#: templates/global-settings-pdf.php:21
+msgid "Adds PDF ticket attachments to ticket emails."
+msgstr "Afegeix fitxers adjunts de tiquets en format PDF als correus electrònics dels tiquets."
+
+#: templates/global-settings-pdf.php:25
+msgid "Enable PDF ticket downloads"
+msgstr "Habilitar la descàrrega de tiquets en format PDF"
+
+#: templates/global-settings-pdf.php:28
+msgid "Allows purchasers to download a copy of their PDF tickets from the My Account page."
+msgstr "Permet als compradors descarregar una còpia dels seus tiquets en format PDF des de la pàgina del meu compte."
+
+#: templates/global-settings-pdf.php:32
+msgid "Attach PDF ticket to HTML ticket email"
+msgstr "Adjunta el tiquet en format PDF al correu electrònic del tiquet HTML"
+
+#: templates/global-settings-pdf.php:35
+msgid "Attaches the PDF ticket to the HTML ticket email when sent."
+msgstr "Afegeix el tiquet PDF al correu electrònic del tiquet HTML quan s'envia."
+
+#: templates/global-settings-pdf.php:39
+msgid "Enable RTL character support"
+msgstr "Habilitar el suport de caràcters RTL"
+
+#: templates/global-settings-pdf.php:42
+msgid "Displays righ-to-left characters (e.g. Arabic, Hebrew) in PDF tickets"
+msgstr "Mostra caràcters d'esquerra a dreta (per exemple, àrab, hebreu) en les entrades en PDF"
+
+#: templates/global-settings-pdf.php:46
+msgid "Font"
+msgstr "Tipus de lletra"
+
+#: templates/global-settings-pdf.php:52
+msgid "DejaVu Sans is the default PDF font. Firefly Sung supports CJK (Chinese, Japanese, Korean) characters. Noto Sans JP supports Japanese characters."
+msgstr "DejaVu Sans és la font de PDF per defecte. Firefly Sung suporta caràcters CJK (xinès, japonès, coreà). Noto Sans JP suporta caràcters japonesos."
+
+#: templates/my-account-ticket-list.php:25
+msgid "Download"
+msgstr "Descarrega"
+
+#: templates/product-pdf-ticket-options.php:10
+msgid "PDF Settings"
+msgstr "Configuració del PDF"
+
+#: templates/product-pdf-ticket-options.php:13
+msgid "Email text:"
+msgstr "Text del correu electrònic:"
+
+#: templates/product-pdf-ticket-options.php:19
+msgid "Ticket footer text:"
+msgstr "Text del peu de pàgina de l'entrada:"
+
+#: templates/product-pdf-ticket-theme-options.php:12
+msgid "PDF ticket theme:"
+msgstr "Tema dels tiquets en PDF:"
+
+#: templates/product-pdf-ticket-theme-options.php:18
+msgid "Select the PDF compatible ticket theme that will be used to style the PDF tickets that are attached to ticket emails."
+msgstr "Seleccioneu el tema de tiquet compatible amb PDF que s'utilitzarà per donar estil als tiquets PDF que s'adjunten als correus electrònics de tiquets."
+
+#: templates/tickets-edit-ticket-pdf-link.php:12
+msgid "Download PDF Ticket"
+msgstr "Descarrega el tiquet en PDF"

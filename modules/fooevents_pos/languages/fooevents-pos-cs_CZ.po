@@ -1,0 +1,2263 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-09-28 10:00-0700\n"
+"PO-Revision-Date: 2025-07-22 14:28-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:16
+msgid "Activate Free Trial"
+msgstr "Aktivovat bezplatnou zkušební verzi"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:17
+msgid "Install Android Tablet App"
+msgstr "Nainstalujte aplikaci pro tablet s Androidem."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:18
+msgid "Clear"
+msgstr "Jasný"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:19
+msgid "Click here"
+msgstr "Klikněte zde"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:20
+msgid "Clipboard copied!"
+msgstr "Schránka zkopírována!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:21
+msgid "Copy to clipboard"
+msgstr "Zkopírovat do schránky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:22
+msgid "Importing please wait..."
+msgstr "Importování, prosím čekejte..."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:23
+msgid "Install iPad App"
+msgstr "Nainstalujte aplikaci pro iPad."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:24
+msgid "Launch FooEvents POS"
+msgstr "Spusťte FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:25
+msgid "My Account"
+msgstr "Můj účet"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:26
+msgid "Purchase a Plan"
+msgstr "Koupit plán"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:27
+msgid "Save"
+msgstr "Uložit"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:28
+msgid "Saved!"
+msgstr "Uloženo!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:29
+msgid "Saving..."
+msgstr "Ukládání..."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:30
+msgid "Search POS Payments"
+msgstr "Hledat platby v pokladně"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:31
+msgid "Contact Us"
+msgstr "Kontaktujte nás"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:32
+msgid "Try Again"
+msgstr "Zkuste to znovu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:33
+msgid "Update Orders"
+msgstr "Aktualizovat objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:34
+msgid "Upload file and import"
+msgstr "Nahrát soubor a importovat"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:35
+msgid "Select icon"
+msgstr "Vyberte ikonu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:36
+msgid "Select logo"
+msgstr "Vyberte logo."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:37
+msgid "View transaction"
+msgstr "Zobrazit transakci."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:38
+msgid "View payment"
+msgstr "Zobrazit platbu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:39
+msgid "Disables sending new order emails in WooCommerce for orders created in the FooEvents POS app."
+msgstr "Zakazuje odesílání nových e-mailů s objednávkami v WooCommerce pro objednávky vytvořené v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:40
+msgid "Email tickets when purchased through FooEvents POS"
+msgstr "Emailové vstupenky při zakoupení prostřednictvím FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:41
+msgid "Emails event tickets to the attendee or purchaser if the ticket was purchased through FooEvents POS."
+msgstr "Emaily s událostními vstupenkami jsou zaslány účastníkovi nebo kupujícímu, pokud byla vstupenka zakoupena prostřednictvím FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:42
+msgid "Enable order analytics"
+msgstr "Povolit analytiku objednávek."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:43
+msgid "Allow FooEvents POS to anonymously collect non-sensitive data for orders placed through the FooEvents POS app such as order totals, country and payment method (to opt out, leave this box unchecked)."
+msgstr "Povolte FooEvents POSu anonymně sbírat necitlivá data o objednávkách provedených prostřednictvím aplikace FooEvents POS, jako jsou celkové částky objednávek, země a platební metoda (pro odhlášení nechte toto políčko nezaškrtnuté)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:44
+msgid "Enable 'Sales Channel' filter"
+msgstr "Povolit filtr „Kanál prodeje“"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:45
+msgid "Enables a 'Sales Channel' filter on the Orders report in WooCommerce Analytics so you can filter between orders placed online and through the FooEvents POS app."
+msgstr "Povoluje filtr „Prodejní kanál“ v zprávách o objednávkách v analýzách WooCommerce, abyste mohli filtrovat mezi objednávkami umístěnými online a prostřednictvím aplikace FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:46
+msgid "Use FooEvents Check-ins app appearance settings"
+msgstr "Použijte nastavení vzhledu aplikace FooEvents Check-ins."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:47
+msgid "Use the same custom appearance settings for FooEvents POS that are selected for the Check-ins app."
+msgstr "Použijte stejné vlastní nastavení vzhledu pro FooEvents POS, které jsou vybrány pro aplikaci Check-ins."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:48
+msgid "Disabling this option could result in products loading faster and less memory used depending on the amount of products loaded."
+msgstr "Zakázání této možnosti může způsobit rychlejší načítání produktů a menší využití paměti v závislosti na množství načtených produktů."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:49
+msgid "Only load POS orders"
+msgstr "Pouze načíst objednávky z pokladny."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:50
+msgid "Enable this option to only load orders that were placed in the POS."
+msgstr "Povolte tuto možnost, abyste načetli pouze objednávky, které byly provedeny v pokladně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:51
+msgid "Pin this product in the POS"
+msgstr "Připnout tento produkt v pokladně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:52
+msgid "Pinning this product will make it always show at the top of listings in the POS."
+msgstr "Připnutím tohoto produktu se vždy zobrazí nahoře v seznamu v POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:53
+msgid "Display attribute labels next to their values for product variations."
+msgstr "Zobrazte popisky atributů vedle jejich hodnot pro varianty produktů."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:54
+msgid "Show this product in the POS"
+msgstr "Zobrazit tento produkt v pokladně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:55
+msgid "Choose whether this product should display in the POS. This setting allows you to have certain products hidden on your website, but visible in the POS, and vice versa."
+msgstr "Vyberte, zda se má tento produkt zobrazovat v POS. Toto nastavení vám umožňuje mít určité produkty skryté na vašem webu, ale viditelné v POS a naopak."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:56
+msgid "The FooEvents POS app will only display products that have a status of 'In Stock'."
+msgstr "Aplikace FooEvents POS zobrazí pouze produkty se stavem 'Na skladě'."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:57
+msgid "Show this variation in the POS"
+msgstr "Zobrazte tuto variantu v pokladně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:58
+msgid "Choose whether this variation should display in the POS. This setting allows you to have certain product variations hidden on your website, but visible in the POS, and vice versa."
+msgstr "Vyberte, zda by tato variace měla být zobrazena v POS. Toto nastavení vám umožňuje mít určité varianty produktů skryté na vašem webu, ale viditelné v POS a naopak."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:59
+msgid "Display the FooEvents POS logo at the bottom of receipts and invoices."
+msgstr "Zobrazte logo FooEvents POS na spodku účtenek a faktur."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:60
+msgid "Enable the use of decimal values in the quantity field."
+msgstr "Povolit použití desetinných hodnot v poli množství."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:61
+msgid "Use these settings for FooEvents POS"
+msgstr "Použijte tyto nastavení pro FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:62
+msgid "Use the same custom settings selected for the Check-ins app for the FooEvents POS interface."
+msgstr "Použijte stejné vlastní nastavení vybrané pro aplikaci Check-ins pro rozhraní FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:63
+msgid "All offline changes have been imported successfully."
+msgstr "Všechny offline změny byly úspěšně importovány."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:64
+msgid "Select the user role(s) that should be loaded as customers in the FooEvents POS app."
+msgstr "Vyberte uživatelskou roli(y), které by měly být načteny jako zákazníci ve FooEvents POS aplikaci."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:66
+#, php-format
+msgid "By default, access to FooEvents POS is restricted to users with the \"Administrator\" or \"Cashier\" user role. However, if you would like other users to have access to the FooEvents POS app but don't necessarily want to grant them Admin access to your site, you can manage permissions for other user roles by installing a free WordPress plugin called %1$sUser Role Editor%2$s."
+msgstr "Ve výchozím nastavení je přístup k aplikaci FooEvents POS omezen na uživatele s rolí \"Správce\" nebo \"Pokladník\". Pokud však chcete, aby měli ostatní uživatelé přístup k aplikaci FooEvents POS, aniž byste jim nutně udělili správcovský přístup ke svému webu, můžete spravovat oprávnění pro jiné uživatelské role instalací bezplatného pluginu WordPress s názvem %1$sUser Role Editor%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:67
+msgid "Changes made to customer settings might only reflect in the FooEvents POS app after resyncing your store data."
+msgstr "Změny provedené v nastavení zákazníka se mohou projevit v aplikaci FooEvents POS až po opětovném synchronizování dat vašeho obchodu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:68
+msgid "It appears that the \"Decimal Product Quantity for WooCommerce\" plugin is active. If you would like to use decimal quantities with FooEvents POS, you will need to deactivate this plugin and enable the FooEvents POS decimal quantity functionality in the Product settings tab."
+msgstr "Zdá se, že je aktivní doplněk \"Decimal Product Quantity for WooCommerce\". Pokud chcete používat desetinné množství s FooEvents POS, budete muset tento doplněk deaktivovat a povolit funkci desetinného množství FooEvents POS v záložce Nastavení produktu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:69
+msgid "This setting will add decimal fields to all your products in FooEvents POS as well as your online store. We strongly recommend that you rigorously test this functionality on a staging site first before using it on a production site. Use of this functionality is at your own risk!"
+msgstr "Toto nastavení přidá desetinná pole ke všem vašim produktům ve FooEvents POS a také ve vašem online obchodě. Důrazně doporučujeme, abyste tuto funkcionalitu důkladně otestovali nejprve na stagingovém webu, než ji použijete na produkčním webu. Použití této funkcionality je na vaše vlastní nebezpečí!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:71
+#, php-format
+msgid "You can set the default minimum cart quantity and step value on the %1$sWooCommerce Product Inventory settings page%2$s after first saving the settings on this page. If you would like to use different values instead of the defaults for a specific product or variation, you can manually set them on the product's edit screen by opening the inventory tab."
+msgstr "Můžete nastavit výchozí minimální množství v košíku a krok na stránce nastavení %1$sWooCommerce Product Inventory%2$s po prvním uložení nastavení na této stránce. Pokud byste chtěli použít jiné hodnoty místo výchozích pro konkrétní produkt nebo variantu, můžete je ručně nastavit na úpravě produktu otevřením záložky inventář."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:72
+msgid "If you would like to use different values instead of the defaults for a specific product or variation, you can manually set them on the product's edit screen by opening the inventory tab."
+msgstr "Pokud chcete použít jiné hodnoty místo výchozích pro konkrétní produkt nebo variantu, můžete je ručně nastavit na úpravě produktu otevřením záložky skladování."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:73
+msgid "e.g. kg, inches etc. (Products can have their own unique values for this setting)"
+msgstr "např. kg, palce atd. (Produkty mohou mít vlastní jedinečné hodnoty pro toto nastavení)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:74
+msgid "e.g. 1 or 0.01, 0.5 etc. (Products can have their own unique values for this setting)"
+msgstr "např. 1 nebo 0,01, 0,5 atd. (Produkty mohou mít vlastní jedinečné hodnoty pro toto nastavení)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:75
+msgid "Scan product barcodes with a Bluetooth scanner or search by product name, ID, SKU, or keyword in FooEvents POS."
+msgstr "Skenovat čárové kódy produktů pomocí Bluetooth skeneru nebo vyhledávat podle názvu produktu, ID, SKU nebo klíčového slova ve FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:76
+msgid "Create dedicated cashiers with limited access, for example, only the FooEvents POS interface, no admin dashboard access."
+msgstr "Vytvořte věnované pokladníky s omezeným přístupem, například pouze k rozhraní FooEvents POS, bez přístupu k řídicímu panelu správce."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:77
+msgid "Scan or apply WooCommerce coupons during checkout to offer special deals and maintain continuity across sales channels."
+msgstr "Skenovat nebo použít kupóny WooCommerce během pokladny, abyste nabídli speciální nabídky a udrželi kontinuitu napříč prodejními kanály."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:78
+msgid "Use your preferred custom order status plugin to seamlessly manage and track the order fulfillment process in-store and online."
+msgstr "Použijte svůj oblíbený plugin pro vlastní stav objednávky k bezproblémové správě a sledování procesu plnění objednávky v obchodě i online."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:79
+msgid "Set product units such as kg, lb, mm, or inches for accurate quantity tracking and inventory management."
+msgstr "Nastavte jednotky produktu jako kg, lb, mm nebo palce pro přesné sledování množství a správu skladu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:80
+msgid "Search, view, and manage WooCommerce customer profiles including contact and billing details."
+msgstr "Vyhledávat, zobrazovat a spravovat profily zákazníků WooCommerce včetně kontaktních a fakturačních údajů."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:81
+msgid "Switch to a dark interface to reduce eye strain, save battery life, and enjoy a more modern look in low-light environments."
+msgstr "Přepněte na tmavé rozhraní, abyste snížili namáhání očí, prodloužili životnost baterie a vychutnali si modernější vzhled v prostředí s nízkým osvětlením."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:82
+msgid "Enable decimal-based quantities for products—ideal for items sold by weight, length, or volume."
+msgstr "Povolit desetinné množství pro produkty - ideální pro položky prodávané podle váhy, délky nebo objemu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:83
+msgid "Apply fixed or percentage discounts to individual products or the entire cart during checkout in the FooEvents POS apps."
+msgstr "Použijte pevné nebo procentuální slevy na jednotlivé produkty nebo celý košík během pokladního procesu v aplikacích FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:84
+msgid "Sell event tickets, bookings, seats, and print tickets using the popular FooEvents plugin."
+msgstr "Prodejte vstupenky na události, rezervace, místa a tiskněte vstupenky pomocí oblíbeného doplňku FooEvents."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:85
+msgid "Connect compatible printers, barcode scanners, and cash drawers to create a complete retail point of sale solution."
+msgstr "Připojte kompatibilní tiskárny, čárové scannery a pokladní šuplíky k vytvoření kompletního řešení pro prodej na prodejně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:86
+msgid "Track and manage inventory in real time, including standard stock, decimal quantities, and custom units like kg or cm."
+msgstr "Sledujte a spravujte skladové zásoby v reálném čase, včetně standardních zásob, desetinných množství a vlastních jednotek jako kg nebo cm."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:87
+msgid "Print and email customer invoices or receipts directly from the FooEvents POS apps at checkout or at a later stage."
+msgstr "Tiskněte a odesílejte zákaznické faktury nebo účtenky přímo z aplikací FooEvents POS při pokladně nebo později."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:88
+msgid "Use WooCommerce's built-in Local Pickup shipping method to manage and fulfill pickup orders through FooEvents POS."
+msgstr "Použijte vestavěnou dopravu Local Pickup WooCommerce k řízení a plnění objednávek na vyzvednutí prostřednictvím FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:89
+msgid "Define minimum and maximum order quantities per product to control how much can be added to the cart."
+msgstr "Definujte minimální a maximální množství objednávek na produkt k ovládání toho, kolik lze přidat do košíku."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:90
+msgid "Use FooEvents POS in your preferred language. Supports 9 major languages for global accessibility and ease of use."
+msgstr "Používejte FooEvents POS ve vašem preferovaném jazyce. Podporuje 9 hlavních jazyků pro globální dostupnost a snadné použití."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:91
+msgid "Use FooEvents POS without internet access. Sync or export orders once you’re back online using the import tool in your WordPress admin dashboard."
+msgstr "Používejte FooEvents POS bez přístupu k internetu. Synchronizujte nebo exportujte objednávky, až se znovu připojíte k internetu pomocí nástroje pro import v administraci WordPressu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:92
+msgid "Get real-time alerts in the app when new orders are placed, so you never miss a sale whether you're in-store or on the go."
+msgstr "Dostávejte v aplikaci okamžitá upozornění, když jsou zadány nové objednávky, abyste nikdy nezmeškali prodej, ať už jste v obchodě nebo na cestách."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:93
+msgid "View, create, update, and fulfill WooCommerce orders directly from the FooEvents POS apps in real time."
+msgstr "Zobrazujte, vytvářejte, aktualizujte a vyřizujte objednávky WooCommerce přímo z aplikací FooEvents POS v reálném čase."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:94
+msgid "Accept in-person payments and record orders as cash, card, check, or any custom payment method you define."
+msgstr "Přijímejte platby v hotovosti, kartou, šekem nebo jakýmkoli vlastním platebním způsobem, který definujete."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:95
+msgid "Support product customizations like toppings or engravings at checkout. All options sync with FooEvents POS for easy order fulfillment."
+msgstr "Podpora vlastních úprav produktů jako jsou polevy nebo rytiny při pokladně. Všechny možnosti se synchronizují s FooEvents POS pro snadné vyřízení objednávek."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:96
+msgid "Access and manage all your WooCommerce products in FooEvents POS, including variations, stock, and pricing."
+msgstr "Přistupujte a spravujte všechny své produkty WooCommerce v FooEvents POS, včetně variant, skladu a cen."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:97
+msgid "Issue full or partial refunds directly from the FooEvents POS apps for all supported payment methods."
+msgstr "Vydávejte plné nebo částečné vrácení peněz přímo z aplikací FooEvents POS pro všechny podporované platební metody."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:98
+msgid "Track store performance using WooCommerce Analytics reports directly in FooEvents POS. Monitor sales, orders, products, and key metrics."
+msgstr "Sledujte výkonnost obchodu pomocí zpráv o analýze WooCommerce přímo v FooEvents POS. Monitorujte prodeje, objednávky, produkty a klíčové metriky."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:99
+msgid "Allow customers to split payments using a combination of different payment methods such as cash, card, COD, Stripe, or Square."
+msgstr "Umožněte zákazníkům rozdělit platby pomocí kombinace různých platebních metod, jako je hotovost, karta, dobírka, Stripe nebo Square."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:100
+msgid "Accept in-person card payments using compatible Square devices, or manually enter card details for phone and remote orders."
+msgstr "Přijímejte platby kartou osobně pomocí kompatibilních zařízení Square nebo ručně zadejte údaje karty pro telefonické a vzdálené objednávky."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:101
+msgid "Process in-person payments using supported Stripe card readers or manually enter card details through the FooEvents POS apps."
+msgstr "Zpracovávejte platby v osobě pomocí podporovaných čteček karet Stripe nebo ručně zadejte údaje o kartě prostřednictvím aplikací FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:102
+msgid "Your WooCommerce tax settings are automatically applied at checkout for accurate tax calculations across all sales channels."
+msgstr "Vaše daňové nastavení WooCommerce je automaticky použito při pokladně pro přesné výpočty daní napříč všemi prodejními kanály."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:103
+msgid "Full support for WooCommerce product variations including size, color, and other custom attributes."
+msgstr "Plná podpora pro varianty produktů WooCommerce včetně velikosti, barvy a dalších vlastností."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:104
+msgid "To sell and print tickets in FooEvents POS, the FooEvents for WooCommerce plugin must be installed and activated."
+msgstr "Prodej a tisk vstupenek ve FooEvents POS vyžaduje nainstalovaný a aktivovaný doplněk FooEvents pro WooCommerce."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:106
+#, php-format
+msgid "Please note that the app title should be unique so that the POS page does not conflict with any other pages on your site. If left empty, the POS page name will default to \"%1$s\" with a slug value of \"fooeventspos\"."
+msgstr "Všimněte si, že název aplikace by měl být jedinečný, aby se stránka pro prodejní místo nesrazila s žádnými jinými stránkami na vašem webu. Pokud je ponechán prázdný, název stránky pro prodejní místo se automaticky nastaví na \"%1$s\" se hodnotou slugu \"fooeventspos\"."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:108
+#, php-format
+msgid "If you have any questions regarding how to use or get the most out of FooEvents POS, we recommend that you visit our %1$sHelp Center%2$s where you will find many useful resources. If you can't find what you're looking for, feel free to %3$sget in touch%4$s."
+msgstr "Pokud máte nějaké dotazy ohledně použití nebo získání maximálního užitku z FooEvents POS, doporučujeme navštívit naše %1$sNápovědu%2$s, kde najdete mnoho užitečných zdrojů. Pokud nenajdete to, co hledáte, neváhejte nás %3$skontaktovat%4$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:109
+msgid "Import changes and new orders that were created while using FooEvents POS in offline mode directly into your WooCommerce database."
+msgstr "Importujte změny a nové objednávky, které byly vytvořeny při používání FooEvents POS v offline režimu, přímo do vaší databáze WooCommerce."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:110
+msgid "This functionality allows us to anonymously collect non-sensitive sales data for orders that are placed through the FooEvents POS app. We use this data to improve the product experience and publish insights which benefit the WordPress/WooCommerce community."
+msgstr "Tato funkce nám umožňuje anonymně sbírat necitlivá prodejní data pro objednávky, které jsou provedeny prostřednictvím aplikace FooEvents POS. Tato data používáme k vylepšení uživatelského zážitku s produktem a zveřejňujeme poznatky, které prospívají komunitě WordPress/WooCommerce."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:111
+msgid "POS payments made via the FooEvents POS."
+msgstr "Platby na pokladně provedené prostřednictvím pokladny FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:112
+msgid "FooEvents POS is a point of sale (POS) that turns any WooCommerce store into a secure omnichannel retail platform which allows you to sell online and in-person seamlessly."
+msgstr "FooEvents POS pro WooCommerce je bod prodeje (POS), který promění jakýkoli obchod WooCommerce v bezpečnou omnichannelovou maloobchodní platformu, která vám umožní prodávat online i osobně bezproblémově."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:113
+msgid "Your store does not currently use HTTPS. Please ensure that you set up a valid SSL certificate."
+msgstr "Váš obchod v současné době nepoužívá protokol HTTPS. Ujistěte se, že jste nastavili platný certifikát SSL."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:114
+msgid "The FooEvents POS import tool allows you to import changes and new orders that were created while using FooEvents POS in offline mode directly into your WooCommerce database. This is useful if you placed a large volume of orders or made lots of changes while in offline mode and are having trouble syncing them through the app."
+msgstr "Nástroj pro importování FooEvents POS vám umožňuje importovat změny a nové objednávky, které byly vytvořeny při používání FooEvents POS v režimu offline přímo do vaší databáze WooCommerce. To je užitečné, pokud jste v režimu offline zadali velké množství objednávek nebo provedli mnoho změn a máte potíže s jejich synchronizací prostřednictvím aplikace."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:115
+msgid "This custom XML file must be exported from the settings screen in the FooEvents POS app and saved to a location on your computer. The changes will be imported into your WooCommerce database in the same sequence that they were made."
+msgstr "Tento vlastní XML soubor musí být exportován ze stránky nastavení aplikace FooEvents POS a uložen na vašem počítači. Změny budou importovány do vaší databáze WooCommerce ve stejném pořadí, v jakém byly provedeny."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:116
+msgid "Invalid file format. Please upload a valid XML file that was exported directly from the FooEvents POS app."
+msgstr "Neplatný formát souboru. Nahrajte prosím platný soubor XML, který byl exportován přímo z aplikace FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:117
+msgid "Your store is currently installed on localhost. In order for the FooEvents POS app to connect to your store, it needs to be installed on a publicly accessible domain."
+msgstr "Váš obchod je aktuálně nainstalován na localhostu. Aby se aplikace FooEvents POS mohla připojit k vašemu obchodu, musí být nainstalována na veřejně přístupném doméně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:118
+msgid "Need help generating these keys?"
+msgstr "Potřebujete pomoc s generováním těchto klíčů?"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:119
+msgid "Need help obtaining these keys?"
+msgstr "Potřebujete pomoc s získáním těchto klíčů?"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:120
+msgid "No offline changes were found."
+msgstr "Nebyly nalezeny žádné offline změny."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:121
+msgid "Changes made to order settings might only reflect in the FooEvents POS app after resyncing your store data."
+msgstr "Změny provedené v nastavení objednávek se mohou projevit v aplikaci FooEvents POS až po znovusynchronizování dat vašeho obchodu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:122
+msgid "Accept payments using any third-party card reader (processed outside of FooEvents POS)."
+msgstr "Přijímejte platby pomocí libovolného čtečky karet třetí strany (zpracováno mimo FooEvents POS)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:123
+msgid "Accept cash payments."
+msgstr "Přijměte platby v hotovosti."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:124
+msgid "Collect payments when goods or services are delivered."
+msgstr "Inkasujte platby při dodání zboží nebo služeb."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:125
+msgid "Accept check payments."
+msgstr "Přijímat platby šekem."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:126
+msgid "Accept payments via direct bank/wire transfer."
+msgstr "Přijímat platby prostřednictvím přímé bankovní/převodové platby."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:127
+msgid "Create your own custom payment method."
+msgstr "Vytvořte si vlastní vlastní platební metodu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:128
+msgid "Allow split payments using a combination of the other enabled payment methods."
+msgstr "Povolit rozdělení plateb pomocí kombinace ostatních povolených platebních metod."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:130
+#, php-format
+msgid "Accept payments using Square Readers. %1$sConfigure Square%2$s"
+msgstr "Přijímejte platby pomocí čteček Square. %1$sNastavit Square%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:132
+#, php-format
+msgid "Capture manual card entries using Square (FooEvents POS web app only). %1$sConfigure Square%2$s"
+msgstr "Zachytit ruční zadání karty pomocí Square (pouze webová aplikace FooEvents POS). %1$sNastavit Square%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:134
+#, php-format
+msgid "Accept payments using a Square Reader. %1$sConfigure Square%2$s"
+msgstr "Přijímejte platby pomocí Square Readeru. %1$sNastavte Square%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:136
+#, php-format
+msgid "Accept payments using a Square Terminal. %1$sConfigure Square%2$s"
+msgstr "Přijímejte platby pomocí Square Terminalu. %1$sNastavte Square%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:138
+#, php-format
+msgid "Accept payments using Stripe BBPOS Chipper™ Bluetooth readers. %1$sConfigure Stripe%2$s"
+msgstr "Přijímejte platby pomocí čteček Stripe BBPOS Chipper™ Bluetooth. %1$sNastavit Stripe%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:140
+#, php-format
+msgid "Capture manual card entries using Stripe. %1$sConfigure Stripe%2$s"
+msgstr "Zachytit ruční zadání karty pomocí Stripe. %1$sNastavit Stripe%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:142
+#, php-format
+msgid "Accept payments using Stripe S700, BBPOS WisePOS™ E or Verifone P400 readers. %1$sConfigure Stripe%2$s"
+msgstr "Přijímejte platby pomocí čteček Stripe S700, BBPOS WisePOS™ E nebo Verifone P400. %1$sNastavit Stripe%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:144
+#, php-format
+msgid "Accept payments using Stripe Reader M2 Bluetooth readers. %1$sConfigure Stripe%2$s"
+msgstr "Přijímejte platby pomocí čteček Stripe Reader M2 Bluetooth. %1$sNastavte Stripe%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:146
+#, php-format
+msgid "Accept payments using Stripe BBPOS WisePad™ Bluetooth readers. %1$sConfigure Stripe%2$s"
+msgstr "Přijímejte platby pomocí čteček Stripe BBPOS WisePad™ Bluetooth. %1$sNastavit Stripe%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:147
+msgid "Pretty Permalinks are not currently enabled and this is required for FooEvents POS to work properly."
+msgstr "Pěkné trvalé odkazy nejsou v současné době povoleny a to je nutné pro správnou funkci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:148
+msgid "If you are experiencing issues that are not mentioned here, please get in touch so that we can help troubleshoot."
+msgstr "Pokud máte problémy, které nejsou zde zmíněny, obraťte se na nás, abychom vám mohli pomoci s odstraněním potíží."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:149
+msgid "There is a newer version of the FooEvents POS WordPress plugin available."
+msgstr "Je k dispozici novější verze doplňku FooEvents POS pro WordPress."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:151
+#, php-format
+msgid "The \"%1$s\" plugin might block the FooEvents POS app from successfully connecting to your store."
+msgstr "Plugin \"%1$s\" by mohl blokovat aplikaci FooEvents POS při úspěšném připojení k vašemu obchodu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:153
+#, php-format
+msgid "Select which payment methods should show in the POS by enabling or disabling the %1$sWooCommerce payment methods%2$s."
+msgstr "Vyberte, které platební metody by měly být zobrazeny v POS tím, že povolíte nebo zakážete %1$splatební metody WooCommerce%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:154
+msgid "Starting with version 1.8.0, FooEvents POS now supports split payments. The method for recording payments on orders has been updated to include this feature. New orders processed through the POS will automatically use this new functionality. Existing orders will gain access to split payments the next time they are opened, either in the WooCommerce back-end or via the POS apps. If you wish to update previous orders in bulk to enable the new payment functionality, and have these payments displayed on the Payments screen, please click the \"Update Orders\" button below. Note: this script updates orders in batches of 100."
+msgstr "Od verze 1.8.0 FooEvents POS nyní podporuje rozdělené platby. Metoda zaznamenávání plateb u objednávek byla aktualizována tak, aby zahrnovala tuto funkci. Nové objednávky zpracované prostřednictvím POS automaticky využijí tuto novou funkcionalitu. Existující objednávky získají přístup k rozděleným platbám příště, když budou otevřeny, buď v záložce WooCommerce nebo prostřednictvím aplikací POS. Pokud chcete hromadně aktualizovat předchozí objednávky, abyste povolili novou platební funkčnost a tyto platby zobrazili na obrazovce Plateb, klikněte na tlačítko \"Aktualizovat objednávky\" níže. Poznámka: Tento skript aktualizuje objednávky po skupinách po 100."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:156
+#, php-format
+msgid "Refer to our %1$sPlugin Privacy Policy%2$s for more information"
+msgstr "Odkazujte na naši %1$sPlugin Zásady ochrany osobních údajů%2$s pro více informací."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:157
+msgid "There was a problem importing one or more offline changes."
+msgstr "Došlo k problému při importu jedné nebo více offline změn."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:158
+msgid "Changes made to product settings might only reflect in the FooEvents POS app after resyncing your store data."
+msgstr "Změny provedené v nastavení produktu se mohou v aplikaci FooEvents POS projevit až po opětovném synchronizování dat obchodu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:159
+msgid "These details are optional and will only be displayed on receipts/tax invoices that are printed from orders created in the FooEvents POS app."
+msgstr "Tyto podrobnosti jsou nepovinné a budou zobrazeny pouze na účtenkách / daňových fakturách, které jsou vytisknuty z objednávek vytvořených v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:160
+msgid "The REST API is used by the FooEvents POS app to communicate with your server."
+msgstr "REST API je používáno aplikací FooEvents POS k komunikaci se serverem."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:161
+msgid "It looks like your site might be installed in a subfolder. This could potentially be an issue if there is another WordPress site installed in the root directory of your domain and interfere with the REST API endpoints."
+msgstr "Vypadá to, že váš web může být nainstalován ve složce podúrovni. To by mohlo potenciálně být problém, pokud je v kořenovém adresáři vašeho domény nainstalován jiný web WordPress a mohl by zasahovat do koncových bodů REST API."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:162
+msgid "The REST API request failed due to an error. Visit the WordPress Site Health section for further details."
+msgstr "REST API požadavek selhal kvůli chybě. Navštivte sekci Zdraví webu WordPress pro další podrobnosti."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:164
+#, php-format
+msgid "Launch FooEvents POS in your %1$sweb browser%2$s, or install the FooEvents POS %3$siPad%4$s or %5$sAndroid tablet%6$s apps. Your free trial will expire in 7 days, after which you will need to purchase a FooEvents POS plan to continue using FooEvents POS."
+msgstr "Spusťte aplikaci FooEvents POS ve svém %1$swebovém prohlížeči%2$s nebo nainstalujte aplikace FooEvents POS pro %3$iPad%4$s nebo %5$sAndroid tablet%6$s. Váš bezplatný zkušební období vyprší za 7 dní, po kterých budete muset zakoupit plán FooEvents POS, abyste mohli nadále používat FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:165
+msgid "Once you’ve activated your free trial, you’ll receive helpful instructions over the next few days that will guide you through getting started with FooEvents POS. You can unsubscribe at any time."
+msgstr "Jakmile aktivujete svůj bezplatný zkušební období, během následujících několika dní obdržíte užitečné instrukce, které vás provedou procesem začátku s FooEvents POS. Můžete se kdykoli odhlásit."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:166
+msgid "Activate your 7-day free trial to start using FooEvents POS right away."
+msgstr "Aktivujte svůj 7denní zkušební přístup a začněte ihned používat FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:167
+msgid "FooEvents POS is a secure point of sale (POS) for WooCommerce that turns any store into a secure omnichannel retail platform which allows you to sell online and in-person seamlessly. FooEvents POS uses your WooCommerce store’s existing products, variations, stock, orders, customers, and tax settings in real-time."
+msgstr "FooEvents POS je zabezpečený bod prodeje (POS) pro WooCommerce, který proměňuje jakýkoli obchod na zabezpečenou omnichannelovou maloobchodní platformu, která vám umožňuje prodávat online i osobně bezproblémově. FooEvents POS v reálném čase využívá existující produkty, varianty, sklad, objednávky, zákazníky a daňová nastavení vašeho obchodu WooCommerce."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:169
+#, php-format
+msgid "You can choose to show or hide certain variations in the POS from the %1$svariations tab%2$s. More information can be found in the %3$shelp documentation%4$s."
+msgstr "Můžete si vybrat, zda chcete zobrazit nebo skrýt určité varianty v pokladně z %1$svariantní karty%2$s. Další informace naleznete v %3$snápovědě k dokumentaci%4$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:171
+#, php-format
+msgid "Accept payments in FooEvents POS using %1$sSquare Readers%2$s by providing your Square Application ID and Access Token."
+msgstr "Přijímejte platby v aplikaci FooEvents POS pomocí čteček %1$sSquare%2$s tím, že poskytnete své ID aplikace a přístupový token od Square."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:172
+msgid "It appears that you have entered Square sandbox details."
+msgstr "Zdá se, že jste zadali detaily testovacího prostředí Square."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:173
+msgid "This Square transaction contains split tenders."
+msgstr "Tato transakce Square obsahuje rozdělené platby."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:175
+#, php-format
+msgid "Refund for order #%1$s captured in FooEvents POS"
+msgstr "Vrácení platby za objednávku #%1$s zaznamenanou v pokladně FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:177
+#, php-format
+msgid "Please use one of %1$sSquare's test cards%2$s at checkout when using the Square Manual Payment method as real cards will not work."
+msgstr "Prosím použijte jeden z %1$sSquareových testovacích karet%2$s při platbě při použití metody Platba na místě od Square, protože skutečné karty nebudou fungovat."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:178
+msgid "FooEvents POS performs various checks which show critical information about your store's configuration and issues that require your attention."
+msgstr "FooEvents POS provádí různé kontroly, které zobrazují důležité informace o konfiguraci vašeho obchodu a problémy, na které je třeba zaměřit pozornost."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:180
+#, php-format
+msgid "Please ensure that you copy the full secret key when generating a new Stripe API key and not just the visible characters in your %1$sStripe dashboard%2$s. Alternatively, you can revoke the existing secret key and generate a new one. For detailed instructions, please refer to %3$sStripe's API keys documentation%4$s."
+msgstr "Ujistěte se, že při generování nového klíče API Stripe zkopírujete celý tajný klíč a nejen viditelné znaky ve vaší %1$sNástěnce Stripe%2$s. Alternativně můžete odvolat existující tajný klíč a vygenerovat nový. Pro podrobné pokyny se odkazujte na %3$sdokumentaci k API klíčům od Stripe%4$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:182
+#, php-format
+msgid "Accept payments in FooEvents POS using %1$sStripe Readers%2$s by providing a Stripe Publishable key and Secret key."
+msgstr "Přijímejte platby v aplikaci FooEvents POS pomocí %1$sStripe čteček%2$s poskytnutím veřejného klíče a tajného klíče Stripe."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:183
+msgid "Uh oh. It looks like the secret key you entered is too short."
+msgstr "Vypadá to, že zadaný tajný klíč je příliš krátký."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:185
+#, php-format
+msgid "Please use one of %1$sStripe's test cards%2$s at checkout as real cards will not work."
+msgstr "Prosím, použijte jeden z %1$s testovacích karet Stripe %2$s při pokladně, protože skutečné karty nebudou fungovat."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:186
+msgid "It appears that you have entered Stripe test API keys."
+msgstr "Zdá se, že jste zadali testovací API klíče pro Stripe."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:188
+#, php-format
+msgid "The WooCommerce thumbnail size is currently set to %1$s pixels which may result in serious performance issues in the POS app and could cause the device to run out of memory. Please adjust the thumbnail size to something greater than zero (0) and less than 300px for optimal performance."
+msgstr "Velikost náhledu WooCommerce je aktuálně nastavena na %1$s pixelů, což může způsobit vážné výkonnostní problémy v aplikaci POS a může způsobit, že zařízení dojde paměti. Prosím, upravte velikost náhledu na hodnotu větší než nula (0) a menší než 300px pro optimální výkon."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:189
+msgid "Unable to read the XML file. Please upload a valid XML file that was exported from the FooEvents POS app."
+msgstr "Nelze načíst soubor XML. Nahrajte prosím platný soubor XML, který byl exportován z aplikace FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:190
+msgid "FooEvents POS integrates with WooCommerce Analytics which allows you to view detailed sales reports for your store and differentiate between orders placed online and through the FooEvents POS app."
+msgstr "FooEvents POS se integruje s analýzami WooCommerce, což vám umožňuje zobrazit podrobné prodejní zprávy pro váš obchod a rozlišovat mezi objednávkami umístěnými online a prostřednictvím aplikace FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:191
+msgid "Unable to connect to the trial service. Please try again or get in touch."
+msgstr "Nelze se připojit k zkušební službě. Zkuste to znovu nebo nás kontaktujte."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:192
+msgid "A free trial has already been activated for this site. To continue using FooEvents POS, please purchase a plan."
+msgstr "Byla již aktivována bezplatná zkušební verze pro tuto stránku. Pro pokračování v používání FooEvents POS si prosím zakupte plán."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:193
+msgid "An error occurred and we were unable to activate your free trial. Please contact us, and one of our support agents will help with your free trial activation."
+msgstr "Došlo k chybě a nemohli jsme aktivovat váš bezplatný zkušební období. Kontaktujte nás a jeden z našich podpůrných agentů vám pomůže s aktivací zkušebního období."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:194
+msgid "Please provide a valid email address."
+msgstr "Prosím, zadejte platnou e-mailovou adresu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:195
+msgid "Please provide a valid store name."
+msgstr "Prosím, zadejte platný název obchodu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:196
+msgid "You do not have permission to perform this action."
+msgstr "Nemáte oprávnění provést tuto akci."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:197
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nemáte dostatečná oprávnění k přístupu na tuto stránku."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:198
+msgid "An error occurred while importing your offline changes. Please try again and re-export the XML file if required."
+msgstr "Došlo k chybě při importu vašich offline změn. Zkuste to prosím znovu a případně znovu exportujte soubor XML."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:199
+msgid "All Cashiers"
+msgstr "Všichni pokladní"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:200
+msgid "All Orders"
+msgstr "Všechny objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:201
+msgid "FooEvents POS Only"
+msgstr "Jen FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:202
+msgid "None"
+msgstr "Žádný"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:203
+msgid "Online Only"
+msgstr "Pouze online"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:204
+msgid "POS Card Payments"
+msgstr "Platební karty na pokladně"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:205
+msgid "POS Cash Payments"
+msgstr "Platby hotově na místě"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:206
+msgid "POS Cash on Delivery"
+msgstr "Pokladna Dobírka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:207
+msgid "POS Check Payments"
+msgstr "Platební terminál POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:208
+msgid "POS Direct Bank Transfer"
+msgstr "POS Přímý bankovní převod"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:209
+msgid "POS Other Payment Methods"
+msgstr "POS Ostatní platební metody"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:210
+msgid "POS Split Payments"
+msgstr "Rozdělení plateb na pokladně"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:211
+msgid "POS Square Payments"
+msgstr "Platební terminál Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:212
+msgid "POS Square Manual Payments"
+msgstr "Manuální platby POS Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:213
+msgid "POS Square Reader Payments"
+msgstr "Platby čtečkou Square Reader POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:214
+msgid "POS Square Terminal Payments"
+msgstr "Platby na terminálu POS Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:215
+msgid "POS Stripe BBPOS Chipper Payments"
+msgstr "Platební terminál Stripe BBPOS Chipper Payments"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:216
+msgid "POS Stripe Manual Payments"
+msgstr "Manuální platby Stripe POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:217
+msgid "POS Stripe Reader Payments"
+msgstr "Platby čtečkou Stripe na pokladně"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:218
+msgid "POS Stripe Reader M2 Payments"
+msgstr "Platební terminál Stripe Reader M2"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:219
+msgid "POS Stripe BBPOS WisePad Payments"
+msgstr "POS Stripe BBPOS WisePad Platby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:220
+msgid "Standard Themes (Desktop Printers)"
+msgstr "Standardní motivy (tiskárny pro stolní počítače)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:221
+msgid "Optimized for Thermal Receipt Printers (POS)"
+msgstr "Optimalizováno pro termální tiskárny účtenek (POS)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:222
+msgid "Active"
+msgstr "Aktivní"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:223
+msgid "Active Free Trial"
+msgstr "Aktivní zkušební verze"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:224
+msgid "Active Plan"
+msgstr "Aktivní plán"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:225
+msgid "Cancel order"
+msgstr "Zrušit objednávku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:226
+msgid "Restocked order items"
+msgstr "Znovu zásobené položky objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:227
+msgid "Set order status to cancelled"
+msgstr "Nastavit stav objednávky na zrušeno."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:228
+msgid "skipped - already canceled"
+msgstr "přeskočeno - již zrušeno"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:229
+msgid "Caution"
+msgstr "Pozor"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:230
+msgid "Column"
+msgstr "Sloupec"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:231
+msgid "Create order"
+msgstr "Vytvořit objednávku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:232
+msgid "Set attendee details"
+msgstr "Nastavit údaje účastníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:233
+msgid "Set billing address"
+msgstr "Nastavit fakturační adresu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:234
+msgid "Set customer"
+msgstr "Nastavit zákazníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:235
+msgid "Set order date"
+msgstr "Nastavit datum objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:236
+msgid "Set payment method"
+msgstr "Nastavit platební metodu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:237
+msgid "Set shipping address"
+msgstr "Nastavit dodací adresu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:238
+msgid "Set status"
+msgstr "Nastavit stav"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:239
+msgid "skipped - already created"
+msgstr "přeskočeno - již vytvořeno"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:240
+msgid "Order total"
+msgstr "Celková částka objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:241
+msgid "Critical"
+msgstr "Kritický"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:242
+msgid "Enable Card Payments"
+msgstr "Povolit platby kartou."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:243
+msgid "Enable Cash Payments"
+msgstr "Povolit platby v hotovosti"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:244
+msgid "Enable Cash on Delivery Payments"
+msgstr "Povolit platby dobírkou."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:245
+msgid "Enable Check Payments"
+msgstr "Povolit platby šekem."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:246
+msgid "Enable Direct Bank/Wire Transfers"
+msgstr "Povolit přímé bankovní/převody."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:247
+msgid "Enable Other Payments"
+msgstr "Povolit další platby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:248
+msgid "Enable Split Payments"
+msgstr "Povolit rozdělené platby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:249
+msgid "Enable Payments with Square"
+msgstr "Povolit platby pomocí Square."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:250
+msgid "Enable Square Manual Payments"
+msgstr "Povolit manuální platby Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:251
+msgid "Enable Square Reader Payments"
+msgstr "Povolit platby pomocí Square Reader"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:252
+msgid "Enable Square Terminal Payments"
+msgstr "Povolit platby pomocí Square Terminal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:253
+msgid "Enable Stripe BBPOS Chipper™ Payments"
+msgstr "Povolit platby Stripe BBPOS Chipper™"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:254
+msgid "Enable Stripe Manual Payments"
+msgstr "Povolit manuální platby Stripe"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:255
+msgid "Enable Stripe Reader Payments"
+msgstr "Povolit platby pomocí čtečky Stripe."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:256
+msgid "Enable Stripe Reader M2 Payments"
+msgstr "Povolit Platební terminál Stripe M2."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:257
+msgid "Enable Stripe BBPOS WisePad™ Payments"
+msgstr "Povolit platby Stripe BBPOS WisePad™"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:258
+msgid "Expired free trial"
+msgstr "Vypršel zkušební období zdarma."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:259
+msgid "Expired Plan"
+msgstr "Plán vypršel."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:260
+msgid "Important"
+msgstr "Důležité"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:261
+msgid "Not Active"
+msgstr "Neaktivní"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:262
+msgid "Line"
+msgstr "Řádek"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:263
+msgid "Maximum size"
+msgstr "Maximální velikost"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:264
+msgid "Blog"
+msgstr "Blog"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:265
+msgid "Documentation"
+msgstr "Dokumentace"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:266
+msgid "FooEvents POS Plans"
+msgstr "Plány FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:267
+msgid "Support"
+msgstr "Podpora"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:268
+msgid "Notice"
+msgstr "Upozornění"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:269
+msgid "Offline changes imported"
+msgstr "Offline změny importovány"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:270
+msgid "Cashier"
+msgstr "Pokladní"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:271
+msgid "captured in FooEvents POS"
+msgstr "zachyceno v pokladně FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:272
+msgid "No issues were detected. Hooray!"
+msgstr "Nebyly zjištěny žádné problémy. Hurá!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:273
+msgid "Plugin update"
+msgstr "Aktualizace pluginu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:274
+msgid "Potentially critical"
+msgstr "Potenciálně kritický"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:275
+msgid "Refund order"
+msgstr "Vrácení objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:276
+msgid "restocked"
+msgstr "doplněno"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:277
+msgid "skipped - already refunded"
+msgstr "přeskočeno - již vráceno"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:278
+msgid "Automatic refund failed. Please refund this order manually through your Square account."
+msgstr "Automatické vrácení selhalo. Prosím vraťte tuto objednávku ručně prostřednictvím svého účtu Square."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:279
+msgid "Square payment refunded successfully."
+msgstr "Platba Square byla úspěšně vrácena."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:280
+msgid "Total refunded"
+msgstr "Celkem vráceno"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:281
+msgid "The REST API is currently accessible"
+msgstr "REST API je v současné době přístupné."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:282
+msgid "Select a file from your computer"
+msgstr "Vyberte soubor ze svého počítače."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:283
+msgid "Activating your free trial"
+msgstr "Aktivace vašeho bezplatného zkušebního období."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:284
+msgid "Checking permissions"
+msgstr "Kontrola oprávnění"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:285
+msgid "Connecting"
+msgstr "Připojení"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:286
+msgid "Enter your email address"
+msgstr "Zadejte svou e-mailovou adresu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:287
+msgid "Turning on the lights"
+msgstr "Zapnutí světel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:288
+msgid "This should only take a few seconds."
+msgstr "Tohle by mělo trvat jen pár vteřin."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:289
+msgid "Update order"
+msgstr "Aktualizovat objednávku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:290
+msgid "skipped - order already updated"
+msgstr "přeskočeno - objednávka již aktualizována"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:291
+msgid "Updated order"
+msgstr "Aktualizovaná objednávka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:292
+msgid "Update product"
+msgstr "Aktualizovat produkt"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:293
+msgid "Set price"
+msgstr "Nastavit cenu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:294
+msgid "Set regular price"
+msgstr "Nastavit běžnou cenu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:295
+msgid "Set sale price"
+msgstr "Nastavit prodejní cenu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:296
+msgid "Set SKU"
+msgstr "Nastavit SKU"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:297
+msgid "Set stock"
+msgstr "Nastavit sklad"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:298
+msgid "Set title"
+msgstr "Nastavit název"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:299
+msgid "skipped - already updated"
+msgstr "přeskočeno - již aktualizováno"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:300
+msgid "Import"
+msgstr "Import"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:301
+msgid "Point of Sale"
+msgstr "Prodejní místo"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:302
+msgid "Settings"
+msgstr "Nastavení"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:303
+msgid "Order Payment Method"
+msgstr "Způsob platby objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:305
+#, php-format
+msgid "FooEvents POS failed to create the directory %1$s. Please manually create this directory on your web server."
+msgstr "FooEvents POS pro WooCommerce se nepodařilo vytvořit adresář %1$s. Tento adresář vytvořte ručně na svém webovém serveru."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:306
+msgid "Please backup your files and database before updating your site."
+msgstr "Zálohujte své soubory a databázi před aktualizací vašeho webu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:307
+msgid "Important Upgrade Notice"
+msgstr "Důležité oznámení o aktualizaci"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:309
+#, php-format
+msgid "Please note that the FooEvents integration in FooEvents POS requires FooEvents for WooCommerce version 1.18.14 or higher to function properly. Please update your %1$sFooEvents for WooCommerce plugin%2$s accordingly."
+msgstr "Všimněte si, že integrace FooEvents ve FooEvents POS vyžaduje verzi FooEvents pro WooCommerce 1.18.14 nebo vyšší, aby správně fungovala. Aktualizujte prosím váš doplněk %1$sFooEvents pro WooCommerce%2$s podle toho."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:311
+#, php-format
+msgid "Thanks for using FooEvents POS! To help us improve the product and share insights with the community, we would like to anonymously collect non-sensitive data for orders placed through the FooEvents POS app. Please enable the %1$sorder analytics%2$s setting to participate."
+msgstr "Děkujeme za použití FooEvents POS! Abyste nám pomohli vylepšit produkt a sdílet poznatky s komunitou, rádi bychom anonymně sbírali nesenzitivní data o objednávkách provedených prostřednictvím aplikace FooEvents POS. Prosím povolte nastavení %1$sanalytiky objednávek%2$s pro účast."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:313
+#, php-format
+msgid "The directory %1$s on your web server is not writable."
+msgstr "Adresář %1$s na vašem webovém serveru není zapisovatelný."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:314
+msgid "WooCommerce is not currently active which is required for FooEvents POS to function. Please ensure that the WooCommerce plugin is installed and activated."
+msgstr "WooCommerce není aktuálně aktivní, což je nutné pro správnou funkci FooEvents POS. Ujistěte se, že je nainstalován a aktivován plugin WooCommerce."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:315
+msgid "XML-RPC is not enabled."
+msgstr "XML-RPC není povoleno."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:316
+msgid "Load all orders"
+msgstr "Načíst všechny objednávky."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:317
+msgid "Any status"
+msgstr "Jakýkoli stav"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:318
+msgid "Draft"
+msgstr "Návrh"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:319
+msgid "Future"
+msgstr "Budoucnost"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:320
+msgid "Pending review"
+msgstr "Čeká na přezkoumání"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:321
+msgid "Private"
+msgstr "Soukromé"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:322
+msgid "Published"
+msgstr "Publikováno"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:323
+msgid "e.g. Billing Address"
+msgstr "Fakturační adresa"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:324
+msgid "e.g. Discounts"
+msgstr "např. Slevy"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:325
+msgid "e.g. excl."
+msgstr "např. vyl."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:326
+msgid "e.g. incl."
+msgstr "např. vč."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:327
+msgid "e.g. Order"
+msgstr "např. Objednávka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:328
+msgid "e.g. Payment Method"
+msgstr "např. Způsob platby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:329
+msgid "e.g. Price"
+msgstr "např. Cena"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:330
+msgid "e.g. Product"
+msgstr "např. Produkt"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:331
+msgid "e.g. Qty"
+msgstr "např. Množství"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:332
+msgid "e.g. Receipt/Tax Invoice"
+msgstr "např. Účtenka/Daňový doklad"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:333
+msgid "e.g. Refunds"
+msgstr "např. Návraty"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:334
+msgid "e.g. Shipping Address"
+msgstr "např.  Dodací adresa"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:335
+msgid "e.g. Subtotal"
+msgstr "např. mezisoučet"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:336
+msgid "e.g. Tax"
+msgstr "např. Daň"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:337
+msgid "e.g. Total"
+msgstr "např. Celkem"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:338
+msgid "FooEvents POS is a web-based point of sale plugin for WooCommerce that runs on your own server and enables you to sell and print tickets in-person (this functionality requires the FooEvents for WooCommerce plugin to be installed and activated)."
+msgstr "FooEvents POS je webový plugin pro prodejní místo pro WooCommerce, který běží na vašem vlastním serveru a umožňuje vám prodávat a tisknout vstupenky osobně (tato funkčnost vyžaduje nainstalovaný a aktivovaný plugin FooEvents pro WooCommerce)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:339
+msgid "FooEvents POS is a point of sale (POS) system for WooCommerce that turns any computer, iPad or Android tablet into a physical retail platform. FooEvents POS apps connect to your WooCommerce store using the FooEvents POS plugin and enable you to sell your products in person while accepting payments using Square™ and Stripe™ or manually using any third-party card reader."
+msgstr "FooEvents POS je systém pro prodejní místo (POS) pro WooCommerce, který promění jakýkoli počítač, iPad nebo tablet s Androidem na fyzickou maloobchodní platformu. Aplikace FooEvents POS se připojují k vašemu obchodu WooCommerce pomocí pluginu FooEvents POS a umožňují vám prodávat své produkty osobně a přijímat platby pomocí Square™ a Stripe™ nebo ručně pomocí libovolného čtečky karet třetí strany."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:340
+msgid "FooEvents POS is a point of sale (POS) that turns any WooCommerce store into a secure omnichannel retail platform which allows you to sell online and in-person seamlessly. Process payments directly within the FooEvents POS point of sale (POS) apps using Square™ and Stripe™ or manually using any third-party card reader. Keep your online and physical store synced in real time without any other software!"
+msgstr "FooEvents POS pro WooCommerce je bod prodeje (POS), který promění libovolný obchod WooCommerce v bezpečnou omnichannelovou maloobchodní platformu, která vám umožní prodávat online i osobně bezproblémově. Zpracovávejte platby přímo v aplikacích FooEvents POS point of sale (POS) pomocí Square™ a Stripe™ nebo ručně pomocí libovolného čtečky karet třetí strany. Udržujte svůj online a fyzický obchod synchronizovaný v reálném čase bez jakéhokoli dalšího softwaru!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:341
+msgid "Show all categories"
+msgstr "Zobrazit všechny kategorie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:342
+msgid "Only show products from these specific categories"
+msgstr "Zobrazit pouze produkty z těchto konkrétních kategorií."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:343
+msgid "Submit a Review"
+msgstr "Odeslat recenzi"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:344
+msgid "Please take a moment to share your experience on Trustpilot—your feedback helps us to improve, grow and provide an even better product!"
+msgstr "Prosím, věnujte chvíli na sdílení své zkušenosti na Trustpilotu - vaše zpětná vazba nám pomáhá zlepšovat se, růst a poskytovat ještě lepší produkt!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:345
+msgid "Thank you for using FooEvents POS!"
+msgstr "Děkujeme za použití FooEvents POS!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:346
+msgid "Order statuses"
+msgstr "Stavy objednávek"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:347
+msgid "Select the order statuses that should trigger a new order alert in the POS app when new or updated orders are fetched in the background."
+msgstr "Vyberte stav objednávek, které by měly spustit nový upozorňovací signál objednávky v aplikaci POS, když jsou nové nebo aktualizované objednávky staženy na pozadí."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:348
+msgid "Shipping methods"
+msgstr "Dopravní metody"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:349
+msgid "Select the shipping methods that should trigger a new order alert in the POS app when new or updated orders are fetched in the background."
+msgstr "Vyberte způsoby dopravy, které by měly spustit upozornění na novou objednávku v aplikaci POS, když jsou nové nebo aktualizované objednávky staženy na pozadí."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:350
+msgid "Billing address title"
+msgstr "Název fakturační adresy"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:351
+msgid "Title of the billing address (e.g. \"Billing Address\")."
+msgstr "Název fakturační adresy (např. \"Fakturační adresa\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:352
+msgid "Quantity step amount"
+msgstr "Množství krok částka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:354
+#, php-format
+msgid "Specify the amount that this product's quantity can be increased or decreased in the cart e.g. 1 or 0.01, 0.5 etc. The current default value is \"%1$s\"."
+msgstr "Určete částku, o kterou lze množství tohoto produktu zvýšit nebo snížit v košíku např. 1 nebo 0,01, 0,5 atd. Aktuální výchozí hodnota je \"%1$s\"."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:355
+msgid "Cart quantity unit"
+msgstr "Jednotka množství v košíku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:356
+msgid "Specify the unit used for this product's cart quantity e.g. kg, lb, inches etc. This value can also be left blank which will result in no unit being displayed."
+msgstr "Určete jednotku použitou pro množství v košíku tohoto produktu např. kg, lb, palce atd. Tato hodnota může být také ponechána prázdná, což způsobí, že žádná jednotka nebude zobrazena."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:357
+msgid "Confirm stock availability at checkout"
+msgstr "Potvrďte dostupnost skladu při pokladně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:358
+msgid "Perform a final stock check for the products in the cart before submitting the order to WooCommerce or sending a payment request to Stripe or Square which may slow down the checkout process. Please note that the background data fetch will still update stock quantities at the frequency set in the FooEvents POS app."
+msgstr "Proveďte konečnou kontrolu skladu produktů v košíku před odesláním objednávky do WooCommerce nebo odesláním žádosti o platbu do Stripe nebo Square, což může zpomalit proces nákupu. Všimněte si, že načítání dat na pozadí stále aktualizuje množství skladu s frekvencí nastavenou v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:359
+msgid "Customer user role"
+msgstr "Role zákazníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:360
+msgid "The FooEvents POS app will only fetch users with the selected roles. This can be customized by selecting other user role(s) in the multi-select box."
+msgstr "FooEvents POS aplikace bude získávat pouze uživatele s vybranými rolemi. To lze upravit výběrem jiných uživatelských rolí v poli pro více výběr."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:361
+msgid "Default quantity step amount"
+msgstr "Výchozí množství kroku."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:362
+msgid "Specify the default amount that a product's quantity can be increased or decreased in the cart."
+msgstr "Určete výchozí částku, o kterou lze zvýšit nebo snížit množství produktu v košíku."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:363
+msgid "Default cart quantity unit"
+msgstr "Výchozí jednotka množství v košíku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:364
+msgid "Specify the default unit used for product cart quantities e.g. kg, lb, inches etc. This value can be overriden at a product level."
+msgstr "Určete výchozí jednotku používanou pro množství v košíku produktů např. kg, lb, palce atd. Tato hodnota může být přepsána na úrovni produktu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:365
+msgid "Default minimum cart quantity"
+msgstr "Výchozí minimální množství v košíku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:366
+msgid "Specify the default minimum amount that can be added to the cart for products."
+msgstr "Určete výchozí minimální částku, kterou lze přidat do košíku pro produkty."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:367
+msgid "Default customer"
+msgstr "Výchozí zákazník"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:368
+msgid "Select the customer that should be used by default for any new orders created in the FooEvents POS app."
+msgstr "Vyberte zákazníka, který by měl být výchozím pro všechny nové objednávky vytvořené v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:369
+msgid "Default submit order status"
+msgstr "Výchozí stav odeslání objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:370
+msgid "Set the default status that orders should have when submitting via the POS."
+msgstr "Nastavte výchozí stav, který by měly mít objednávky při odesílání prostřednictvím POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:371
+msgid "Disable new order emails"
+msgstr "Deaktivovat e-maily s novými objednávkami."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:372
+msgid "Discounts title"
+msgstr "Název slev"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:373
+msgid "Title of the discounts field (e.g. \"Discounts\")."
+msgstr "Název pole slev (např. \"Slevy\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:374
+msgid "Exclusive abbreviation"
+msgstr "Exkluzivní zkratka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:375
+msgid "Abbreviation to indicate the exclusive price (e.g. \"excl.\")."
+msgstr "Zkratka pro označení výhradní ceny (např. \"bez DPH\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:376
+msgid "Fetch order notes"
+msgstr "Získat poznámky k objednávce"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:377
+msgid "The FooEvents POS app will fetch and display corresponding order notes in the Order Details section. This may cause performance issues and the FooEvents POS app might run out of memory on certain platforms when a large volume of orders is fetched. Disabling this setting will still load notes to customers."
+msgstr "FooEvents POS aplikace bude načítat a zobrazovat odpovídající poznámky k objednávkám v sekci Podrobnosti objednávky. To může způsobit výkonnostní problémy a aplikace FooEvents POS by mohla na určitých platformách při velkém objemu objednávek dojít paměť. Zakázání tohoto nastavení stále načte poznámky zákazníkům."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:378
+msgid "Display FooEvents POS logo"
+msgstr "Zobrazit logo FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:379
+msgid "Footer content"
+msgstr "Patička obsah"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:380
+msgid "Optional content displayed at the bottom of receipts and invoices."
+msgstr "Volitelný obsah zobrazený na dně účtenek a faktur."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:381
+msgid "Header content"
+msgstr "Hlavičkový obsah"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:382
+msgid "Optional content which displays immediately after the store name and logo at the top of receipts."
+msgstr "Volitelný obsah, který se zobrazí ihned po názvu obchodu a logu nahoře na účtech."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:383
+msgid "Inclusive abbreviation"
+msgstr "Včetně zkratky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:384
+msgid "Abbreviation to indicate the inclusive price (e.g. \"incl.\")."
+msgstr "Zkratka pro označení včetně ceny (např. \"včetně\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:385
+msgid "Load product images"
+msgstr "Načíst obrázky produktů."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:386
+msgid "Minimum cart quantity"
+msgstr "Minimální množství v košíku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:388
+#, php-format
+msgid "Specify the minimum amount that can be added to the cart for this product e.g. 1 or 0.01, 0.5 etc. The current default value is \"%1$s\"."
+msgstr "Určete minimální částku, která může být přidána do košíku pro tento produkt např. 1 nebo 0.01, 0.5 atd. Aktuální výchozí hodnota je \"%1$s\"."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:389
+msgid "New order alerts"
+msgstr "Nové upozornění na objednávku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:390
+msgid "Incomplete order statuses"
+msgstr "Nedokončené stavy objednávek"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:391
+msgid "Orders with the selected statuses can be sent through the checkout process in order to capture a payment. Please note that order details such as cart items, customer or coupon codes will not be editable."
+msgstr "Objednávky s vybranými stavy lze odeslat prostřednictvím procesu objednávky, aby byla zachycena platba. Upozorňujeme, že podrobnosti objednávky, jako jsou položky v košíku, zákazník nebo kupónové kódy, nebudou upravitelné."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:392
+msgid "Order number prefix"
+msgstr "Předpona čísla objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:393
+msgid "Text which displays in front of the order number (e.g. \"Order\")."
+msgstr "Text, který se zobrazuje před číslem objednávky (např. \"Objednávka\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:394
+msgid "Order statuses to load"
+msgstr "Stavy objednávek k načtení"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:395
+msgid "The FooEvents POS app will only fetch orders with the selected statuses. This can be customized by selecting each status using the multi-select box."
+msgstr "FooEvents POS aplikace bude stahovat pouze objednávky se zvolenými stavy. To lze upravit výběrem každého stavu pomocí vícevýběrového pole."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:396
+msgid "Order submit statuses"
+msgstr "Stavy odeslání objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:397
+msgid "Select the statuses that will be shown on the checkout screen to override the default order submit status when submitting an order."
+msgstr "Vyberte stavy, které budou zobrazeny na obrazovce pokladny k přepsání výchozího stavu odeslání objednávky při odesílání objednávky."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:398
+msgid "Order load limit"
+msgstr "Limit načítání objednávek"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:399
+msgid "Limits the number of recent orders to load in the FooEvents POS app."
+msgstr "Omezuje počet nedávných objednávek k načtení v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:400
+msgid "Override default cart quantity unit"
+msgstr "Přepsat výchozí jednotku množství košíku"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:402
+#, php-format
+msgid "Specify a different cart quantity unit for this product which is currently set to \"%1$s\""
+msgstr "Specifikujte jinou jednotku množství košíku pro tento produkt, která je aktuálně nastavena na \"%1$s\"."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:403
+msgid "Payment method title"
+msgstr "Název platební metody"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:404
+msgid "Title of the payment method (e.g. \"Payment Method\")."
+msgstr "Název platební metody (např. \"Platební metoda\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:405
+msgid "Price column title"
+msgstr "Název sloupce s cenou"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:406
+msgid "Title of the price column (e.g. \"Price\")."
+msgstr "Název sloupce s cenou (např. \"Cena\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:407
+msgid "Product column title"
+msgstr "Název sloupce produktu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:408
+msgid "Title of the product column (e.g. \"Product\")."
+msgstr "Název sloupce produktu (např. \"Produkt\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:409
+msgid "Product status"
+msgstr "Stav produktu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:410
+msgid "The FooEvents POS app will only fetch products with the selected status. This can be customized by selecting other status(es) using the multi-select box."
+msgstr "FooEvents POS aplikace bude stahovat pouze produkty se zvoleným stavem. To lze upravit výběrem jiných stavů pomocí vícevýběrového pole."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:411
+msgid "Products to load per request"
+msgstr "Počet produktů načtených za požadavek"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:412
+msgid "When fetching all data you can specify how many products the FooEvents POS app should load in each request (lower values will result in slower product load times but this usually works better for servers with limited resources)."
+msgstr "Při získávání všech dat můžete určit, kolik produktů by měla aplikace FooEvents POS načíst v každém požadavku (nižší hodnoty povedou ke pomalejšímu načítání produktů, ale obvykle to funguje lépe pro servery s omezenými zdroji)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:413
+msgid "Products categories to display"
+msgstr "Kategorie produktů k zobrazení"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:414
+msgid "The FooEvents POS app will display all published products by default, but you can select specific product categories to display instead using the multi-select box."
+msgstr "FooEvents POS aplikace zobrazí všechny zveřejněné produkty ve výchozím nastavení, ale místo toho můžete pomocí vícevýběrového pole vybrat konkrétní produktové kategorie k zobrazení."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:415
+msgid "Quantity column title"
+msgstr "Množství"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:416
+msgid "Title of the quantity column (e.g. \"Qty\")."
+msgstr "Název sloupce množství (např. \"Množství\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:417
+msgid "Receipt title"
+msgstr "Název účtenky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:418
+msgid "Title of the receipt (e.g. \"Tax Invoice\")."
+msgstr "Název účtenky (např. \"Daňový doklad\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:419
+msgid "Refunds title"
+msgstr "Název vrácení"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:420
+msgid "Title of the refunds field (e.g. \"Refunds\")."
+msgstr "Název pole pro vrácení peněz (např. \"Vrácení peněz\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:421
+msgid "Shipping address title"
+msgstr "Název dodací adresy"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:422
+msgid "Title of the shipping address (e.g. \"Shipping Address\")."
+msgstr "Název dodací adresy (např. \"Dodací adresa\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:423
+msgid "Show attribute labels"
+msgstr "Zobrazit popisky atributů."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:424
+msgid "Display billing address"
+msgstr "Zobrazit fakturační adresu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:425
+msgid "Display the customer's billing address on the receipt."
+msgstr "Zobrazte fakturační adresu zákazníka na účtence."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:426
+msgid "Show product GTIN, UPC, EAN or ISBN"
+msgstr "Zobrazit produktové číslo GTIN, UPC, EAN nebo ISBN."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:427
+msgid "Display the product GTIN, UPC, EAN or ISBN on the receipt."
+msgstr "Zobrazte produktové číslo GTIN, UPC, EAN nebo ISBN na účtence."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:428
+msgid "Only fetch in stock products"
+msgstr "Pouze získejte produkty na skladě."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:429
+msgid "Display shipping address"
+msgstr "Zobrazit dodací adresu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:430
+msgid "Display the customer's shipping address on the receipt."
+msgstr "Zobrazit dodací adresu zákazníka na účtu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:431
+msgid "Show product SKU"
+msgstr "Zobrazit kód produktu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:432
+msgid "Display the product SKU on the receipt."
+msgstr "Zobrazte produktové SKU na účtu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:433
+msgid "Access Token"
+msgstr "Přístupový token"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:434
+msgid "Links WooCommerce orders to Square transactions and enables automatic Square refunds in the FooEvents POS app."
+msgstr "Propojuje objednávky WooCommerce s transakcemi Square a umožňuje automatické vrácení peněz v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:435
+msgid "Application ID"
+msgstr "Identifikátor aplikace"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:436
+msgid "Enables secure communication between FooEvents POS and the Square Point of Sale app."
+msgstr "Umožňuje bezpečnou komunikaci mezi FooEvents POS a aplikací Square Point of Sale."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:437
+msgid "Store logo"
+msgstr "Obchodní logo"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:438
+msgid "Select an existing image to use as the logo on receipts or upload a new file (preferably hi-res black and white)."
+msgstr "Vyberte existující obrázek k použití jako logo na účtenkách nebo nahrajte nový soubor (nejlépe černobílý s vysokým rozlišením)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:439
+msgid "Store name"
+msgstr "Název obchodu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:440
+msgid "Name of the store displayed on receipts."
+msgstr "Název obchodu zobrazený na účtech."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:441
+msgid "Publishable key"
+msgstr "Veřejný klíč"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:442
+msgid "Used for initializing a secure Stripe manual card payment form in the FooEvents POS app. This option can be left empty if the Stripe manual card payment method will not be used."
+msgstr "Používá se k inicializaci zabezpečeného formuláře pro ruční platbu kartou Stripe v aplikaci FooEvents POS. Tato možnost může zůstat prázdná, pokud metoda ruční platby kartou Stripe nebude použita."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:443
+msgid "Secret key"
+msgstr "Tajný klíč"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:444
+msgid "Enables secure communication between FooEvents POS and your Stripe account."
+msgstr "Umožňuje bezpečnou komunikaci mezi FooEvents POS a vaším účtem Stripe."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:445
+msgid "Subtotal column title"
+msgstr "Název sloupce mezisoučtu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:446
+msgid "Title of the subtotal column (e.g. \"Subtotal\")."
+msgstr "Název sloupce mezisoučtu (např. \"Mezisoučet\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:447
+msgid "Tax title"
+msgstr "Daňový titul"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:448
+msgid "Title used for the combined tax total (e.g. \"Tax\")."
+msgstr "Název použitý pro kombinovaný daňový součet (např. \"Daň\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:449
+msgid "Total title"
+msgstr "Celkový název"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:450
+msgid "Title of the combined total (e.g. \"Total\")."
+msgstr "Celkový součet (např. \"Celkem\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:451
+msgid "Use decimal values in quantities"
+msgstr "Používejte desetinné hodnoty v množstvích."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:452
+msgid "Activate"
+msgstr "Aktivovat"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:453
+msgid "Find out more"
+msgstr "Zjistit více"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:455
+#, php-format
+msgid "View version %1$s details"
+msgstr "Zobrazit podrobnosti verze %1$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:456
+msgid "See site health"
+msgstr "Zobrazit stav webu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:457
+msgid "Upgrade to FooEvents POS Plus"
+msgstr "Upgradujte na FooEvents POS Plus."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:459
+#, php-format
+msgid "The %1$sFooEvents for WooCommerce%2$s plugin must be installed and activated in order to sell and print tickets in FooEvents POS. You may also need to install other FooEvents plugin extensions to make use of specific functionality."
+msgstr "Plugin %1$sFooEvents pro WooCommerce%2$s musí být nainstalován a aktivován pro prodej a tisk vstupenek v aplikaci FooEvents POS. Může být také nutné nainstalovat další rozšíření pluginu FooEvents pro využití konkrétní funkcionality."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:460
+msgid "We have identified issues that may require your attention."
+msgstr "Identifikovali jsme problémy, které mohou vyžadovat vaši pozornost."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:461
+msgid "See details"
+msgstr "Zobrazit podrobnosti"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:462
+msgid "Customer"
+msgstr "Zákazník"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:463
+msgid "Customer provided note"
+msgstr "Poznámka zadaná zákazníkem"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:464
+msgid "Guest"
+msgstr "Host"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:465
+msgid "Hide"
+msgstr "Skrýt"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:466
+msgid "No POS payments found"
+msgstr "Nebyly nalezeny žádné platby POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:467
+msgid "No POS payments found in trash"
+msgstr "Nebyly nalezeny žádné platby POS v koši."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:468
+msgid "No order items provided."
+msgstr "Nebyly poskytnuty žádné položky objednávky."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:469
+msgid "One or more order items were not found."
+msgstr "Jeden nebo více položek objednávky nebylo nalezeno."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:470
+msgid "Attendee details"
+msgstr "Detaily účastníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:471
+msgid "Update order cashier"
+msgstr "Aktualizovat objednávku pokladníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:472
+msgid "Update order customer"
+msgstr "Aktualizovat zákazníka objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:473
+msgid "Update order date"
+msgstr "Aktualizovat datum objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:474
+msgid "Update order items"
+msgstr "Aktualizovat položky objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:475
+msgid "Update payment method"
+msgstr "Aktualizovat platební metodu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:476
+msgid "Update Square order ID"
+msgstr "Aktualizovat identifikátor objednávky Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:477
+msgid "Update order status"
+msgstr "Aktualizovat stav objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:478
+msgid "Update Stripe payment ID"
+msgstr "Aktualizovat identifikátor platby Stripe"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:480
+#, php-format
+msgid "Order updated via FooEvents POS by %1$s:%2$s"
+msgstr "Objednávka aktualizována prostřednictvím FooEvents POS od %1$s:%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:482
+#, php-format
+msgid "%1$d orders need to be updated."
+msgstr "Je třeba aktualizovat %1$d objednávek."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:484
+#, php-format
+msgid "payment %1$d/%2$d"
+msgstr "platba %1$d/%2$d"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:485
+msgid "The following products do not have sufficient stock available for this order and will have their quantities adjusted or be removed from the cart:"
+msgstr "Následující produkty nemají dostatečné množství skladem pro tuto objednávku a jejich množství bude upraveno nebo budou odebrány z košíku:"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:486
+msgid "Review Check-ins app appearance settings"
+msgstr "Nastavení vzhledu aplikace Check-ins prohlédnout"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:487
+msgid "Show as optional"
+msgstr "Zobrazit jako volitelné"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:488
+msgid "Show as required"
+msgstr "Zobrazit podle potřeby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:489
+msgid "Square Fees"
+msgstr "Poplatky Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:491
+#, php-format
+msgid "Payment intent error for %1$s"
+msgstr "Chyba platby pro %1$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:492
+msgid "Use event settings"
+msgstr "Použijte nastavení událostí."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:493
+msgid "View other orders"
+msgstr "Zobrazit další objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:494
+msgid "View POS payments"
+msgstr "Zobrazit platby na pokladně"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:495
+msgid "Analytics"
+msgstr "Analytika"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:496
+msgid "POS Customers"
+msgstr "Zákazníci na pokladně"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:497
+msgid "POS Users"
+msgstr "Uživatelé pokladního systému"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:498
+msgid "Attendee company name"
+msgstr "Název společnosti účastníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:499
+msgid "Set whether the attendee company name field is shown and required to be captured in FooEvents POS."
+msgstr "Nastavte, zda se má zobrazovat pole názvu společnosti účastníka a zda je nutné ho zadat v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:500
+msgid "Attendee designation"
+msgstr "Přiřazení účastníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:501
+msgid "Set whether the attendee designation field is shown and required to be captured in FooEvents POS."
+msgstr "Nastavte, zda se má zobrazovat pole určení účastníka a zda je nutné ho zadat v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:502
+msgid "Attendee email"
+msgstr "E-mail účastníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:503
+msgid "Set whether the attendee email field is shown and required to be captured in FooEvents POS."
+msgstr "Nastavte, zda je pole e-mailu účastníka zobrazeno a je vyžadováno, aby bylo zachyceno v FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:504
+msgid "Attendee name"
+msgstr "Jméno účastníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:505
+msgid "Set whether the attendee name field is shown and required to be captured in FooEvents POS."
+msgstr "Nastavte, zda má být pole pro jméno účastníka zobrazeno a zda je nutné ho zadat v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:506
+msgid "Attendee phone number"
+msgstr "Telefonní číslo účastníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:507
+msgid "Set whether the attendee phone number field is shown and required to be captured in FooEvents POS."
+msgstr "Nastavte, zda má být pole telefonního čísla účastníka zobrazeno a vyžadováno k zadání v aplikaci FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:508
+msgid "Scan Barcodes"
+msgstr "Skenovat čárové kódy"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:509
+msgid "Cashier User Role"
+msgstr "Role pokladníka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:510
+msgid "Coupons"
+msgstr "Slevové kupóny"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:511
+msgid "Custom Order Statuses"
+msgstr "Vlastní stavy objednávek"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:512
+msgid "Custom Units of Measurement"
+msgstr "Vlastní jednotky měření"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:513
+msgid "Customers"
+msgstr "Zákazníci"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:514
+msgid "Dark Mode"
+msgstr "Tmavý režim"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:515
+msgid "Decimal Quantities"
+msgstr "Desetinné množství"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:516
+msgid "Discounts"
+msgstr "Slevy"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:517
+msgid "Event Settings"
+msgstr "Nastavení události"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:518
+msgid "Event & Ticketing with FooEvents"
+msgstr "Události a prodej vstupenek s FooEvents."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:519
+msgid "App icon"
+msgstr "Ikona aplikace"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:520
+msgid "Upload or select an existing image that will be used as the main app icon (512 x 512 PNG format with transparency is recommended)."
+msgstr "Nahrajte nebo vyberte existující obrázek, který bude použit jako hlavní ikona aplikace (je doporučen formát PNG o rozměrech 512 x 512 s průhledností)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:521
+msgid "App logo"
+msgstr "Logo aplikace"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:522
+msgid "Upload or select an existing image that will be used as the main app logo (PNG format with transparency is recommended)."
+msgstr "Nahrát nebo vybrat existující obrázek, který bude použit jako hlavní logo aplikace (je doporučen formát PNG s průhledností)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:523
+msgid "App title"
+msgstr "Název aplikace"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:524
+msgid "The title that displays on the sign-in screen beneath the app logo and is also used to name the page that loads the POS for further customization."
+msgstr "Název, který se zobrazuje na obrazovce přihlášení pod logem aplikace a slouží také k pojmenování stránky, která načítá POS pro další přizpůsobení."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:525
+msgid "FooEvents license key"
+msgstr "Klíč licence FooEvents"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:526
+msgid "Required for automatic plugin updates."
+msgstr "Vyžadováno pro automatické aktualizace pluginu."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:527
+msgid "Primary interface color"
+msgstr "Primární barva rozhraní"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:528
+msgid "The primary color that will be used to style various interface elements in the app such as buttons, spinners, order list headers and sliders."
+msgstr "Primární barva, která bude použita k úpravě různých prvků rozhraní v aplikaci, jako jsou tlačítka, kroužky, záhlaví seznamu objednávek a posuvníky."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:529
+msgid "Primary text color"
+msgstr "Primární barva textu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:530
+msgid "The primary color that will be used for body text contained within various interface elements in the app."
+msgstr "Primární barva, která bude použita pro text těla obsaženého v různých prvků rozhraní v aplikaci."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:531
+msgid "Barcode / QR code width"
+msgstr "Šířka čárového kódu / QR kódu"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:532
+msgid "Specify the width of the barcode / QR code as it should appear on tickets printed from the POS."
+msgstr "Určete šířku čárového kódu / QR kódu tak, jak by měl být zobrazen na vstupenkách vytištěných z pokladny."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:533
+msgid "POS ticket theme"
+msgstr "Téma účtenky POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:534
+msgid "Select the theme that will be used for printing tickets in FooEvents POS. \"Optimized for POS\" themes have been designed to print optimally on ticket and thermal receipt printers while \"Standard\" themes have not been designed for this purpose but may still print fine (use at own risk)."
+msgstr "Vyberte motiv, který bude použit k tisku lístků ve FooEvents POS. Motivy „Optimalizováno pro POS“ byly navrženy tak, aby se tiskly optimálně na tiskárnách lístků a termálních účtenkových tiskárnách, zatímco motivy „Standardní“ nebyly navrženy pro tento účel, ale mohou se stále tisknout dobře (používejte na vlastní nebezpečí)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:535
+msgid "FooEvents POS"
+msgstr "FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:536
+msgid "FooEvents POS - Point of Sale (POS)"
+msgstr "FooEvents POS pro WooCommerce - Bod prodeje (POS)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:537
+msgid "FooEvents POS Import"
+msgstr "Import FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:538
+msgid "FooEvents POS Analytics"
+msgstr "Analytika FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:539
+msgid "POS Payment"
+msgstr "Platba na místě"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:540
+msgid "POS Payments"
+msgstr "Platební terminál"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:541
+msgid "FooEvents POS Settings"
+msgstr "Nastavení FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:542
+msgid "Welcome to FooEvents POS!"
+msgstr "Vítejte ve FooEvents POS pro WooCommerce!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:543
+msgid "General"
+msgstr "Všeobecné"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:544
+msgid "Hardware Integration"
+msgstr "Integrace hardwaru"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:545
+msgid "Importing offline changes..."
+msgstr "Importování offline změn..."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:546
+msgid "Integration"
+msgstr "Integrace"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:547
+msgid "Manage Inventory"
+msgstr "Spravovat sklad"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:548
+msgid "Invoice Printing"
+msgstr "Tisk faktur"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:549
+msgid "Manage Local Pickups"
+msgstr "Spravujte osobní odběry."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:550
+msgid "Min/Max Quantities"
+msgstr "Minimální/Maximální Množství"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:551
+msgid "Multi-language Support"
+msgstr "Podpora vícejazyčnosti"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:552
+msgid "Offline Mode"
+msgstr "Offline režim"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:553
+msgid "Order Alerts"
+msgstr "Upozornění na objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:554
+msgid "Orders"
+msgstr "Objednávky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:555
+msgid "Payment Details"
+msgstr "Platební údaje"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:556
+msgid "Card Payment"
+msgstr "Platební karta"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:557
+msgid "Cash Payment"
+msgstr "Platba v hotovosti"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:558
+msgid "Cash on Delivery"
+msgstr "Dobírka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:559
+msgid "Check Payment"
+msgstr "Platba šekem"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:560
+msgid "Custom title"
+msgstr "Vlastní nadpis"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:561
+msgid "This sets the title that is displayed above the payment methods at checkout."
+msgstr "Toto nastaví nadpis, který je zobrazen nad platebními metodami při pokladně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:562
+msgid "Direct Bank Transfer"
+msgstr "Přímý bankovní převod"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:563
+msgid "Enable/Disable"
+msgstr "Povolit/Zakázat"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:564
+msgid "Online"
+msgstr "Online"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:565
+msgid "Other Payment Method"
+msgstr "Jiná platební metoda"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:566
+msgid "Split Payment"
+msgstr "Rozdělená platba"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:567
+msgid "Square"
+msgstr "Čtverec"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:568
+msgid "Square Manual Payment"
+msgstr "Platba naúčet pomocí Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:569
+msgid "Square Reader"
+msgstr "Square Reader"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:570
+msgid "Square Terminal"
+msgstr "Square Terminal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:571
+msgid "Stripe BBPOS Chipper 2X BT"
+msgstr "Stripe BBPOS Chipper 2X BT"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:572
+msgid "Stripe Manual Payment"
+msgstr "Platba naúčet pomocí Stripe"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:573
+msgid "Stripe Reader"
+msgstr "Čtečka Stripe"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:574
+msgid "Stripe Reader M2"
+msgstr "Čtečka Stripe M2"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:575
+msgid "Stripe BBPOS WisePad 3"
+msgstr "Stripe BBPOS WisePad 3"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:576
+msgid "Payment Methods"
+msgstr "Platební metody"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:577
+msgid "Payments"
+msgstr "Platby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:578
+msgid "Amount"
+msgstr "Částka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:579
+msgid "Select"
+msgstr "Vybrat"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:580
+msgid "Date"
+msgstr "Datum"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:581
+msgid "Payment ID"
+msgstr "Identifikace platby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:582
+msgid "Payment Method"
+msgstr "Platební metoda"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:583
+msgid "Order"
+msgstr "Objednávka"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:584
+msgid "Transaction"
+msgstr "Transakce"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:585
+msgid "POS Settings"
+msgstr "Nastavení POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:586
+msgid "WooCommerce Product Add-ons Integration"
+msgstr "Integrace doplňků produktů WooCommerce"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:587
+msgid "Products"
+msgstr "Produkty"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:588
+msgid "Receipts"
+msgstr "Účtenky"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:589
+msgid "Refunds"
+msgstr "Vrácení peněz"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:590
+msgid "Reports"
+msgstr "Zprávy"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:591
+msgid "Sales Channel"
+msgstr "Prodejní kanál"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:592
+msgid "Done, your free trial is now active!"
+msgstr "Hotovo, váš bezplatný zkušební období je nyní aktivní!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:593
+msgid "Whoops, something went wrong!"
+msgstr "Ups, něco se pokazilo!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:594
+msgid "Welcome to FooEvents for WooCommerce!"
+msgstr "Vítejte ve FooEvents POS!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:595
+msgid "Show this product's variations in the POS"
+msgstr "Zobrazit varianty tohoto produktu v pokladně."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:596
+msgid "Split Payments"
+msgstr "Rozdělení platby"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:597
+msgid "Square Payments"
+msgstr "Platby Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:598
+msgid "Status"
+msgstr "Stav"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:599
+msgid "Stripe Payments"
+msgstr "Platební brána Stripe"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:600
+msgid "WooCommerce Tax Rates"
+msgstr "Daňové sazby WooCommerce"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:601
+msgid "Ticket Settings"
+msgstr "Nastavení lístků"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:602
+msgid "Users"
+msgstr "Uživatelé"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:603
+msgid "WooCommerce Variations Support"
+msgstr "Podpora variant WooCommerce"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:604
+msgid "You're good to go!"
+msgstr "Jste připraveni!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:605
+msgid "WooCommerce Analytics"
+msgstr "Analytika WooCommerce"
+

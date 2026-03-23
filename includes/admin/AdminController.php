@@ -10,6 +10,7 @@ class AdminController {
      */
     public function run() {
         add_action( 'admin_menu', [ $this, 'register_menus' ] );
+        add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_assets' ] );
         
         $settings = new \KueueEvents\Core\Admin\SettingsController();
         $settings->run();
@@ -97,6 +98,22 @@ class AdminController {
     public function save_seating_map( $request ) {
         $data = $request->get_json_params();
         return \KueueEvents\Core\Modules\Seating\SeatingRepository::save_map( $data );
+    }
+
+    /**
+     * Enqueue Admin Assets
+     */
+    public function enqueue_assets( $hook ) {
+        // Only load on our plugin pages
+        if ( strpos( $hook, 'kq-' ) === false && strpos( $hook, 'kq_event' ) === false ) {
+            return;
+        }
+
+        wp_enqueue_style( 'kq-design-system', KQ_PLUGIN_URL . 'assets/css/design-system.css', [], KQ_VERSION );
+        wp_enqueue_style( 'kq-admin-style', KQ_PLUGIN_URL . 'assets/css/admin.css', ['kq-design-system'], KQ_VERSION );
+        
+        // FontAwesome for icons
+        wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', [], '6.4.0' );
     }
 
     /**
@@ -309,6 +326,14 @@ class AdminController {
     }
 
     /**
+     * Render Issued Tickets
+     */
+    public function render_tickets() {
+        $module = new \KueueEvents\Core\Modules\Tickets\TicketAdmin();
+        $module->render_list();
+    }
+
+    /**
      * Render POS / Box Office
      */
     public function render_pos() {
@@ -352,6 +377,9 @@ class AdminController {
      * Render Finance Dashboard
      */
     public function render_finance() {
+        $stats = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_global_stats();
+        $commissions = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_paged( 1, 50 ); // Load top 50
+        $payout_requests = \KueueEvents\Core\Modules\Payouts\PayoutRepository::get_all_pending();
         include_once KQ_PLUGIN_DIR . 'includes/Modules/Finance/views/finance-view.php';
     }
 

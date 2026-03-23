@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FooEvents Check-ins\n"
+"POT-Creation-Date: 2024-11-27 12:18+0200\n"
+"PO-Revision-Date: 2024-11-27 12:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-express-check-in.php:64
+msgid "The FooEvents Express Check-in plugin requires FooEvents for WooCommerce to be installed."
+msgstr ""
+
+#: class-fooevents-express-check-in.php:112
+msgid "SUCCESS: Ticket"
+msgstr ""
+
+#: class-fooevents-express-check-in.php:113
+msgid " has been updated."
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:45
+#: templates/express-check-in.php:12
+msgid "Express Check-in"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:82
+msgid "Attendee"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:266
+#: templates/tickets.php:21
+msgid "Date"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:276
+msgid "Slot"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:348
+msgid "Security check failed - FooEvents Express Check-ins 0002"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:440
+#, php-format
+msgid "WARNING: #%1$s has already been checked-in for day %2$s."
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:486
+#: classes/class-fooevents-express-check-in-ticket-helper.php:652
+#: classes/class-fooevents-express-check-in-ticket-helper.php:667
+#, php-format
+msgid "WARNING: #%s has already been checked-in."
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:502
+#, php-format
+msgid "ERROR: There was an error processing ticket matching %s "
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:525
+msgid "Security check failed - FooEvents Express Check-ins 0003"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:570
+#, php-format
+msgid "ERROR: No tickets where found matching #%s for auto check-in"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:582
+#, php-format
+msgid "ERROR: Multiple tickets found matching #%s for auto check-in"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:616
+#, php-format
+msgid "ERROR: Unable to check-in #%s ticket has been marked canceled"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:638
+#, php-format
+msgid "SUCCESS: #%1$s has been checked-in on Day %2$s"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:679
+#, php-format
+msgid "ERROR: Unable to check-in #%s ticket has been marked canceled."
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:708
+#, php-format
+msgid "SUCCESS: #%s has been checked-in."
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:723
+#, php-format
+msgid "ERROR: Unknown error for #%s."
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:744
+msgid "Security check failed - FooEvents Express Check-ins 0004"
+msgstr ""
+
+#: classes/class-fooevents-express-check-in-ticket-helper.php:789
+#: classes/class-fooevents-express-check-in-ticket-helper.php:812
+#, php-format
+msgid "SUCCESS: #%s checked-in has been undone."
+msgstr ""
+
+#: classes/updatehelper.php:285
+msgid "Important:"
+msgstr ""
+
+#: classes/updatehelper.php:298
+msgid "Please backup your files and database before updates!"
+msgstr ""
+
+#: templates/express-check-in.php:16
+msgid "Auto Search"
+msgstr ""
+
+#: templates/express-check-in.php:17
+msgid "Auto Check-in"
+msgstr ""
+
+#: templates/express-check-in.php:18
+msgid "Audio Alerts"
+msgstr ""
+
+#: templates/express-check-in.php:23
+msgid "Search Attendees"
+msgstr ""
+
+#: templates/tickets-data.php:47
+msgid "Options"
+msgstr ""
+
+#: templates/tickets-data.php:48
+msgid "Check-in"
+msgstr ""
+
+#: templates/tickets-data.php:50
+msgid "Cancel"
+msgstr ""
+
+#: templates/tickets-data.php:51
+msgid "Reset"
+msgstr ""
+
+#: templates/tickets-data.php:52
+msgid "Print"
+msgstr ""
+
+#: templates/tickets.php:15
+msgid "Ticket ID"
+msgstr ""
+
+#: templates/tickets.php:16
+msgid "Order"
+msgstr ""
+
+#: templates/tickets.php:17
+msgid "Purchaser"
+msgstr ""
+
+#: templates/tickets.php:19
+msgid "Event"
+msgstr ""
+
+#: templates/tickets.php:20
+msgid "Variations"
+msgstr ""
+
+#: templates/tickets.php:23
+msgid "Bookings"
+msgstr ""
+
+#: templates/tickets.php:25
+msgid "Check-in Status"
+msgstr ""
+
+#: templates/tickets.php:26
+msgid "Actions"
+msgstr ""
+
+#: templates/tickets.php:34
+msgid "No tickets found, please try again"
+msgstr ""

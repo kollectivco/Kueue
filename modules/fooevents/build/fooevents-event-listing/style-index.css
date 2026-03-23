@@ -1,0 +1,317 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/fooevents-event-listing/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-woocommerce-events-fooevents-event-listing {
+  border: 0;
+}
+
+.fooevents-event-listing-clear {
+  clear: both;
+}
+
+/* Event Listing Block */
+.fooevents-event-listing-date-month {
+  font-size: 0.9em;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 0.7em;
+  margin: 0;
+}
+
+.fooevents-event-listing-date-day {
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+/* Event Listing Block > List */
+.fooevents-event-listing-list-container {
+  gap: 1.5em;
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+.fooevents-event-listing-list-container.image-right {
+  grid-template-columns: auto 300px;
+}
+
+.image-right .fooevents-event-listing-list-thumbnail {
+  grid-column: 2/3;
+  grid-row: 1;
+}
+
+.image-right .fooevents-event-listing-list-content {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.fooevents-event-listing-list-container.image-none {
+  grid-template-columns: repeat(1, 100%);
+}
+
+.fooevents-event-listing-list-seperators h2 {
+  padding: 0 0 0.5em 0;
+  font-size: 1.2em;
+}
+
+#fooevents-event-listing-list h3 {
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+#fooevents-event-listing-list img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+#fooevents-event-listing-list .fooevents-event-listing-list-datetime {
+  padding: 0;
+  margin: 0 0 0.5em;
+}
+
+#fooevents-event-listing-list .fooevents-event-listing-list-excerpt {
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+#fooevents-event-listing-list .fooevents-event-listing-list-price {
+  font-weight: bold;
+  padding-right: 1em;
+}
+
+#fooevents-event-listing-list .fooevents-event-listing-list-location {
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+#fooevents-event-listing-list .fooevents-event-listing-list-stock {
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+#fooevents-event-listing-list .fooevents-event-listing-list-book-now {
+  font-weight: bold;
+}
+
+#fooevents-event-listing-list .fooevents-event-listing-list-book-now a {
+  text-decoration: none;
+}
+
+/* Event Listing Block > Compact */
+table#fooevents-event-listing-compact {
+  width: 100%;
+}
+
+table#fooevents-event-listing-compact th {
+  text-align: left;
+}
+
+#fooevents-event-listing-compact h3 {
+  margin-bottom: 0.5em;
+  padding: 0;
+  margin-block-start: 0;
+  font-size: 1.4em;
+}
+
+#fooevents-event-listing-compact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+table#fooevents-event-listing-compact td.date {
+  text-align: center;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-datetime {
+  padding: 0 0 0.5em;
+  margin: 0;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-excerpt {
+  margin-bottom: 1em;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-stock {
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-book-now {
+  padding: 0;
+  margin: 0 0em;
+  font-weight: bold;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-book-now a {
+  text-decoration: none;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-price {
+  font-weight: bold;
+  margin: 0;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-price {
+  font-weight: bold;
+  margin: 0;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-availability {
+  margin: 0;
+}
+
+#fooevents-event-listing-compact .fooevents-event-listing-compact-location {
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+/* Event Listing Block > Tiled */
+#fooevents-event-listing-tiles {
+  display: grid;
+  gap: 30px;
+}
+
+#fooevents-event-listing-tiles h3 {
+  margin-bottom: 0.5em;
+  padding: 0;
+  margin-block-start: 0;
+  font-size: 1.2em;
+}
+
+#fooevents-event-listing-tiles .event-thumbnail img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-tiles-datetime {
+  padding: 0;
+  margin: 0 0 0.5em;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-tiles-location {
+  font-weight: bold;
+  margin: 0 0 0.5em;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-tiles-excerpt {
+  margin: 0 0 1em;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-tiles-stock {
+  margin: 0 0 1em;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-tiles-price {
+  font-weight: bold;
+  margin: 0;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-tiles-availability {
+  margin: 0;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-book-now {
+  font-weight: bold;
+  margin: 1em 0 0;
+}
+
+#fooevents-event-listing-tiles .fooevents-event-listing-book-now a {
+  text-decoration: none;
+}
+
+.fooevents-event-listing-tile-number-2 {
+  grid-template-columns: repeat(2, calc(50% - 15px));
+}
+
+.fooevents-event-listing-tile-number-3 {
+  grid-template-columns: repeat(3, calc(33.33% - 20px));
+}
+
+.fooevents-event-listing-tile-number-4 {
+  grid-template-columns: repeat(4, calc(25% - 22.5px));
+}
+
+.fooevents-event-listing-tile-number-5 {
+  grid-template-columns: repeat(5, calc(20% - 24px));
+}
+
+.fooevents-event-listing-tile-number-6 {
+  grid-template-columns: repeat(6, calc(16.66% - 25px));
+}
+
+/* Event Icon Styles */
+.event-icon {
+  display: inline;
+  margin: 0.4em 0.4em 0 0;
+  padding: 0;
+  line-height: 0.8em;
+}
+
+.event-icon:before {
+  content: "\f469";
+  font-family: "dashicons";
+  font-size: 1em;
+}
+
+.event-icon-calendar:before {
+  content: "\f508";
+}
+
+@media screen and (max-width: 55em) {
+  .fooevents-event-listing-tile-number-5,
+  .fooevents-event-listing-tile-number-6 {
+    grid-template-columns: repeat(3, calc(33.33% - 20px));
+  }
+  #fooevents-event-listing-compact td {
+    display: block;
+    width: 100%;
+  }
+  table#fooevents-event-listing-compact td.date {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 50em) {
+  .fooevents-event-listing-tile-number-2,
+  .fooevents-event-listing-tile-number-3,
+  .fooevents-event-listing-tile-number-4,
+  .fooevents-event-listing-tile-number-5,
+  .fooevents-event-listing-tile-number-6 {
+    grid-template-columns: repeat(3, calc(33.33% - 20px));
+  }
+}
+@media screen and (max-width: 40em) {
+  .fooevents-event-listing-tile-number-2,
+  .fooevents-event-listing-tile-number-3,
+  .fooevents-event-listing-tile-number-4,
+  .fooevents-event-listing-tile-number-5,
+  .fooevents-event-listing-tile-number-6 {
+    grid-template-columns: repeat(2, calc(50% - 15px));
+  }
+  .fooevents-event-listing-list-container {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+@media screen and (max-width: 30em) {
+  .fooevents-event-listing-tile-number-2,
+  .fooevents-event-listing-tile-number-3,
+  .fooevents-event-listing-tile-number-4,
+  .fooevents-event-listing-tile-number-5,
+  .fooevents-event-listing-tile-number-6 {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

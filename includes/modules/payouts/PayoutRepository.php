@@ -36,6 +36,15 @@ class PayoutRepository {
     }
 
     /**
+     * Get all pending payouts for admin.
+     */
+    public static function get_all_pending() {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_payouts';
+        return $wpdb->get_results( "SELECT * FROM $table WHERE status = 'pending' ORDER BY created_at ASC" );
+    }
+
+    /**
      * Update payout status.
      */
     public static function update_status( $id, $status, $notes = '' ) {

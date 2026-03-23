@@ -1,49 +1,76 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
-<div class="wrap">
-    <h1>
-        <?php _e( 'Organizers', 'kueue-events-core' ); ?>
-        <a href="<?php echo admin_url( 'admin.php?page=kq-organizers&action=add' ); ?>" class="page-title-action"><?php _e( 'Add New', 'kueue-events-core' ); ?></a>
-    </h1>
-    <table class="wp-list-table widefat fixed striped">
-        <thead>
-            <tr>
-                <th scope="col" class="manage-column column-name"><?php _e( 'Organizer Name', 'kueue-events-core' ); ?></th>
-                <th scope="col" class="manage-column column-user"><?php _e( 'Linked User', 'kueue-events-core' ); ?></th>
-                <th scope="col" class="manage-column column-email"><?php _e( 'Email', 'kueue-events-core' ); ?></th>
-                <th scope="col" class="manage-column column-status"><?php _e( 'Status', 'kueue-events-core' ); ?></th>
-                <th scope="col" class="manage-column column-commission"><?php _e( 'Commission', 'kueue-events-core' ); ?></th>
-                <th scope="col" class="manage-column column-actions"><?php _e( 'Actions', 'kueue-events-core' ); ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if ( empty( $organizers ) ) : ?>
-                <tr><td colspan="6"><?php _e( 'No organizers found.', 'kueue-events-core' ); ?></td></tr>
-            <?php else : ?>
-                <?php foreach ( $organizers as $organizer ) : ?>
-                    <tr>
-                        <td><strong><?php echo esc_html( $organizer->organizer_name ); ?></strong></td>
-                        <td><?php 
-                            $user = get_userdata( $organizer->user_id );
-                            echo $user ? esc_html( $user->user_login ) . ' (' . $user->ID . ')' : '—';
-                        ?></td>
-                        <td><?php echo esc_html( $organizer->email ); ?></td>
-                        <td>
-                            <?php 
-                            $status_color = 'gray';
-                            if ( $organizer->status === 'active' ) $status_color = 'green';
-                            if ( $organizer->status === 'suspended' ) $status_color = 'red';
-                            if ( $organizer->status === 'pending' ) $status_color = 'orange';
-                            ?>
-                            <span style="color: <?php echo $status_color; ?>; font-weight: bold;"><?php echo esc_html( ucfirst( $organizer->status ) ); ?></span>
-                        </td>
-                        <td><?php echo esc_html( ucfirst( $organizer->commission_type ) ) . ': ' . esc_html( $organizer->commission_value ); ?></td>
-                        <td>
-                            <a href="<?php echo admin_url( 'admin.php?page=kq-organizers&action=edit&id=' . $organizer->id ); ?>"><?php _e( 'Edit', 'kueue-events-core' ); ?></a> |
-                            <a href="<?php echo wp_nonce_url( admin_url( 'admin.php?page=kq-organizers&action=delete&id=' . $organizer->id ), 'kq_delete_organizer_' . $organizer->id ); ?>" style="color: red;" onclick="return confirm('<?php _e( 'Are you sure?', 'kueue-events-core' ); ?>')"><?php _e( 'Delete', 'kueue-events-core' ); ?></a>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </tbody>
-    </table>
+<div class="kq-admin-section">
+    <div class="kq-admin-header">
+        <h1><?php _e( 'Organizers Management', 'kueue-events-core' ); ?></h1>
+        <div class="kq-admin-actions">
+            <a href="<?php echo admin_url( 'admin.php?page=kq-organizers&action=add' ); ?>" class="kq-btn kq-btn-primary">
+                <i class="fa fa-plus"></i> <?php _e( 'Add New Organizer', 'kueue-events-core' ); ?>
+            </a>
+        </div>
+    </div>
+
+    <div class="kq-card" style="padding: 0; overflow: hidden;">
+        <table class="wp-list-table widefat fixed striped kq-table" style="border:none; box-shadow:none;">
+            <thead>
+                <tr>
+                    <th scope="col" class="manage-column column-name"><?php _e( 'Organizer Name', 'kueue-events-core' ); ?></th>
+                    <th scope="col" class="manage-column column-user"><?php _e( 'Linked User', 'kueue-events-core' ); ?></th>
+                    <th scope="col" class="manage-column column-email"><?php _e( 'Email', 'kueue-events-core' ); ?></th>
+                    <th scope="col" class="manage-column column-status"><?php _e( 'Status', 'kueue-events-core' ); ?></th>
+                    <th scope="col" class="manage-column column-commission"><?php _e( 'Commission', 'kueue-events-core' ); ?></th>
+                    <th scope="col" class="manage-column column-actions" style="text-align: right;"><?php _e( 'Actions', 'kueue-events-core' ); ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if ( empty( $organizers ) ) : ?>
+                    <tr><td colspan="6" style="text-align:center; padding: 40px; color: #888;"><?php _e( 'No organizers found.', 'kueue-events-core' ); ?></td></tr>
+                <?php else : ?>
+                    <?php foreach ( $organizers as $organizer ) : ?>
+                        <tr>
+                            <td>
+                                <strong style="font-size: 15px; color: var(--kq-dark);"><?php echo esc_html( $organizer->organizer_name ); ?></strong>
+                                <div style="font-size: 11px; color: #888;">ID: #<?php echo $organizer->id; ?></div>
+                            </td>
+                            <td>
+                                <?php 
+                                $user = get_userdata( $organizer->user_id );
+                                if ($user) : ?>
+                                    <div style="display: flex; align-items: center; gap: 8px;">
+                                        <?php echo get_avatar($user->ID, 24, '', '', ['class' => 'avatar-round', 'style' => 'border-radius:50%;']); ?>
+                                        <span><?php echo esc_html( $user->user_login ); ?></span>
+                                    </div>
+                                <?php else : ?>
+                                    <span style="color: #ccc;">—</span>
+                                <?php endif; ?>
+                            </td>
+                            <td><?php echo esc_html( $organizer->email ); ?></td>
+                            <td>
+                                <?php 
+                                $status_bg = 'rgba(136, 136, 136, 0.1)';
+                                $status_color = '#888';
+                                if ( $organizer->status === 'active' ) { $status_bg = 'rgba(76, 209, 55, 0.1)'; $status_color = '#4cd137'; }
+                                if ( $organizer->status === 'suspended' ) { $status_bg = 'rgba(255, 49, 49, 0.1)'; $status_color = '#ff3131'; }
+                                if ( $organizer->status === 'pending' ) { $status_bg = 'rgba(255, 193, 7, 0.1)'; $status_color = '#ffc107'; }
+                                ?>
+                                <span style="background: <?php echo $status_bg; ?>; color: <?php echo $status_color; ?>; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase;">
+                                    <?php echo esc_html( $organizer->status ); ?>
+                                </span>
+                            </td>
+                            <td>
+                                <div style="font-weight: 600;"><?php echo esc_html( $organizer->commission_value ); ?><?php echo $organizer->commission_type === 'percentage' ? '%' : ' EGP'; ?></div>
+                                <div style="font-size: 11px; color: #888;"><?php echo esc_html( ucfirst( $organizer->commission_type ) ); ?></div>
+                            </td>
+                            <td style="text-align: right;">
+                                <a href="<?php echo admin_url( 'admin.php?page=kq-organizers&action=edit&id=' . $organizer->id ); ?>" class="kq-btn kq-btn-outline" style="padding: 4px 12px; font-size: 12px;"><?php _e( 'Edit', 'kueue-events-core' ); ?></a>
+                                <a href="<?php echo wp_nonce_url( admin_url( 'admin.php?page=kq-organizers&action=delete&id=' . $organizer->id ), 'kq_delete_organizer_' . $organizer->id ); ?>" 
+                                   class="kq-btn" 
+                                   style="padding: 4px 12px; font-size: 12px; color: #ff3131;" 
+                                   onclick="return confirm('<?php _e( 'Are you sure?', 'kueue-events-core' ); ?>')"><?php _e( 'Delete', 'kueue-events-core' ); ?></a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </tbody>
+        </table>
+    </div>
 </div>

@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FooEvents Multi Day\n"
+"POT-Creation-Date: 2024-08-21 13:33-0700\n"
+"PO-Revision-Date: 2024-08-21 13:33-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-multiday-events.php:86
+#: class-fooevents-multiday-events.php:251
+#: class-fooevents-multiday-events.php:422
+#: class-fooevents-multiday-events.php:479
+#: class-fooevents-multiday-events.php:593
+#: class-fooevents-multiday-events.php:853
+msgid "Day"
+msgstr "Jour"
+
+#: class-fooevents-multiday-events.php:91
+msgid "Done"
+msgstr "Terminé"
+
+#: class-fooevents-multiday-events.php:92
+msgid "Today"
+msgstr "Aujourd'hui"
+
+#: class-fooevents-multiday-events.php:95
+msgid "Show a different month"
+msgstr "Afficher un mois différent"
+
+#: class-fooevents-multiday-events.php:103
+msgid "Start time"
+msgstr "Heure de début"
+
+#: class-fooevents-multiday-events.php:104
+msgid "End time"
+msgstr "Heure de fin"
+
+#: class-fooevents-multiday-events.php:539
+#, php-format
+msgid "Day %s"
+msgstr "Jour %s"
+
+#: classes/updatehelper.php:236
+msgid "Important:"
+msgstr "Important:"
+
+#: classes/updatehelper.php:249
+msgid "Please backup your files and database before updates!"
+msgstr "Veuillez sauvegarder vos fichiers et votre base de données avant les mises à jour!"
+
+#: templates/display-multiday-express-check-in-options.php:15
+msgid "Check-in Day"
+msgstr "Jour d'enregistrement"
+
+#: templates/end-date-option.php:12
+msgid "End date:"
+msgstr "Date de fin:"
+
+#: templates/end-date-option.php:14
+msgid "The date that the event is scheduled to end. This is used as a label on your website and it's also used by the FooEvents Calendar to display a multi-day event."
+msgstr "La date à laquelle l'événement est prévu de se terminer. Cela est utilisé comme étiquette sur votre site web et est également utilisé par le calendrier FooEvents pour afficher un événement sur plusieurs jours."
+
+#: templates/multiday-select-date-container.php:20
+msgid "Start time:"
+msgstr "Heure de début:"
+
+#: templates/multiday-select-date-container.php:40
+msgid "End time:"
+msgstr "Heure de fin:"
+
+#: templates/multiday-select-date-container.php:66
+msgid "Set start/end times globally?"
+msgstr "Configurer les heures de début/fin globalement?"
+
+#: templates/multiday-select-date-container.php:68
+msgid "Enable this option to use the same start and end times for each day of a multi-day event."
+msgstr "Activez cette option pour utiliser les mêmes heures de début et de fin pour chaque jour d'un événement sur plusieurs jours."
+
+#: templates/multiday-term-option.php:13
+msgid "Day:"
+msgstr "Jour:"
+
+#: templates/multiday-term-option.php:16
+msgid "Change 'Day' to your own custom text for this event."
+msgstr "Changez 'Jour' par votre propre texte personnalisé pour cet événement."
+
+#: templates/num-days-option.php:12
+msgid "Number of days:"
+msgstr "Nombre de jours:"
+
+#: templates/num-days-option.php:18
+msgid "Select the number of days for multi-day events. This setting is used by the Event Check-ins apps to manage daily check-ins."
+msgstr "Sélectionnez le nombre de jours pour les événements sur plusieurs jours. Ce paramètre est utilisé par les applications de vérification des événements pour gérer les enregistrements quotidiens."

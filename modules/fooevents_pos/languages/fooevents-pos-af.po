@@ -1,0 +1,2263 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-09-28 10:00-0700\n"
+"PO-Revision-Date: 2025-07-22 14:28-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: af\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:16
+msgid "Activate Free Trial"
+msgstr "Aktiveer Gratis Toetsperiode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:17
+msgid "Install Android Tablet App"
+msgstr "Installeer Android Tablet-toepassing"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:18
+msgid "Clear"
+msgstr "Vee uit"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:19
+msgid "Click here"
+msgstr "Kliek hier"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:20
+msgid "Clipboard copied!"
+msgstr "Klembord gekopieer!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:21
+msgid "Copy to clipboard"
+msgstr "Kopieer na klembord"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:22
+msgid "Importing please wait..."
+msgstr "Voer in, wag asseblief..."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:23
+msgid "Install iPad App"
+msgstr "Installeer iPad-toepassing"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:24
+msgid "Launch FooEvents POS"
+msgstr "Begin FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:25
+msgid "My Account"
+msgstr "My Rekening"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:26
+msgid "Purchase a Plan"
+msgstr "Koop 'n Plan"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:27
+msgid "Save"
+msgstr "Stoor"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:28
+msgid "Saved!"
+msgstr "Gestoor!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:29
+msgid "Saving..."
+msgstr "Stoor..."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:30
+msgid "Search POS Payments"
+msgstr "Soek POS-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:31
+msgid "Contact Us"
+msgstr "Kontak Ons"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:32
+msgid "Try Again"
+msgstr "Probeer weer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:33
+msgid "Update Orders"
+msgstr "Werk Bestellings By"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:34
+msgid "Upload file and import"
+msgstr "Laai lêer op en voer in"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:35
+msgid "Select icon"
+msgstr "Kies ikoon"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:36
+msgid "Select logo"
+msgstr "Kies logo"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:37
+msgid "View transaction"
+msgstr "Sien transaksie"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:38
+msgid "View payment"
+msgstr "Sien betaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:39
+msgid "Disables sending new order emails in WooCommerce for orders created in the FooEvents POS app."
+msgstr "Deaktiveer die stuur van nuwe bestellings-e-posse in WooCommerce vir bestellings wat geskep is in die FooEvents POS-toep."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:40
+msgid "Email tickets when purchased through FooEvents POS"
+msgstr "Stuur e-poskaartjies wanneer dit deur FooEvents POS gekoop word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:41
+msgid "Emails event tickets to the attendee or purchaser if the ticket was purchased through FooEvents POS."
+msgstr "Stuur e-posseventkaartjies aan die bywoner of koper as die kaartjie deur FooEvents POS gekoop is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:42
+msgid "Enable order analytics"
+msgstr "Aktiveer bestellingsanalise."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:43
+msgid "Allow FooEvents POS to anonymously collect non-sensitive data for orders placed through the FooEvents POS app such as order totals, country and payment method (to opt out, leave this box unchecked)."
+msgstr "Laat FooEvents POS toe om anoniem nie-sensitiewe data te versamel vir bestellings geplaas deur die FooEvents POS-toep soos bestellings totale, land en betalingsmetode (om uit te skakel, los hierdie blokkie ongemerk)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:44
+msgid "Enable 'Sales Channel' filter"
+msgstr "Aktiveer 'Verkopekanaal' filter"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:45
+msgid "Enables a 'Sales Channel' filter on the Orders report in WooCommerce Analytics so you can filter between orders placed online and through the FooEvents POS app."
+msgstr "Stel 'n 'Verkopekanaal'-filter in op die Bestellingsverslag in WooCommerce Analytics sodat jy kan filter tussen bestellings wat aanlyn geplaas is en deur die FooEvents POS-toepassing."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:46
+msgid "Use FooEvents Check-ins app appearance settings"
+msgstr "Gebruik FooEvents Check-ins app voorkomsinstellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:47
+msgid "Use the same custom appearance settings for FooEvents POS that are selected for the Check-ins app."
+msgstr "Gebruik dieselfde aangepaste voorkomsinstellings vir FooEvents POS wat gekies is vir die Check-ins-toep."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:48
+msgid "Disabling this option could result in products loading faster and less memory used depending on the amount of products loaded."
+msgstr "Die deaktivering van hierdie opsie kan daartoe lei dat produkte vinniger laai en minder geheue gebruik word, afhangende van die hoeveelheid produkte wat gelaai word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:49
+msgid "Only load POS orders"
+msgstr "Laai slegs POS-bestellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:50
+msgid "Enable this option to only load orders that were placed in the POS."
+msgstr "Skakel hierdie opsie aan om slegs bestellings te laai wat in die POS geplaas is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:51
+msgid "Pin this product in the POS"
+msgstr "Speld hierdie produk in die POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:52
+msgid "Pinning this product will make it always show at the top of listings in the POS."
+msgstr "Deur hierdie produk vas te pen, sal dit altyd bo-aan die lyste in die POS wys."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:53
+msgid "Display attribute labels next to their values for product variations."
+msgstr "Vertoon attribuut-etikette langs hul waardes vir produkvariasies."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:54
+msgid "Show this product in the POS"
+msgstr "Wys hierdie produk in die POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:55
+msgid "Choose whether this product should display in the POS. This setting allows you to have certain products hidden on your website, but visible in the POS, and vice versa."
+msgstr "Kies of hierdie produk in die POS vertoon moet word. Hierdie instelling stel jou in staat om sekere produkte op jou webwerf te verberg, maar sienbaar in die POS, en andersom."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:56
+msgid "The FooEvents POS app will only display products that have a status of 'In Stock'."
+msgstr "Die FooEvents POS-toep sal slegs produkte vertoon wat die status 'In Voorraad' het."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:57
+msgid "Show this variation in the POS"
+msgstr "Wys hierdie variasie in die POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:58
+msgid "Choose whether this variation should display in the POS. This setting allows you to have certain product variations hidden on your website, but visible in the POS, and vice versa."
+msgstr "Kies of hierdie variasie in die POS vertoon moet word. Hierdie instelling stel jou in staat om sekere produkvariasies op jou webwerf te verberg, maar sienbaar in die POS, en andersom."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:59
+msgid "Display the FooEvents POS logo at the bottom of receipts and invoices."
+msgstr "Vertoon die FooEvents POS-logo onder aan kwitansies en fakture."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:60
+msgid "Enable the use of decimal values in the quantity field."
+msgstr "Stel die gebruik van desimale waardes in die hoeveelheidsveld in."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:61
+msgid "Use these settings for FooEvents POS"
+msgstr "Gebruik hierdie instellings vir FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:62
+msgid "Use the same custom settings selected for the Check-ins app for the FooEvents POS interface."
+msgstr "Gebruik dieselfde aanpassings wat gekies is vir die Check-ins app vir die FooEvents POS-koppelvlak."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:63
+msgid "All offline changes have been imported successfully."
+msgstr "Alle aanlyn veranderinge is suksesvol ingevoer."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:64
+msgid "Select the user role(s) that should be loaded as customers in the FooEvents POS app."
+msgstr "Kies die gebruikersrol(le) wat as kliënte in die FooEvents POS-toepassing gelaai moet word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:66
+#, php-format
+msgid "By default, access to FooEvents POS is restricted to users with the \"Administrator\" or \"Cashier\" user role. However, if you would like other users to have access to the FooEvents POS app but don't necessarily want to grant them Admin access to your site, you can manage permissions for other user roles by installing a free WordPress plugin called %1$sUser Role Editor%2$s."
+msgstr "Standaard is toegang tot FooEvents POS beperk tot gebruikers met die \"Administrateur\" of \"Kassier\" gebruikersrol. Indien jy egter wil hê dat ander gebruikers toegang tot die FooEvents POS-toepassing moet hê, maar nie noodwendig Admin-toegang tot jou webwerf moet verleen nie, kan jy toestemmings vir ander gebruikersrolle bestuur deur 'n gratis WordPress-inprop genaamd %1$sUser Role Editor%2$s te installeer."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:67
+msgid "Changes made to customer settings might only reflect in the FooEvents POS app after resyncing your store data."
+msgstr "Veranderinge wat aan kliëntinstellings aangebring word, mag dalk slegs in die FooEvents POS-toep na die herinkronisering van jou winkeldata weerspieël word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:68
+msgid "It appears that the \"Decimal Product Quantity for WooCommerce\" plugin is active. If you would like to use decimal quantities with FooEvents POS, you will need to deactivate this plugin and enable the FooEvents POS decimal quantity functionality in the Product settings tab."
+msgstr "Dit lyk asof die \"Decimal Product Quantity for WooCommerce\" invoegtoepassing aktief is. As jy desimale hoeveelhede met FooEvents POS wil gebruik, sal jy hierdie invoegtoepassing moet deaktiveer en die FooEvents POS desimale hoeveelheidsfunksionaliteit in die Produkinstellings-tabblad moet aktiveer."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:69
+msgid "This setting will add decimal fields to all your products in FooEvents POS as well as your online store. We strongly recommend that you rigorously test this functionality on a staging site first before using it on a production site. Use of this functionality is at your own risk!"
+msgstr "Hierdie instelling sal desimale velde byvoeg vir al jou produkte in FooEvents POS sowel as jou aanlynwinkel. Ons beveel sterk aan dat jy hierdie funksionaliteit streng toets op 'n toetswebwerf voordat jy dit op 'n produksiewebwerf gebruik. Die gebruik van hierdie funksionaliteit is op jou eie risiko!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:71
+#, php-format
+msgid "You can set the default minimum cart quantity and step value on the %1$sWooCommerce Product Inventory settings page%2$s after first saving the settings on this page. If you would like to use different values instead of the defaults for a specific product or variation, you can manually set them on the product's edit screen by opening the inventory tab."
+msgstr "Jy kan die standaard minimum mandjie hoeveelheid en stap waarde instel op die %1$sWooCommerce Produkvoorraad instellingsbladsy%2$s nadat jy die instellings op hierdie bladsy gestoor het. As jy eerder ander waardes as die verstekwaardes vir 'n spesifieke produk of variasie wil gebruik, kan jy hulle handmatig instel op die produk se wysigingskerm deur die voorraadtabblad oop te maak."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:72
+msgid "If you would like to use different values instead of the defaults for a specific product or variation, you can manually set them on the product's edit screen by opening the inventory tab."
+msgstr "As jy graag ander waardes wil gebruik in plaas van die verstekwaardes vir 'n spesifieke produk of variasie, kan jy hulle handmatig instel op die produk se wysigingskerm deur die voorraadtabblad oop te maak."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:73
+msgid "e.g. kg, inches etc. (Products can have their own unique values for this setting)"
+msgstr "bv. kg, duim ens. (Produkte kan hul eie unieke waardes vir hierdie instelling hê)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:74
+msgid "e.g. 1 or 0.01, 0.5 etc. (Products can have their own unique values for this setting)"
+msgstr "Byvoorbeeld 1 of 0.01, 0.5 ens. (Produkte kan hul eie unieke waardes vir hierdie instelling hê)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:75
+msgid "Scan product barcodes with a Bluetooth scanner or search by product name, ID, SKU, or keyword in FooEvents POS."
+msgstr "Skan produk strepieskodes met 'n Bluetooth-skandeerder of soek volgens produknaam, ID, SKU, of sleutelwoord in FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:76
+msgid "Create dedicated cashiers with limited access, for example, only the FooEvents POS interface, no admin dashboard access."
+msgstr "Skep toegewyde kassiers met beperkte toegang, byvoorbeeld slegs die FooEvents POS-koppelvlak, geen toegang tot die administrateurspaneel nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:77
+msgid "Scan or apply WooCommerce coupons during checkout to offer special deals and maintain continuity across sales channels."
+msgstr "Skandeer of pas WooCommerce-koepons tydens die afrekenproses toe om spesiale aanbiedinge te bied en kontinuïteit regoor verkopekanale te handhaaf."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:78
+msgid "Use your preferred custom order status plugin to seamlessly manage and track the order fulfillment process in-store and online."
+msgstr "Gebruik jou voorkeur aangepaste bestellingsstatus-prop om die bestellingsvervullingsproses in die winkel en aanlyn naadloos te bestuur en te monitor."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:79
+msgid "Set product units such as kg, lb, mm, or inches for accurate quantity tracking and inventory management."
+msgstr "Stel produk eenhede soos kg, lb, mm, of duim vir akkurate hoeveelheid opsporing en voorraadbestuur."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:80
+msgid "Search, view, and manage WooCommerce customer profiles including contact and billing details."
+msgstr "Soek, sien, en bestuur WooCommerce kliëntprofiel insluitend kontak en faktureringsbesonderhede."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:81
+msgid "Switch to a dark interface to reduce eye strain, save battery life, and enjoy a more modern look in low-light environments."
+msgstr "Skakel na 'n donker koppelvlak om oogspanning te verminder, batterylewe te spaar, en 'n meer moderne voorkoms in swak beligte omgewings te geniet."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:82
+msgid "Enable decimal-based quantities for products—ideal for items sold by weight, length, or volume."
+msgstr "Aktiveer desimaal-gebaseerde hoeveelhede vir produkte—ideaal vir items wat per gewig, lengte, of volume verkoop word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:83
+msgid "Apply fixed or percentage discounts to individual products or the entire cart during checkout in the FooEvents POS apps."
+msgstr "Pas vaste of persentasie-afslag toe op individuele produkte of die hele mandjie tydens die afrekenproses in die FooEvents POS-toepassings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:84
+msgid "Sell event tickets, bookings, seats, and print tickets using the popular FooEvents plugin."
+msgstr "Verkoop geleentheidskaartjies, besprekings, sitplekke, en druk kaartjies met behulp van die gewilde FooEvents-inprop."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:85
+msgid "Connect compatible printers, barcode scanners, and cash drawers to create a complete retail point of sale solution."
+msgstr "Koppel kompatible drukkers, barkode-skandeerders en kontantlade aan om 'n volledige kleinhandelverkopingoplossing te skep."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:86
+msgid "Track and manage inventory in real time, including standard stock, decimal quantities, and custom units like kg or cm."
+msgstr "Volg en bestuur voorraad in werklike tyd, insluitend standaardvoorraad, desimale hoeveelhede, en aanpassingsenhede soos kg of cm."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:87
+msgid "Print and email customer invoices or receipts directly from the FooEvents POS apps at checkout or at a later stage."
+msgstr "Druk en e-pos kliëntfakture of -kwitansies direk vanuit die FooEvents POS-toepassings by die kassa of op 'n latere stadium."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:88
+msgid "Use WooCommerce's built-in Local Pickup shipping method to manage and fulfill pickup orders through FooEvents POS."
+msgstr "Gebruik WooCommerce se ingeboude Plaaslike Afhaal Versendingsmetode om afhaalbestellings deur FooEvents POS te bestuur en te vervul."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:89
+msgid "Define minimum and maximum order quantities per product to control how much can be added to the cart."
+msgstr "Definieer minimum en maksimum bestelhoeveelhede per produk om te beheer hoeveel aan die mandjie toegevoeg kan word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:90
+msgid "Use FooEvents POS in your preferred language. Supports 9 major languages for global accessibility and ease of use."
+msgstr "Gebruik FooEvents POS in jou voorkeurstaal. Ondersteun 9 groot tale vir globale toeganklikheid en gerief."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:91
+msgid "Use FooEvents POS without internet access. Sync or export orders once you’re back online using the import tool in your WordPress admin dashboard."
+msgstr "Gebruik FooEvents POS sonder internettoegang. Sinchroniseer of voer bestellings uit sodra jy weer aanlyn is deur die invoerhulpmiddel in jou WordPress-administrasiepaneel te gebruik."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:92
+msgid "Get real-time alerts in the app when new orders are placed, so you never miss a sale whether you're in-store or on the go."
+msgstr "Kry in die program in werklike tyd waarskuwings wanneer nuwe bestellings geplaas word, sodat jy nooit 'n verkoop misloop nie, of jy nou in die winkel is of besig is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:93
+msgid "View, create, update, and fulfill WooCommerce orders directly from the FooEvents POS apps in real time."
+msgstr "Sien, skep, werk by en vervul WooCommerce-bestellings direk vanuit die FooEvents POS-toepassings in werklike tyd."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:94
+msgid "Accept in-person payments and record orders as cash, card, check, or any custom payment method you define."
+msgstr "Aanvaar in-persoon betalings en neem bestellings op as kontant, kaart, tjek, of enige aangepaste betalingsmetode wat jy definieer."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:95
+msgid "Support product customizations like toppings or engravings at checkout. All options sync with FooEvents POS for easy order fulfillment."
+msgstr "Ondersteun produkverpersoonlikings soos strooisels of graveerwerk by die afrekening. Alle opsies sinchroniseer met FooEvents POS vir maklike bestellingsvervulling."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:96
+msgid "Access and manage all your WooCommerce products in FooEvents POS, including variations, stock, and pricing."
+msgstr "Kry toegang tot en bestuur al jou WooCommerce-produkte in FooEvents POS, insluitend variasies, voorraad en pryse."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:97
+msgid "Issue full or partial refunds directly from the FooEvents POS apps for all supported payment methods."
+msgstr "Gee volledige of gedeeltelike terugbetalings direk vanuit die FooEvents POS-toepassings vir alle ondersteunde betaalmetodes."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:98
+msgid "Track store performance using WooCommerce Analytics reports directly in FooEvents POS. Monitor sales, orders, products, and key metrics."
+msgstr "Volg winkel prestasie deur gebruik te maak van WooCommerce Analise verslae direk in FooEvents POS. Monitor verkope, bestellings, produkte, en sleutel metings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:99
+msgid "Allow customers to split payments using a combination of different payment methods such as cash, card, COD, Stripe, or Square."
+msgstr "Laat kliënte toe om betalings te verdeel deur 'n kombinasie van verskillende betalingsmetodes soos kontant, kaart, COD, Stripe of Square te gebruik."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:100
+msgid "Accept in-person card payments using compatible Square devices, or manually enter card details for phone and remote orders."
+msgstr "Aanvaar in-persoon kaartbetalings met geskikte Square-toestelle, of voer kaartbesonderhede handmatig in vir telefoon- en afstandbestellings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:101
+msgid "Process in-person payments using supported Stripe card readers or manually enter card details through the FooEvents POS apps."
+msgstr "Verwerk in persoonlike betalings met ondersteunde Stripe-kaartlesers of voer kaartbesonderhede handmatig in deur die FooEvents POS-toepassings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:102
+msgid "Your WooCommerce tax settings are automatically applied at checkout for accurate tax calculations across all sales channels."
+msgstr "Jou WooCommerce-belastinginstellings word outomaties by die aflaai toegepas vir akkurate belastingberekeninge regoor alle verkoopkanale."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:103
+msgid "Full support for WooCommerce product variations including size, color, and other custom attributes."
+msgstr "Volledige ondersteuning vir WooCommerce-produkvariasies, insluitend grootte, kleur en ander aanpassingsattribuute."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:104
+msgid "To sell and print tickets in FooEvents POS, the FooEvents for WooCommerce plugin must be installed and activated."
+msgstr "Om kaartjies te verkoop en druk in FooEvents POS, moet die FooEvents vir WooCommerce invoegtoepassing geïnstalleer en geaktiveer word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:106
+#, php-format
+msgid "Please note that the app title should be unique so that the POS page does not conflict with any other pages on your site. If left empty, the POS page name will default to \"%1$s\" with a slug value of \"fooeventspos\"."
+msgstr "Let asseblief daarop dat die app-titel uniek moet wees sodat die POS-bladsy nie bots met enige ander bladsye op jou webwerf nie. As dit leeg gelaat word, sal die POS-bladsynaam standaard wees \"%1$s\" met 'n slakwaarde van \"fooeventspos\"."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:108
+#, php-format
+msgid "If you have any questions regarding how to use or get the most out of FooEvents POS, we recommend that you visit our %1$sHelp Center%2$s where you will find many useful resources. If you can't find what you're looking for, feel free to %3$sget in touch%4$s."
+msgstr "As jy enige vrae het oor hoe om FooEvents POS te gebruik of die meeste uit te kry, beveel ons aan dat jy ons %1$sHulp Sentrum%2$s besoek waar jy baie nuttige bronne sal vind. As jy nie kan vind waarna jy soek nie, voel vry om %3$skontak te maak%4$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:109
+msgid "Import changes and new orders that were created while using FooEvents POS in offline mode directly into your WooCommerce database."
+msgstr "Voer veranderinge en nuwe bestellings in wat geskep is terwyl jy FooEvents POS in aflynmodus gebruik direk in jou WooCommerce-databasis."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:110
+msgid "This functionality allows us to anonymously collect non-sensitive sales data for orders that are placed through the FooEvents POS app. We use this data to improve the product experience and publish insights which benefit the WordPress/WooCommerce community."
+msgstr "Hierdie funksionaliteit stel ons in staat om anoniem nie-sensitiewe verkoopsdata te versamel vir bestellings wat deur die FooEvents POS-toepassing geplaas word. Ons gebruik hierdie data om die produkervaring te verbeter en insigte te publiseer wat die WordPress/WooCommerce-gemeenskap bevoordeel."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:111
+msgid "POS payments made via the FooEvents POS."
+msgstr "POS-betalings wat via die FooEvents POS gedoen is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:112
+msgid "FooEvents POS is a point of sale (POS) that turns any WooCommerce store into a secure omnichannel retail platform which allows you to sell online and in-person seamlessly."
+msgstr "FooEvents POS vir WooCommerce is 'n verkooppunt (POS) wat enige WooCommerce-winkel omskep in 'n veilige omnichannel kleinhandelsplatform wat jou toelaat om aanlyn en persoonlik naadloos te verkoop."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:113
+msgid "Your store does not currently use HTTPS. Please ensure that you set up a valid SSL certificate."
+msgstr "Jou winkel gebruik tans nie HTTPS nie. Maak asseblief seker dat jy 'n geldige SSL-sertifikaat opstel."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:114
+msgid "The FooEvents POS import tool allows you to import changes and new orders that were created while using FooEvents POS in offline mode directly into your WooCommerce database. This is useful if you placed a large volume of orders or made lots of changes while in offline mode and are having trouble syncing them through the app."
+msgstr "Die FooEvents POS invoerhulpmiddel stel jou in staat om veranderinge en nuwe bestellings wat geskep is terwyl jy FooEvents POS in aflynmodus gebruik het, direk in jou WooCommerce-databasis in te voer. Dit is nuttig as jy 'n groot volume bestellings geplaas het of baie veranderinge aangebring het terwyl jy in aflynmodus was en sukkel om hulle te sinchroniseer deur die program."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:115
+msgid "This custom XML file must be exported from the settings screen in the FooEvents POS app and saved to a location on your computer. The changes will be imported into your WooCommerce database in the same sequence that they were made."
+msgstr "Hierdie aangepaste XML-lêer moet uitgevoer word vanaf die instellingskerm in die FooEvents POS-toep en gestoor word op 'n plek op jou rekenaar. Die veranderinge sal ingevoer word in jou WooCommerce-databasis in dieselfde volgorde waarin hulle gemaak is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:116
+msgid "Invalid file format. Please upload a valid XML file that was exported directly from the FooEvents POS app."
+msgstr "Ongeldige lêerformaat. Laai asseblief 'n geldige XML-lêer op wat direk uit die FooEvents POS-toepassing uitgevoer is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:117
+msgid "Your store is currently installed on localhost. In order for the FooEvents POS app to connect to your store, it needs to be installed on a publicly accessible domain."
+msgstr "Jou winkel is tans geïnstalleer op 'n plaaslike bediener. Om die FooEvents POS-program met jou winkel te laat koppel, moet dit op 'n publiek toeganklike domein geïnstalleer word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:118
+msgid "Need help generating these keys?"
+msgstr "Benodig hulp om hierdie sleutels te genereer?"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:119
+msgid "Need help obtaining these keys?"
+msgstr "Benodig hulp om hierdie sleutels te verkry?"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:120
+msgid "No offline changes were found."
+msgstr "Geen aanlyn veranderinge is gevind."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:121
+msgid "Changes made to order settings might only reflect in the FooEvents POS app after resyncing your store data."
+msgstr "Veranderinge wat aan bestellingsinstellings aangebring is, mag dalk slegs in die FooEvents POS-toep na die herinkronisering van jou winkeldata weerspieël word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:122
+msgid "Accept payments using any third-party card reader (processed outside of FooEvents POS)."
+msgstr "Aanvaar betalings met enige derde-party kaartleser (verwerk buite FooEvents POS)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:123
+msgid "Accept cash payments."
+msgstr "Aanvaar kontantbetalings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:124
+msgid "Collect payments when goods or services are delivered."
+msgstr "Versamel betalings wanneer goedere of dienste afgelewer word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:125
+msgid "Accept check payments."
+msgstr "Aanvaar tjekbetalings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:126
+msgid "Accept payments via direct bank/wire transfer."
+msgstr "Aanvaar betalings via direkte bank-/oordrag."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:127
+msgid "Create your own custom payment method."
+msgstr "Skep jou eie aangepaste betalingsmetode."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:128
+msgid "Allow split payments using a combination of the other enabled payment methods."
+msgstr "Laat verdeelde betalings toe deur 'n kombinasie van die ander geaktiveerde betaalmetodes te gebruik."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:130
+#, php-format
+msgid "Accept payments using Square Readers. %1$sConfigure Square%2$s"
+msgstr "Aanvaar betalings met Square Lesers. %1$sKonfigureer Square%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:132
+#, php-format
+msgid "Capture manual card entries using Square (FooEvents POS web app only). %1$sConfigure Square%2$s"
+msgstr "Vang handmatige kaartinskrywings op met Square (FooEvents POS-webtoep net). %1$sStel Square in%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:134
+#, php-format
+msgid "Accept payments using a Square Reader. %1$sConfigure Square%2$s"
+msgstr "Aanvaar betalings met 'n Square Reader. %1$sStel Square in%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:136
+#, php-format
+msgid "Accept payments using a Square Terminal. %1$sConfigure Square%2$s"
+msgstr "Aanvaar betalings met 'n Square Terminal. %1$sStel Square in%2$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:138
+#, php-format
+msgid "Accept payments using Stripe BBPOS Chipper™ Bluetooth readers. %1$sConfigure Stripe%2$s"
+msgstr "Aanvaar betalings met Stripe BBPOS Chipper™ Bluetooth lesers. %1$sStel Stripe in%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:140
+#, php-format
+msgid "Capture manual card entries using Stripe. %1$sConfigure Stripe%2$s"
+msgstr "Vang handmatige kaartinskrywings op met Stripe. %1$sStel Stripe in%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:142
+#, php-format
+msgid "Accept payments using Stripe S700, BBPOS WisePOS™ E or Verifone P400 readers. %1$sConfigure Stripe%2$s"
+msgstr "Aanvaar betalings met Stripe S700, BBPOS WisePOS™ E of Verifone P400 lesers. %1$sStel Stripe in%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:144
+#, php-format
+msgid "Accept payments using Stripe Reader M2 Bluetooth readers. %1$sConfigure Stripe%2$s"
+msgstr "Aanvaar betalings met Stripe Reader M2 Bluetooth-lesers. %1$sStel Stripe in%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:146
+#, php-format
+msgid "Accept payments using Stripe BBPOS WisePad™ Bluetooth readers. %1$sConfigure Stripe%2$s"
+msgstr "Aanvaar betalings met Stripe BBPOS WisePad™ Bluetooth lesers. %1$sStel Stripe in%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:147
+msgid "Pretty Permalinks are not currently enabled and this is required for FooEvents POS to work properly."
+msgstr "Mooi Permalinks is tans nie geaktiveer nie en dit is nodig vir FooEvents POS om behoorlik te werk."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:148
+msgid "If you are experiencing issues that are not mentioned here, please get in touch so that we can help troubleshoot."
+msgstr "As jy probleme ervaar wat nie hier genoem word nie, kontak ons asseblief sodat ons kan help om die probleem op te los."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:149
+msgid "There is a newer version of the FooEvents POS WordPress plugin available."
+msgstr "Daar is 'n nuwer weergawe van die FooEvents POS WordPress-inprop beskikbaar."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:151
+#, php-format
+msgid "The \"%1$s\" plugin might block the FooEvents POS app from successfully connecting to your store."
+msgstr "Die \"%1$s\" invoegtoepassing mag die FooEvents POS-program blokkeer om suksesvol met jou winkel te verbind."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:153
+#, php-format
+msgid "Select which payment methods should show in the POS by enabling or disabling the %1$sWooCommerce payment methods%2$s."
+msgstr "Kies watter betaalmetodes in die POS moet wys deur die %1$sWooCommerce betaalmetodes%2$s in te skakel of uit te skakel."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:154
+msgid "Starting with version 1.8.0, FooEvents POS now supports split payments. The method for recording payments on orders has been updated to include this feature. New orders processed through the POS will automatically use this new functionality. Existing orders will gain access to split payments the next time they are opened, either in the WooCommerce back-end or via the POS apps. If you wish to update previous orders in bulk to enable the new payment functionality, and have these payments displayed on the Payments screen, please click the \"Update Orders\" button below. Note: this script updates orders in batches of 100."
+msgstr "Vanaf weergawe 1.8.0 ondersteun FooEvents POS nou verdeelde betalings. Die metode vir die opname van betalings op bestellings is opgedateer om hierdie funksie in te sluit. Nuwe bestellings wat deur die POS verwerk word, sal outomaties hierdie nuwe funksionaliteit gebruik. Bestaande bestellings sal toegang tot verdeelde betalings kry die volgende keer as hulle oopgemaak word, óf in die WooCommerce agterkant óf via die POS-toepassings. As jy vorige bestellings in grootmaat wil opdateer om die nuwe betalingsfunksionaliteit te aktiveer, en hierdie betalings op die Betalingskerm te vertoon, klik asseblief op die \"Werk Bestellings By\" knoppie hieronder. Nota: hierdie skrip dateer bestellings in lotte van 100 op."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:156
+#, php-format
+msgid "Refer to our %1$sPlugin Privacy Policy%2$s for more information"
+msgstr "Raadpleeg ons %1$sPlugin Privaatheidsbeleid%2$s vir meer inligting."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:157
+msgid "There was a problem importing one or more offline changes."
+msgstr "Daar was 'n probleem met die invoer van een of meer aanlyn veranderinge."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:158
+msgid "Changes made to product settings might only reflect in the FooEvents POS app after resyncing your store data."
+msgstr "Veranderinge wat aan produkinstellings aangebring is, sal dalk eers in die FooEvents POS-toep na die stoor data weer gesinkroniseer is, weerspieël word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:159
+msgid "These details are optional and will only be displayed on receipts/tax invoices that are printed from orders created in the FooEvents POS app."
+msgstr "Hierdie besonderhede is opsioneel en sal slegs op kwitansies/btw-fakture verskyn wat gedruk word vanaf bestellings wat geskep is in die FooEvents POS-toep."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:160
+msgid "The REST API is used by the FooEvents POS app to communicate with your server."
+msgstr "Die REST API word deur die FooEvents POS-toepassing gebruik om met jou bediener te kommunikeer."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:161
+msgid "It looks like your site might be installed in a subfolder. This could potentially be an issue if there is another WordPress site installed in the root directory of your domain and interfere with the REST API endpoints."
+msgstr "Dit lyk asof jou webwerf dalk in 'n subvouer geïnstalleer is. Dit kan moontlik 'n probleem wees as daar 'n ander WordPress-webwerf in die hoofgids van jou domein geïnstalleer is en met die REST API-eindpunte inmeng."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:162
+msgid "The REST API request failed due to an error. Visit the WordPress Site Health section for further details."
+msgstr "Die REST API-aanvraag het misluk as gevolg van 'n fout. Besoek die WordPress Site Health-afdeling vir verdere besonderhede."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:164
+#, php-format
+msgid "Launch FooEvents POS in your %1$sweb browser%2$s, or install the FooEvents POS %3$siPad%4$s or %5$sAndroid tablet%6$s apps. Your free trial will expire in 7 days, after which you will need to purchase a FooEvents POS plan to continue using FooEvents POS."
+msgstr "Begin FooEvents POS in jou %1$swebblaaier%2$s, of installeer die FooEvents POS %3$siPad%4$s of %5$sAndroid-tablet%6$s-toepassings. Jou gratis toetsperiode sal binne 7 dae verval, waarna jy 'n FooEvents POS-plan sal moet koop om voort te gaan met die gebruik van FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:165
+msgid "Once you’ve activated your free trial, you’ll receive helpful instructions over the next few days that will guide you through getting started with FooEvents POS. You can unsubscribe at any time."
+msgstr "Sodra jy jou gratis toetsperiode geaktiveer het, sal jy die volgende paar dae nuttige instruksies ontvang wat jou sal help om aan die gang te kom met FooEvents POS. Jy kan enige tyd uitskryf."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:166
+msgid "Activate your 7-day free trial to start using FooEvents POS right away."
+msgstr "Aktiveer jou 7-dae gratis toetslopie om dadelik met FooEvents POS te begin gebruik."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:167
+msgid "FooEvents POS is a secure point of sale (POS) for WooCommerce that turns any store into a secure omnichannel retail platform which allows you to sell online and in-person seamlessly. FooEvents POS uses your WooCommerce store’s existing products, variations, stock, orders, customers, and tax settings in real-time."
+msgstr "FooEvents POS is 'n veilige verkooppunt (POS) vir WooCommerce wat enige winkel omskep in 'n veilige omnichannel kleinhandelsplatform wat jou toelaat om aanlyn en persoonlik naadloos te verkoop. FooEvents POS gebruik jou WooCommerce-winkel se bestaande produkte, variasies, voorraad, bestellings, kliënte, en belastinginstellings in werklikheid."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:169
+#, php-format
+msgid "You can choose to show or hide certain variations in the POS from the %1$svariations tab%2$s. More information can be found in the %3$shelp documentation%4$s."
+msgstr "Jy kan kies om sekere variasies in die POS te wys of te verberg van die %1$svariasies lappie%2$s. Meer inligting kan gevind word in die %3$shulp dokumentasie%4$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:171
+#, php-format
+msgid "Accept payments in FooEvents POS using %1$sSquare Readers%2$s by providing your Square Application ID and Access Token."
+msgstr "Aanvaar betalings in FooEvents POS deur %1$sSquare Lesers%2$s te gebruik deur jou Square Aansoek ID en Toegangsteken te voorsien."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:172
+msgid "It appears that you have entered Square sandbox details."
+msgstr "Dit lyk asof jy Square sandboksbesonderhede ingevoer het."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:173
+msgid "This Square transaction contains split tenders."
+msgstr "Hierdie Square-transaksie bevat verdeelde betalings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:175
+#, php-format
+msgid "Refund for order #%1$s captured in FooEvents POS"
+msgstr "Terugbetaling vir bestelling #%1$s vasgelê in FooEvents POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:177
+#, php-format
+msgid "Please use one of %1$sSquare's test cards%2$s at checkout when using the Square Manual Payment method as real cards will not work."
+msgstr "Gee asseblief een van %1$sSquare se toetskaarte%2$s by die afrekenpunt in wanneer jy die Square Handmatige Betalingsmetode gebruik, aangesien regte kaarte nie sal werk nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:178
+msgid "FooEvents POS performs various checks which show critical information about your store's configuration and issues that require your attention."
+msgstr "FooEvents POS voer verskeie kontroles uit wat kritiese inligting oor jou winkel se konfigurasie toon en kwessies wat jou aandag vereis."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:180
+#, php-format
+msgid "Please ensure that you copy the full secret key when generating a new Stripe API key and not just the visible characters in your %1$sStripe dashboard%2$s. Alternatively, you can revoke the existing secret key and generate a new one. For detailed instructions, please refer to %3$sStripe's API keys documentation%4$s."
+msgstr "Maak asseblief seker dat jy die volledige geheime sleutel kopieer wanneer jy 'n nuwe Stripe API-sleutel genereer en nie net die sigbare karakters in jou %1$sStripe dashboard%2$s nie. Alternatiewelik kan jy die bestaande geheime sleutel herroep en 'n nuwe een genereer. Vir gedetailleerde instruksies, verwys asseblief na %3$sStripe se API-sleutels dokumentasie%4$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:182
+#, php-format
+msgid "Accept payments in FooEvents POS using %1$sStripe Readers%2$s by providing a Stripe Publishable key and Secret key."
+msgstr "Aanvaar betalings in FooEvents POS deur %1$sStripe Lesers%2$s te gebruik deur 'n Stripe Publiseerbare sleutel en Geheimsleutel te voorsien."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:183
+msgid "Uh oh. It looks like the secret key you entered is too short."
+msgstr "Uh oh. Dit lyk asof die geheime sleutel wat jy ingevoer het, te kort is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:185
+#, php-format
+msgid "Please use one of %1$sStripe's test cards%2$s at checkout as real cards will not work."
+msgstr "Gee asseblief een van %1$sStripe se toetskaarte%2$s by die afrekening, aangesien regte kaarte nie sal werk nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:186
+msgid "It appears that you have entered Stripe test API keys."
+msgstr "Dit lyk asof jy Stripe toets-API-sleutels ingevoer het."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:188
+#, php-format
+msgid "The WooCommerce thumbnail size is currently set to %1$s pixels which may result in serious performance issues in the POS app and could cause the device to run out of memory. Please adjust the thumbnail size to something greater than zero (0) and less than 300px for optimal performance."
+msgstr "Die WooCommerce duimnaelsize is tans ingestel op %1$s pixels wat ernstige prestasieprobleme in die POS-toep en geheue-uitputting van die toestel kan veroorsaak. Stel asseblief die duimnaelsize in op iets groter as nul (0) en minder as 300px vir optimale prestasie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:189
+msgid "Unable to read the XML file. Please upload a valid XML file that was exported from the FooEvents POS app."
+msgstr "Kan nie die XML-lêer lees nie. Laai asseblief 'n geldige XML-lêer op wat uit die FooEvents POS-toepassing uitgevoer is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:190
+msgid "FooEvents POS integrates with WooCommerce Analytics which allows you to view detailed sales reports for your store and differentiate between orders placed online and through the FooEvents POS app."
+msgstr "FooEvents POS integreer met WooCommerce Analytics wat jou in staat stel om gedetailleerde verkooiverslae vir jou winkel te sien en onderskei tussen bestellings wat aanlyn geplaas is en deur die FooEvents POS-toep."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:191
+msgid "Unable to connect to the trial service. Please try again or get in touch."
+msgstr "Kan nie met die proeftoetsdiens verbind nie. Probeer weer of kom in kontak."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:192
+msgid "A free trial has already been activated for this site. To continue using FooEvents POS, please purchase a plan."
+msgstr "n Gratis toets is reeds geaktiveer vir hierdie webwerf. Om voort te gaan om FooEvents POS te gebruik, koop asseblief 'n plan."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:193
+msgid "An error occurred and we were unable to activate your free trial. Please contact us, and one of our support agents will help with your free trial activation."
+msgstr "n Fout het voorgekom en ons was nie in staat om jou gratis toetslopie te aktiveer nie. Kontak ons asseblief, en een van ons ondersteuningsagente sal help met jou gratis toetslopie aktivering."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:194
+msgid "Please provide a valid email address."
+msgstr "Verskaf asseblief 'n geldige e-posadres."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:195
+msgid "Please provide a valid store name."
+msgstr "Verskaf asseblief 'n geldige winkelnaam."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:196
+msgid "You do not have permission to perform this action."
+msgstr "Jy het nie toestemming om hierdie aksie uit te voer nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:197
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Jy het nie voldoende regte om toegang tot hierdie bladsy te verkry nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:198
+msgid "An error occurred while importing your offline changes. Please try again and re-export the XML file if required."
+msgstr "n Fout het voorgekom tydens die invoer van jou aanlyn veranderinge. Probeer asseblief weer en voer die XML-lêer weer uit indien nodig."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:199
+msgid "All Cashiers"
+msgstr "Alle Kassiers"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:200
+msgid "All Orders"
+msgstr "Alle Bestellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:201
+msgid "FooEvents POS Only"
+msgstr "FooEvents POS Slegs"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:202
+msgid "None"
+msgstr "Geen"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:203
+msgid "Online Only"
+msgstr "Slegs aanlyn"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:204
+msgid "POS Card Payments"
+msgstr "POS Kaartbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:205
+msgid "POS Cash Payments"
+msgstr "POS Kontantbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:206
+msgid "POS Cash on Delivery"
+msgstr "POS Kontant by Aflewering"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:207
+msgid "POS Check Payments"
+msgstr "POS Tjek Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:208
+msgid "POS Direct Bank Transfer"
+msgstr "POS Direkte Bankoordrag"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:209
+msgid "POS Other Payment Methods"
+msgstr "POS Ander Betalingsmetodes"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:210
+msgid "POS Split Payments"
+msgstr "POS Verdeelde Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:211
+msgid "POS Square Payments"
+msgstr "POS Square Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:212
+msgid "POS Square Manual Payments"
+msgstr "POS Square Handmatigebetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:213
+msgid "POS Square Reader Payments"
+msgstr "POS Square Leser-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:214
+msgid "POS Square Terminal Payments"
+msgstr "POS Square Terminal Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:215
+msgid "POS Stripe BBPOS Chipper Payments"
+msgstr "POS Stripe BBPOS Chipper-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:216
+msgid "POS Stripe Manual Payments"
+msgstr "POS Stripe Handmatige Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:217
+msgid "POS Stripe Reader Payments"
+msgstr "POS Stripe leser betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:218
+msgid "POS Stripe Reader M2 Payments"
+msgstr "POS Stripe leser M2-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:219
+msgid "POS Stripe BBPOS WisePad Payments"
+msgstr "POS Stripe BBPOS WisePad-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:220
+msgid "Standard Themes (Desktop Printers)"
+msgstr "Standaard Temas (Lessenaar Drukkers)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:221
+msgid "Optimized for Thermal Receipt Printers (POS)"
+msgstr "Geoptimeer vir Termiese Ontvangsdrukkers (POS)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:222
+msgid "Active"
+msgstr "Aktief"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:223
+msgid "Active Free Trial"
+msgstr "Aktiewe Gratis Toetsperiode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:224
+msgid "Active Plan"
+msgstr "Aktiewe Plan"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:225
+msgid "Cancel order"
+msgstr "Kanselleer bestelling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:226
+msgid "Restocked order items"
+msgstr "Hergevoorraadde bestelitems"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:227
+msgid "Set order status to cancelled"
+msgstr "Stel bestellingsstatus in op gekanselleer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:228
+msgid "skipped - already canceled"
+msgstr "Oorgeslaan - reeds gekanselleer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:229
+msgid "Caution"
+msgstr "Voorsoorsigheid"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:230
+msgid "Column"
+msgstr "Kolom"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:231
+msgid "Create order"
+msgstr "Skep bestelling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:232
+msgid "Set attendee details"
+msgstr "Stel bywoner besonderhede"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:233
+msgid "Set billing address"
+msgstr "Stel faktureringsadres"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:234
+msgid "Set customer"
+msgstr "Stel kliënt"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:235
+msgid "Set order date"
+msgstr "Stel besteldatum"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:236
+msgid "Set payment method"
+msgstr "Stel betalingsmetode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:237
+msgid "Set shipping address"
+msgstr "Stel afleweringadres"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:238
+msgid "Set status"
+msgstr "Stel status"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:239
+msgid "skipped - already created"
+msgstr "Oorgeslaan - reeds geskep"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:240
+msgid "Order total"
+msgstr "Bestellingstotaal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:241
+msgid "Critical"
+msgstr "Krities"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:242
+msgid "Enable Card Payments"
+msgstr "Aktiveer Kaartbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:243
+msgid "Enable Cash Payments"
+msgstr "Aktiveer Kontantbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:244
+msgid "Enable Cash on Delivery Payments"
+msgstr "Aktiveer Kontant op Aflewering-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:245
+msgid "Enable Check Payments"
+msgstr "Aktiveer Tjekbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:246
+msgid "Enable Direct Bank/Wire Transfers"
+msgstr "Aktiveer Direkte Bank/Oordragbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:247
+msgid "Enable Other Payments"
+msgstr "Aktiveer Ander Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:248
+msgid "Enable Split Payments"
+msgstr "Aktiveer Verdeeldebetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:249
+msgid "Enable Payments with Square"
+msgstr "Aktiveer Betalings met Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:250
+msgid "Enable Square Manual Payments"
+msgstr "Aktiveer Square Handmatige Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:251
+msgid "Enable Square Reader Payments"
+msgstr "Aktiveer Square Leser-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:252
+msgid "Enable Square Terminal Payments"
+msgstr "Aktiveer Square Terminal-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:253
+msgid "Enable Stripe BBPOS Chipper™ Payments"
+msgstr "Aktiveer Stripe BBPOS Chipper™ Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:254
+msgid "Enable Stripe Manual Payments"
+msgstr "Aktiveer Stripe Handmatige Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:255
+msgid "Enable Stripe Reader Payments"
+msgstr "Aktiveer Stripe Reader-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:256
+msgid "Enable Stripe Reader M2 Payments"
+msgstr "Aktiveer Stripe Reader M2-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:257
+msgid "Enable Stripe BBPOS WisePad™ Payments"
+msgstr "Aktiveer Stripe BBPOS WisePad™ Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:258
+msgid "Expired free trial"
+msgstr "Vervalle gratis toetsperiode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:259
+msgid "Expired Plan"
+msgstr "Vervalle Plan"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:260
+msgid "Important"
+msgstr "Belangrik"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:261
+msgid "Not Active"
+msgstr "Nie aktief"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:262
+msgid "Line"
+msgstr "Lyn"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:263
+msgid "Maximum size"
+msgstr "Maksimum grootte"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:264
+msgid "Blog"
+msgstr "Blog"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:265
+msgid "Documentation"
+msgstr "Dokumentasie"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:266
+msgid "FooEvents POS Plans"
+msgstr "FooEvents POS Planne"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:267
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:268
+msgid "Notice"
+msgstr "Kennisgewing"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:269
+msgid "Offline changes imported"
+msgstr "Veranderinge vanaf aflyn ingevoer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:270
+msgid "Cashier"
+msgstr "Kassier"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:271
+msgid "captured in FooEvents POS"
+msgstr "opgeneem in FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:272
+msgid "No issues were detected. Hooray!"
+msgstr "Geen probleme is opgespoor nie. Hoera!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:273
+msgid "Plugin update"
+msgstr "Invoegtoepassing opdatering"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:274
+msgid "Potentially critical"
+msgstr "Potensieel krities"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:275
+msgid "Refund order"
+msgstr "Terugbetalingsbestelling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:276
+msgid "restocked"
+msgstr "aangevul"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:277
+msgid "skipped - already refunded"
+msgstr "Oorgeslaan - reeds terugbetaal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:278
+msgid "Automatic refund failed. Please refund this order manually through your Square account."
+msgstr "Outomatiese terugbetaling het misluk. Maak asseblief hierdie bestelling handmatig terug deur jou Square-rekening."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:279
+msgid "Square payment refunded successfully."
+msgstr "Square-betaling suksesvol terugbetaal."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:280
+msgid "Total refunded"
+msgstr "Totale terugbetaal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:281
+msgid "The REST API is currently accessible"
+msgstr "Die REST API is tans toeganklik"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:282
+msgid "Select a file from your computer"
+msgstr "Kies 'n lêer vanaf jou rekenaar"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:283
+msgid "Activating your free trial"
+msgstr "Aktiveer jou gratis toetsperiode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:284
+msgid "Checking permissions"
+msgstr "Kontroleer toestemmings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:285
+msgid "Connecting"
+msgstr "Verbind"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:286
+msgid "Enter your email address"
+msgstr "Voer jou e-posadres in"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:287
+msgid "Turning on the lights"
+msgstr "Die ligte aanskakel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:288
+msgid "This should only take a few seconds."
+msgstr "Dit behoort net 'n paar sekondes te neem."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:289
+msgid "Update order"
+msgstr "Werk bestelling by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:290
+msgid "skipped - order already updated"
+msgstr "geslaan - bestelling reeds opgedateer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:291
+msgid "Updated order"
+msgstr "Opgedateerde bestelling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:292
+msgid "Update product"
+msgstr "Werk produk by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:293
+msgid "Set price"
+msgstr "Stel prys"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:294
+msgid "Set regular price"
+msgstr "Stel gewone prys"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:295
+msgid "Set sale price"
+msgstr "Stel verkoopprys"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:296
+msgid "Set SKU"
+msgstr "Stel SKU"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:297
+msgid "Set stock"
+msgstr "Stel voorraad"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:298
+msgid "Set title"
+msgstr "Stel titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:299
+msgid "skipped - already updated"
+msgstr "Overslaan - reeds opgedateer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:300
+msgid "Import"
+msgstr "Invoer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:301
+msgid "Point of Sale"
+msgstr "Verkooppunt"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:302
+msgid "Settings"
+msgstr "Instellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:303
+msgid "Order Payment Method"
+msgstr "Bestellingsbetalingmetode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:305
+#, php-format
+msgid "FooEvents POS failed to create the directory %1$s. Please manually create this directory on your web server."
+msgstr "FooEvents POS vir WooCommerce het nie die gids %1$s kon skep nie. Skep asseblief hierdie gids handmatig op jou webbediener."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:306
+msgid "Please backup your files and database before updating your site."
+msgstr "Maak asseblief 'n rugsteun van jou lêers en databasis voordat jy jou webwerf opdateer."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:307
+msgid "Important Upgrade Notice"
+msgstr "Belangrike Opgraderingskennisgewing"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:309
+#, php-format
+msgid "Please note that the FooEvents integration in FooEvents POS requires FooEvents for WooCommerce version 1.18.14 or higher to function properly. Please update your %1$sFooEvents for WooCommerce plugin%2$s accordingly."
+msgstr "Let asseblief daarop dat die FooEvents-integrasie in FooEvents POS FooEvents vir WooCommerce weergawe 1.18.14 of hoër benodig om behoorlik te werk. Werk asseblief jou %1$sFooEvents vir WooCommerce invoegtoepassing%2$s by."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:311
+#, php-format
+msgid "Thanks for using FooEvents POS! To help us improve the product and share insights with the community, we would like to anonymously collect non-sensitive data for orders placed through the FooEvents POS app. Please enable the %1$sorder analytics%2$s setting to participate."
+msgstr "Dankie dat jy FooEvents POS gebruik! Om ons te help om die produk te verbeter en insigte met die gemeenskap te deel, wil ons graag anoniem nie-sensitiewe data vir bestellings wat deur die FooEvents POS-toepassing geplaas is, versamel. Skakel asseblief die %1$sbestellingsanalise%2$s-instelling in om deel te neem."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:313
+#, php-format
+msgid "The directory %1$s on your web server is not writable."
+msgstr "Die gids %1$s op jou webbediener is nie skryfbaar nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:314
+msgid "WooCommerce is not currently active which is required for FooEvents POS to function. Please ensure that the WooCommerce plugin is installed and activated."
+msgstr "WooCommerce is tans nie aktief nie, wat nodig is vir FooEvents POS om te funksioneer. Maak asseblief seker dat die WooCommerce-inprop geïnstalleer en geaktiveer is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:315
+msgid "XML-RPC is not enabled."
+msgstr "XML-RPC is nie geaktiveer nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:316
+msgid "Load all orders"
+msgstr "Laai alle bestellings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:317
+msgid "Any status"
+msgstr "Enige status"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:318
+msgid "Draft"
+msgstr "Kladweergawe"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:319
+msgid "Future"
+msgstr "Toekoms"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:320
+msgid "Pending review"
+msgstr "Afwagtende hersiening"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:321
+msgid "Private"
+msgstr "Privaat"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:322
+msgid "Published"
+msgstr "Gepubliseer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:323
+msgid "e.g. Billing Address"
+msgstr "Byvoorbeeld Rekeningadres"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:324
+msgid "e.g. Discounts"
+msgstr "Byvoorbeeld: Afslag."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:325
+msgid "e.g. excl."
+msgstr "byvoorbeeld"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:326
+msgid "e.g. incl."
+msgstr "bv. insl."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:327
+msgid "e.g. Order"
+msgstr "Byvoorbeeld Bestelling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:328
+msgid "e.g. Payment Method"
+msgstr "Betaalmetode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:329
+msgid "e.g. Price"
+msgstr "bv. Prys"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:330
+msgid "e.g. Product"
+msgstr "Byvoorbeeld Produk"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:331
+msgid "e.g. Qty"
+msgstr "Byv."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:332
+msgid "e.g. Receipt/Tax Invoice"
+msgstr "Byvoorbeeld Ontvangs/Belastingfaktuur"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:333
+msgid "e.g. Refunds"
+msgstr "bv. Terugbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:334
+msgid "e.g. Shipping Address"
+msgstr "Byvoorbeeld Versendingsadres"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:335
+msgid "e.g. Subtotal"
+msgstr "Subtotaal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:336
+msgid "e.g. Tax"
+msgstr "bv. Belasting"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:337
+msgid "e.g. Total"
+msgstr "Totaal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:338
+msgid "FooEvents POS is a web-based point of sale plugin for WooCommerce that runs on your own server and enables you to sell and print tickets in-person (this functionality requires the FooEvents for WooCommerce plugin to be installed and activated)."
+msgstr "FooEvents POS is 'n aanlyn punt van verkoping-inprop vir WooCommerce wat op jou eie bediener loop en jou in staat stel om kaartjies in persoon te verkoop en druk (hierdie funksionaliteit vereis dat die FooEvents vir WooCommerce-inprop geïnstalleer en geaktiveer word)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:339
+msgid "FooEvents POS is a point of sale (POS) system for WooCommerce that turns any computer, iPad or Android tablet into a physical retail platform. FooEvents POS apps connect to your WooCommerce store using the FooEvents POS plugin and enable you to sell your products in person while accepting payments using Square™ and Stripe™ or manually using any third-party card reader."
+msgstr "FooEvents POS is 'n punt van verkoop (POS) stelsel vir WooCommerce wat enige rekenaar, iPad of Android tablet omskep in 'n fisiese kleinhandelplatform. FooEvents POS-toepassings verbind met jou WooCommerce-winkel deur die FooEvents POS-inprop en stel jou in staat om jou produkte persoonlik te verkoop terwyl jy betalings aanvaar met Square™ en Stripe™ of handmatig met enige derde-party kaartleser."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:340
+msgid "FooEvents POS is a point of sale (POS) that turns any WooCommerce store into a secure omnichannel retail platform which allows you to sell online and in-person seamlessly. Process payments directly within the FooEvents POS point of sale (POS) apps using Square™ and Stripe™ or manually using any third-party card reader. Keep your online and physical store synced in real time without any other software!"
+msgstr "FooEvents POS vir WooCommerce is 'n verkooppunt (POS) wat enige WooCommerce-winkel omskep in 'n veilige omnichannel kleinhandelsplatform wat jou toelaat om aanlyn en persoonlik naadloos te verkoop. Verwerk betalings direk binne die FooEvents POS-verkooppunt (POS)-toepassings met behulp van Square™ en Stripe™ of handmatig met enige derde-party kaartleser. Hou jou aanlyn- en fisiese winkel in werklikheid gesinkroniseer sonder enige ander sagteware!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:341
+msgid "Show all categories"
+msgstr "Wys alle kategorieë."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:342
+msgid "Only show products from these specific categories"
+msgstr "Toon slegs produkte uit hierdie spesifieke kategorieë."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:343
+msgid "Submit a Review"
+msgstr "Plaas 'n Resensie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:344
+msgid "Please take a moment to share your experience on Trustpilot—your feedback helps us to improve, grow and provide an even better product!"
+msgstr "Neem asseblief 'n oomblik om jou ervaring op Trustpilot te deel—jou terugvoer help ons om te verbeter, te groei en 'n nog beter produk te bied!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:345
+msgid "Thank you for using FooEvents POS!"
+msgstr "Dankie vir die gebruik van FooEvents POS!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:346
+msgid "Order statuses"
+msgstr "Bestellingsituasies"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:347
+msgid "Select the order statuses that should trigger a new order alert in the POS app when new or updated orders are fetched in the background."
+msgstr "Kies die bestellingsstatusse wat 'n nuwe bestellingswaarskuwing in die POS-toep wanneer nuwe of opgedateerde bestellings in die agtergrond opgehaal word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:348
+msgid "Shipping methods"
+msgstr "Versendingsmetodes"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:349
+msgid "Select the shipping methods that should trigger a new order alert in the POS app when new or updated orders are fetched in the background."
+msgstr "Kies die versendingsmetodes wat 'n nuwe bestellingswaarskuwing in die POS-toep wanneer nuwe of opgedateerde bestellings in die agtergrond opgehaal word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:350
+msgid "Billing address title"
+msgstr "Faktureringsadres titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:351
+msgid "Title of the billing address (e.g. \"Billing Address\")."
+msgstr "Titel van die faktuuradres (bv. \"Faktuuradres\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:352
+msgid "Quantity step amount"
+msgstr "Hoeveelheidsstapbedrag"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:354
+#, php-format
+msgid "Specify the amount that this product's quantity can be increased or decreased in the cart e.g. 1 or 0.01, 0.5 etc. The current default value is \"%1$s\"."
+msgstr "Spesifiseer die bedrag waarmee die hoeveelheid van hierdie produk in die mandjie verhoog of verlaag kan word, bv. 1 of 0.01, 0.5 ens. Die huidige verstekwaarde is \"%1$s\"."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:355
+msgid "Cart quantity unit"
+msgstr "Kartheenheidseenheid"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:356
+msgid "Specify the unit used for this product's cart quantity e.g. kg, lb, inches etc. This value can also be left blank which will result in no unit being displayed."
+msgstr "Spesifiseer die eenheid wat gebruik word vir die produk se karthoeveelheid bv. kg, lb, duim ens. Hierdie waarde kan ook leeg gelaat word wat sal lei tot geen eenheid wat vertoon word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:357
+msgid "Confirm stock availability at checkout"
+msgstr "Bevestig voorraadbeskikbaarheid by die afrekenpunt."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:358
+msgid "Perform a final stock check for the products in the cart before submitting the order to WooCommerce or sending a payment request to Stripe or Square which may slow down the checkout process. Please note that the background data fetch will still update stock quantities at the frequency set in the FooEvents POS app."
+msgstr "Voer 'n finale voorraadondersoek vir die produkte in die mandjie uit voordat die bestelling na WooCommerce gestuur word of 'n betalingsversoek na Stripe of Square gestuur word wat die afrekeningsproses kan vertraag. Let asseblief daarop dat die agtergronddata-opvraag steeds voorraad hoeveelhede sal opdateer teen die frekwensie wat in die FooEvents POS-toepassing ingestel is."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:359
+msgid "Customer user role"
+msgstr "Kliëntgebruikersrol"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:360
+msgid "The FooEvents POS app will only fetch users with the selected roles. This can be customized by selecting other user role(s) in the multi-select box."
+msgstr "Die FooEvents POS-program sal slegs gebruikers met die gekose rolle ophaal. Dit kan aangepas word deur ander gebruikersrol(le) in die multi-kieskas te kies."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:361
+msgid "Default quantity step amount"
+msgstr "Standaard hoeveelheid stap bedrag"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:362
+msgid "Specify the default amount that a product's quantity can be increased or decreased in the cart."
+msgstr "Spesifiseer die verstekbedrag wat 'n produk se hoeveelheid in die mandjie verhoog of verlaag kan word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:363
+msgid "Default cart quantity unit"
+msgstr "Standaard mandjie hoeveelheid eenheid"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:364
+msgid "Specify the default unit used for product cart quantities e.g. kg, lb, inches etc. This value can be overriden at a product level."
+msgstr "Spesifiseer die verstek eenheid wat gebruik word vir produkkarhoeveelhede bv. kg, lb, duim ens. Hierdie waarde kan op produkvlak oorskryf word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:365
+msgid "Default minimum cart quantity"
+msgstr "Standaard minimum mandjie hoeveelheid"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:366
+msgid "Specify the default minimum amount that can be added to the cart for products."
+msgstr "Spesifiseer die verstek minimum bedrag wat by die mandjie vir produkte gevoeg kan word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:367
+msgid "Default customer"
+msgstr "Standaard kliënt"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:368
+msgid "Select the customer that should be used by default for any new orders created in the FooEvents POS app."
+msgstr "Kies die kliënt wat standaard gebruik moet word vir enige nuwe bestellings wat in die FooEvents POS-toepassing geskep word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:369
+msgid "Default submit order status"
+msgstr "Standaard indien bestellingsstatus"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:370
+msgid "Set the default status that orders should have when submitting via the POS."
+msgstr "Stel die verstekstatus wat bestellings moet hê wanneer dit via die POS ingedien word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:371
+msgid "Disable new order emails"
+msgstr "Deaktiveer nuwe bestellings e-posse"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:372
+msgid "Discounts title"
+msgstr "Kortings titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:373
+msgid "Title of the discounts field (e.g. \"Discounts\")."
+msgstr "Titel van die afslagveld (bv. \"Afslag\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:374
+msgid "Exclusive abbreviation"
+msgstr "Uitgeslote afkorting"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:375
+msgid "Abbreviation to indicate the exclusive price (e.g. \"excl.\")."
+msgstr "Afkorting om die eksklusiewe prys aan te dui (bv. \"exkl.\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:376
+msgid "Fetch order notes"
+msgstr "Haal bestellingsnotas op"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:377
+msgid "The FooEvents POS app will fetch and display corresponding order notes in the Order Details section. This may cause performance issues and the FooEvents POS app might run out of memory on certain platforms when a large volume of orders is fetched. Disabling this setting will still load notes to customers."
+msgstr "Die FooEvents POS-toep sal ooreenstemmende bestellingsnotas ophaal en vertoon in die Bestellingsbesonderhede-afdeling. Dit kan tot prestasieprobleme lei en die FooEvents POS-toep kan op sekere platforms geheue verloor wanneer 'n groot volume bestellings opgehaal word. Die deaktivering van hierdie instelling sal steeds notas aan kliënte laai."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:378
+msgid "Display FooEvents POS logo"
+msgstr "Vertoon FooEvents POS-logo"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:379
+msgid "Footer content"
+msgstr "Voetstukinhoud"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:380
+msgid "Optional content displayed at the bottom of receipts and invoices."
+msgstr "Opsionele inhoud wat onder aan kwitansies en fakture vertoon word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:381
+msgid "Header content"
+msgstr "Kopinhoud"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:382
+msgid "Optional content which displays immediately after the store name and logo at the top of receipts."
+msgstr "Opsionele inhoud wat onmiddellik ná die winkelnaam en logo bo-aan kwitansies vertoon word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:383
+msgid "Inclusive abbreviation"
+msgstr "Inklusiewe afkorting"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:384
+msgid "Abbreviation to indicate the inclusive price (e.g. \"incl.\")."
+msgstr "Afkorting om die insluitende prys aan te dui (bv. \"inkl.\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:385
+msgid "Load product images"
+msgstr "Laai produkafbeeldings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:386
+msgid "Minimum cart quantity"
+msgstr "Minimum mandjie hoeveelheid"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:388
+#, php-format
+msgid "Specify the minimum amount that can be added to the cart for this product e.g. 1 or 0.01, 0.5 etc. The current default value is \"%1$s\"."
+msgstr "Spesifiseer die minimum bedrag wat by die mandjie vir hierdie produk gevoeg kan word bv. 1 of 0.01, 0.5 ens. Die huidige verstekwaarde is \"%1$s\"."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:389
+msgid "New order alerts"
+msgstr "Nuwe bestellingswaarskuwings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:390
+msgid "Incomplete order statuses"
+msgstr "Onvolledige bestellingsstatusse"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:391
+msgid "Orders with the selected statuses can be sent through the checkout process in order to capture a payment. Please note that order details such as cart items, customer or coupon codes will not be editable."
+msgstr "Bestellings met die gekose statusse kan deur die afrekeningsproses gestuur word om 'n betaling vas te lê. Let daarop dat bestellingsbesonderhede soos mandjiegoedere, kliënt of koeponkodes nie wysigbaar sal wees nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:392
+msgid "Order number prefix"
+msgstr "Bestelnommer voorvoegsel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:393
+msgid "Text which displays in front of the order number (e.g. \"Order\")."
+msgstr "Teks wat voor die bestellingsnommer verskyn (bv. \"Bestelling\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:394
+msgid "Order statuses to load"
+msgstr "Bestellingsituasies om te laai"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:395
+msgid "The FooEvents POS app will only fetch orders with the selected statuses. This can be customized by selecting each status using the multi-select box."
+msgstr "Die FooEvents POS-program sal slegs bestellings met die gekose statusse ophaal. Dit kan aangepas word deur elke status te kies deur die multi-select-boks te gebruik."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:396
+msgid "Order submit statuses"
+msgstr "Bestellingsindieningsstatusse"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:397
+msgid "Select the statuses that will be shown on the checkout screen to override the default order submit status when submitting an order."
+msgstr "Kies die statusse wat op die afrekeningskerm vertoon sal word om die verstek bestellingsubmit-status te oorskry wanneer 'n bestelling ingedien word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:398
+msgid "Order load limit"
+msgstr "Bestellingsladingslimiet"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:399
+msgid "Limits the number of recent orders to load in the FooEvents POS app."
+msgstr "Beperk die aantal onlangse bestellings om in die FooEvents POS-toepassing te laai."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:400
+msgid "Override default cart quantity unit"
+msgstr "Oorskryf standaard mandjie hoeveelheid eenheid"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:402
+#, php-format
+msgid "Specify a different cart quantity unit for this product which is currently set to \"%1$s\""
+msgstr "Spesifiseer 'n ander karhoeveelheidseenheid vir hierdie produk wat tans ingestel is op \"%1$s\""
+
+#: admin/helpers/fooeventspos-phrases-helper.php:403
+msgid "Payment method title"
+msgstr "Betalingsmetode titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:404
+msgid "Title of the payment method (e.g. \"Payment Method\")."
+msgstr "Titel van die betaalmetode (bv. \"Betaalmetode\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:405
+msgid "Price column title"
+msgstr "Prys kolom titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:406
+msgid "Title of the price column (e.g. \"Price\")."
+msgstr "Titel van die pryskolom (bv. \"Prys\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:407
+msgid "Product column title"
+msgstr "Produk kolom titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:408
+msgid "Title of the product column (e.g. \"Product\")."
+msgstr "Titel van die produk kolom (bv. \"Produk\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:409
+msgid "Product status"
+msgstr "Produkstatus"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:410
+msgid "The FooEvents POS app will only fetch products with the selected status. This can be customized by selecting other status(es) using the multi-select box."
+msgstr "Die FooEvents POS-program sal slegs produkte ophaal met die gekose status. Dit kan aangepas word deur ander statusse te kies deur die multi-select-boks te gebruik."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:411
+msgid "Products to load per request"
+msgstr "Produkte om per versoek te laai"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:412
+msgid "When fetching all data you can specify how many products the FooEvents POS app should load in each request (lower values will result in slower product load times but this usually works better for servers with limited resources)."
+msgstr "Wanneer al die data opgehaal word, kan jy spesifiseer hoeveel produkte die FooEvents POS-program in elke versoek moet laai (laer waardes sal stadiger produklaaitye tot gevolg hê, maar werk gewoonlik beter vir bedieners met beperkte hulpbronne)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:413
+msgid "Products categories to display"
+msgstr "Produkkategorieë om te vertoon"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:414
+msgid "The FooEvents POS app will display all published products by default, but you can select specific product categories to display instead using the multi-select box."
+msgstr "Die FooEvents POS-program sal standaard alle gepubliseerde produkte vertoon, maar jy kan spesifieke produk-kategorieë kies om in plaas daarvan te vertoon deur die multi-kies-boks te gebruik."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:415
+msgid "Quantity column title"
+msgstr "Hoeveelheid kolom titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:416
+msgid "Title of the quantity column (e.g. \"Qty\")."
+msgstr "Titel van die hoeveelheidskolom (bv. \"Qty\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:417
+msgid "Receipt title"
+msgstr "Kwitansie titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:418
+msgid "Title of the receipt (e.g. \"Tax Invoice\")."
+msgstr "Titel van die kwitansie (bv. \"Belastingfaktuur\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:419
+msgid "Refunds title"
+msgstr "Terugbetalings titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:420
+msgid "Title of the refunds field (e.g. \"Refunds\")."
+msgstr "Titel van die terugbetalingsveld (bv. \"Terugbetalings\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:421
+msgid "Shipping address title"
+msgstr "Afleweringsadres titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:422
+msgid "Title of the shipping address (e.g. \"Shipping Address\")."
+msgstr "Titel van die afleweringadres (bv. \"Afleweringsadres\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:423
+msgid "Show attribute labels"
+msgstr "Wys eienskappe etikette"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:424
+msgid "Display billing address"
+msgstr "Vertoon faktureringsadres"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:425
+msgid "Display the customer's billing address on the receipt."
+msgstr "Vertoon die kliënt se faktureringsadres op die kwitansie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:426
+msgid "Show product GTIN, UPC, EAN or ISBN"
+msgstr "Wys produk GTIN, UPC, EAN of ISBN."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:427
+msgid "Display the product GTIN, UPC, EAN or ISBN on the receipt."
+msgstr "Vertoon die produk GTIN, UPC, EAN of ISBN op die kwitansie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:428
+msgid "Only fetch in stock products"
+msgstr "Slegs haal produkte in voorraad op."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:429
+msgid "Display shipping address"
+msgstr "Vertoon afleweringadres"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:430
+msgid "Display the customer's shipping address on the receipt."
+msgstr "Vertoon die kliënt se afleweringsadres op die kwitansie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:431
+msgid "Show product SKU"
+msgstr "Wys produk SKU"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:432
+msgid "Display the product SKU on the receipt."
+msgstr "Vertoon die produk SKU op die kwitansie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:433
+msgid "Access Token"
+msgstr "Toegangsteken"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:434
+msgid "Links WooCommerce orders to Square transactions and enables automatic Square refunds in the FooEvents POS app."
+msgstr "Koppel WooCommerce-bestellings aan Square-transaksies en maak outomatiese Square-terugbetalings moontlik in die FooEvents POS-toepassing."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:435
+msgid "Application ID"
+msgstr "Aansoek ID"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:436
+msgid "Enables secure communication between FooEvents POS and the Square Point of Sale app."
+msgstr "Maak veilige kommunikasie moontlik tussen FooEvents POS en die Square Point of Sale app."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:437
+msgid "Store logo"
+msgstr "Winkellogo"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:438
+msgid "Select an existing image to use as the logo on receipts or upload a new file (preferably hi-res black and white)."
+msgstr "Kies 'n bestaande prentjie om as die logo op kwitansies te gebruik of laai 'n nuwe lêer op (verkieslik hoë resolusie swart en wit)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:439
+msgid "Store name"
+msgstr "Winkelnaam"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:440
+msgid "Name of the store displayed on receipts."
+msgstr "Naam van die winkel wat op kwitansies vertoon word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:441
+msgid "Publishable key"
+msgstr "Publiseerbare sleutel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:442
+msgid "Used for initializing a secure Stripe manual card payment form in the FooEvents POS app. This option can be left empty if the Stripe manual card payment method will not be used."
+msgstr "Gebruik vir die inisialisering van 'n veilige Stripe-handmatigekaartbetalingsvorm in die FooEvents POS-toep. Hierdie opsie kan leeg gelaat word as die Stripe-handmatigekaartbetalingsmetode nie gebruik sal word nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:443
+msgid "Secret key"
+msgstr "Geheime sleutel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:444
+msgid "Enables secure communication between FooEvents POS and your Stripe account."
+msgstr "Maak veilige kommunikasie moontlik tussen FooEvents POS en jou Stripe-rekening."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:445
+msgid "Subtotal column title"
+msgstr "Subtotaal kolomtitel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:446
+msgid "Title of the subtotal column (e.g. \"Subtotal\")."
+msgstr "Titel van die subtotale kolom (bv. \"Subtotaal\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:447
+msgid "Tax title"
+msgstr "Belastingtitel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:448
+msgid "Title used for the combined tax total (e.g. \"Tax\")."
+msgstr "Titel wat gebruik word vir die gekombineerde belastingtotaal (bv. \"Belasting\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:449
+msgid "Total title"
+msgstr "Totale titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:450
+msgid "Title of the combined total (e.g. \"Total\")."
+msgstr "Titel van die totale bedrag (bv. \"Totaal\")."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:451
+msgid "Use decimal values in quantities"
+msgstr "Gebruik desimale waardes in hoeveelhede."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:452
+msgid "Activate"
+msgstr "Aktiveer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:453
+msgid "Find out more"
+msgstr "Vind meer uit"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:455
+#, php-format
+msgid "View version %1$s details"
+msgstr "Sien weergawe %1$s besonderhede"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:456
+msgid "See site health"
+msgstr "Sien webwerfgesondheid"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:457
+msgid "Upgrade to FooEvents POS Plus"
+msgstr "Opgradeer na FooEvents POS Plus."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:459
+#, php-format
+msgid "The %1$sFooEvents for WooCommerce%2$s plugin must be installed and activated in order to sell and print tickets in FooEvents POS. You may also need to install other FooEvents plugin extensions to make use of specific functionality."
+msgstr "Die %1$sFooEvents vir WooCommerce%2$s invoegtoepassing moet geïnstalleer en geaktiveer word om kaartjies te verkoop en druk in FooEvents POS. Jy mag ook ander FooEvents invoegtoepassing-uitbreidings moet installeer om van spesifieke funksionaliteit gebruik te maak."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:460
+msgid "We have identified issues that may require your attention."
+msgstr "Ons het probleme geïdentifiseer wat moontlik jou aandag mag verg."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:461
+msgid "See details"
+msgstr "Sien besonderhede"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:462
+msgid "Customer"
+msgstr "Klant"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:463
+msgid "Customer provided note"
+msgstr "Kliëntverskafte nota"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:464
+msgid "Guest"
+msgstr "Gas"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:465
+msgid "Hide"
+msgstr "Versteek"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:466
+msgid "No POS payments found"
+msgstr "Geen POS-betalings gevind"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:467
+msgid "No POS payments found in trash"
+msgstr "Geen POS-betalings in die vuilnisbak gevind"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:468
+msgid "No order items provided."
+msgstr "Geen bestellingsitems verskaf nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:469
+msgid "One or more order items were not found."
+msgstr "Een of meer bestellingsitems is nie gevind nie."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:470
+msgid "Attendee details"
+msgstr "Bywoner besonderhede"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:471
+msgid "Update order cashier"
+msgstr "Werk bestelingskassier by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:472
+msgid "Update order customer"
+msgstr "Werk bestellingskliënt by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:473
+msgid "Update order date"
+msgstr "Werk bestellingsdatum by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:474
+msgid "Update order items"
+msgstr "Werk bestellingsitems by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:475
+msgid "Update payment method"
+msgstr "Werk betalingsmetode by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:476
+msgid "Update Square order ID"
+msgstr "Werk Square-bestellings-ID by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:477
+msgid "Update order status"
+msgstr "Werk bestellingsstatus by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:478
+msgid "Update Stripe payment ID"
+msgstr "Werk Stripe-betalings-ID by"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:480
+#, php-format
+msgid "Order updated via FooEvents POS by %1$s:%2$s"
+msgstr "Bestelling opgedateer via FooEvents POS deur %1$s:%2$s."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:482
+#, php-format
+msgid "%1$d orders need to be updated."
+msgstr "%1$d bestellings moet opgedateer word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:484
+#, php-format
+msgid "payment %1$d/%2$d"
+msgstr "betaling %1$d/%2$d"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:485
+msgid "The following products do not have sufficient stock available for this order and will have their quantities adjusted or be removed from the cart:"
+msgstr "Die volgende produkte het nie genoeg voorraad beskikbaar vir hierdie bestelling nie en sal hul hoeveelhede aangepas word of uit die mandjie verwyder word:"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:486
+msgid "Review Check-ins app appearance settings"
+msgstr "Oorsig van die Check-ins app se voorkomsinstellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:487
+msgid "Show as optional"
+msgstr "Wys as opsioneel."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:488
+msgid "Show as required"
+msgstr "Wys soos vereis."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:489
+msgid "Square Fees"
+msgstr "Square Fooie"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:491
+#, php-format
+msgid "Payment intent error for %1$s"
+msgstr "Betalingsvoorneme-fout vir %1$s"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:492
+msgid "Use event settings"
+msgstr "Gebruik gebeurtenisinstellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:493
+msgid "View other orders"
+msgstr "Sien ander bestellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:494
+msgid "View POS payments"
+msgstr "Sien POS-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:495
+msgid "Analytics"
+msgstr "Analitika"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:496
+msgid "POS Customers"
+msgstr "POS Kliënte"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:497
+msgid "POS Users"
+msgstr "POS-gebruikers"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:498
+msgid "Attendee company name"
+msgstr "Besoeker maatskappy naam"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:499
+msgid "Set whether the attendee company name field is shown and required to be captured in FooEvents POS."
+msgstr "Stel vas of die deelnemer se maatskappy se naamveld gewys en vereis moet word om in FooEvents POS vasgelê te word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:500
+msgid "Attendee designation"
+msgstr "Bywoner aanduiding"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:501
+msgid "Set whether the attendee designation field is shown and required to be captured in FooEvents POS."
+msgstr "Stel vas of die bywoner aanduiding veld gewys en vereis moet word om in FooEvents POS vasgelê te word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:502
+msgid "Attendee email"
+msgstr "Bywoner e-pos"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:503
+msgid "Set whether the attendee email field is shown and required to be captured in FooEvents POS."
+msgstr "Stel vas of die bywoner e-posveld gewys moet word en verpligtend is om in FooEvents POS vasgelê te word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:504
+msgid "Attendee name"
+msgstr "Bywonernaam"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:505
+msgid "Set whether the attendee name field is shown and required to be captured in FooEvents POS."
+msgstr "Stel vas of die deelnemer se naamveld vertoon moet word en verpligtend is om in FooEvents POS vasgelê te word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:506
+msgid "Attendee phone number"
+msgstr "Bywoner telefoonnommer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:507
+msgid "Set whether the attendee phone number field is shown and required to be captured in FooEvents POS."
+msgstr "Stel vas of die deelnemer se telefoonnommerveld vertoon moet word en verpligtend is om in FooEvents POS vasgelê te word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:508
+msgid "Scan Barcodes"
+msgstr "Skandeer Strepieskode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:509
+msgid "Cashier User Role"
+msgstr "Kassier Gebruikersrol"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:510
+msgid "Coupons"
+msgstr "Koepons"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:511
+msgid "Custom Order Statuses"
+msgstr "Aangepaste Bestellingsstatusse"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:512
+msgid "Custom Units of Measurement"
+msgstr "Aangepaste eenhede van meting"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:513
+msgid "Customers"
+msgstr "Klante"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:514
+msgid "Dark Mode"
+msgstr "Donkermodus"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:515
+msgid "Decimal Quantities"
+msgstr "Desimale Hoeveelhede"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:516
+msgid "Discounts"
+msgstr "Afslag"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:517
+msgid "Event Settings"
+msgstr "Byeenkomsinstellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:518
+msgid "Event & Ticketing with FooEvents"
+msgstr "Gebeurtenis & Kaartjieverkoping met FooEvents."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:519
+msgid "App icon"
+msgstr "App-ikoon"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:520
+msgid "Upload or select an existing image that will be used as the main app icon (512 x 512 PNG format with transparency is recommended)."
+msgstr "Laai 'n bestaande prent of kies 'n bestaande prent wat as die hoofprogram-ikoon gebruik sal word (512 x 512 PNG-formaat met deursigtigheid word aanbeveel)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:521
+msgid "App logo"
+msgstr "App-logo"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:522
+msgid "Upload or select an existing image that will be used as the main app logo (PNG format with transparency is recommended)."
+msgstr "Laai 'n bestaande prent of kies 'n bestaande prent wat as die hoofprogramlogo gebruik sal word (PNG-formaat met deursigtigheid word aanbeveel)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:523
+msgid "App title"
+msgstr "App titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:524
+msgid "The title that displays on the sign-in screen beneath the app logo and is also used to name the page that loads the POS for further customization."
+msgstr "Die titel wat op die aanmeldskerm onder die app-logo verskyn en ook gebruik word om die bladsy te benoem wat die POS laai vir verdere aanpassing."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:525
+msgid "FooEvents license key"
+msgstr "FooEvents lisensiesleutel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:526
+msgid "Required for automatic plugin updates."
+msgstr "Vereis vir outomatiese invoegtoepassingopdaterings."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:527
+msgid "Primary interface color"
+msgstr "Primêre koppelvlakkleur"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:528
+msgid "The primary color that will be used to style various interface elements in the app such as buttons, spinners, order list headers and sliders."
+msgstr "Die primêre kleur wat gebruik sal word om verskeie interfeeselemente in die program te styl, soos knoppies, spinnermeulens, bestellingslys-koppe en skyfies."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:529
+msgid "Primary text color"
+msgstr "Primêre tekskleur"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:530
+msgid "The primary color that will be used for body text contained within various interface elements in the app."
+msgstr "Die primêre kleur wat gebruik sal word vir liggaamsteks wat binne verskeie interfeeselemente in die program bevat word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:531
+msgid "Barcode / QR code width"
+msgstr "Staafkode / QR-kode breedte"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:532
+msgid "Specify the width of the barcode / QR code as it should appear on tickets printed from the POS."
+msgstr "Spesifiseer die wydte van die strepieskode / QR-kode soos dit op kaartjies gedruk vanaf die POS moet verskyn."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:533
+msgid "POS ticket theme"
+msgstr "POS kaartjie-tema"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:534
+msgid "Select the theme that will be used for printing tickets in FooEvents POS. \"Optimized for POS\" themes have been designed to print optimally on ticket and thermal receipt printers while \"Standard\" themes have not been designed for this purpose but may still print fine (use at own risk)."
+msgstr "Kies die tema wat gebruik sal word vir die druk van kaartjies in FooEvents POS. \"Geoptimaliseerde vir POS\" temas is ontwerp om optimaal op kaartjie- en termiese kwitansiërdrukkers te druk, terwyl \"Standaard\" temas nie vir hierdie doel ontwerp is nie, maar kan steeds goed druk (gebruik op eie risiko)."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:535
+msgid "FooEvents POS"
+msgstr "FooEvents POS"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:536
+msgid "FooEvents POS - Point of Sale (POS)"
+msgstr "FooEvents POS vir WooCommerce - Punt van Verkope (POS)"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:537
+msgid "FooEvents POS Import"
+msgstr "FooEvents POS Invoer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:538
+msgid "FooEvents POS Analytics"
+msgstr "FooEvents POS Analitika"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:539
+msgid "POS Payment"
+msgstr "POS Betaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:540
+msgid "POS Payments"
+msgstr "POS-betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:541
+msgid "FooEvents POS Settings"
+msgstr "FooEvents POS Instellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:542
+msgid "Welcome to FooEvents POS!"
+msgstr "Welkom by FooEvents POS vir WooCommerce!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:543
+msgid "General"
+msgstr "Algemeen"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:544
+msgid "Hardware Integration"
+msgstr "Hardeware-integrasie"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:545
+msgid "Importing offline changes..."
+msgstr "Invoer van aanlyn veranderinge..."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:546
+msgid "Integration"
+msgstr "Integrasie"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:547
+msgid "Manage Inventory"
+msgstr "Bestuur voorraad"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:548
+msgid "Invoice Printing"
+msgstr "Faktuurafdrukke"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:549
+msgid "Manage Local Pickups"
+msgstr "Bestuur Plaaslike Afhaalpunte"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:550
+msgid "Min/Max Quantities"
+msgstr "Minimum/Maksimum Hoeveelhede"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:551
+msgid "Multi-language Support"
+msgstr "Meertalige Ondersteuning"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:552
+msgid "Offline Mode"
+msgstr "Aflynmodus"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:553
+msgid "Order Alerts"
+msgstr "Bestellingswaarskuwings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:554
+msgid "Orders"
+msgstr "Bestellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:555
+msgid "Payment Details"
+msgstr "Betalingsbesonderhede"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:556
+msgid "Card Payment"
+msgstr "Kaartbetaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:557
+msgid "Cash Payment"
+msgstr "Kontantbetaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:558
+msgid "Cash on Delivery"
+msgstr "Betalings by Aflewering"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:559
+msgid "Check Payment"
+msgstr "Tjekbetaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:560
+msgid "Custom title"
+msgstr "Aangepaste titel"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:561
+msgid "This sets the title that is displayed above the payment methods at checkout."
+msgstr "Hierdie stel die titel wat bo die betaalmetodes by die afrekeningsproses vertoon word."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:562
+msgid "Direct Bank Transfer"
+msgstr "Direkte Bankoorplasing"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:563
+msgid "Enable/Disable"
+msgstr "Aktiveer/Deaktiveer"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:564
+msgid "Online"
+msgstr "Aanlyn"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:565
+msgid "Other Payment Method"
+msgstr "Ander Betalingsmetode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:566
+msgid "Split Payment"
+msgstr "Verdeelde Betaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:567
+msgid "Square"
+msgstr "Square"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:568
+msgid "Square Manual Payment"
+msgstr "Square Handmatige Betaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:569
+msgid "Square Reader"
+msgstr "Square leser"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:570
+msgid "Square Terminal"
+msgstr "Square Terminal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:571
+msgid "Stripe BBPOS Chipper 2X BT"
+msgstr "Stripe BBPOS Chipper 2X BT"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:572
+msgid "Stripe Manual Payment"
+msgstr "Stripe Handmatigebetaling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:573
+msgid "Stripe Reader"
+msgstr "Stripe leser"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:574
+msgid "Stripe Reader M2"
+msgstr "Stripe Leeser M2"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:575
+msgid "Stripe BBPOS WisePad 3"
+msgstr "Stripe BBPOS WisePad 3"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:576
+msgid "Payment Methods"
+msgstr "Betalingsmetodes"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:577
+msgid "Payments"
+msgstr "Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:578
+msgid "Amount"
+msgstr "Bedrag"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:579
+msgid "Select"
+msgstr "Kies"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:580
+msgid "Date"
+msgstr "Datum"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:581
+msgid "Payment ID"
+msgstr "Betalings-ID"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:582
+msgid "Payment Method"
+msgstr "Betalingsmetode"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:583
+msgid "Order"
+msgstr "Bestelling"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:584
+msgid "Transaction"
+msgstr "Transaksie"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:585
+msgid "POS Settings"
+msgstr "POS-instellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:586
+msgid "WooCommerce Product Add-ons Integration"
+msgstr "WooCommerce Produk Bykomstighede Integrasie"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:587
+msgid "Products"
+msgstr "Produkte"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:588
+msgid "Receipts"
+msgstr "Kwitansies"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:589
+msgid "Refunds"
+msgstr "Terugbetalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:590
+msgid "Reports"
+msgstr "Verslae"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:591
+msgid "Sales Channel"
+msgstr "Verkoopskanaal"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:592
+msgid "Done, your free trial is now active!"
+msgstr "Klaar, jou gratis toetslopie is nou aktief!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:593
+msgid "Whoops, something went wrong!"
+msgstr "Oeps, iets het verkeerd geloop!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:594
+msgid "Welcome to FooEvents for WooCommerce!"
+msgstr "Welkom by FooEvents POS!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:595
+msgid "Show this product's variations in the POS"
+msgstr "Wys hierdie produk se variasies in die POS."
+
+#: admin/helpers/fooeventspos-phrases-helper.php:596
+msgid "Split Payments"
+msgstr "Gedeelde Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:597
+msgid "Square Payments"
+msgstr "Square Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:598
+msgid "Status"
+msgstr "Status"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:599
+msgid "Stripe Payments"
+msgstr "Stripe Betalings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:600
+msgid "WooCommerce Tax Rates"
+msgstr "WooCommerce Belastingkoerse"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:601
+msgid "Ticket Settings"
+msgstr "Kaartjieinstellings"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:602
+msgid "Users"
+msgstr "Gebruikers"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:603
+msgid "WooCommerce Variations Support"
+msgstr "WooCommerce Variasie-ondersteuning"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:604
+msgid "You're good to go!"
+msgstr "Jy is reg om te gaan!"
+
+#: admin/helpers/fooeventspos-phrases-helper.php:605
+msgid "WooCommerce Analytics"
+msgstr "WooCommerce Analitika"
+

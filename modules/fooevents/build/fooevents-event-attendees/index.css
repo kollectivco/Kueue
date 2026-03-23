@@ -1,0 +1,194 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/fooevents-event-attendees/editor.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+/* Attendee Block Grid Styles */
+.fooevents-attendees-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.fooevents-attendee-list-grid-2 {
+  grid-template-columns: repeat(2, calc(50% - 15px));
+}
+
+.fooevents-attendee-list-grid-3 {
+  grid-template-columns: repeat(3, calc(33.33% - 20px));
+}
+
+.fooevents-attendee-list-grid-4 {
+  grid-template-columns: repeat(4, calc(25% - 22.5px));
+}
+
+.fooevents-attendee-list-grid-5 {
+  grid-template-columns: repeat(5, calc(20% - 24px));
+}
+
+.fooevents-attendee-list-grid-6 {
+  grid-template-columns: repeat(6, calc(16.66% - 25px));
+}
+
+.fooevents-attendee-list-grid-7 {
+  grid-template-columns: repeat(7, calc(14.28% - 25.7142857143px));
+}
+
+.fooevents-attendee-list-grid-8 {
+  grid-template-columns: repeat(8, calc(12.5% - 26.25px));
+}
+
+.fooevents-attendees-grid .fooevents-attendee {
+  margin-top: 1em;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.fooevents-attendees:after,
+.fooevents-attendee-list-clear {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.fooevents-attendees-grid .fooevents-attendee img {
+  border-radius: 100%;
+  max-width: 90%;
+  margin: 0 0 0.5em;
+  display: inline-block;
+}
+
+.fooevents-attendees-grid .fooevents-attendee-info-name {
+  font-weight: bold;
+}
+
+.fooevents-attendees-grid .fooevents-attendee-info-designation,
+.fooevents-attendees-grid .fooevents-attendee-info-company,
+.fooevents-attendees-grid .fooevents-attendee-info-telephone,
+.fooevents-attendees-grid .fooevents-attendee-info-email,
+.fooevents-attendees-grid .fooevents-attendee-info-signup {
+  font-size: 0.8em;
+}
+
+.fooevents-attendees-grid .fooevents-attendee-info-designation {
+  font-weight: 600;
+}
+
+.fooevents-attendees-grid-total {
+  padding: 1em 0;
+  text-align: center;
+}
+
+/* Attendee Block Pictures Styles */
+.fooevents-attendees-pictures .fooevents-attendee {
+  float: left;
+  text-align: center;
+  line-height: 1.3em;
+  margin: 0 0 0 -0.8em;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee img {
+  max-width: 100%;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee-size-large {
+  width: 6em;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee-size-large img {
+  border: solid 4px #fff;
+  width: 6em;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee-size-medium {
+  width: 3.5em;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee-size-medium img {
+  border: solid 3px #fff;
+  width: 3.5em;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee-size-small {
+  width: 2.5em;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee-size-small img {
+  border: solid 2px #fff;
+  width: 2.5em;
+}
+
+#fooevents-attendee-list-compact .fooevents-attendee-large img {
+  max-width: 6em;
+}
+
+#fooevents-attendee-list-compact .fooevents-attendee-medium img {
+  max-width: 3.5em;
+}
+
+#fooevents-attendee-list-compact .fooevents-attendee-small img {
+  max-width: 2.5em;
+}
+
+.fooevents-attendees-pictures .fooevents-attendee-0 {
+  margin: 0;
+}
+
+/* Attendee Block List Styles */
+.fooevents-attendees-list img {
+  border-radius: 100%;
+  max-width: 90%;
+  margin: 0 0 0.5em;
+}
+
+.fooevents-attendees-list-total {
+  padding: 1em 0;
+  text-align: left;
+}
+
+/* Attendee Block Image Styles */
+.fooevents-attendees-pictures .fooevents-attendee img {
+  border-radius: 100%;
+  max-width: 100%;
+  margin: 0 0 0.5em;
+}
+
+@media screen and (max-width: 55em) {
+  .fooevents-attendee-list-grid-5,
+  .fooevents-attendee-list-grid-6,
+  .fooevents-attendee-list-grid-7,
+  .fooevents-attendee-list-grid-8 {
+    grid-template-columns: repeat(5, calc(20% - 24px));
+  }
+}
+@media screen and (max-width: 50em) {
+  .fooevents-attendee-list-grid-5,
+  .fooevents-attendee-list-grid-6,
+  .fooevents-attendee-list-grid-7,
+  .fooevents-attendee-list-grid-8 {
+    grid-template-columns: repeat(4, calc(25% - 22.5px));
+  }
+}
+@media screen and (max-width: 40em) {
+  .fooevents-attendee-list-grid-4,
+  .fooevents-attendee-list-grid-5,
+  .fooevents-attendee-list-grid-6,
+  .fooevents-attendee-list-grid-7,
+  .fooevents-attendee-list-grid-8 {
+    grid-template-columns: repeat(3, calc(33.33% - 20px));
+  }
+}
+@media screen and (max-width: 30em) {
+  .fooevents-attendee-list-grid-3,
+  .fooevents-attendee-list-grid-4,
+  .fooevents-attendee-list-grid-5,
+  .fooevents-attendee-list-grid-6,
+  .fooevents-attendee-list-grid-7,
+  .fooevents-attendee-list-grid-8 {
+    grid-template-columns: repeat(2, calc(50% - 15px));
+  }
+}
+
+/*# sourceMappingURL=index.css.map*/

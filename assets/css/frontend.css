@@ -1,0 +1,232 @@
+/* Frontend UI Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.kq-event-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.kq-event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.kq-event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kq-event-body {
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.kq-event-category {
+    font-size: 12px;
+    color: #ff3131;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.kq-event-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f0f10;
+    margin-bottom: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.kq-event-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kq-event-meta i {
+    color: #ff3131;
+}
+
+.kq-event-footer {
+    padding: 20px 24px;
+    border-top: 1px solid #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kq-event-price {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f0f10;
+}
+
+/* Single Event Page */
+.kq-single-event {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.kq-hero-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.kq-event-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.kq-sidebar {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.kq-ticket-selector {
+    margin-top: 24px;
+}
+
+.kq-ticket-item {
+    padding: 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.kq-ticket-item:hover {
+    border-color: #ff3131;
+    background: rgba(255, 49, 49, 0.02);
+}
+
+.kq-ticket-name {
+    font-weight: 600;
+}
+
+.kq-ticket-price {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Dashboard UI */
+.kq-dashboard-sidebar {
+    background: #0f0f10;
+    color: #fff;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.kq-dashboard-content {
+	background: #f6f6f6;
+	padding: 40px;
+	border-radius: 16px;
+}
+
+/* Form Styles */
+.kq-input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 16px;
+    transition: all 0.2s;
+}
+
+.kq-input:focus {
+    border-color: #ff3131;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 49, 49, 0.1);
+}
+
+/* Checkout Attendee Fields */
+.kq-checkout-attendees {
+    margin-top: 40px !important;
+    padding-top: 30px !important;
+    border-top: 2px solid #f6f6f6 !important;
+}
+
+.kq-checkout-attendees h3 {
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    margin-bottom: 25px !important;
+    color: #0f0f10 !important;
+}
+
+.kq-attendee-group {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.kq-attendee-group-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.kq-attendee-number {
+    background: #ff3131;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.kq-attendee-group-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f0f10;
+    margin: 0;
+}
+
+.kq-attendee-fields-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .kq-attendee-fields-grid {
+        grid-template-columns: 1fr;
+    }
+}

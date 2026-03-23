@@ -1,0 +1,6 @@
+{
+    "name": "Default Ticket Theme",
+    "supports-html": "true",
+    "supports-pdf": "true",
+    "supports-pos": "false"
+}

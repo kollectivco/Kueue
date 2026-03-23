@@ -22,7 +22,8 @@ class TemplateRenderer {
             '{event_date}'    => get_post_meta( $ticket->event_id, '_kq_start_date', true ),
             '{event_time}'    => get_post_meta( $ticket->event_id, '_kq_start_time', true ),
             '{venue_name}'    => get_post_meta( $ticket->event_id, '_kq_venue_name', true ),
-            '{qr_code}'       => QRCodeGenerator::generate_svg_url( $ticket->secure_token ),
+            '{qr_code}'       => QRCodeGenerator::generate_data_uri( $ticket->secure_token ),
+            '{google_wallet_url}' => (new GoogleWalletService())->get_save_url( $ticket ),
         ];
     }
 
@@ -34,7 +35,10 @@ class TemplateRenderer {
             return '';
         }
 
-        $content = file_get_contents( $template_path );
+        ob_start();
+        include $template_path;
+        $content = ob_get_clean();
+
         foreach ( $this->placeholders as $placeholder => $value ) {
             $content = str_replace( $placeholder, $value, $content );
         }

@@ -1,0 +1,85 @@
+:root {
+    --kq-primary: #ff3131;
+    --kq-primary-hover: #e02a2a;
+    --kq-dark: #0f0f10;
+    --kq-dark-lite: #1a1a1c;
+    --kq-light: #f6f6f6;
+    --kq-white: #ffffff;
+    --kq-gray: #888888;
+    --kq-border: rgba(0, 0, 0, 0.05);
+    --kq-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --kq-radius: 12px;
+    --kq-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kq-card {
+    background: var(--kq-white);
+    border-radius: var(--kq-radius);
+    padding: 24px;
+    box-shadow: var(--kq-shadow);
+    border: 1px solid var(--kq-border);
+    transition: var(--kq-transition);
+    height: 100%;
+}
+
+.kq-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.kq-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--kq-transition);
+    cursor: pointer;
+    border: none;
+}
+
+.kq-btn-primary {
+    background: var(--kq-primary);
+    color: var(--kq-white) !important;
+}
+
+.kq-btn-primary:hover {
+    background: var(--kq-primary-hover);
+}
+
+.kq-btn-dark {
+    background: var(--kq-dark);
+    color: var(--kq-white) !important;
+}
+
+.kq-btn-outline {
+    background: transparent;
+    border: 1px solid var(--kq-border);
+    color: var(--kq-dark) !important;
+}
+
+/* Bento Grid */
+.kq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+/* Stats */
+.kq-stat-value {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--kq-dark);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.kq-stat-label {
+    font-size: 14px;
+    color: var(--kq-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,4662 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-08-28 10:48-0700\n"
+"PO-Revision-Date: 2025-08-28 11:20-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: build/fooevents-event-attendees/render.php:7
+#: src/fooevents-event-attendees/render.php:7
+msgid "FooEvents Event Attendees – hello from a dynamic block!"
+msgstr "Účastníci události FooEvents - ahoj z dynamického bloku!"
+
+#: class-fooevents.php:222
+msgid "WooCommerce Events has re-branded to FooEvents. Please disable and remove the older WooCommerce Events plugin."
+msgstr "WooCommerce Events se přejmenoval na FooEvents. Vypněte a odeberte starší plugin WooCommerce Events."
+
+#: class-fooevents.php:229 class-fooevents.php:234 class-fooevents.php:241
+#: class-fooevents.php:248 class-fooevents.php:255
+#, php-format
+msgid "Directory %s is not writeable"
+msgstr "Do adresáře %s nelze zapisovat"
+
+#: class-fooevents.php:262
+msgid "We have detected that you have overridden FooEvents ticket template files in your Wordpress theme. Please move these to an overridden ticket theme directory. Please consult the FooEvents documentation on how to do this."
+msgstr "Zjistili jsme, že jste přepsali soubory šablon lístků FooEvents ve svém motivu Wordpress. Přesuňte je prosím do adresáře s přepsaným tématem lístku. Prostudujte si prosím dokumentaci FooEvents, jak to provést."
+
+#: class-fooevents.php:270
+msgid "PHP GD library is a requirement for FooEvents to generate QR codes. Please contact your web host to enable PHP GD libraries."
+msgstr "PHP GD knihovna je požadavkem pro FooEvents pro generování QR kódů. Chcete-li povolit knihovny PHP GD, kontaktujte svého webového hostitele."
+
+#: class-fooevents.php:281
+msgid "Purchaser username already used. Ticket was not created."
+msgstr "Uživatelské jméno kupujícího je již použito. Lístek nebyl vytvořen."
+
+#: class-fooevents.php:282
+msgid "An error occured. Ticket was not created."
+msgstr "Nastala chyba. Lístek nebyl vytvořen."
+
+#: class-fooevents.php:283
+msgid "Purchaser email address already used. Ticket was not created."
+msgstr "E-mailová adresa kupujícího již byla použita. Lístek nebyl vytvořen."
+
+#: class-fooevents.php:317
+msgid "Thank you for using FooEvents!"
+msgstr "Děkujeme, že používáte FooEvents!"
+
+#: class-fooevents.php:318
+msgid "Please take a moment to share your experience on Trustpilot—your feedback helps us to improve, grow and provide an even better product!"
+msgstr "Prosím, věnujte chvíli na sdílení své zkušenosti na Trustpilotu - vaše zpětná vazba nám pomáhá zlepšovat se, růst a poskytovat ještě lepší produkt!"
+
+#: class-fooevents.php:320
+msgid "Submit a Review"
+msgstr "Odeslat recenzi"
+
+#: class-fooevents.php:364 class-fooevents.php:1509
+msgid "Important: "
+msgstr "Důležité:"
+
+#: class-fooevents.php:365
+msgid "Your site appears to have Stripe's Apple Pay and Google Pay Express Checkout payment options enabled. Please note, the WooCommerce Stripe Payment Gateway plugin recently switched to the new WooCommerce Store API and is no longer compatible with FooEvents when using the classic shortcode-based WooCommerce Checkout experience. Please switch to the new WooCommerce Checkout block to continue using Apple Pay with FooEvents."
+msgstr "Váš web má zapnuté možnosti platby Stripe Apple Pay a Google Pay Express Checkout. Upozorňujeme, že doplněk WooCommerce Stripe Payment Gateway nedávno přešel na nové rozhraní obchodu WooCommerce Store API a již není kompatibilní s FooEvents při použití klasické zkrácené zkušenosti s pokladnou WooCommerce. Přepněte prosím na nový blok pokladny WooCommerce, abyste mohli nadále používat Apple Pay s FooEvents."
+
+#: class-fooevents.php:367 class-fooevents.php:1513
+#: templates/product-event-settings.php:189
+#: templates/product-event-settings.php:246
+#: templates/product-event-settings.php:285
+msgid "Learn more"
+msgstr "Zjistit více"
+
+#: class-fooevents.php:508 class-fooevents.php:517 class-fooevents.php:527
+#: class-fooevents.php:537 class-fooevents.php:570
+#, php-format
+msgid "FooEvents failed to create the directory %s please manually create this directory on your server."
+msgstr "Při vytváření adresáře %s se nezdařilo vytvořit tento adresář. Vytvorte adresar ručně na serveru."
+
+#: class-fooevents.php:548
+#, php-format
+msgid "FooEvents failed to create the file %s please manually create this file on your server."
+msgstr "FooEvents se nepodařilo vytvořit soubor %s, vytvořte prosím tento soubor ručně na svém serveru."
+
+#: class-fooevents.php:687
+msgid "Done"
+msgstr "Hotovo"
+
+#: class-fooevents.php:688
+msgid "Today"
+msgstr "Dnes"
+
+#: class-fooevents.php:691
+msgid "Show a different month"
+msgstr "Zobrazit jiný měsíc"
+
+#: class-fooevents.php:702 class-fooevents.php:834
+#: classes/class-fooevents-zoom-api-helper.php:895
+#: classes/class-fooevents-zoom-api-helper.php:899
+#: templates/product-event-integration-settings.php:204
+msgid "minutes"
+msgstr "minut"
+
+#: class-fooevents.php:703 class-fooevents.php:832
+#: classes/class-fooevents-zoom-api-helper.php:895
+#: templates/product-event-integration-settings.php:198
+msgid "hours"
+msgstr "hodin"
+
+#: class-fooevents.php:704 classes/class-fooevents-zoom-api-helper.php:604
+msgid "days"
+msgstr "dny"
+
+#: class-fooevents.php:705 classes/class-fooevents-zoom-api-helper.php:608
+msgid "weeks"
+msgstr "týdny"
+
+#: class-fooevents.php:724
+msgid "Your stationery settings have been saved."
+msgstr "Vaše nastavení šablon byla uložena."
+
+#: class-fooevents.php:725
+msgid "An error occurred while saving your stationery settings."
+msgstr "Při ukládání nastavení šablon došlo k chybě."
+
+#: class-fooevents.php:752 templates/tickets-add-ticket.php:115
+msgid "Event Overview"
+msgstr "Přehled událostí"
+
+#: class-fooevents.php:753
+msgid "Select an event in the <strong>Event Details</strong> section."
+msgstr "Vyberte událost v části <strong>Podrobnosti události</strong> ."
+
+#: class-fooevents.php:772 templates/global-settings.php:524
+msgid "Test Access"
+msgstr "Testovací přístup"
+
+#: class-fooevents.php:773
+msgid "Testing Access..."
+msgstr "Testování přístupu..."
+
+#: class-fooevents.php:774
+msgid "Successfully connected to your Zoom account"
+msgstr "Úspěšně připojeno k vašemu účtu Zoom"
+
+#: class-fooevents.php:775 templates/global-settings.php:541
+#: templates/product-event-integration-settings.php:77
+msgid "Fetch Users"
+msgstr "Načíst uživatele"
+
+#: class-fooevents.php:776
+msgid "Fetching Users..."
+msgstr "Načítání uživatelů..."
+
+#: class-fooevents.php:777 templates/global-settings.php:551
+msgid "Show only meetings/webinars for the user that generated the Zoom API Server-to-Server OAuth credentials"
+msgstr "Zobrazit pouze schůzky/webináře pro uživatele, který vygeneroval pověření OAuth rozhraní Zoom API Server-to-Server"
+
+#: class-fooevents.php:778 templates/global-settings.php:553
+msgid "Show all meetings/webinars created by the following users:"
+msgstr "Zobrazit všechny schůzky/webové semináře vytvořené následujícími uživateli:"
+
+#: class-fooevents.php:779 templates/global-settings.php:564
+msgid "Please note that meeting/webinar load times will increase as more users are selected."
+msgstr "Vezměte prosím na vědomí, že doba načítání schůzky/webináře se prodlouží, když bude vybráno více uživatelů."
+
+#: class-fooevents.php:782 templates/global-settings.php:597
+#: templates/product-event-integration-settings.php:63
+#: templates/product-event-integration-settings.php:112
+#: templates/product-event-integration-settings.php:141
+#: templates/product-event-integration-settings.php:161
+#: templates/product-event-integration-settings.php:184
+#: templates/product-event-integration-settings.php:240
+msgid "Not set"
+msgstr "Nenastavený"
+
+#: class-fooevents.php:783 templates/product-event-integration-settings.php:113
+#: templates/product-event-integration-settings.php:162
+msgid "Auto-generate"
+msgstr "Automaticky generuj"
+
+#: class-fooevents.php:784 classes/class-fooevents-zoom-api-helper.php:1474
+#: classes/class-fooevents-zoom-api-helper.php:1581
+msgid "Topic"
+msgstr "Téma"
+
+#: class-fooevents.php:785 classes/class-fooevents-woo-helper.php:2340
+#: templates/event-tab-map.php:10
+msgid "Description"
+msgstr "Popis"
+
+#: class-fooevents.php:786
+#: classes/class-fooevents-follow-up-emails-helper.php:755
+#: classes/class-fooevents-orders-helper.php:583
+#: classes/class-fooevents-ticket-helper.php:3274
+#: classes/class-fooevents-zoom-api-helper.php:1475
+#: classes/class-fooevents-zoom-api-helper.php:1583
+#: templates/order-new-order-email-ticket-details.php:30
+msgid "Date"
+msgstr "Datum"
+
+#: class-fooevents.php:787 classes/class-fooevents-zoom-api-helper.php:1475
+#: classes/class-fooevents-zoom-api-helper.php:1583
+#: templates/order-new-order-email-ticket-details.php:41
+msgid "Start date"
+msgstr "Datum zahájení"
+
+#: class-fooevents.php:788
+#: templates/order-new-order-email-ticket-details.php:44
+msgid "End date"
+msgstr "Datum ukončení"
+
+#: class-fooevents.php:789 classes/class-fooevents-zoom-api-helper.php:1476
+#: classes/class-fooevents-zoom-api-helper.php:1585
+#: templates/order-new-order-email-ticket-details.php:33
+#: templates/order-new-order-email-ticket-details.php:47
+#: templates/order-new-order-email-ticket-details.php:60
+#: templates/order-new-order-email-ticket-details.php:68
+msgid "Start time"
+msgstr "Čas začátku"
+
+#: class-fooevents.php:790 classes/class-fooevents-zoom-api-helper.php:1477
+#: classes/class-fooevents-zoom-api-helper.php:1586
+#: templates/order-new-order-email-ticket-details.php:36
+#: templates/order-new-order-email-ticket-details.php:50
+#: templates/order-new-order-email-ticket-details.php:63
+#: templates/order-new-order-email-ticket-details.php:71
+msgid "End time"
+msgstr "Čas konce"
+
+#: class-fooevents.php:791 classes/class-fooevents-zoom-api-helper.php:1478
+#: classes/class-fooevents-zoom-api-helper.php:1587
+msgid "Duration"
+msgstr "Délka"
+
+#: class-fooevents.php:792 classes/class-fooevents-zoom-api-helper.php:1482
+#: classes/class-fooevents-zoom-api-helper.php:1591
+msgid "Recurrence"
+msgstr "Opakování"
+
+#: class-fooevents.php:793
+msgid "Upcoming occurrences"
+msgstr "Nadcházející události"
+
+#: class-fooevents.php:794
+msgid "Occurrences"
+msgstr "Výskyty"
+
+#: class-fooevents.php:795
+msgid "No upcoming occurrences"
+msgstr "Nadcházející události"
+
+#: class-fooevents.php:796
+msgid "Unable to fetch meeting details"
+msgstr "Podrobnosti o schůzce nelze načíst"
+
+#: class-fooevents.php:797
+msgid "Unable to fetch webinar details"
+msgstr "Podrobnosti webináře nelze načíst"
+
+#: class-fooevents.php:798
+msgid "Note: Automatic attendee registration is required."
+msgstr "Poznámka: Je vyžadována automatická registrace účastníka."
+
+#: class-fooevents.php:799
+msgid "Note: Automatic attendee registration is required for all occurrences."
+msgstr "Poznámka: Pro všechny výskyty je vyžadována automatická registrace účastníka."
+
+#: class-fooevents.php:800
+msgid "Note: Attendees will be registered automatically."
+msgstr "Poznámka: Účastníci budou registrováni automaticky."
+
+#: class-fooevents.php:801
+msgid "Note: Attendees will be registered automatically for all occurrences."
+msgstr "Poznámka: Účastníci budou registrováni automaticky pro všechny výskyty."
+
+#: class-fooevents.php:802
+msgid "Automatic attendee registration is currently enabled for this meeting"
+msgstr "Pro tuto schůzku je aktuálně povolena automatická registrace účastníků"
+
+#: class-fooevents.php:803
+msgid "Automatic attendee registration is currently enabled for this webinar"
+msgstr "Pro tento webinář je aktuálně povolena automatická registrace účastníků"
+
+#: class-fooevents.php:804
+msgid "Automatic attendee registration is currently disabled for this meeting"
+msgstr "Automatická registrace účastníků je pro tuto schůzku momentálně zakázána"
+
+#: class-fooevents.php:805
+msgid "Automatic attendee registration is currently disabled for this webinar"
+msgstr "Automatická registrace účastníků je pro tento webinář momentálně zakázána"
+
+#: class-fooevents.php:806
+msgid "Enable automatic attendee registration for this meeting"
+msgstr "Povolit automatickou registraci účastníků pro tuto schůzku"
+
+#: class-fooevents.php:807
+msgid "Enable automatic attendee registration for this webinar"
+msgstr "Povolit automatickou registraci účastníků pro tento webinář"
+
+#: class-fooevents.php:808
+msgid "Automatic attendee registration is currently enabled for all occurrences"
+msgstr "Automatická registrace účastníků je aktuálně povolena pro všechny události"
+
+#: class-fooevents.php:809
+msgid "Automatic attendee registration is not currently enabled for all occurrences"
+msgstr "Automatická registrace účastníků není aktuálně povolena pro všechny události"
+
+#: class-fooevents.php:810
+msgid "Enable automatic attendee registration for all occurrences"
+msgstr "Povolit automatickou registraci účastníků pro všechny výskyty"
+
+#: class-fooevents.php:811
+msgid "Registrations"
+msgstr "Přihlášky"
+
+#: class-fooevents.php:812 templates/product-event-integration-settings.php:157
+msgid "Link the event to these meetings/webinars:"
+msgstr "Propojte událost s těmito schůzkami/webináři:"
+
+#: class-fooevents.php:813 templates/product-event-integration-settings.php:180
+msgid "Show details"
+msgstr "Zobrazit detaily"
+
+#: class-fooevents.php:814
+msgid "Hide details"
+msgstr "Skrýt detaily"
+
+#: class-fooevents.php:815
+msgid "This is not a recurring meeting"
+msgstr "Toto není opakující se setkání"
+
+#: class-fooevents.php:816
+msgid "This is not a recurring webinar"
+msgstr "Toto není opakující se webinář"
+
+#: class-fooevents.php:817
+msgid "This meeting's recurrence is currently set to 'No Fixed Time' which does not allow attendees to pre-register in advance. Please change the setting for this meeting to have a fixed recurrence (daily/weekly/monthly) in your Zoom account before proceeding."
+msgstr "Opakování této schůzky je aktuálně nastaveno na „Bez pevného času“, což účastníkům neumožňuje předběžnou registraci. Než budete pokračovat, změňte nastavení této schůzky tak, aby se opakovala (denně/týdně/měsíčně) ve vašem účtu Zoom."
+
+#: class-fooevents.php:818
+msgid "This webinar's recurrence is currently set to 'No Fixed Time' which does not allow attendees to pre-register in advance. Please change the setting for this webinar to have a fixed recurrence (daily/weekly/monthly) in your Zoom account before proceeding."
+msgstr "Opakování tohoto webináře je aktuálně nastaveno na „Bez pevného času“, což účastníkům neumožňuje předběžnou registraci. Než budete pokračovat, změňte nastavení pro tento webinář tak, aby se opakoval (denně/týdně/měsíčně) ve vašem účtu Zoom."
+
+#: class-fooevents.php:819
+msgid "Edit meeting"
+msgstr "Upravit schůzku"
+
+#: class-fooevents.php:820
+msgid "Edit webinar"
+msgstr "Upravit webinář"
+
+#: class-fooevents.php:821 templates/product-event-settings.php:24
+msgid "Single"
+msgstr "Jednodenní"
+
+#: class-fooevents.php:822 templates/product-event-settings.php:25
+msgid "Sequential days"
+msgstr "Po sobě jdoucí dny"
+
+#: class-fooevents.php:823
+msgid "Select days"
+msgstr "Vybrané dny"
+
+#: class-fooevents.php:824 templates/product-event-settings.php:27
+msgid "Bookable"
+msgstr "Rezervace"
+
+#: class-fooevents.php:825 templates/global-settings.php:21
+#: templates/product-event-settings.php:28
+msgid "Seating"
+msgstr "Místa k sezení"
+
+#: class-fooevents.php:826 templates/product-event-settings.php:24
+msgid "Standard one-day events."
+msgstr "Standardní jednodenní akce."
+
+#: class-fooevents.php:827
+msgid "Events that occur over multiple days and repeat for a set number of sequential days."
+msgstr "Události, které probíhají několik dnů a opakují se po stanovený počet po sobě jdoucích dnů."
+
+#: class-fooevents.php:828
+msgid "Events that repeat over multiple calendar days."
+msgstr "Události, které se opakují více kalendářních dnů."
+
+#: class-fooevents.php:829
+msgid "Events that require customers to select from available date and time slots (bookings and repeat events)."
+msgstr "Události, které vyžadují, aby si zákazníci vybrali z dostupných datumů a časových úseků (rezervace a opakované události)."
+
+#: class-fooevents.php:830
+msgid "Events that include the ability for customers to select row and seat numbers from a seating chart."
+msgstr "Události, které zahrnují možnost pro zákazníky vybrat si čísla řad a sedadel z tabulky sedadel."
+
+#: class-fooevents.php:831
+msgid "Refresh Example Info"
+msgstr "Obnovit informace o příkladu"
+
+#: class-fooevents.php:833 classes/class-fooevents-zoom-api-helper.php:895
+msgid "hour"
+msgstr "hodina"
+
+#: class-fooevents.php:835
+msgid "minute"
+msgstr "minuta"
+
+#: class-fooevents.php:836 classes/class-fooevents-zoom-api-helper.php:604
+msgid "Daily"
+msgstr "Denně"
+
+#: class-fooevents.php:1039
+#: classes/automatewoo/classes/trigger-fooevents-after-check-in-ticket.php:30
+#: classes/automatewoo/classes/trigger-fooevents-after-create-ticket.php:30
+#: classes/class-fooevents-follow-up-emails-helper.php:68
+#: classes/class-fooevents-follow-up-emails-helper.php:69
+#: classes/class-fooevents-ticket-helper.php:161
+#: templates/plugin-introduction.php:26
+msgid "FooEvents"
+msgstr "FooEvents"
+
+#: class-fooevents.php:1047 class-fooevents.php:1571
+msgid "Settings"
+msgstr "Nastavení"
+
+#: class-fooevents.php:1048 class-fooevents.php:1577
+msgid "Getting Started"
+msgstr "Začínáme"
+
+#: class-fooevents.php:1049
+msgid "Import Check-ins"
+msgstr "Import check-in"
+
+#: class-fooevents.php:1237
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nemáte dostatečná oprávnění k přístupu na tuto stránku."
+
+#: class-fooevents.php:1338
+msgid "Load all tickets"
+msgstr "Načtěte všechny vstupenky"
+
+#: class-fooevents.php:1392 templates/reports-report-page.php:42
+#: templates/reports-report-page.php:47
+msgid "None"
+msgstr "Žádný"
+
+#: class-fooevents.php:1393
+msgid "Only the latest access update"
+msgstr "Pouze nejnovější aktualizace přístupu."
+
+#: class-fooevents.php:1394
+msgid "All access updates"
+msgstr "Všechny aktualizace přístupu"
+
+#: class-fooevents.php:1511
+msgid "Your site is currently using the new WooCommerce Checkout block to process payments. While FooEvents offers partial support for the sale of single-day, multi-day, booking, and seating tickets using the WooCommerce Checkout block, the capturing of custom attendee fields is not yet supported. If you need to capture custom attendee information, please switch to the classic shortcode-based WooCommerce Checkout experience."
+msgstr "Vaše stránka v současné době používá nový blok pokladny WooCommerce k zpracování plateb. Zatímco FooEvents nabízí částečnou podporu pro prodej jednodenních, vícedenních, rezervačních a sedadelních vstupenek pomocí bloku pokladny WooCommerce, zatím není podporováno zachycování vlastních polí účastníků. Pokud potřebujete zachytit vlastní informace o účastnících, přepněte na klasický zážitek s pokladnou WooCommerce založený na zkratce."
+
+#: class-fooevents.php:1525
+msgid "FooEvents Introduction"
+msgstr "Úvod do FooEvents"
+
+#: class-fooevents.php:1560 templates/fooevents-checkins-import.php:11
+msgid "FooEvents Check-ins Import"
+msgstr "Import check-in FooEvents"
+
+#: class-fooevents.php:1560
+msgid "Import check-ins that were performed while using the FooEvents Check-ins app in offline mode."
+msgstr "Importovat přihlášky, které byly provedeny při použití aplikace FooEvents Check-ins v režimu offline."
+
+#: class-fooevents.php:2043
+#: classes/blocks/class-fooevents-blocks-event-listing.php:90
+#: templates/global-settings.php:225
+msgid "Book ticket"
+msgstr "Koupit vstupenku"
+
+#: class-fooevents.php:2480
+msgid "These are your tickets for:"
+msgstr "Toto jsou vaše vstupenky na:"
+
+#: class-fooevents.php:2481
+msgid "Ticket details:"
+msgstr "Detaily vstupenky:"
+
+#: class-fooevents.php:2482
+msgid "Ticket Number:"
+msgstr "Číslo vstupenky:"
+
+#: class-fooevents.php:2483
+msgid "Location:"
+msgstr "Místo:"
+
+#: class-fooevents.php:2484 templates/event-tab.php:104
+#: templates/product-event-settings.php:131
+msgid "Directions:"
+msgstr "Navigace:"
+
+#: class-fooevents.php:2485 templates/email/ticket.php:269
+#: templates/my-account-view-order-tickets.php:66
+msgid "Ticket Holder:"
+msgstr "Držitel vstupenky:"
+
+#: class-fooevents.php:2486 templates/email/ticket.php:280
+msgid "Telephone Number:"
+msgstr "Telefonní číslo:"
+
+#: class-fooevents.php:2487 templates/email/ticket.php:291
+#: templates/my-account-view-order-tickets.php:120
+#: templates/order-ticket-details-generated-tickets.php:81
+#: templates/order-ticket-details.php:73 templates/tickets-edit-ticket.php:40
+msgid "Company:"
+msgstr "Společnost:"
+
+#: class-fooevents.php:2488 templates/email/ticket.php:302
+#: templates/my-account-view-order-tickets.php:126
+#: templates/order-ticket-details-generated-tickets.php:87
+#: templates/order-ticket-details.php:79 templates/tickets-add-ticket.php:86
+#: templates/tickets-edit-ticket.php:44
+msgid "Designation:"
+msgstr "Označení:"
+
+#: class-fooevents.php:2489 templates/email/ticket.php:164
+msgid "Price:"
+msgstr "Cena:"
+
+#: class-fooevents.php:2560
+#: classes/class-fooevents-follow-up-emails-helper.php:700
+#: classes/class-fooevents-ticket-helper.php:3169
+#: classes/class-fooevents-ticket-helper.php:3175
+#: classes/class-fooevents-woo-helper.php:484
+#: classes/class-fooevents-woo-helper.php:4241
+#: classes/class-fooevents-zoom-api-helper.php:1546
+#: templates/global-settings.php:235
+msgid "Day"
+msgstr "Den"
+
+#: classes/automatewoo/classes/trigger-fooevents-after-check-in-ticket.php:29
+msgid "After check-in ticket"
+msgstr "Po ověření lístku"
+
+#: classes/automatewoo/classes/trigger-fooevents-after-create-ticket.php:29
+msgid "After create ticket"
+msgstr "Po vytvoření lístku"
+
+#: classes/automatewoo/classes/variable-fooevents-attendee-email.php:24
+msgid "Displays the attendee email address"
+msgstr "Zobrazuje e-mailovou adresu účastníka"
+
+#: classes/automatewoo/classes/variable-fooevents-attendee-first-name.php:24
+msgid "Displays the attendee first name."
+msgstr "Zobrazuje křestní jméno účastníka."
+
+#: classes/automatewoo/classes/variable-fooevents-attendee-last-name.php:24
+msgid "Displays the attendee last name."
+msgstr "Zobrazuje příjmení účastníka."
+
+#: classes/automatewoo/classes/variable-fooevents-attendee-phone.php:24
+msgid "Displays the attendee phone number"
+msgstr "Zobrazuje telefonní číslo účastníka."
+
+#: classes/automatewoo/classes/variable-fooevents-barcode-url.php:24
+msgid "Outputs the barcode URL."
+msgstr "Vypíše adresu URL čárového kódu."
+
+#: classes/automatewoo/classes/variable-fooevents-bookings-date-datetime.php:24
+msgid "Displays the event bookings date datetime."
+msgstr "Zobrazuje datum a čas rezervace události."
+
+#: classes/automatewoo/classes/variable-fooevents-bookings-date-mysql.php:24
+#: classes/automatewoo/classes/variable-fooevents-bookings-date.php:24
+msgid "Displays the bookings date."
+msgstr "Zobrazuje datum rezervace."
+
+#: classes/automatewoo/classes/variable-fooevents-bookings-date-term.php:24
+msgid "Displays the bookings date term."
+msgstr "Zobrazuje termín rezervace."
+
+#: classes/automatewoo/classes/variable-fooevents-bookings-slot-term.php:24
+msgid "Displays the bookings slot term."
+msgstr "Zobrazuje rezervovaný časový úsek."
+
+#: classes/automatewoo/classes/variable-fooevents-bookings-slot.php:24
+msgid "Displays the bookings slot."
+msgstr "Zobrazuje rezervovaný časový slot."
+
+#: classes/automatewoo/classes/variable-fooevents-event-date-datetime.php:24
+msgid "Displays the event date datetime."
+msgstr "Zobrazuje datum a čas události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-date-mysql.php:24
+msgid "Displays the event date in MySQL format."
+msgstr "Zobrazuje datum události ve formátu MySQL."
+
+#: classes/automatewoo/classes/variable-fooevents-event-date-plaintext.php:24
+msgid "Displays the date in plain text."
+msgstr "Zobrazuje datum v čistém textu."
+
+#: classes/automatewoo/classes/variable-fooevents-event-date-plaintext.php:63
+#: classes/automatewoo/classes/variable-fooevents-event-date.php:63
+#: classes/class-fooevents-follow-up-emails-helper.php:723
+#: templates/event-tab.php:65 templates/event-tab.php:84
+#: templates/event-tab.php:92 templates/product-event-settings.php:44
+msgid "Start time:"
+msgstr "Čas začátku:"
+
+#: classes/automatewoo/classes/variable-fooevents-event-date-plaintext.php:68
+#: classes/automatewoo/classes/variable-fooevents-event-date.php:68
+#: classes/class-fooevents-follow-up-emails-helper.php:728
+#: templates/event-tab.php:73 templates/event-tab.php:86
+#: templates/event-tab.php:95 templates/product-event-settings.php:67
+msgid "End time:"
+msgstr "Čas ukončení:"
+
+#: classes/automatewoo/classes/variable-fooevents-event-date.php:24
+msgid "Displays the event date."
+msgstr "Zobrazuje datum události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-end-date-datetime.php:24
+msgid "Displays the event end date datetime."
+msgstr "Zobrazuje datum a čas ukončení události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-end-date-mysql.php:24
+msgid "Displays the event end date in MySQL format."
+msgstr "Zobrazuje konečné datum události ve formátu MySQL."
+
+#: classes/automatewoo/classes/variable-fooevents-event-end-date-plaintext.php:24
+msgid "Displays the event end date in plain text."
+msgstr "Zobrazuje konečné datum události v čistém textu."
+
+#: classes/automatewoo/classes/variable-fooevents-event-end-date.php:24
+msgid "Displays the event end date."
+msgstr "Zobrazuje datum ukončení události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-end-hour.php:24
+msgid "Displays the event end hour."
+msgstr "Zobrazuje konečnou hodinu události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-end-minutes.php:24
+msgid "Displays the event end minutes."
+msgstr "Zobrazuje počet minut do konce události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-end-period.php:24
+msgid "Displays the event end period."
+msgstr "Zobrazuje konec události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-hour.php:24
+msgid "Displays the event hour."
+msgstr "Zobrazuje hodinu události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-minutes.php:24
+msgid "Displays the event minutes."
+msgstr "Zobrazuje zápisy z události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-name.php:24
+msgid "Displays the event name."
+msgstr "Zobrazuje název události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-period.php:24
+msgid "Displays the event period."
+msgstr "Zobrazuje období události."
+
+#: classes/automatewoo/classes/variable-fooevents-event-venue.php:24
+msgid "Displays the event venue."
+msgstr "Zobrazuje místo konání události."
+
+#: classes/automatewoo/classes/variable-fooevents-seating-row-name-label.php:24
+msgid "Displays the seating row name label."
+msgstr "Zobrazuje název označení řady sedadel."
+
+#: classes/automatewoo/classes/variable-fooevents-seating-row-name.php:24
+msgid "Displays the seating row name."
+msgstr "Zobrazuje název řady sedadel."
+
+#: classes/automatewoo/classes/variable-fooevents-seating-seat-number-label.php:24
+msgid "Displays the seating seat number label."
+msgstr "Zobrazuje označení čísla sedadla."
+
+#: classes/automatewoo/classes/variable-fooevents-seating-seat-number.php:24
+msgid "Displays the seating seat number."
+msgstr "Zobrazuje číslo sedadla."
+
+#: classes/automatewoo/classes/variable-fooevents-ticket-id.php:24
+msgid "Displays the ticket ID."
+msgstr "Zobrazuje identifikátor vstupenky."
+
+#: classes/automatewoo/classes/variable-fooevents-zoom-url.php:24
+msgid "Outputs the Zoom URL."
+msgstr "Vypíše URL adresu Zoomu."
+
+#: classes/class-events-list-table.php:64
+msgid "ID"
+msgstr "ID"
+
+#: classes/class-events-list-table.php:65
+msgid "Event Name"
+msgstr "Název události"
+
+#: classes/class-events-list-table.php:66 templates/reports-report-page.php:97
+msgid "Tickets Sold"
+msgstr "Předprodej ukončen"
+
+#: classes/class-events-list-table.php:67
+msgid "Available Tickets"
+msgstr "Vstupenky k dispozici"
+
+#: classes/class-events-list-table.php:68 templates/reports-report-page.php:57
+#: templates/reports-report-page.php:89
+msgid "Gross Revenue"
+msgstr "Hrubý příjem"
+
+#: classes/class-events-list-table.php:156
+#: templates/tickets-add-ticket-event-details.php:83
+#: templates/tickets-edit-ticket.php:122
+msgid "Edit"
+msgstr "Upravit"
+
+#: classes/class-fooevents-checkout-helper.php:131
+#: classes/class-fooevents-checkout-helper.php:890
+#: classes/class-fooevents-ticket-helper.php:210
+#: classes/class-fooevents-woo-helper.php:601
+#: classes/class-fooevents-woo-helper.php:610
+#: classes/class-fooevents-woo-helper.php:611
+#: classes/class-fooevents-woo-helper.php:612
+#: classes/class-fooevents-woo-helper.php:613
+#: classes/class-fooevents-woo-helper.php:614
+#: classes/class-fooevents-woo-helper.php:615
+#: classes/class-fooevents-woo-helper.php:4888
+#: classes/class-fooevents-woo-helper.php:4897
+#: classes/class-fooevents-woo-helper.php:4898
+#: classes/class-fooevents-woo-helper.php:4899
+#: classes/class-fooevents-woo-helper.php:4900
+#: classes/class-fooevents-woo-helper.php:4901
+#: classes/class-fooevents-woo-helper.php:4902
+#: templates/global-settings.php:215
+msgid "Attendee"
+msgstr "Účastník"
+
+#: classes/class-fooevents-checkout-helper.php:136
+#, php-format
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: classes/class-fooevents-checkout-helper.php:224
+#: templates/global-settings.php:245
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: classes/class-fooevents-checkout-helper.php:234
+#: classes/class-fooevents-checkout-helper.php:238
+#: classes/class-fooevents-checkout-helper.php:242
+msgid "Copy purchaser's details"
+msgstr "Zkopírujte údaje o kupujícím"
+
+#: classes/class-fooevents-checkout-helper.php:248
+msgid "First Name"
+msgstr "Křestní jméno"
+
+#: classes/class-fooevents-checkout-helper.php:268
+msgid "Last Name"
+msgstr "Příjmení"
+
+#: classes/class-fooevents-checkout-helper.php:292
+#: templates/order-new-order-email-ticket-details.php:78
+msgid "Email"
+msgstr "Email"
+
+#: classes/class-fooevents-checkout-helper.php:328
+#: templates/order-new-order-email-ticket-details.php:80
+msgid "Telephone"
+msgstr "Telefon"
+
+#: classes/class-fooevents-checkout-helper.php:352
+#: templates/order-new-order-email-ticket-details.php:83
+msgid "Company"
+msgstr "Společnost"
+
+#: classes/class-fooevents-checkout-helper.php:376
+#: templates/order-new-order-email-ticket-details.php:86
+msgid "Designation"
+msgstr "Pojmenování"
+
+#: classes/class-fooevents-checkout-helper.php:661
+#, php-format
+msgid "Name is required for %1$s attendee %2$d"
+msgstr "Jméno je povinné pro %1$s účastníka %2$d"
+
+#: classes/class-fooevents-checkout-helper.php:669
+#, php-format
+msgid "Last name is required for %1$s attendee %2$d"
+msgstr "Příjmení je povinné pro %1$s účastníka %2$d"
+
+#: classes/class-fooevents-checkout-helper.php:687
+#, php-format
+msgid "Email is required for %1$s attendee %2$d"
+msgstr "E-mail je povinný pro %1$s účastníka %2$d"
+
+#: classes/class-fooevents-checkout-helper.php:698
+#, php-format
+msgid "Email is not valid for %1$s attendee %2$d"
+msgstr "E-mail není platný pro %1$s účastníka %2$d"
+
+#: classes/class-fooevents-checkout-helper.php:708
+#, php-format
+msgid "Telephone is required for %1$s attendee %2$d"
+msgstr "Pro %1$s účastníka %2$d je vyžadován telefon"
+
+#: classes/class-fooevents-checkout-helper.php:718
+#, php-format
+msgid "Company is required for %1$s attendee %2$d"
+msgstr "Společnost je vyžadována pro %1$s účastníka %2$d"
+
+#: classes/class-fooevents-checkout-helper.php:728
+#, php-format
+msgid "Designation is required for %1$s attendee %2$d"
+msgstr "Označení je vyžadováno pro %1$s účastníka %2$d"
+
+#: classes/class-fooevents-checkout-helper.php:777
+#, php-format
+msgid "All attendee email addresses that are used to register for %s must be unique"
+msgstr "Všechny e-mailové adresy účastníků, které se používají k registraci do %s, musí být jedinečné"
+
+#: classes/class-fooevents-checkout-helper.php:880
+msgid "POS"
+msgstr "POS"
+
+#: classes/class-fooevents-checkout-helper.php:1129
+#: classes/class-fooevents-orders-helper.php:643
+#: classes/class-fooevents-ticket-helper.php:3055
+msgid "Row"
+msgstr "Řádek"
+
+#: classes/class-fooevents-checkout-helper.php:1137
+#: classes/class-fooevents-orders-helper.php:649
+#: classes/class-fooevents-ticket-helper.php:3067
+#: classes/class-fooevents-woo-helper.php:607
+#: classes/class-fooevents-woo-helper.php:615
+#: classes/class-fooevents-woo-helper.php:4455
+#: classes/class-fooevents-woo-helper.php:4894
+#: classes/class-fooevents-woo-helper.php:4902
+msgid "Seat"
+msgstr "Sedadlo"
+
+#: classes/class-fooevents-event-report-helper.php:61
+#: templates/plugin-introduction.php:60
+msgid "Reports"
+msgstr "Reporty"
+
+#: classes/class-fooevents-event-report-helper.php:62
+msgid "Report"
+msgstr "Nahlásit"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:59
+msgid "After Ticket Issued"
+msgstr "Po vydání lístku"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:60
+msgid "After Ticket Check-in"
+msgstr "Po ověření vstupenky"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:61
+msgid "After Event Date"
+msgstr "Po datu události"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:62
+msgid "Before Event Date"
+msgstr "Před datem události"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:63
+msgid "After Booking Date"
+msgstr "Po datu rezervace"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:64
+msgid "Before Booking Date"
+msgstr "Před datem rezervace"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:72
+#: classes/class-fooevents-follow-up-emails-helper.php:73
+msgid "Send follow-up emails to customers that book appointments, services or rentals."
+msgstr "Odesílejte následné e-maily zákazníkům, kteří si rezervují schůzky, služby nebo pronájmy."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:194
+#: classes/class-fooevents-follow-up-emails-helper.php:311
+#: classes/class-fooevents-follow-up-emails-helper.php:421
+#: classes/class-fooevents-follow-up-emails-helper.php:524
+#, php-format
+msgid "FooEvents Email queued: %1$s %2$s scheduled on %3$s<br/>Trigger: %4$s"
+msgstr "FooEvents e-maily ve frontě: %1$s %2$s naplánováno na %3$s<br/> Spouštěč: %4$s"
+
+#: classes/class-fooevents-follow-up-emails-helper.php:550
+msgid "The URL of the downloadable file."
+msgstr "Adresa URL souboru ke stažení."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:551
+msgid "The name of the downloadable file."
+msgstr "Název souboru ke stažení."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:552
+msgid "The attendee’s first name."
+msgstr "Křestní jméno účastníka."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:553
+msgid "The attendee’s last name."
+msgstr "Příjmení účastníka."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:554
+msgid "The ticket number."
+msgstr "Číslo vstupenky."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:555
+msgid "The event name."
+msgstr "Název události."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:556
+msgid "The event date."
+msgstr "Datum události."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:557
+msgid "The multi-day event dates seperated by commas."
+msgstr "Termíny vícedenních akcí oddělené čárkami."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:558
+msgid "Directions to the event venue."
+msgstr "Trasa na místo konání akce."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:559
+msgid "The event type as configured in Event Settings."
+msgstr "Typ události podle konfigurace v Nastavení události."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:560
+msgid "The hour of the day when the event starts."
+msgstr "Hodina dne, kdy událost začíná."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:561
+msgid "The minute portion of the hour when the event starts."
+msgstr "Minutová část hodiny, kdy událost začíná."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:562
+msgid "The period of the day when the event starts (a.m. or p.m.)."
+msgstr "Období dne, kdy událost začíná (dopoledne nebo odpoledne)."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:563
+msgid "The hour of the day when the event ends."
+msgstr "Hodina dne, kdy událost končí."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:564
+msgid "The minute portion of the hour when the event ends."
+msgstr "Minutová část hodiny, kdy událost končí."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:565
+msgid "The period of the day when the event ends (a.m. or p.m.)."
+msgstr "Období dne, kdy událost končí (dopoledne nebo odpoledne)."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:566
+msgid "The event timezone."
+msgstr "Časové pásmo události."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:568
+msgid "The booked slot."
+msgstr "Zarezervovaný slot."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:569
+msgid "Custom terminology used for the booking slot."
+msgstr "Vlastní terminologie použitá pro rezervační slot."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:570
+msgid "The date of the bookable event."
+msgstr "Datum rezervovatelné události."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:571
+msgid "Custom terminology used for the booking date."
+msgstr "Vlastní terminologie použitá pro datum rezervace."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:574
+msgid "The custom label used for the seat row name."
+msgstr "Vlastní štítek používaný pro název řady sedadel."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:575
+msgid "The seat row name of the purchased ticket."
+msgstr "Název řady sedadel zakoupené vstupenky."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:576
+msgid "The custom label used for the seat."
+msgstr "Vlastní štítek použitý pro sedadlo."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:577
+msgid "The seat number of the purchased ticket."
+msgstr "Číslo sedadla zakoupené vstupenky."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:580
+msgid "Custom attendee field values for the event."
+msgstr "Vlastní hodnoty pole účastníka pro událost."
+
+#: classes/class-fooevents-follow-up-emails-helper.php:765
+#: classes/class-fooevents-orders-helper.php:572
+#: classes/class-fooevents-ticket-helper.php:3284
+msgid "Slot"
+msgstr "Slot"
+
+#: classes/class-fooevents-orders-helper.php:104
+#: templates/product-event-settings.php:182 templates/tickets-add-ticket.php:64
+msgid "Attendee Details"
+msgstr "Detaily účastníka"
+
+#: classes/class-fooevents-orders-helper.php:112
+#: classes/class-fooevents-ticket-helper.php:1499
+#: classes/class-fooevents-ticket-helper.php:1500
+msgid "Resend Tickets"
+msgstr "Znovu poslat vstupenky"
+
+#: classes/class-fooevents-theme-helper.php:59
+#: templates/plugin-introduction.php:62 templates/ticket-themes-viewer.php:11
+msgid "Ticket Themes"
+msgstr "Šablony vstupenek"
+
+#: classes/class-fooevents-theme-helper.php:96
+msgid "NONCE authentication failed. Please try again."
+msgstr "Ověření NONCE selhalo. Zkuste to prosím znovu."
+
+#: classes/class-fooevents-theme-helper.php:131
+msgid "Theme already exists."
+msgstr "Šablona již existuje."
+
+#: classes/class-fooevents-theme-helper.php:152
+msgid "Theme has been uploaded."
+msgstr "Šablona byla nahrána."
+
+#: classes/class-fooevents-theme-helper.php:156
+msgid "File does not contain valid theme files."
+msgstr "Soubor neobsahuje platné soubory motivů."
+
+#: classes/class-fooevents-theme-helper.php:167
+msgid "Please upload valid .zip file"
+msgstr "Uložte platný soubor zip file"
+
+#: classes/class-fooevents-theme-helper.php:196
+msgid "Preview ticket has been sent"
+msgstr "Náhled Lístku byl odeslán"
+
+#: classes/class-fooevents-theme-helper.php:220
+msgid "Local Stadium"
+msgstr "Místní stadion"
+
+#: classes/class-fooevents-theme-helper.php:239 templates/email/ticket.php:11
+msgid "Preview Event"
+msgstr "Náhled události"
+
+#: classes/class-fooevents-theme-helper.php:247
+msgid "John"
+msgstr "John"
+
+#: classes/class-fooevents-theme-helper.php:248
+msgid "Doe"
+msgstr "Doe"
+
+#: classes/class-fooevents-ticket-helper.php:149
+#: classes/class-fooevents-ticket-helper.php:155
+#: templates/plugin-introduction.php:56
+#: templates/product-event-printing-settings.php:19
+#: templates/reports-report-page.php:62
+msgid "Tickets"
+msgstr "Vstupenky"
+
+#: classes/class-fooevents-ticket-helper.php:150
+#: templates/product-event-printing-attendee-badges.php:603
+#: templates/product-event-printing-attendee-badges.php:672
+#: templates/product-event-printing-attendee-badges.php:742
+#: templates/product-event-printing-attendee-badges.php:812
+#: templates/product-event-printing-attendee-badges.php:882
+#: templates/product-event-printing-attendee-badges.php:952
+#: templates/product-event-printing-attendee-badges.php:1022
+#: templates/product-event-printing-attendee-badges.php:1092
+#: templates/product-event-printing-attendee-badges.php:1162
+#: templates/product-event-printing-attendee-badges.php:1232
+#: templates/product-event-printing-attendee-badges.php:1302
+#: templates/product-event-printing-attendee-badges.php:1372
+#: templates/product-event-printing-attendee-badges.php:1442
+#: templates/product-event-printing-attendee-badges.php:1512
+#: templates/product-event-printing-attendee-badges.php:1582
+#: templates/product-event-printing-attendee-badges.php:1652
+msgid "Ticket"
+msgstr "Vstupenka"
+
+#: classes/class-fooevents-ticket-helper.php:151
+msgid "Add New"
+msgstr "Přidat nový"
+
+#: classes/class-fooevents-ticket-helper.php:152
+msgid "Add New Ticket"
+msgstr "Přidat vstupenku"
+
+#: classes/class-fooevents-ticket-helper.php:153
+msgid "Edit Ticket"
+msgstr "Editovat vstupenku"
+
+#: classes/class-fooevents-ticket-helper.php:154
+msgid "New Ticket"
+msgstr "Nová vstupenka"
+
+#: classes/class-fooevents-ticket-helper.php:156
+msgid "View Ticket"
+msgstr "Zobrazit vstupenku"
+
+#: classes/class-fooevents-ticket-helper.php:157
+msgid "Search Tickets"
+msgstr "Hledat vstupenky"
+
+#: classes/class-fooevents-ticket-helper.php:158
+msgid "No tickets found"
+msgstr "Nebyly nalezeny žádné vstupenky"
+
+#: classes/class-fooevents-ticket-helper.php:159
+msgid "No tickets found in the Trash"
+msgstr "V koši nebyly nalezeny žádné vstupenky"
+
+#: classes/class-fooevents-ticket-helper.php:166
+msgid "Event Tickets"
+msgstr "Vstupenky na událost"
+
+#: classes/class-fooevents-ticket-helper.php:205
+msgid "Select"
+msgstr "Vybrat"
+
+#: classes/class-fooevents-ticket-helper.php:206
+msgid "Title"
+msgstr "Název"
+
+#: classes/class-fooevents-ticket-helper.php:207
+#: src/fooevents-event-listing/edit.js:83
+msgid "Order"
+msgstr "Objednávka"
+
+#: classes/class-fooevents-ticket-helper.php:208
+#: classes/class-fooevents-ticket-helper.php:1056
+#: templates/global-settings.php:205
+msgid "Event"
+msgstr "Událost"
+
+#: classes/class-fooevents-ticket-helper.php:209
+msgid "Purchaser"
+msgstr "Kupující"
+
+#: classes/class-fooevents-ticket-helper.php:211
+msgid "Purchase Date"
+msgstr "Datum nákupu"
+
+#: classes/class-fooevents-ticket-helper.php:215
+msgid "Bookings"
+msgstr "Rezervace"
+
+#: classes/class-fooevents-ticket-helper.php:219
+msgid "Status"
+msgstr "Stav"
+
+#: classes/class-fooevents-ticket-helper.php:290
+msgid "Warning: WooCommerce order has been deleted"
+msgstr "Upozornění: Objednávka WooCommerce byla smazána"
+
+#: classes/class-fooevents-ticket-helper.php:388
+#: templates/plugin-introduction.php:61
+#: templates/tickets-import-tickets-confirmation.php:11
+#: templates/tickets-import-tickets-field-selection.php:11
+#: templates/tickets-import-tickets-log.php:11
+#: templates/tickets-import-tickets.php:11
+msgid "Import Tickets"
+msgstr "Import vstupenek"
+
+#: classes/class-fooevents-ticket-helper.php:450
+#: classes/class-fooevents-ticket-helper.php:462
+msgid "Please select CSV file to upload"
+msgstr "Vyberte prosím soubor CSV, který chcete nahrát"
+
+#: classes/class-fooevents-ticket-helper.php:478
+msgid "File has been processed. All tickets imported."
+msgstr "Soubor byl zpracován. Všechny vstupenky jsou importovány."
+
+#: classes/class-fooevents-ticket-helper.php:590
+#, php-format
+msgid "Please check required import fields. %s is a required field."
+msgstr "Zkontrolujte požadovaná pole pro import. %s je povinné pole."
+
+#: classes/class-fooevents-ticket-helper.php:1016
+#: templates/order-new-order-email-ticket-details.php:22
+msgid "Ticket Details"
+msgstr "Detaily objednávky"
+
+#: classes/class-fooevents-ticket-helper.php:1025
+msgid "Access Log"
+msgstr "Protokol přístupu"
+
+#: classes/class-fooevents-ticket-helper.php:1034
+#: classes/class-fooevents-woo-helper.php:3493
+msgid "Ticket Status"
+msgstr "Stav vstupenky"
+
+#: classes/class-fooevents-ticket-helper.php:1043
+msgid "Resend Ticket"
+msgstr "Znovu poslat vstupenku"
+
+#: classes/class-fooevents-ticket-helper.php:1756
+msgid "Security check failed - FooEvents 0001"
+msgstr "Bezpečnostní kontrola selhala - 0001"
+
+#: classes/class-fooevents-ticket-helper.php:1812
+#: classes/class-fooevents-ticket-helper.php:1979
+msgid "Attendee first name is required."
+msgstr "Je vyžadováno křestní jméno účastníka."
+
+#: classes/class-fooevents-ticket-helper.php:1827
+#: classes/class-fooevents-ticket-helper.php:1994
+msgid "Attendee last name is required."
+msgstr "Je vyžadováno příjmení účastníka."
+
+#: classes/class-fooevents-ticket-helper.php:1842
+#: classes/class-fooevents-ticket-helper.php:1949
+msgid "Purchaser email is required."
+msgstr "E-mail kupujícího je povinný."
+
+#: classes/class-fooevents-ticket-helper.php:1919
+msgid "Event is required."
+msgstr "Událost je povinná."
+
+#: classes/class-fooevents-ticket-helper.php:1934
+msgid "Purchaser username is required."
+msgstr "Uživatelské jméno kupujícího je povinné."
+
+#: classes/class-fooevents-ticket-helper.php:1964
+msgid "Purchaser display name is required."
+msgstr "Zobrazení jména kupujícího je povinné."
+
+#: classes/class-fooevents-ticket-helper.php:2009
+msgid "Attendee email is required."
+msgstr "E-mail účastníka je povinný."
+
+#: classes/class-fooevents-ticket-helper.php:2029
+msgid "User email address already exists."
+msgstr "E-mailová adresa uživatele již existuje."
+
+#: classes/class-fooevents-ticket-helper.php:2044
+msgid "User display name already exists."
+msgstr "Zobrazované jméno uživatele již existuje."
+
+#: classes/class-fooevents-ticket-helper.php:2755
+#: classes/class-fooevents-woo-helper.php:413
+#: classes/class-fooevents-woo-helper.php:2702
+msgid "{OrderNumber} Ticket"
+msgstr "{OrderNumber} Vstupenka"
+
+#: classes/class-fooevents-ticket-helper.php:3061
+msgid "Rows"
+msgstr "Řádky"
+
+#: classes/class-fooevents-ticket-helper.php:3073
+msgid "Seats"
+msgstr "Místa"
+
+#: classes/class-fooevents-ticket-helper.php:3079
+msgid "Seating Chart"
+msgstr "Rozvržení sedadel"
+
+#: classes/class-fooevents-ticket-helper.php:3085
+msgid "Seating Charts"
+msgstr "Seznamy míst"
+
+#: classes/class-fooevents-ticket-helper.php:3091
+msgid "FRONT"
+msgstr "POČÁTEK"
+
+#: classes/class-fooevents-ticket-helper.php:3097
+msgid "FRONTS"
+msgstr "ÚVOD"
+
+#: classes/class-fooevents-woo-helper.php:138
+msgid "WooCommerce is required for FooEvents. Please install and activate the latest version of WooCommerce."
+msgstr "Pro  FooEvents je vyžadován WooCommerce. Nainstalujte a aktivujte nejnovější verzi programu WooCommerce."
+
+#: classes/class-fooevents-woo-helper.php:148
+#: src/fooevents-event-listing/edit.js:74 templates/reports-report-page.php:14
+msgid "Event Settings"
+msgstr "Nastavení události"
+
+#: classes/class-fooevents-woo-helper.php:610
+#: classes/class-fooevents-woo-helper.php:4897
+msgid "Attendee Name"
+msgstr "Jméno účastníka"
+
+#: classes/class-fooevents-woo-helper.php:611
+#: classes/class-fooevents-woo-helper.php:3492
+#: classes/class-fooevents-woo-helper.php:4898
+#: templates/tickets-import-tickets-confirmation.php:53
+#: templates/tickets-import-tickets-field-selection.php:65
+msgid "Attendee Email"
+msgstr "E-mail účastníka"
+
+#: classes/class-fooevents-woo-helper.php:612
+#: classes/class-fooevents-woo-helper.php:4899
+msgid "Attendee Phone"
+msgstr "Telefon účastníka"
+
+#: classes/class-fooevents-woo-helper.php:613
+#: classes/class-fooevents-woo-helper.php:3497
+#: classes/class-fooevents-woo-helper.php:4900
+#: templates/tickets-import-tickets-confirmation.php:58
+#: templates/tickets-import-tickets-field-selection.php:67
+msgid "Attendee Company"
+msgstr "Firma účastníka"
+
+#: classes/class-fooevents-woo-helper.php:614
+#: classes/class-fooevents-woo-helper.php:3498
+#: classes/class-fooevents-woo-helper.php:4901
+#: templates/tickets-import-tickets-confirmation.php:61
+#: templates/tickets-import-tickets-field-selection.php:68
+msgid "Attendee Designation"
+msgstr "Označení účastníka"
+
+#: classes/class-fooevents-woo-helper.php:615
+#: classes/class-fooevents-woo-helper.php:4902
+msgid "Attendee Seat"
+msgstr "Sedadlo účastníka"
+
+#: classes/class-fooevents-woo-helper.php:671
+msgid "Event Integration"
+msgstr "Integrace událostí"
+
+#: classes/class-fooevents-woo-helper.php:679
+#: templates/product-event-expiration-settings.php:11
+msgid "Event Expiration"
+msgstr "Ukončení předprodeje"
+
+#: classes/class-fooevents-woo-helper.php:687
+#: templates/product-event-export-settings.php:11
+msgid "Event Export"
+msgstr "Export události"
+
+#: classes/class-fooevents-woo-helper.php:695
+#: templates/product-event-printing-settings.php:11
+msgid "Stationery Builder"
+msgstr "Tvůrce rozložení"
+
+#: classes/class-fooevents-woo-helper.php:703
+#: templates/product-event-terminology-settings.php:11
+msgid "Event Terminology"
+msgstr "Terminologie událostí"
+
+#: classes/class-fooevents-woo-helper.php:712
+msgid "Ticket Settings"
+msgstr "Nastavení vstupenek"
+
+#: classes/class-fooevents-woo-helper.php:2321 templates/event-tab.php:10
+#: templates/product-event-settings.php:11 templates/tickets-add-ticket.php:13
+msgid "Event Details"
+msgstr "Detaily události"
+
+#: classes/class-fooevents-woo-helper.php:3362
+msgid "Sort by event date: Old to New"
+msgstr "Řadit od nejdříve konaných"
+
+#: classes/class-fooevents-woo-helper.php:3363
+msgid "Sort by event date: New to Old"
+msgstr "Řadit od nejpozději konaných"
+
+#: classes/class-fooevents-woo-helper.php:3487
+msgid "TicketID"
+msgstr "ID vstupenky"
+
+#: classes/class-fooevents-woo-helper.php:3488
+msgid "TicketID Numeric"
+msgstr "Číslo vstupenky"
+
+#: classes/class-fooevents-woo-helper.php:3489
+msgid "OrderID"
+msgstr "Číslo objednávky"
+
+#: classes/class-fooevents-woo-helper.php:3490
+#: templates/tickets-import-tickets-confirmation.php:51
+#: templates/tickets-import-tickets-field-selection.php:63
+msgid "Attendee First Name"
+msgstr "Křestní jmméno účastníka"
+
+#: classes/class-fooevents-woo-helper.php:3491
+#: templates/tickets-import-tickets-confirmation.php:52
+#: templates/tickets-import-tickets-field-selection.php:64
+msgid "Attendee Last Name"
+msgstr "Příjmení účastníka"
+
+#: classes/class-fooevents-woo-helper.php:3494
+msgid "Ticket Type"
+msgstr "Typ vstupenky"
+
+#: classes/class-fooevents-woo-helper.php:3495
+#: templates/tickets-edit-ticket.php:64
+msgid "Variation"
+msgstr "Variace"
+
+#: classes/class-fooevents-woo-helper.php:3496
+#: templates/tickets-import-tickets-confirmation.php:55
+#: templates/tickets-import-tickets-field-selection.php:66
+msgid "Attendee Telephone"
+msgstr "Telefon účastníka"
+
+#: classes/class-fooevents-woo-helper.php:3499
+msgid "Purchaser First Name"
+msgstr "Křestní jméno kupujícího"
+
+#: classes/class-fooevents-woo-helper.php:3500
+msgid "Purchaser Last Name"
+msgstr "Příjmení kupujícího"
+
+#: classes/class-fooevents-woo-helper.php:3501
+msgid "Purchaser Email"
+msgstr "E-mail kupujícího"
+
+#: classes/class-fooevents-woo-helper.php:3502
+msgid "Purchaser Phone"
+msgstr "Telefon kupujícího"
+
+#: classes/class-fooevents-woo-helper.php:3503
+msgid "Purchaser Company"
+msgstr "Kupující společnost"
+
+#: classes/class-fooevents-woo-helper.php:3504
+msgid "Customer Note"
+msgstr "Poznámka zákazníka"
+
+#: classes/class-fooevents-woo-helper.php:3505
+msgid "Order Status"
+msgstr "Stav objednávky"
+
+#: classes/class-fooevents-woo-helper.php:3506
+msgid "Payment Method"
+msgstr "Způsob platby"
+
+#: classes/class-fooevents-woo-helper.php:3507
+msgid "Order Date"
+msgstr "Datum objednávky"
+
+#: classes/class-fooevents-woo-helper.php:3509
+msgid "Ticket Price"
+msgstr "Cena vstupenky"
+
+#: classes/class-fooevents-woo-helper.php:3510
+msgid "Ticket Price Paid"
+msgstr "Cena vstupenky zaplacena"
+
+#: classes/class-fooevents-woo-helper.php:3512
+msgid "Billing Address 1"
+msgstr "Fakturační adresa 1"
+
+#: classes/class-fooevents-woo-helper.php:3513
+msgid "Billing Address 2"
+msgstr "Fakturační adresa 2"
+
+#: classes/class-fooevents-woo-helper.php:3514
+msgid "Billing City"
+msgstr "Fakturační město"
+
+#: classes/class-fooevents-woo-helper.php:3515
+msgid "Billing Postal Code"
+msgstr "Fakturační PSČ"
+
+#: classes/class-fooevents-woo-helper.php:3516
+msgid "Billing Country"
+msgstr "Fakturační země"
+
+#: classes/class-fooevents-woo-helper.php:3517
+msgid "Billing State"
+msgstr "Stát"
+
+#: classes/class-fooevents-woo-helper.php:3518
+msgid "Billing Phone"
+msgstr "Fakturační telefon"
+
+#: classes/class-fooevents-woo-helper.php:3898
+#: classes/class-fooevents-woo-helper.php:3910
+#, php-format
+msgid "Day %s"
+msgstr "Den %s"
+
+#: classes/class-fooevents-woo-helper.php:4183
+msgid "No tickets found."
+msgstr "Žádné vstupenky nebyly nalezeny."
+
+#: classes/class-fooevents-woo-helper.php:4245
+#: templates/fooevents-checkins-import.php:106
+msgid "Checked-in"
+msgstr "Přijel"
+
+#: classes/class-fooevents-woo-helper.php:4246
+msgid "Checked-out"
+msgstr "Objednáno"
+
+#: classes/class-fooevents-woo-helper.php:4247
+msgid "Checked-in by"
+msgstr "Ověřeno"
+
+#: classes/class-fooevents-woo-helper.php:4248
+msgid "Checked-out by"
+msgstr "Ověřeno"
+
+#: classes/class-fooevents-woo-helper.php:4906
+#: templates/product-event-printing-settings.php:219
+msgid "Barcode"
+msgstr "Čárový kód"
+
+#: classes/class-fooevents-woo-helper.php:4908
+#: templates/product-event-printing-settings.php:114
+msgid "Logo/Image"
+msgstr "Obrázek loga"
+
+#: classes/class-fooevents-woo-helper.php:4910
+#: templates/product-event-printing-settings.php:155
+msgid "Event Name Only"
+msgstr "Pouze název události"
+
+#: classes/class-fooevents-woo-helper.php:4912
+#: templates/product-event-printing-settings.php:170
+msgid "Event Name/Variation"
+msgstr "Název/Varianta události"
+
+#: classes/class-fooevents-woo-helper.php:4914
+#: templates/product-event-printing-settings.php:185
+msgid "Variation Only"
+msgstr "Pouze varianty"
+
+#: classes/class-fooevents-woo-helper.php:4916
+#: templates/product-event-printing-settings.php:226
+msgid "Ticket Number"
+msgstr "Ticket Number"
+
+#: classes/class-fooevents-woo-helper.php:4918
+#: templates/product-event-printing-settings.php:241
+msgid "Custom Ticket Number"
+msgstr "Vlastní číslo vstupenky"
+
+#: classes/class-fooevents-woo-helper.php:4932
+#: templates/product-event-printing-settings.php:200
+msgid "Event Location"
+msgstr "Místo konání"
+
+#: classes/class-fooevents-woo-helper.php:4934
+#: templates/product-event-printing-settings.php:128
+msgid "Custom Text"
+msgstr "Vlastní text"
+
+#: classes/class-fooevents-woo-helper.php:4936
+#: templates/product-event-printing-settings.php:144
+msgid "Empty Spacer"
+msgstr "Mezera"
+
+#: classes/class-fooevents-zoom-api-helper.php:88
+#: classes/class-fooevents-zoom-api-helper.php:182
+msgid "Error obtaining access token using the provided Zoom API credentials."
+msgstr "Chyba při získávání přístupového tokenu pomocí zadaných pověření rozhraní Zoom API."
+
+#: classes/class-fooevents-zoom-api-helper.php:212
+msgid "Unable to connect to your Zoom account"
+msgstr "Nelze se připojit k vašemu účtu Zoom"
+
+#: classes/class-fooevents-zoom-api-helper.php:256
+#: classes/class-fooevents-zoom-api-helper.php:315
+#: classes/class-fooevents-zoom-api-helper.php:325
+msgid "Please enter your Zoom API Account ID, Client ID and Client Secret"
+msgstr "Zadejte prosím ID účtu API Zoom, ID klienta a tajný klíč"
+
+#: classes/class-fooevents-zoom-api-helper.php:604
+#: classes/class-fooevents-zoom-api-helper.php:608
+#: classes/class-fooevents-zoom-api-helper.php:612
+msgid "Every"
+msgstr "Každý"
+
+#: classes/class-fooevents-zoom-api-helper.php:608
+msgid "Weekly"
+msgstr "Týdně"
+
+#: classes/class-fooevents-zoom-api-helper.php:612
+msgid "Monthly"
+msgstr "Měsíčně"
+
+#: classes/class-fooevents-zoom-api-helper.php:612
+msgid "months"
+msgstr "měsíců"
+
+#: classes/class-fooevents-zoom-api-helper.php:622
+msgid " on "
+msgstr " na "
+
+#: classes/class-fooevents-zoom-api-helper.php:630
+#: classes/class-fooevents-zoom-api-helper.php:707
+msgid "Sunday"
+msgstr "Neděle"
+
+#: classes/class-fooevents-zoom-api-helper.php:634
+#: classes/class-fooevents-zoom-api-helper.php:711
+msgid "Monday"
+msgstr "Pondělí"
+
+#: classes/class-fooevents-zoom-api-helper.php:638
+#: classes/class-fooevents-zoom-api-helper.php:715
+msgid "Tuesday"
+msgstr "Úterý"
+
+#: classes/class-fooevents-zoom-api-helper.php:642
+#: classes/class-fooevents-zoom-api-helper.php:719
+msgid "Wednesday"
+msgstr "Středa"
+
+#: classes/class-fooevents-zoom-api-helper.php:646
+#: classes/class-fooevents-zoom-api-helper.php:723
+msgid "Thursday"
+msgstr "Čtvrtek"
+
+#: classes/class-fooevents-zoom-api-helper.php:650
+#: classes/class-fooevents-zoom-api-helper.php:727
+msgid "Friday"
+msgstr "Pátek"
+
+#: classes/class-fooevents-zoom-api-helper.php:654
+#: classes/class-fooevents-zoom-api-helper.php:731
+msgid "Saturday"
+msgstr "Sobota"
+
+#: classes/class-fooevents-zoom-api-helper.php:670
+msgid " on the "
+msgstr " na "
+
+#: classes/class-fooevents-zoom-api-helper.php:672
+msgid " of the month"
+msgstr " měsíce"
+
+#: classes/class-fooevents-zoom-api-helper.php:681
+msgid "on the last"
+msgstr "na posledním"
+
+#: classes/class-fooevents-zoom-api-helper.php:685
+msgid "on the first"
+msgstr "na prvním"
+
+#: classes/class-fooevents-zoom-api-helper.php:689
+msgid "on the second"
+msgstr "na druhém"
+
+#: classes/class-fooevents-zoom-api-helper.php:693
+msgid "on the third"
+msgstr "na třetím"
+
+#: classes/class-fooevents-zoom-api-helper.php:697
+msgid "on the fourth"
+msgstr "na čtvrtém"
+
+#: classes/class-fooevents-zoom-api-helper.php:757
+msgid "until"
+msgstr "dokud"
+
+#: classes/class-fooevents-zoom-api-helper.php:763
+msgid "occurrence"
+msgstr "výskyt"
+
+#: classes/class-fooevents-zoom-api-helper.php:763
+msgid "occurrences"
+msgstr "výskyty"
+
+#: classes/class-fooevents-zoom-api-helper.php:1465
+msgid "Zoom Meeting"
+msgstr "Zoom lekce"
+
+#: classes/class-fooevents-zoom-api-helper.php:1469
+msgid "Zoom Webinar"
+msgstr "Zoom webinář"
+
+#: classes/class-fooevents-zoom-api-helper.php:1488
+#: classes/class-fooevents-zoom-api-helper.php:1597
+msgid "Meeting ID"
+msgstr "ID schůzky"
+
+#: classes/class-fooevents-zoom-api-helper.php:1492
+#: classes/class-fooevents-zoom-api-helper.php:1601
+msgid "Meeting password"
+msgstr "Heslo schůzky"
+
+#: classes/class-fooevents-zoom-api-helper.php:1497
+#: classes/class-fooevents-zoom-api-helper.php:1606
+msgid "Webinar ID"
+msgstr "ID webináře"
+
+#: classes/class-fooevents-zoom-api-helper.php:1501
+#: classes/class-fooevents-zoom-api-helper.php:1609
+msgid "Webinar password"
+msgstr "Heslo webináře"
+
+#: classes/class-fooevents-zoom-api-helper.php:1524
+#: classes/class-fooevents-zoom-api-helper.php:1631
+msgid "Join link"
+msgstr "Připojit odkaz"
+
+#: classes/class-fooevents-zoom-api-helper.php:1528
+#: classes/class-fooevents-zoom-api-helper.php:1635
+msgid "Join this meeting"
+msgstr "Připojte se k tomuto setkání"
+
+#: classes/class-fooevents-zoom-api-helper.php:1528
+#: classes/class-fooevents-zoom-api-helper.php:1635
+msgid "Join this webinar"
+msgstr "Připojte se k tomuto webináři"
+
+#: classes/class-fooevents-zoom-api-helper.php:1556
+#: templates/global-settings.php:480
+#: templates/product-event-integration-settings.php:11
+msgid "Zoom Meetings and Webinars"
+msgstr "Zoom schůzky a webové semináře"
+
+#: classes/updatehelper.php:257
+msgid "Important:"
+msgstr "Důležité:"
+
+#: classes/updatehelper.php:270
+msgid "Please backup your files and database before updates!"
+msgstr "Prosím zálohujte své soubory a databázi před aktualizacemi!"
+
+#: src/fooevents-event-attendees/edit.js:61
+msgid "Attendee Settings"
+msgstr "Nastavení účastníka"
+
+#: src/fooevents-event-attendees/edit.js:63
+#: src/fooevents-event-listing/edit.js:122
+msgid "Filter by Product IDs"
+msgstr "Filtrovat podle identifikátorů produktů"
+
+#: src/fooevents-event-attendees/edit.js:78
+msgid "Sort Attendees By:"
+msgstr "Seřadit účastníky podle:"
+
+#: src/fooevents-event-attendees/edit.js:91
+msgid "Sort Attendees Order:"
+msgstr "Seřadit účastníky podle pořadí:"
+
+#: src/fooevents-event-attendees/edit.js:102
+msgid "Limit number attendees"
+msgstr "Omezit počet účastníků."
+
+#: src/fooevents-event-attendees/edit.js:110
+msgid "Number of attendees"
+msgstr "Počet účastníků"
+
+#: src/fooevents-event-attendees/edit.js:118
+msgid "Display unique attendees only"
+msgstr "Zobrazit pouze jedinečné účastníky."
+
+#: src/fooevents-event-attendees/edit.js:125
+#: src/fooevents-event-listing/edit.js:137
+msgid "Display Settings"
+msgstr "Nastavení zobrazení"
+
+#: src/fooevents-event-attendees/edit.js:127
+#: src/fooevents-event-listing/edit.js:139
+msgid "Layout"
+msgstr "Rozložení"
+
+#: src/fooevents-event-attendees/edit.js:141
+msgid "Number of items per row"
+msgstr "Počet položek na řádek."
+
+#: src/fooevents-event-attendees/edit.js:150
+msgid "Show name"
+msgstr "Název představení"
+
+#: src/fooevents-event-attendees/edit.js:159
+msgid "Name format"
+msgstr "Formát jména"
+
+#: src/fooevents-event-attendees/edit.js:174
+msgid "Show Gravatar"
+msgstr "Zobrazit Gravatar"
+
+#: src/fooevents-event-attendees/edit.js:182
+msgid "Show email address"
+msgstr "Zobrazit e-mailovou adresu"
+
+#: src/fooevents-event-attendees/edit.js:191
+msgid "Show phone number"
+msgstr "Zobrazit telefonní číslo"
+
+#: src/fooevents-event-attendees/edit.js:200
+msgid "Show company"
+msgstr "Ukázat společnost"
+
+#: src/fooevents-event-attendees/edit.js:209
+msgid "Show designation"
+msgstr "Zobrazit označení"
+
+#: src/fooevents-event-attendees/edit.js:217
+msgid "Show total attendees"
+msgstr "Zobrazit celkový počet účastníků."
+
+#: src/fooevents-event-attendees/edit.js:224
+msgid "Profile picture size"
+msgstr "Velikost profilového obrázku"
+
+#: src/fooevents-event-listing/edit.js:76
+msgid "Number of events"
+msgstr "Počet událostí"
+
+#: src/fooevents-event-listing/edit.js:94
+msgid "Event Types"
+msgstr "Typy událostí"
+
+#: src/fooevents-event-listing/edit.js:106
+msgid "Filter by Category slugs"
+msgstr "Filtrovat podle kategorií"
+
+#: src/fooevents-event-listing/edit.js:152
+msgid "Number of tile columns"
+msgstr "Počet sloupců dlaždic"
+
+#: src/fooevents-event-listing/edit.js:160
+msgid "Display Image"
+msgstr "Zobrazit obrázek"
+
+#: src/fooevents-event-listing/edit.js:168
+msgid "Image size"
+msgstr "Velikost obrázku"
+
+#: src/fooevents-event-listing/edit.js:183
+msgid "Image Alignment"
+msgstr "Zarovnání obrázku"
+
+#: src/fooevents-event-listing/edit.js:196
+msgid "Display Month Seperators"
+msgstr "Zobrazit oddělovače měsíců"
+
+#: src/fooevents-event-listing/edit.js:203
+msgid "Display Location"
+msgstr "Zobrazit umístění"
+
+#: src/fooevents-event-listing/edit.js:210
+msgid "Display Icons"
+msgstr "Zobrazit ikony"
+
+#: src/fooevents-event-listing/edit.js:217
+msgid "Display Date"
+msgstr "Zobrazit datum"
+
+#: src/fooevents-event-listing/edit.js:224
+msgid "Display Times"
+msgstr "Zobrazit časy"
+
+#: src/fooevents-event-listing/edit.js:231
+msgid "Display Excerpt"
+msgstr "Zobrazit výňatek"
+
+#: src/fooevents-event-listing/edit.js:238
+msgid "Display Price"
+msgstr "Zobrazit cenu"
+
+#: src/fooevents-event-listing/edit.js:245
+msgid "Display Availability"
+msgstr "Zobrazit dostupnost"
+
+#: src/fooevents-event-listing/edit.js:252
+msgid "Display Button"
+msgstr "Zobrazit tlačítko"
+
+#: templates/blocks/event-attendees-grid.php:81
+msgid "people are attending this event."
+msgstr "lidé se účastní tohoto události."
+
+#: templates/blocks/event-attendees-grid.php:84
+msgid "No attendees found."
+msgstr "Žádní účastníci nenalezeni."
+
+#: templates/blocks/event-listing-compact.php:69
+#: templates/blocks/event-listing-tiles.php:57
+#: templates/blocks/event-listing.php:80
+msgid "Available"
+msgstr "Dostupné"
+
+#: templates/blocks/event-listing-compact.php:79
+#: templates/blocks/event-listing-tiles.php:68
+#: templates/blocks/event-listing.php:93
+msgid "No events found."
+msgstr "Nebyly nalezeny žádné události."
+
+#: templates/email/ticket.php:46 templates/reports-report-page.php:47
+msgid "Location"
+msgstr "Místo konání"
+
+#: templates/email/ticket.php:52
+msgid "Directions"
+msgstr "Navigace"
+
+#: templates/email/ticket.php:58
+msgid "Contact us for questions and concerns"
+msgstr "Kontakt na pořadatele"
+
+#: templates/email/ticket.php:69
+msgid "Powered by"
+msgstr "Pohání"
+
+#: templates/email/ticket.php:69 templates/plugin-introduction.php:29
+msgid "FooEvents.com"
+msgstr "FooEvents.com"
+
+#: templates/email/ticket.php:106
+msgid "Add to wallet"
+msgstr "Přidat do peněženky"
+
+#: templates/email/ticket.php:153
+msgid "Add to calendar"
+msgstr "Přidat do kalendáře"
+
+#: templates/email/ticket.php:330
+msgid "Zoom Details"
+msgstr "Podrobnosti Zoom"
+
+#: templates/event-tab.php:30 templates/product-event-settings.php:36
+msgid "Start date:"
+msgstr "Datum zahájení:"
+
+#: templates/event-tab.php:37 templates/my-account-view-order-tickets.php:23
+#: templates/order-ticket-details-generated-tickets.php:120
+#: templates/order-ticket-details.php:112
+msgid "Date:"
+msgstr "Datum:"
+
+#: templates/event-tab.php:49
+msgid "End date:"
+msgstr "Datum ukončení:"
+
+#: templates/event-tab.php:62
+#, php-format
+msgid "%1$s %2$d: "
+msgstr "%1$s %2$d: "
+
+#: templates/event-tab.php:98 templates/my-account-view-order-tickets.php:35
+#: templates/order-ticket-details-generated-tickets.php:132
+#: templates/order-ticket-details.php:124
+#: templates/product-event-settings.php:107
+msgid "Venue:"
+msgstr "Místo:"
+
+#: templates/event-tab.php:101
+msgid "Coordinates:"
+msgstr "Souřadnice:"
+
+#: templates/event-tab.php:107
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: templates/event-tab.php:110 templates/my-account-view-order-tickets.php:108
+#: templates/order-ticket-details-generated-tickets.php:69
+#: templates/order-ticket-details.php:60 templates/tickets-add-ticket.php:46
+#: templates/tickets-add-ticket.php:74 templates/tickets-edit-ticket.php:32
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/fooevents-checkins-import.php:55
+msgid "Importing offline check-ins..."
+msgstr "Importování offline příchodů..."
+
+#: templates/fooevents-checkins-import.php:96
+msgid "Status is required"
+msgstr "Stav je povinný"
+
+#: templates/fooevents-checkins-import.php:98
+msgid "Status updated"
+msgstr "Stav aktualizován"
+
+#: templates/fooevents-checkins-import.php:100
+msgid "Status unchanged"
+msgstr "Stav nezměněn"
+
+#: templates/fooevents-checkins-import.php:102
+msgid "Status not updated"
+msgstr "Stav není aktualizován"
+
+#: templates/fooevents-checkins-import.php:108
+msgid "Not checked-in"
+msgstr "Neodbaveno"
+
+#: templates/fooevents-checkins-import.php:110
+msgid "Canceled"
+msgstr "Zrušeno"
+
+#: templates/fooevents-checkins-import.php:112
+msgid "Unpaid"
+msgstr "Nezaplaceno"
+
+#: templates/fooevents-checkins-import.php:128
+#: templates/fooevents-checkins-import.php:193
+msgid "Copy to clipboard"
+msgstr "Zkopírovat do schránky"
+
+#: templates/fooevents-checkins-import.php:148
+msgid "The FooEvents Check-ins import tool allows you to import check-ins that were performed while using the Check-ins app in offline mode. This is useful if you performed a large volume of check-ins while in offline mode and are having trouble syncing them."
+msgstr "Nástroj pro import kontrol příchodů FooEvents vám umožňuje importovat kontrolní příchody, které byly provedeny při používání aplikace Check-ins v režimu offline. Toto je užitečné, pokud jste provedli velké množství kontrolních příchodů v režimu offline a máte potíže s jejich synchronizací."
+
+#: templates/fooevents-checkins-import.php:149
+msgid "This custom XML file must be exported from the settings screen in the FooEvents Check-ins app and saved to a location on your computer. The check-ins will be imported in the exact order they were performed."
+msgstr "Tento vlastní XML soubor musí být exportován ze stránky nastavení v aplikaci FooEvents Check-ins a uložen na vašem počítači. Check-iny budou importovány v přesném pořadí, ve kterém byly provedeny."
+
+#: templates/fooevents-checkins-import.php:178
+msgid "Importing, please wait..."
+msgstr "Probíhá import, čekejte prosím..."
+
+#: templates/fooevents-checkins-import.php:190
+msgid "Copied!"
+msgstr "Zkopírováno!"
+
+#: templates/global-settings.php:11
+msgid "FooEvents Settings"
+msgstr "Nastavení FooEvents"
+
+#: templates/global-settings.php:13
+msgid "License"
+msgstr "Licence"
+
+#: templates/global-settings.php:14 templates/global-settings.php:59
+msgid "General"
+msgstr "Hlavní"
+
+#: templates/global-settings.php:15 templates/global-settings.php:195
+msgid "Terminology"
+msgstr "Terminologie"
+
+#: templates/global-settings.php:16 templates/global-settings.php:259
+#: templates/product-ticket-settings.php:11
+msgid "Ticket Design"
+msgstr "Design vstupenky"
+
+#: templates/global-settings.php:18
+msgid "PDF Tickets"
+msgstr "Vstupenky ve formátu PDF"
+
+#: templates/global-settings.php:24
+msgid "Calendar"
+msgstr "Kalendář"
+
+#: templates/global-settings.php:26 templates/global-settings.php:346
+msgid "Check-ins App"
+msgstr "Aplikace pro odbavení"
+
+#: templates/global-settings.php:27
+msgid "Integration"
+msgstr "Integrace"
+
+#: templates/global-settings.php:35
+msgid "FooEvents License"
+msgstr "Licence FooEvents"
+
+#: templates/global-settings.php:40
+msgid "FooEvents license key"
+msgstr "Licenční klíč FooEvents"
+
+#: templates/global-settings.php:43
+msgid "Required for automatic plugin updates. Leave empty if purchase was made on CodeCanyon.net AND no other plugin purchases were made on FooEvents.com. You must paste your license key here if any plugin purchases were made on FooEvents.com."
+msgstr "Vyžadováno pro automatické aktualizace pluginu. Nechte prázdné, pokud byl nákup proveden na CodeCanyon.net A na FooEvents.com nebyly provedeny žádné další nákupy pluginů. Pokud jste na FooEvents.com zakoupili nějaký plugin, musíte sem vložit svůj licenční klíč."
+
+#: templates/global-settings.php:44
+msgid "Get license key"
+msgstr "Získej licenční klíč"
+
+#: templates/global-settings.php:48
+msgid "Envato purchase code"
+msgstr "Envato purchase code"
+
+#: templates/global-settings.php:51
+msgid "Required for automatic plugin updates. Leave empty if purchase was made on FooEvents.com AND no purchases were made on CodeCanyon.net. You must paste your Envato purchase code here if the FooEvents for WooCommerce plugin was purchased on CodeCanyon.net."
+msgstr "Vyžadováno pro automatické aktualizace pluginu. Nechte prázdné, pokud byl nákup uskutečněn na FooEvents.com A nebyly provedeny žádné nákupy na CodeCanyon.net. Pokud byl plugin FooEvents for WooCommerce zakoupen na CodeCanyon.net, musíte sem vložit svůj nákupní kód Envato."
+
+#: templates/global-settings.php:64
+msgid "Change add to cart text"
+msgstr "Change add to cart text"
+
+#: templates/global-settings.php:67
+msgid "Changes 'Add to cart' text to 'Book ticket' for event products."
+msgstr "Změní text 'Přidat do košíku' na 'Kupit vstupenku' pro produkty akce."
+
+#: templates/global-settings.php:71
+msgid "Enable event sorting options"
+msgstr "Povolit možnosti řazení událostí"
+
+#: templates/global-settings.php:74
+msgid "Adds sort by date options to the WooCommerce product sorting drop-down list. You can set the default sort option in the WordPress Customizer."
+msgstr "Přidá možnosti řazení podle data do rozevíracího seznamu řazení produktů WooCommerce. Výchozí možnost řazení můžete nastavit v nástroji WordPress Customizer."
+
+#: templates/global-settings.php:78
+msgid "Display event date on product listings"
+msgstr "Zobrazit datum události na výpisech produktů"
+
+#: templates/global-settings.php:81
+msgid "Adds the event date above the product title on product listing pages."
+msgstr "Přidá datum události nad název produktu na stránky se seznamem produktů."
+
+#: templates/global-settings.php:85
+msgid "Hide event details tab"
+msgstr "Hide event details tab"
+
+#: templates/global-settings.php:88
+msgid "Hides the event details tab on the product page."
+msgstr "Skryje kartu podrobností události na stránce produktu."
+
+#: templates/global-settings.php:92
+msgid "Use placeholders on checkout form"
+msgstr "Use placeholders on checkout form"
+
+#: templates/global-settings.php:95
+msgid "Displays placeholders in the checkout form (useful for themes that don't support form labels)."
+msgstr "Zobrazí zástupné symboly ve formuláři pokladny (užitečné pro motivy, které nepodporují štítky formulářů)."
+
+#: templates/global-settings.php:99 templates/global-settings.php:358
+msgid "Hide unpaid tickets"
+msgstr "Hide unpaid tickets"
+
+#: templates/global-settings.php:102
+msgid "Hides unpaid tickets in ticket admin."
+msgstr "Skryje nezaplacené vstupenky ve správci vstupenek."
+
+#: templates/global-settings.php:106
+msgid "Disable completed order email notification"
+msgstr "Zakázat e-mailové upozornění na dokončenou objednávku"
+
+#: templates/global-settings.php:109
+msgid "Prevents the WooCommerce completed order email notification from being sent to customers when tickets are created through the WordPress dashboard."
+msgstr "Zabraňuje odeslání e-mailového oznámení o dokončené objednávce WooCommerce zákazníkům při vytváření lístků prostřednictvím řídicího panelu WordPress."
+
+#: templates/global-settings.php:113
+msgid "Use \"Total Sales\" on reports listing page"
+msgstr "Použijte „Celkové tržby“ na stránce s výpisem reportů."
+
+#: templates/global-settings.php:116
+msgid "Solves a performance issue on some servers with large amount of tickets. Tickets sold on report listing page might be less acurate with this setting enabled."
+msgstr "Řeší výkonnostní problém na některých serverech s velkým množstvím vstupenek. Počet prodaných vstupenek na stránce s výpisem reportu může být s touto funkcí aktivována méně přesný."
+
+#: templates/global-settings.php:120
+msgid "Email copy of tickets to other recipients"
+msgstr "E-mailové kopie vstupenek ostatním příjemcům"
+
+#: templates/global-settings.php:123
+msgid "Sends a copy when a ticket is generated to the specified email address. Use a comma separated list to send to multiple email addresses."
+msgstr "Odešle kopii při vygenerování lístku na zadanou e-mailovou adresu. K odeslání na více e-mailových adres použijte seznam oddělený čárkami."
+
+#: templates/global-settings.php:127
+msgid "Copy ticket purchaser's details"
+msgstr "Zkopírujte údaje o kupujícím vstupenky"
+
+#: templates/global-settings.php:130
+msgid "Disabled"
+msgstr "Vypnuto"
+
+#: templates/global-settings.php:131
+msgid "Show icon"
+msgstr "Zobrazit ikonu"
+
+#: templates/global-settings.php:132
+msgid "Show text"
+msgstr "Zobrazit text"
+
+#: templates/global-settings.php:133
+msgid "Show icon AND text"
+msgstr "Zobrazit ikonu i text"
+
+#: templates/global-settings.php:134
+msgid "Automatically copy details"
+msgstr "Automaticky kopírovat podrobnosti"
+
+#: templates/global-settings.php:135
+msgid "Automatically copy details AND hide email address"
+msgstr "Automaticky zkopírujte podrobnosti A skryjte e-mailovou adresu"
+
+#: templates/global-settings.php:137
+msgid "Adds the option to copy across the ticket purchaser's details for the attendee's first name, last name and email address on the checkout page using either an icon, text, or icon and text visual prompt. It can also be set to automatically copy the purchaser's details with the option to hide the email address field."
+msgstr "Přidá možnost kopírování podrobností o kupujícím vstupenky pro křestní jméno, příjmení a e-mailovou adresu účastníka na stránce pokladny pomocí ikony, textu nebo ikony a textové vizuální výzvy. Lze také nastavit automatické kopírování údajů o kupujícím s možností skrýt pole e-mailové adresy."
+
+#: templates/global-settings.php:141
+msgid "Event expiration method"
+msgstr "Způsob vypršení platnosti události"
+
+#: templates/global-settings.php:144
+msgid "Disable purchase"
+msgstr "Zakázat nákup"
+
+#: templates/global-settings.php:145
+msgid "Hide product"
+msgstr "Skrýt produkt"
+
+#: templates/global-settings.php:147
+msgid "Disable the ability to purchase the ticket/product or hide it in page listings after the event has expired."
+msgstr "Vypněte možnost zakoupit vstupenku/produkt nebo jej skrýt ve výpisech stránek po vypršení platnosti události."
+
+#: templates/global-settings.php:151
+msgid "Attendee fields position"
+msgstr "Pole pozice účastníků"
+
+#: templates/global-settings.php:154
+msgid "After order notes (default)"
+msgstr "Po formuláři Poznámka k objednávce (výchozí)"
+
+#: templates/global-settings.php:155
+msgid "Before order notes"
+msgstr "Před formulářem Poznámka k objednávce (výchozí)"
+
+#: templates/global-settings.php:156
+msgid "After billing form"
+msgstr "Po formuláři Fakturační údaje"
+
+#: templates/global-settings.php:157
+msgid "After shipping form"
+msgstr "Po formuláři Dodací údaje"
+
+#: templates/global-settings.php:159
+msgid "Sets the position of the attendee form fields on the checkout page. Selecting a different position may help to resolve conflicts with certain themes and third-party plugins."
+msgstr "Nastaví pozici polí formuláře účastníka na stránce pokladny. Výběr jiné pozice může pomoci vyřešit konflikty s určitými motivy a pluginy třetích stran."
+
+#: templates/global-settings.php:163
+msgid "Send on order status"
+msgstr "Odeslat při stavu objednávky"
+
+#: templates/global-settings.php:170
+msgid "Sets the required order status for ticket creation and sending. \"Completed\" is the default status but this can be deselected and other statuses can be selected simultaneously using the multi-select field."
+msgstr "Nastaví požadovaný stav objednávky pro vytvoření a odeslání vstupenky. \"Dokončeno\" je výchozí stav, ale lze jej zrušit a současně vybrat jiné stavy pomocí pole vícenásobného výběru."
+
+#: templates/global-settings.php:174
+msgid "Import batch size"
+msgstr "Velikost dávkového importu"
+
+#: templates/global-settings.php:177
+msgid "100 (Default)"
+msgstr "100 (Výchozí)"
+
+#: templates/global-settings.php:186
+msgid "Specify the number of tickets to import in each batch."
+msgstr "Specifikujte počet vstupenek k importu v každé dávce."
+
+#: templates/global-settings.php:187
+msgid "Depending on your server's configuration and capabilities, setting a large batch size may cause issues due to server timeouts or memory exhaustion. Adjust this value accordingly to avoid performance issues."
+msgstr "V závislosti na konfiguraci a schopnostech vašeho serveru může nastavení velké velikosti dávky způsobit problémy kvůli vypršení časového limitu serveru nebo vyčerpání paměti. Upravte tuto hodnotu odpovídajícím způsobem, abyste se vyhnuli problémům s výkonem."
+
+#: templates/global-settings.php:201
+#: templates/product-event-terminology-settings.php:14
+msgid "Singular"
+msgstr "Jednotné číslo"
+
+#: templates/global-settings.php:202
+#: templates/product-event-terminology-settings.php:15
+msgid "Plural"
+msgstr "Množné číslo"
+
+#: templates/global-settings.php:211
+msgid "Change 'event' to your own custom text."
+msgstr "Změňte „událost“ na svůj vlastní text."
+
+#: templates/global-settings.php:221
+msgid "Change 'attendee' to your own custom text."
+msgstr "Změňte „účastníka“ na svůj vlastní text."
+
+#: templates/global-settings.php:231
+msgid "Change 'Book ticket' to your own custom text."
+msgstr "Změňte 'Koupit vstupenku' na svůj vlastní text."
+
+#: templates/global-settings.php:241
+msgid "Change 'Day' to your own custom text."
+msgstr "Změňte text \"Day\" na vlastní text."
+
+#: templates/global-settings.php:251
+msgid "Change 'Copy' to your own custom text."
+msgstr "Změňte 'Kopírovat' na svůj vlastní text."
+
+#: templates/global-settings.php:264
+msgid "Global ticket border"
+msgstr "Global ticket border"
+
+#: templates/global-settings.php:267
+msgid "Color of the ticket border."
+msgstr "Barva okraje vstupenky."
+
+#: templates/global-settings.php:271
+msgid "Global ticket button"
+msgstr "Global ticket button"
+
+#: templates/global-settings.php:274 templates/product-ticket-settings.php:63
+msgid "Color of the ticket button."
+msgstr "Barva tlačítka vstupenky."
+
+#: templates/global-settings.php:278
+msgid "Global ticket button text"
+msgstr "Global ticket button text"
+
+#: templates/global-settings.php:281
+msgid "Color of the text in the ticket button."
+msgstr "Barva textu v tlačítku vstupenky."
+
+#: templates/global-settings.php:285
+msgid "Global ticket logo"
+msgstr "Global ticket logo"
+
+#: templates/global-settings.php:290 templates/global-settings.php:301
+#: templates/global-settings.php:377
+#: templates/product-event-integration-settings.php:270
+#: templates/product-event-integration-settings.php:281
+#: templates/product-event-printing-settings.php:72
+#: templates/product-event-printing-settings.php:122
+#: templates/product-event-printing-settings.php:418
+#: templates/product-event-printing-settings.php:454
+#: templates/product-event-printing-settings.php:490
+#: templates/product-event-printing-settings.php:526
+#: templates/product-event-printing-settings.php:564
+#: templates/product-event-printing-settings.php:600
+#: templates/product-event-printing-settings.php:636
+#: templates/product-event-printing-settings.php:672
+#: templates/product-event-printing-settings.php:710
+#: templates/product-event-printing-settings.php:746
+#: templates/product-event-printing-settings.php:782
+#: templates/product-event-printing-settings.php:818
+#: templates/product-event-printing-settings.php:856
+#: templates/product-event-printing-settings.php:892
+#: templates/product-event-printing-settings.php:928
+#: templates/product-event-printing-settings.php:964
+#: templates/product-ticket-settings.php:31
+#: templates/product-ticket-settings.php:43
+msgid "Clear"
+msgstr "Vymazat"
+
+#: templates/global-settings.php:291
+msgid "Full URL that links to the logo that will be used in the ticket."
+msgstr "Úplná adresa URL, která odkazuje na logo, které bude použito ve vstupence."
+
+#: templates/global-settings.php:296
+msgid "Global ticket header image"
+msgstr "Global ticket header image"
+
+#: templates/global-settings.php:302
+msgid "Full URL that links to the image that will be used as the ticket header."
+msgstr "Úplná adresa URL, která odkazuje na obrázek, který bude použit jako záhlaví vstupenky."
+
+#: templates/global-settings.php:307
+msgid "Enable QR codes"
+msgstr "Povolit QR kódy"
+
+#: templates/global-settings.php:311
+msgid "Use QR codes instead of 1D barcodes on tickets."
+msgstr "Na vstupenkách používejte místo 1D čárových kódů QR kódy."
+
+#: templates/global-settings.php:315
+msgid "QR/Barcode image format"
+msgstr "Formát obrázku QR/čárového kódu"
+
+#: templates/global-settings.php:318
+msgid "PNG"
+msgstr "PNG"
+
+#: templates/global-settings.php:319
+msgid "PNG and JPG"
+msgstr "PNG a JPG"
+
+#: templates/global-settings.php:321
+msgid "Select the preferred image format for 1D barcodes and QR codes that are generated for tickets. PNG is the default format."
+msgstr "Vyberte preferovaný formát obrázku pro 1D čárové kódy a QR kódy, které jsou generovány pro vstupenky. PNG je výchozí formát."
+
+#: templates/global-settings.php:325
+msgid "Remove FooEvents footer link"
+msgstr "Odebrat odkaz v zápatí emailu vstupenky FooEvents"
+
+#: templates/global-settings.php:328
+msgid "Removes the \"Powered by FooEvents.com\" link from the ticket email footer."
+msgstr "Odebere odkaz „Powered by FooEvents.com“ ze zápatí e-mailu tiketu."
+
+#: templates/global-settings.php:351
+msgid "Hide personal information"
+msgstr "Skrýt osobní údaje"
+
+#: templates/global-settings.php:354
+msgid "Hides all personal information for attendees and/or ticket purchasers in the app. Only attendee names will be visible for check-in purposes."
+msgstr "Skryje všechny osobní údaje účastníků a/nebo kupujících vstupenek v aplikaci. Pro účely přihlášení budou viditelná pouze jména účastníků."
+
+#: templates/global-settings.php:361
+msgid "Hides all unpaid tickets in the app."
+msgstr "Skryje všechny nezaplacené vstupenky v aplikaci."
+
+#: templates/global-settings.php:365
+msgid "App title"
+msgstr "Název aplikace"
+
+#: templates/global-settings.php:367
+msgid "e.g. Attendee Check-ins"
+msgstr "např. Odbavení účastníků"
+
+#: templates/global-settings.php:368
+msgid "The title that displays on the app sign-in screen beneath the app logo."
+msgstr "Název, který se zobrazuje na přihlašovací obrazovce aplikace pod logem aplikace."
+
+#: templates/global-settings.php:372
+msgid "App logo"
+msgstr "App logo"
+
+#: templates/global-settings.php:378
+msgid "Full URL that links to the image that will be used as the logo on the sign-in screen (PNG format with transparency and a width of around 940px is recommended)."
+msgstr "Úplná adresa URL, která odkazuje na obrázek, který bude použit jako logo na přihlašovací obrazovce (doporučuje se formát PNG s průhledností a šířkou přibližně 940 pixelů)."
+
+#: templates/global-settings.php:383
+msgid "Accent color"
+msgstr "Barva zvýraznění"
+
+#: templates/global-settings.php:386
+msgid "Color of the top navigation bar and sign-in button."
+msgstr "Barva horního navigačního panelu a tlačítka pro přihlášení."
+
+#: templates/global-settings.php:390
+msgid "Accent text color"
+msgstr "Barva textu zvýraznění"
+
+#: templates/global-settings.php:393
+msgid "Color of the text in the top navigation bar and sign-in button."
+msgstr "Barva textu v horní navigační liště a přihlašovací tlačítko."
+
+#: templates/global-settings.php:397
+msgid "Background color"
+msgstr "Barva pozadí"
+
+#: templates/global-settings.php:400
+msgid "Color of the background on the sign-in screen."
+msgstr "Barva pozadí na přihlašovací obrazovce."
+
+#: templates/global-settings.php:404
+msgid "Title text color"
+msgstr "Barva textu nadpisu"
+
+#: templates/global-settings.php:407
+msgid "Color of the title text beneath the logo on the sign-in screen."
+msgstr "Barva textu nadpisu pod logem na přihlašovací obrazovce."
+
+#: templates/global-settings.php:412
+msgid "Event listing options"
+msgstr "Možnosti výpisu událostí"
+
+#: templates/global-settings.php:414
+msgid "Show all events"
+msgstr "Zobrazit všechny události"
+
+#: templates/global-settings.php:415
+msgid "Manage how events are listed in the app. Changes can be made in real-time without the user needing to sign-out."
+msgstr "Spravujte, jak jsou události uvedeny v aplikaci. Změny lze provádět v reálném čase, aniž by se uživatel musel odhlašovat."
+
+#: templates/global-settings.php:417
+msgid "Only show events created by the signed-in user"
+msgstr "Zobrazit pouze události vytvořené přihlášeným uživatelem"
+
+#: templates/global-settings.php:419
+msgid "Only show the following events:"
+msgstr "Zobrazit pouze následující události:"
+
+#: templates/global-settings.php:431
+msgid "Show all events for Administrator users"
+msgstr "Zobrazit všechny události pro uživatele s oprávněním administrátora"
+
+#: templates/global-settings.php:435
+msgid "Tickets to load per request"
+msgstr "Vstupenky k načtení na vyžádání"
+
+#: templates/global-settings.php:446
+msgid "Specify how many event tickets the Check-ins app should load during each request (lower values will result in slower ticket load times but this usually works better for servers with limited resources)."
+msgstr "Určete, kolik lístků na události má aplikace Check-ins načíst během každého požadavku (nižší hodnoty budou mít za následek pomalejší načítání lístků, ale to obvykle funguje lépe pro servery s omezenými prostředky)."
+
+#: templates/global-settings.php:450
+msgid "Show ticket access log"
+msgstr "Zobrazit protokol o přístupu k lístkům"
+
+#: templates/global-settings.php:461
+msgid "Select whether a ticket's check-ins log should be loaded together with the ticket information. Please note that this might cause tickets to take longer to load or require additional server resources."
+msgstr "Vyberte, zda má být záznam o kontrole lístku načten společně s informacemi o lístku. Mějte prosím na paměti, že to může způsobit, že se lístky budou načítat déle nebo budou vyžadovat další serverové zdroje."
+
+#: templates/global-settings.php:470
+msgid "Google Maps"
+msgstr "Google Mapy"
+
+#: templates/global-settings.php:473
+msgid "Google Maps API key"
+msgstr "Klíč API pro Google mapy"
+
+#: templates/global-settings.php:476
+msgid "Enable Google Maps to be displayed on the product page."
+msgstr "Povolte zobrazení Map Google na stránce produktu."
+
+#: templates/global-settings.php:484
+msgid "JWT API Key"
+msgstr "Klíč API JWT"
+
+#: templates/global-settings.php:487 templates/global-settings.php:494
+#: templates/global-settings.php:504 templates/global-settings.php:511
+#: templates/global-settings.php:518
+msgid "Required to securely connect to your Zoom account in order to register attendees for your meetings/webinars."
+msgstr "Vyžaduje se bezpečné připojení k vašemu účtu Zoom za účelem registrace účastníků vašich schůzek/webinářů."
+
+#: templates/global-settings.php:491
+msgid "JWT API Secret"
+msgstr "Tajný klíč API JWT"
+
+#: templates/global-settings.php:501
+msgid "Account ID"
+msgstr "ID účtu"
+
+#: templates/global-settings.php:508
+msgid "Client ID"
+msgstr "ID klienta"
+
+#: templates/global-settings.php:515
+msgid "Client Secret"
+msgstr "Klient tajný kód"
+
+#: templates/global-settings.php:527
+msgid "Get help generating Zoom API Server-to-Server OAuth credentials"
+msgstr "Získejte nápovědu pro generování ověření OAuth rozhraní Zoom API Server-to-Server"
+
+#: templates/global-settings.php:539
+msgid "Users/Hosts"
+msgstr "Uživatelé/hostitelé"
+
+#: templates/global-settings.php:542
+msgid "Displays meetings/webinars on the Event Integration tab according to which users created them so that they can be linked to specific events. The default setting will only display meetings/webinars for the user that generated the Server-to-Server OAuth credentials. The second option is useful if you have multiple hosts on your Zoom account and you would like to restrict which meetings/webinars are visible (Hint: Shift-Click or Ctrl/Cmd+Click to select multiple hosts)."
+msgstr "Zobrazuje schůzky/webové semináře na záložce Integrace událostí podle toho, jak je uživatelé vytvořili, aby je bylo možné propojit s konkrétními událostmi. Ve výchozím nastavení se zobrazí pouze schůzky/webové semináře pro uživatele, který vygeneroval klíč API a tajný klíč. Druhá možnost je užitečná, pokud máte na svém účtu Zoom více hostitelů a chtěli byste omezit, které schůzky/webináře jsou viditelné (Nápověda: Shift-Klik nebo Ctrl/Cmd+Klik pro výběr více hostů)."
+
+#: templates/global-settings.php:571
+#: templates/product-event-integration-settings.php:213
+msgid "Mailchimp"
+msgstr "Mailchimp"
+
+#: templates/global-settings.php:574
+msgid "API key"
+msgstr "Klíč API"
+
+#: templates/global-settings.php:578
+msgid "Connected"
+msgstr "Připojeno"
+
+#: templates/global-settings.php:580
+msgid "Not Connected"
+msgstr "Nepřipojeno"
+
+#: templates/global-settings.php:582
+msgid "Enables FooEvents to integrate with your Mailchimp account. Login to Mailchimp and navigate to \"Account\" > \"Extras\" > \"API keys\" to create or reuse an existing API key."
+msgstr "Umožňuje FooEvents integrovat se s vaším účtem Mailchimp. Přihlaste se do Mailchimpu a přejděte na „Účet“ > „Doplňky“ > „Klíče API“ a vytvořte nebo znovu použijte existující klíč API."
+
+#: templates/global-settings.php:586
+msgid "Server prefix"
+msgstr "Předpona serveru"
+
+#: templates/global-settings.php:589
+msgid "Login to your Mailchimp account and copy the parameter that comes immediately after \"https://\" in your web browser e.g. the server prefix is \"us19\" in https://us19.admin.mailchimp.com/"
+msgstr "Přihlaste se ke svému účtu Mailchimp a do webového prohlížeče zkopírujte parametr, který je uveden hned za „https://“, např. prefix serveru je \"us19\" v https://us19.admin.mailchimp.com/"
+
+#: templates/global-settings.php:594
+msgid "Default audience list"
+msgstr "Výchozí seznam publika"
+
+#: templates/global-settings.php:602
+msgid "Select a default audience where you would like the attendees of all your events to be automatically added as contacts in Mailchimp. This can be overridden for each product (event) through the Event Integration settings. Note: The audience must first be setup in your Mailchimp account."
+msgstr "Vyberte výchozí publikum, kam chcete, aby se účastníci všech vašich událostí automaticky přidávali jako kontakty v Mailchimpu. Toto lze u každého produktu (události) přepsat pomocí nastavení Integrace událostí. Poznámka: Publikum musí být nejprve nastaveno ve vašem účtu Mailchimp."
+
+#: templates/global-settings.php:606
+msgid "Default audience tags"
+msgstr "Výchozí značky publika"
+
+#: templates/global-settings.php:609
+msgid "Specify default audience tags as comma-separated values (,) which you would like to be associated with the attendees of all your events when they are automatically added as contacts in Mailchimp. This can be overridden for each product (event) through the Event Integration settings."
+msgstr "Zadejte výchozí značky publika jako hodnoty oddělené čárkami (,), které chcete přiřadit k účastníkům všech vašich událostí, když budou automaticky přidáni jako kontakty v Mailchimpu. Toto lze u každého produktu (události) přepsat pomocí nastavení Integrace událostí."
+
+#: templates/global-settings.php:616
+msgid "Get help generating Mailchimp API keys"
+msgstr "Získejte pomoc s generováním klíčů Mailchimp API"
+
+#: templates/global-settings.php:621
+msgid "WooCommerce Subscriptions"
+msgstr "Předplatné WooCommerce"
+
+#: templates/global-settings.php:624
+msgid "Disable new ticket generation for subscription renewals"
+msgstr "Zakázat generování nového lístku pro obnovení předplatného"
+
+#: templates/global-settings.php:627
+msgid "Only create tickets on parent order completion. No tickets will be generated on order renewals."
+msgstr "Vstupenky vytvářejte pouze po dokončení rodičovské objednávky. Při obnovení objednávky nebudou generovány žádné vstupenky."
+
+#: templates/global-settings.php:632
+#: templates/product-event-integration-settings.php:255
+msgid "AddToWallet"
+msgstr "AddToWallet"
+
+#: templates/global-settings.php:635
+msgid "AddToWallet API key"
+msgstr "Přidat klíč API do peněženky"
+
+#: templates/global-settings.php:638
+msgid "Let attendees add their QR codes to their Android or Apple Wallet apps on their phones."
+msgstr "Nechte účastníky přidat své QR kódy do svých aplikací Android nebo Apple Wallet na svých telefonech."
+
+#: templates/global-settings.php:646
+msgid "Get help generating the AddToWallet API key"
+msgstr "Získejte pomoc při generování klíče API AddToWallet."
+
+#: templates/my-account-view-order-tickets.php:29
+#: templates/order-ticket-details-generated-tickets.php:126
+#: templates/order-ticket-details.php:118 templates/tickets-edit-ticket.php:96
+msgid "Time:"
+msgstr "Čas:"
+
+#: templates/my-account-view-order-tickets.php:41
+#: templates/order-ticket-details-generated-tickets.php:138
+#: templates/order-ticket-details.php:130
+#: templates/tickets-add-ticket-event-details.php:74
+#: templates/tickets-edit-ticket.php:113
+msgid "Zoom Meetings / Webinars: "
+msgstr "Zoom schůzky / webové semináře: "
+
+#: templates/my-account-view-order-tickets.php:90
+#: templates/order-ticket-details-generated-tickets.php:51
+#: templates/order-ticket-details.php:42
+msgid "Zoom Meeting / Webinar"
+msgstr "Zoom Setkání / Webinář"
+
+#: templates/my-account-view-order-tickets.php:114
+#: templates/order-ticket-details-generated-tickets.php:75
+#: templates/order-ticket-details.php:67 templates/tickets-edit-ticket.php:36
+msgid "Telephone:"
+msgstr "Telefon:"
+
+#: templates/my-account-view-order-tickets.php:144
+msgid "Yes"
+msgstr "Ano"
+
+#: templates/my-account-view-order-tickets.php:144
+msgid "No"
+msgstr "Ne"
+
+#: templates/order-new-order-email-ticket-details.php:57
+msgid "Day "
+msgstr "Den "
+
+#: templates/order-new-order-email-ticket-details.php:77
+msgid "Name"
+msgstr "Název"
+
+#: templates/order-new-order-email-ticket-details.php:91
+#: templates/order-new-order-email-ticket-details.php:94
+#: templates/order-ticket-details.php:30 templates/order-ticket-details.php:36
+#, php-format
+msgid "Booking %s"
+msgstr "Rezervace %s"
+
+#: templates/order-ticket-details-generated-tickets.php:12
+msgid "The following ticket/s have been generated for this order."
+msgstr "Pro tuto objednávku byly vygenerovány následující vstupenky."
+
+#: templates/order-ticket-details.php:12
+#, php-format
+msgid "Tickets will only be generated when the order is changed to '%s'"
+msgstr "Vstupenky budou generovány pouze tehdy, když se objednávka změní na '%s'"
+
+#: templates/order-ticket-resend-ticket.php:19
+#: templates/tickets-edit-ticket-resend-ticket.php:18
+msgid "Resend"
+msgstr "Znovu odeslat"
+
+#: templates/order-ticket-resend-ticket.php:24
+msgid "Tickets have not yet been generated"
+msgstr "Vstupenky ještě nebyly vygenerovány"
+
+#: templates/plugin-introduction.php:27
+msgid "Welcome to FooEvents for WooCommerce!"
+msgstr "Vítejte v FooEvents pro WooCommerce!"
+
+#: templates/plugin-introduction.php:30
+msgid "Help Center"
+msgstr "Centrum nápovědy"
+
+#: templates/plugin-introduction.php:32
+msgid "FooEvents is the #1 event, ticketing and bookings platform for WooCommerce. Sell unlimited WooCommerce tickets and bookings from your own website and manage free registration for physical events, virtual events or both (hybrid events). No commission OR ticket fees."
+msgstr "FooEvents je nejlepší platforma pro události, prodej vstupenek a rezervace pro WooCommerce. Prodávejte neomezené vstupenky a rezervace pro WooCommerce přímo na svých webových stránkách a spravujte zdarma registraci na fyzické události, virtuální události nebo obojí (hybridní události). Žádná provize NEBO poplatky za vstupenky."
+
+#: templates/plugin-introduction.php:41 templates/plugin-introduction.php:43
+msgid "Global Settings"
+msgstr "Globální nastavení"
+
+#: templates/plugin-introduction.php:42
+msgid "Enter your FooEvents License key and ensure your FooEvents plugins remain up to date. Configure the behavior of your events, tickets, calendar, Zoom and Mailchimp integrations as well as the FooEvents Check-ins apps."
+msgstr "Zadejte svůj licenční klíč FooEvents a ujistěte se, že vaše pluginy FooEvents jsou vždy aktuální. Nastavte chování vašich událostí, vstupenek, kalendáře, integrací s Zoom a Mailchimp a také aplikací FooEvents Check-ins."
+
+#: templates/plugin-introduction.php:43 templates/plugin-introduction.php:51
+msgid "Help Guide"
+msgstr "Návod k použití"
+
+#: templates/plugin-introduction.php:49
+msgid "Events"
+msgstr "Akce"
+
+#: templates/plugin-introduction.php:50
+msgid "FooEvents extends standard WooCommerce products and adds event and ticketing functionality. To create your first event, add a new product and complete the standard product fields and FooEvents option in the Product data tabs."
+msgstr "FooEvents rozšiřuje standardní produkty WooCommerce a přidává funkci událostí a prodeje vstupenek. Pro vytvoření první události přidejte nový produkt a vyplňte standardní pole produktu a možnosti FooEvents v kartách Produktová data."
+
+#: templates/plugin-introduction.php:51
+msgid "Add an Event"
+msgstr "Přidat událost"
+
+#: templates/plugin-introduction.php:57
+msgid "Tickets are generated when an order is completed which occurs automatically when the payment has been completed."
+msgstr "Vstupenky jsou generovány poté, co je objednávka dokončena, což se stane automaticky po dokončení platby."
+
+#: templates/plugin-introduction.php:59 templates/reports-report-page.php:15
+#: templates/tickets-import-tickets-log.php:53
+msgid "View Tickets"
+msgstr "Zobrazit vstupenky"
+
+#: templates/plugin-introduction.php:73
+msgid "Download the FREE FooEvents Check-ins app"
+msgstr "Stáhněte si BEZPLATNÝ aplikaci FooEvents Check-ins"
+
+#: templates/plugin-introduction.php:74
+msgid "The FooEvents Check-ins app connects securely to any WordPress website that uses FooEvents, the #1 ticket plugin for WooCommerce. This app makes it easier than ever to manage access to your events, venues and other services like a pro!"
+msgstr "Aplikace FooEvents Check-ins se bezpečně připojuje k libovolnému webu WordPress, který používá FooEvents, nejlepší doplněk na lístky pro WooCommerce. Tato aplikace vám usnadní správu přístupu k vašim událostem, prostorům a dalším službám jako profesionál!"
+
+#: templates/plugin-introduction.php:78
+msgid "Scan the QR codes to install the apps."
+msgstr "Načtěte QR kódy pro instalaci aplikací."
+
+#: templates/plugin-introduction.php:85
+msgid "FooEvents Extensions"
+msgstr "Rozšíření FooEvents"
+
+#: templates/plugin-introduction.php:86
+msgid "The following extensions add various advanced features to the FooEvents for WooCommerce plugin. They can be purchased separately or as part of our popular"
+msgstr "Následující rozšíření přidávají do pluginu FooEvents for WooCommerce různé pokročilé funkce. Lze je zakoupit samostatně nebo jako součást naší oblíbené"
+
+#: templates/plugin-introduction.php:86
+msgid "bundles"
+msgstr "balíčky"
+
+#: templates/plugin-introduction.php:86
+msgid "If you would like to upgrade to a bundle, please"
+msgstr "Pokud byste chtěli upgradovat na balíček, prosím"
+
+#: templates/plugin-introduction.php:86
+msgid "contact us"
+msgstr "napište nám"
+
+#: templates/plugin-introduction.php:86
+msgid "and we will gladly assist"
+msgstr "a my rádi pomůžeme"
+
+#: templates/plugin-introduction.php:93
+msgid "FooEvents for WooCommerce"
+msgstr "FooEvents pro WooCommerce"
+
+#: templates/plugin-introduction.php:94
+msgid "FooEvents adds powerful event, ticketing and booking functionality to your WooCommerce website with no commission or ticket fees."
+msgstr "FooEvents přidává na váš web WooCommerce výkonné funkce pro události, vstupenky a rezervace bez provizí nebo poplatků třetím stranám. <strong>Překlad: <a href=\"https://vandaal.cz\" target=\"_blank\">Fany VanDaal</a></strong>."
+
+#: templates/plugin-introduction.php:96 templates/plugin-introduction.php:126
+#: templates/plugin-introduction.php:151 templates/plugin-introduction.php:179
+#: templates/plugin-introduction.php:210 templates/plugin-introduction.php:240
+#: templates/plugin-introduction.php:270 templates/plugin-introduction.php:299
+#: templates/plugin-introduction.php:329
+msgid "Installed"
+msgstr "Nainstalováno"
+
+#: templates/plugin-introduction.php:97 templates/plugin-introduction.php:126
+#: templates/plugin-introduction.php:128 templates/plugin-introduction.php:151
+#: templates/plugin-introduction.php:153 templates/plugin-introduction.php:179
+#: templates/plugin-introduction.php:181 templates/plugin-introduction.php:210
+#: templates/plugin-introduction.php:212 templates/plugin-introduction.php:240
+#: templates/plugin-introduction.php:242 templates/plugin-introduction.php:270
+#: templates/plugin-introduction.php:272 templates/plugin-introduction.php:299
+#: templates/plugin-introduction.php:301 templates/plugin-introduction.php:329
+#: templates/plugin-introduction.php:331
+msgid "Plugin details"
+msgstr "Podrobnosti pluginu"
+
+#: templates/plugin-introduction.php:97 templates/plugin-introduction.php:133
+#: templates/plugin-introduction.php:158 templates/plugin-introduction.php:186
+#: templates/plugin-introduction.php:217 templates/plugin-introduction.php:247
+#: templates/plugin-introduction.php:277 templates/plugin-introduction.php:306
+#: templates/plugin-introduction.php:336 templates/plugin-introduction.php:345
+msgid "Documentation"
+msgstr "Dokumentace"
+
+#: templates/plugin-introduction.php:120
+msgid "FooEvents POS"
+msgstr "FooEvents POS"
+
+#: templates/plugin-introduction.php:121
+msgid "FooEvents POS (point of sale) is a web-based point of sale plugin and enables you to sell products, bookings, event tickets and print tickets in-person."
+msgstr "FooEvents POS (Prodejní místo) je webový plugin pro prodejní místo a umožňuje vám prodávat produkty, rezervace, vstupenky na akce a tisknout vstupenky osobně."
+
+#: templates/plugin-introduction.php:128 templates/plugin-introduction.php:153
+#: templates/plugin-introduction.php:181 templates/plugin-introduction.php:212
+#: templates/plugin-introduction.php:242 templates/plugin-introduction.php:272
+#: templates/plugin-introduction.php:301 templates/plugin-introduction.php:331
+msgid "Deactivated"
+msgstr "Deaktivováno"
+
+#: templates/plugin-introduction.php:130 templates/plugin-introduction.php:155
+#: templates/plugin-introduction.php:183 templates/plugin-introduction.php:214
+#: templates/plugin-introduction.php:244 templates/plugin-introduction.php:274
+#: templates/plugin-introduction.php:303 templates/plugin-introduction.php:333
+msgid "Not Installed"
+msgstr "Nenainstalováno"
+
+#: templates/plugin-introduction.php:130 templates/plugin-introduction.php:155
+#: templates/plugin-introduction.php:183 templates/plugin-introduction.php:214
+#: templates/plugin-introduction.php:244 templates/plugin-introduction.php:274
+#: templates/plugin-introduction.php:303 templates/plugin-introduction.php:333
+msgid "Get this plugin"
+msgstr "Získejte tento plugin"
+
+#: templates/plugin-introduction.php:145
+msgid "FooEvents Bookings"
+msgstr "Rezervace FooEvents"
+
+#: templates/plugin-introduction.php:146
+msgid "Offer bookings for both physical and virtual events, venues, classes and services. Let your customers check availability and book a space or slot."
+msgstr "Nabídněte rezervace fyzických i virtuálních akcí, míst, kurzů a služeb. Nechte své zákazníky zkontrolovat dostupnost a zarezervovat si místo nebo slot."
+
+#: templates/plugin-introduction.php:174
+msgid "FooEvents Seating"
+msgstr "FooEvents sezení"
+
+#: templates/plugin-introduction.php:175
+msgid "Manage seating arrangements using our flexible seating chart builder and let attendees select their seats based on the layout of your venue."
+msgstr "Spravujte uspořádání sedadel pomocí našeho flexibilního tvůrce sedadel a nechte účastníky vybrat si svá místa na základě uspořádání vašeho místa konání."
+
+#: templates/plugin-introduction.php:204
+msgid "FooEvents Custom Attendee Fields"
+msgstr "Vlastní pole účastníků FooEvents"
+
+#: templates/plugin-introduction.php:205
+msgid "Capture customized attendee fields at checkout so you can tailor FooEvents according to your unique event requirements."
+msgstr "Zachyťte přizpůsobená pole účastníků u pokladny, abyste mohli přizpůsobit událost podle svých jedinečných požadavků na událost."
+
+#: templates/plugin-introduction.php:234
+msgid "FooEvents PDF Tickets"
+msgstr "Vstupenky PDF FooEvents"
+
+#: templates/plugin-introduction.php:235
+msgid "Attach event tickets or booking confirmations as PDF files to the email that is sent to the attendee or ticket purchaser."
+msgstr "Připojte vstupenky na akce nebo potvrzení rezervace jako soubory PDF k e-mailu, který je zaslán účastníkovi nebo kupujícímu vstupenky."
+
+#: templates/plugin-introduction.php:265
+msgid "FooEvents Multi-day"
+msgstr "FooEvents Vícedenní"
+
+#: templates/plugin-introduction.php:266
+msgid "Sell tickets to events that run over multiple calendar or sequential days and perform separate check-ins for each day of the event."
+msgstr "Prodávejte vstupenky na akce, které probíhají ve více kalendářních nebo po sobě jdoucích dnech, a provádějte samostatné odbavení pro každý den akce."
+
+#: templates/plugin-introduction.php:294
+msgid "FooEvents Express Check-ins"
+msgstr "FooEvents Express Check-in"
+
+#: templates/plugin-introduction.php:295
+msgid "Ensure fast and effortless attendee check-ins at your event. Search for attendees or connect a barcode scanner to scan tickets instead of typing."
+msgstr "Zajistěte rychlé a snadné odbavení účastníků na vaší akci. Vyhledejte účastníky nebo připojte skener čárových kódů a skenujte vstupenky místo psaní."
+
+#: templates/plugin-introduction.php:324
+msgid "FooEvents Calendar"
+msgstr "Kalendář FooEvents"
+
+#: templates/plugin-introduction.php:325
+msgid "Display your events in a stylish calendar on your WordPress website using simple short codes and widgets."
+msgstr "Zobrazte své události ve stylovém kalendáři na svém webu WordPress pomocí jednoduchých krátkých kódů a widgetů."
+
+#: templates/plugin-introduction.php:342
+msgid "FooEvents Ticket Themes (FREE)"
+msgstr "Témata vstupenek pro FooEvents (ZDARMA)"
+
+#: templates/plugin-introduction.php:343
+msgid "Transform the appearance of your HTML and PDF tickets and make your event stand out with our FREE Ticket Themes."
+msgstr "Transformujte vzhled svých vstupenek HTML a PDF a nechte svou akci vyniknout pomocí našich ZDARMA motivů vstupenek."
+
+#: templates/plugin-introduction.php:345
+msgid "Download"
+msgstr "Stáhnout"
+
+#: templates/product-event-expiration-settings.php:14
+msgid "Event expiration date:"
+msgstr "Datum ukončení předprodeje:"
+
+#: templates/product-event-expiration-settings.php:16
+msgid "The date when the event will automatically expire."
+msgstr "Datum, kdy akce automaticky vyprší."
+
+#: templates/product-event-expiration-settings.php:21
+msgid "Expiration message:"
+msgstr "Zpráva při ukončení předprodeje:"
+
+#: templates/product-event-expiration-settings.php:21
+msgid "The message that will be displayed on the product page when the event has expired."
+msgstr "Zpráva, která se zobrazí na stránce produktu po vypršení platnosti události."
+
+#: templates/product-event-expiration-settings.php:26
+msgid "Ticket Expiration"
+msgstr "Platnost vstupenky"
+
+#: templates/product-event-expiration-settings.php:29
+msgid "Expiration type:"
+msgstr "Typ vypršení platnosti:"
+
+#: templates/product-event-expiration-settings.php:30
+msgid "Fixed date"
+msgstr "Pevné datum"
+
+#: templates/product-event-expiration-settings.php:30
+msgid "Select either a fixed date or elapsed time since the ticket was purchased to automatically expire tickets."
+msgstr "Vyberte buď pevné datum, nebo čas, který uplynul od zakoupení vstupenky, aby vstupenky automaticky vypršely."
+
+#: templates/product-event-expiration-settings.php:31
+msgid "Elapsed time"
+msgstr "Délka platnosti"
+
+#: templates/product-event-expiration-settings.php:37
+msgid "Select fixed date:"
+msgstr "Vyberte pevné datum:"
+
+#: templates/product-event-expiration-settings.php:39
+msgid "Select the fixed ticket expiration date."
+msgstr "Vyberte pevné datum vypršení platnosti vstupenky."
+
+#: templates/product-event-expiration-settings.php:44
+msgid "Select elapsed time:"
+msgstr "Vyberte délku platnosti:"
+
+#: templates/product-event-expiration-settings.php:51
+msgid "Years"
+msgstr "Roky"
+
+#: templates/product-event-expiration-settings.php:52
+msgid "Months"
+msgstr "Měsíce"
+
+#: templates/product-event-expiration-settings.php:53
+msgid "Weeks"
+msgstr "Týdny"
+
+#: templates/product-event-expiration-settings.php:54
+msgid "Days"
+msgstr "Dnů"
+
+#: templates/product-event-expiration-settings.php:55
+msgid "Hours"
+msgstr "Hodiny"
+
+#: templates/product-event-expiration-settings.php:56
+msgid "Minutes"
+msgstr "Minuty"
+
+#: templates/product-event-expiration-settings.php:58
+msgid "Select the unit of time to be used for elapsed time."
+msgstr "Vyberte jednotku času, která se má použít pro uplynulý čas."
+
+#: templates/product-event-export-settings.php:17
+msgid "Include unpaid tickets:"
+msgstr "Zahrnout nezaplacené vstupenky:"
+
+#: templates/product-event-export-settings.php:17
+msgid "Include unpaid tickets in exported file."
+msgstr "Zahrnout nezaplacené vstupenky do exportovaného souboru."
+
+#: templates/product-event-export-settings.php:18
+msgid "Include billing details:"
+msgstr "Zahrnout fakturační údaje:"
+
+#: templates/product-event-export-settings.php:18
+msgid "Include billing details in exported file."
+msgstr "Zahrnout fakturační údaje do exportovaného souboru."
+
+#: templates/product-event-export-settings.php:19
+msgid "Download CSV of attendees"
+msgstr "Stáhnout CSV účastníků"
+
+#: templates/product-event-integration-settings.php:16
+msgid "The Zoom API Server-to-Server OAuth credentials are not set."
+msgstr "Server-to-Server OAuth přihlašovací údaje pro Zoom API nejsou nastaveny."
+
+#: templates/product-event-integration-settings.php:17
+#: templates/product-event-settings.php:125
+msgid "Please check the Event Integration settings."
+msgstr "Zkontrolujte nastavení integrace událostí."
+
+#: templates/product-event-integration-settings.php:24
+msgid "Attendee details"
+msgstr "Podrobnosti účastníka"
+
+#: templates/product-event-integration-settings.php:25
+msgid "Note: Meeting and webinar registration requires attendee full name and email to be captured at checkout."
+msgstr "Poznámka: Registrace na setkání a webinář vyžaduje, aby bylo při objednávce zaznamenáno jméno a e-mail účastníka."
+
+#: templates/product-event-integration-settings.php:33
+#: templates/product-event-integration-settings.php:224
+msgid "Capture attendee full name and email is currently enabled"
+msgstr "Zachytávání úplného jména a e-mailu účastníka je momentálně povoleno"
+
+#: templates/product-event-integration-settings.php:40
+#: templates/product-event-integration-settings.php:231
+msgid "Capture attendee full name and email is currently disabled"
+msgstr "Zachytávání úplného jména a e-mailu účastníka je momentálně vypnuto"
+
+#: templates/product-event-integration-settings.php:42
+#: templates/product-event-integration-settings.php:233
+msgid "Enable attendee detail capture option"
+msgstr "Povolit možnost získání údajů účastníka"
+
+#: templates/product-event-integration-settings.php:49
+msgid "Automatically generate:"
+msgstr "Automaticky generovat:"
+
+#: templates/product-event-integration-settings.php:51
+#: templates/product-event-integration-settings.php:122
+#: templates/product-event-integration-settings.php:171
+msgid "Meetings"
+msgstr "Schůzky"
+
+#: templates/product-event-integration-settings.php:53
+#: templates/product-event-integration-settings.php:115
+#: templates/product-event-integration-settings.php:164
+msgid "Webinars"
+msgstr "Webináře"
+
+#: templates/product-event-integration-settings.php:54
+msgid "Requires the Zoom Video Webinars service to be purchased in your Zoom account."
+msgstr "Vyžaduje, aby byla služba Zoom Video Webinars zakoupena ve vašem účtu Zoom."
+
+#: templates/product-event-integration-settings.php:60
+msgid "Select meeting/webinar host:"
+msgstr "Vyberte hostitele setkání/webináře:"
+
+#: templates/product-event-integration-settings.php:75
+msgid "Select the host of Zoom meetings/webinars that get generated automatically."
+msgstr "Vyberte hostitele schůzek/webinářů Zoom, které se generují automaticky."
+
+#: templates/product-event-integration-settings.php:82
+msgid "Current event type:"
+msgstr "Aktuální typ události:"
+
+#: templates/product-event-integration-settings.php:88
+msgid "Zoom integration type:"
+msgstr "Typ integrace Zoom:"
+
+#: templates/product-event-integration-settings.php:91
+msgid "Single meeting/webinar for this event"
+msgstr "Jedno setkání/webinář pro tuto událost"
+
+#: templates/product-event-integration-settings.php:92
+msgid "Select or automatically generate a Zoom meeting/webinar for this event which attendees will automatically be registered for when purchasing an event ticket."
+msgstr "Vyberte nebo automaticky vygenerujte schůzku/webinář Zoom pro tuto událost, na kterou budou účastníci automaticky registrováni při nákupu vstupenky na událost."
+
+#: templates/product-event-integration-settings.php:96
+msgid "Separate meeting/webinar for each day"
+msgstr "Samostatné setkání/webinář pro každý den"
+
+#: templates/product-event-integration-settings.php:97
+msgid "Select or automatically generate a Zoom meeting/webinar for each day of this multi-day event which attendees will automatically be registered for when purchasing an event ticket. Note: Requires the FooEvents Multi-day plugin."
+msgstr "Vyberte nebo automaticky vygenerujte schůzku/webinář Zoom pro každý den této vícedenní akce, na kterou budou účastníci automaticky zaregistrováni při nákupu vstupenky na akci. Poznámka: Vyžaduje plugin FooEvents Multi-day."
+
+#: templates/product-event-integration-settings.php:101
+msgid "Separate meeting/webinar for each booking slot"
+msgstr "Samostatné setkání/webinář pro každé rezervované místo"
+
+#: templates/product-event-integration-settings.php:102
+msgid "Select or automatically generate a Zoom meeting/webinar for each date/time slot of the bookable event which attendees will automatically be registered for when purchasing an event ticket. Note: Requires the FooEvents Bookings plugin."
+msgstr "Vyberte nebo automaticky vygenerujte schůzku/webinář Zoom pro každé datum/časový úsek rezervovatelné události, na kterou budou účastníci automaticky registrováni při nákupu vstupenky na událost. Poznámka: Vyžaduje plugin FooEvents Bookings."
+
+#: templates/product-event-integration-settings.php:110
+msgid "Link the event to this meeting/webinar:"
+msgstr "Propojte událost s tímto setkáním/webinářem:"
+
+#: templates/product-event-integration-settings.php:131
+msgid "No Zoom meetings/webinars found."
+msgstr "Nebyla nalezena žádná setkání/webináře na Zoomu."
+
+#: templates/product-event-integration-settings.php:134
+msgid "Create a Zoom meeting"
+msgstr "Vytvořte Zoom meeting"
+
+#: templates/product-event-integration-settings.php:136
+msgid "Create a Zoom webinar"
+msgstr "Vytvořte Zoom webinar"
+
+#: templates/product-event-integration-settings.php:140
+msgid "Details:"
+msgstr "Podrobnosti:"
+
+#: templates/product-event-integration-settings.php:192
+msgid "Meeting/webinar duration"
+msgstr "Délka setkání/webináře"
+
+#: templates/product-event-integration-settings.php:205
+msgid "Set the duration of Zoom meetings/webinars that get generated automatically for booking date and time slots."
+msgstr "Nastavte dobu trvání schůzek/webinářů Zoom, které se automaticky generují pro datum a čas rezervace."
+
+#: templates/product-event-integration-settings.php:216
+msgid "Attendee details:"
+msgstr "Detaily účastníka:"
+
+#: templates/product-event-integration-settings.php:217
+msgid "Note: In order to add attendee details to a Mailchimp list, you will need to capture attendee details at checkout."
+msgstr "Poznámka: Abyste mohli přidat údaje účastníků do seznamu Mailchimp, budete muset získat údaje účastníků při dokončování objednávky."
+
+#: templates/product-event-integration-settings.php:238
+msgid "Audience list"
+msgstr "Seznam publika"
+
+#: templates/product-event-integration-settings.php:245
+msgid "Select an audience where you would like the attendees of this event to be automatically added as contacts in Mailchimp. This takes priority over the default audience list in the FooEvents settings. Note: The audience must first be setup in your Mailchimp account."
+msgstr "Vyberte publikum, do kterého chcete, aby byli účastníci této události automaticky přidáváni jako kontakty v Mailchimpu. To má přednost před výchozím seznamem publika v nastavení FooEvents. Poznámka: Publikum musí být nejprve nastaveno ve vašem účtu Mailchimp."
+
+#: templates/product-event-integration-settings.php:248
+msgid "Audience tags"
+msgstr "Štítky publika"
+
+#: templates/product-event-integration-settings.php:250
+msgid "Specify tags as comma-separated values (,) which you would like to be associated with all the attendees of this event when they are automatically added as contacts in Mailchimp. This takes priority over the default audience tags in the FooEvents settings."
+msgstr "Zadejte značky jako hodnoty oddělené čárkami (,), které chcete přiřadit všem účastníkům této události, když budou automaticky přidáni jako kontakty v Mailchimpu. To má přednost před výchozími značkami publika v nastavení FooEvents."
+
+#: templates/product-event-integration-settings.php:259
+msgid "Display AddToWallet link on ticket?"
+msgstr "Zobrazit odkaz Přidat do peněženky na vstupenku?"
+
+#: templates/product-event-integration-settings.php:261
+msgid "Display a link that will let the attendee add their QR code as a pass to their Android or Apple Wallet on their phone. Please note that an account with sufficient credits on the addtowallet.co website and a valid API key in the FooEvents -> Settings -> Integration -> AddToWallet API key field is needed."
+msgstr "Zobrazit odkaz umožňující účastníkovi přidat svůj QR kód jako průkaz do svého telefonu s Androidem nebo Apple Wallet. Upozorňujeme, že je potřeba účet s dostatečnými kredity na webu addtowallet.co a platný API klíč v poli FooEvents -> Nastavení -> Integrace -> AddToWallet API klíč."
+
+#: templates/product-event-integration-settings.php:266
+msgid "AddToWallet logo:"
+msgstr "AddToWallet logo:"
+
+#: templates/product-event-integration-settings.php:272
+msgid "Full URL that links to the image that will be used as the logo on AddToWallet passes. For best results please ensure that this is a square image. (JPG or PNG format)."
+msgstr "Plná adresa URL, která odkazuje na obrázek, který bude použit jako logo na průkazech AddToWallet. Pro nejlepší výsledky se ujistěte, že se jedná o čtvercový obrázek. (Formát JPG nebo PNG)."
+
+#: templates/product-event-integration-settings.php:277
+msgid "AddToWallet image:"
+msgstr "Přidat do peněženky obrázek:"
+
+#: templates/product-event-integration-settings.php:283
+msgid "Full URL that links to the main image that will be used on AddToWallet passes (JPG or PNG format)."
+msgstr "Plná adresa URL, která odkazuje na hlavní obrázek, který bude použit na průkazech AddToWallet (formát JPG nebo PNG)."
+
+#: templates/product-event-integration-settings.php:288
+msgid "AddToWallet pass background color:"
+msgstr "Přidat do peněženky barvu pozadí pasu:"
+
+#: templates/product-event-integration-settings.php:290
+msgid "Color of the AddToWallet pass background."
+msgstr "Barva pozadí průkazu AddToWallet."
+
+#: templates/product-event-integration-settings.php:295
+msgid "AddToWallet card title:"
+msgstr "Přidat do peněženky název karty:"
+
+#: templates/product-event-integration-settings.php:297
+msgid "The title can be your website or event name."
+msgstr "Název může být název vašich webových stránek nebo události."
+
+#: templates/product-event-integration-settings.php:302
+msgid "AddToWallet card header:"
+msgstr "Přidat do peněženky záhlaví karty:"
+
+#: templates/product-event-integration-settings.php:304
+msgid "The header can be your event name or variation"
+msgstr "Hlavička může být název události nebo variace."
+
+#: templates/product-event-integration-settings.php:309
+msgid "Display date on AddToWallet pass?"
+msgstr "Zobrazit datum na průkazu AddToWallet?"
+
+#: templates/product-event-integration-settings.php:311
+msgid "Display the date on the AddToWallet pass."
+msgstr "Zobrazte datum na průkazu AddToWallet."
+
+#: templates/product-event-integration-settings.php:316
+msgid "AddToWallet date label:"
+msgstr "Přidat do peněženky datumové označení:"
+
+#: templates/product-event-integration-settings.php:318
+msgid "Word or phrase to display instead of the default word Date"
+msgstr "Slovo nebo fráze k zobrazení místo výchozího slova Datum"
+
+#: templates/product-event-integration-settings.php:323
+msgid "AddToWallet date value:"
+msgstr "PřidatDoPeněženky datum hodnota:"
+
+#: templates/product-event-integration-settings.php:325
+msgid "Value to display instead of the default Date"
+msgstr "Hodnota k zobrazení místo výchozího data"
+
+#: templates/product-event-integration-settings.php:330
+msgid "Display attendee name on AddToWallet pass?"
+msgstr "Zobrazit jméno účastníka na průkazu AddToWallet?"
+
+#: templates/product-event-integration-settings.php:332
+msgid "Display the attendee name on the AddToWallet pass."
+msgstr "Zobrazte jméno účastníka na průkazu AddToWallet."
+
+#: templates/product-event-integration-settings.php:337
+msgid "AddToWallet attendee label:"
+msgstr "Přidat do peněženky popis účastníka:"
+
+#: templates/product-event-integration-settings.php:339
+msgid "Word or phrase to display instead of the default word Attendee"
+msgstr "Účastník"
+
+#: templates/product-event-integration-settings.php:344
+msgid "Display the venue/location on AddToWallet pass?"
+msgstr "Zobrazit místo konání na průkazu AddToWallet?"
+
+#: templates/product-event-integration-settings.php:346
+msgid "Display the location on the AddToWallet pass."
+msgstr "Zobrazit umístění na průkazu AddToWallet."
+
+#: templates/product-event-integration-settings.php:351
+msgid "AddToWallet location label:"
+msgstr "Přidat do peněženky popis umístění:"
+
+#: templates/product-event-integration-settings.php:353
+msgid "Word or phrase to display instead of the default word Location"
+msgstr "Slovo nebo fráze k zobrazení místo výchozího slova Lokace."
+
+#: templates/product-event-integration-settings.php:358
+msgid "Configure AddToWallet API Settings."
+msgstr "Nastavte nastavení rozhraní API AddToWallet."
+
+#: templates/product-event-printing-attendee-badges.php:547
+#: templates/product-event-printing-attendee-badges.php:548
+msgid "Ticket:"
+msgstr "Vstupenka:"
+
+#: templates/product-event-printing-settings.php:17
+msgid "Format:"
+msgstr "Formát:"
+
+#: templates/product-event-printing-settings.php:20
+msgid "10 tickets per sheet (Letter size)"
+msgstr "10 tickets per sheet (Letter size)"
+
+#: templates/product-event-printing-settings.php:21
+msgid "10 tickets per sheet 5.5in x 1.75in (Avery 16154 Tickets Letter size)"
+msgstr "10 tickets per sheet 5.5in x 1.75in (Avery 16154 Tickets Letter size)"
+
+#: templates/product-event-printing-settings.php:22
+msgid "10 tickets per sheet (A4 size)"
+msgstr "10 tickets per sheet (A4 size)"
+
+#: templates/product-event-printing-settings.php:23
+msgid "3 tickets per sheet (A4 size)"
+msgstr "3 vstupenky na list (velikost A4)"
+
+#: templates/product-event-printing-settings.php:24
+msgid "1 ticket per sheet 5.5in x 2in (BOCA Printer)"
+msgstr "1 lístek na list o rozměrech 5,5 x 2 palce (tiskárna BOCA)"
+
+#: templates/product-event-printing-settings.php:27
+msgid "Badges"
+msgstr "Odznaky"
+
+#: templates/product-event-printing-settings.php:28
+msgid "6 badges per sheet 4in x 3in (Avery 5392/5393 Letter size)"
+msgstr "6 odznaků na list 4 palce x 3 palce (velikost Avery 5392/5393 Letter)"
+
+#: templates/product-event-printing-settings.php:29
+msgid "10 badges per sheet 4.025in x 2in (Avery 5163/8163 Letter size)"
+msgstr "10 badges per sheet 4.025in x 2in (Avery 5163/8163 Letter size)"
+
+#: templates/product-event-printing-settings.php:30
+msgid "12 badges per sheet 63.5mm x 72mm (Microsoft W233 A4 size)"
+msgstr "12 badges per sheet 63.5mm x 72mm (Microsoft W233 A4 size)"
+
+#: templates/product-event-printing-settings.php:31
+msgid "16 badges per sheet 99mm x 33.9mm (Microsoft W121 A4 size)"
+msgstr "16 badges per sheet 99mm x 33.9mm (Microsoft W121 A4 size)"
+
+#: templates/product-event-printing-settings.php:32
+msgid "24 badges per sheet 35mm x 70mm (Microsoft W110 A4 size)"
+msgstr "24 badges per sheet 35mm x 70mm (Microsoft W110 A4 size)"
+
+#: templates/product-event-printing-settings.php:33
+msgid "30 badges per sheet 2.625in x 1in (Avery 5160/8160 Letter size)"
+msgstr "30 badges per sheet 2.625in x 1in (Avery 5160/8160 Letter size)"
+
+#: templates/product-event-printing-settings.php:34
+msgid "39 badges per sheet 66mm x 20.60mm (Microsoft W239 A4 size)"
+msgstr "39 badges per sheet 66mm x 20.60mm (Microsoft W239 A4 size)"
+
+#: templates/product-event-printing-settings.php:35
+msgid "45 badges per sheet 38.5mm x 29.9mm (Microsoft W115 A4 size)"
+msgstr "45 badges per sheet 38.5mm x 29.9mm (Microsoft W115 A4 size)"
+
+#: templates/product-event-printing-settings.php:36
+msgid "1 badge per sheet 4in x 2.5in (DK-2113 BrotherQL Label Printer)"
+msgstr "1 odznak na list 4\" x 2,5\" (DK-2113 BrotherQL tiskárna štítků)"
+
+#: templates/product-event-printing-settings.php:38
+msgid "Wraparound Labels/Wristbands"
+msgstr "Zavinovací štítky/náramky"
+
+#: templates/product-event-printing-settings.php:39
+msgid "1 wristband per sheet 11in x 1in (BOCA Printer)"
+msgstr "1 náramek na list o rozměrech 11 x 1 palec (tiskárna BOCA)"
+
+#: templates/product-event-printing-settings.php:40
+msgid "5 labels per sheet 9-3/4in x 1-1/4in (Avery 22845 Letter size)"
+msgstr "5 štítků na list 9-3/4\" x 1-1/4\" (velikost Avery 22845 Letter)"
+
+#: templates/product-event-printing-settings.php:41
+msgid "1 Z-band Fun/Splash wristband per sheet 10in x 1in (Zebra ZD510-HC printer)"
+msgstr "1 náramek Z-band Fun/Splash na list 10\" x 1\" pro tiskárnu Zebra ZD510-HC"
+
+#: templates/product-event-printing-settings.php:43
+msgid "Certificates"
+msgstr "Certifikáty"
+
+#: templates/product-event-printing-settings.php:44
+msgid "1 certificate per sheet (Letter size/Portrait)"
+msgstr "1 certifikát na list (velikost Letter/na výšku)"
+
+#: templates/product-event-printing-settings.php:45
+msgid "1 certificate per sheet (Letter size/Landscape)"
+msgstr "1 certifikát na list (velikost Letter/Na šířku)"
+
+#: templates/product-event-printing-settings.php:46
+msgid "1 certificate per sheet (A4 size/Portrait)"
+msgstr "1 certifikát na list (formát A4/na výšku)"
+
+#: templates/product-event-printing-settings.php:47
+msgid "1 certificate per sheet (A4 size/Landscape)"
+msgstr "1 certifikát na list (formát A4/na šířku)"
+
+#: templates/product-event-printing-settings.php:50
+msgid "The number of items to print per sheet as well as the page format."
+msgstr "Počet položek k tisku na list a formát stránky."
+
+#: templates/product-event-printing-settings.php:53
+msgid "Number of columns:"
+msgstr "Počet sloupců:"
+
+#: templates/product-event-printing-settings.php:55
+msgid "The number of columns to display in the stationery layout area. The recommended number of columns will be set by default but this can be adjusted manually."
+msgstr "Počet sloupců, které se mají zobrazit v oblasti rozvržení šablony. Doporučený počet sloupců bude nastaven ve výchozím nastavení, ale lze jej upravit ručně."
+
+#: templates/product-event-printing-settings.php:58
+msgid "Number of rows:"
+msgstr "Počet řádků:"
+
+#: templates/product-event-printing-settings.php:60
+msgid "The number of rows to display in the stationery layout area. The recommended number of rows will be set by default but this can be adjusted manually."
+msgstr "Počet řádků, které se mají zobrazit v oblasti rozvržení šablony. Doporučený počet řádků bude nastaven ve výchozím nastavení, ale lze jej upravit ručně."
+
+#: templates/product-event-printing-settings.php:63
+msgid "Include cut lines?"
+msgstr "Zahrnout čáry řezu?"
+
+#: templates/product-event-printing-settings.php:65
+msgid "Display ticket cut lines on page."
+msgstr "Zobrazte na stránce čáry řezu vstupenky."
+
+#: templates/product-event-printing-settings.php:68
+msgid "Background image"
+msgstr "Obrázek pozadí"
+
+#: templates/product-event-printing-settings.php:71
+msgid "Upload file"
+msgstr "Nahrát soubor"
+
+#: templates/product-event-printing-settings.php:74
+msgid "Background image that will be displayed on each ticket, label or certificate page"
+msgstr "Obrázek na pozadí, který se zobrazí na každé stránce tiketu, štítku nebo certifikátu"
+
+#: templates/product-event-printing-settings.php:80
+msgid "Include all attendees"
+msgstr "Zahrnout všechny účastníky"
+
+#: templates/product-event-printing-settings.php:82
+msgid "Include all the attendees for this event in the selected stationery."
+msgstr "Zahrnout všechny účastníky této události do vybrané šablony."
+
+#: templates/product-event-printing-settings.php:85
+msgid "Specific ticket number(s):"
+msgstr "Konkrétní čísla vstupenek:"
+
+#: templates/product-event-printing-settings.php:87
+msgid "Enter the ticket number(s) that will be used to populate the selected stationery, separated by commas (,). If both the ticket number and order number fields are empty, then all the attendees for this event will be included."
+msgstr "Zadejte čísla vstupenek, která budou použita k vyplnění vybrané šablony, oddělená čárkami (,). Pokud jsou pole číslo vstupenky i číslo objednávky prázdná, budou zahrnuti všichni účastníci této akce."
+
+#: templates/product-event-printing-settings.php:90
+msgid "Specific order number(s):"
+msgstr "Konkrétní čísla objednávek:"
+
+#: templates/product-event-printing-settings.php:92
+msgid "Enter the order number(s) that will be used to populate the selected stationery, separated by commas (,). If both the ticket number and order number fields are empty, then all the attendees for this event will be included."
+msgstr "Zadejte čísla objednávek, která budou použita k vyplnění vybraných tiskovin, oddělená čárkami (,). Pokud jsou pole číslo vstupenky i číslo objednávky prázdná, budou zahrnuti všichni účastníci této akce."
+
+#: templates/product-event-printing-settings.php:95
+msgid "Sort order:"
+msgstr "Pořadí řazení:"
+
+#: templates/product-event-printing-settings.php:97
+msgid "Most recent tickets first"
+msgstr "Nejdříve nejnovější vstupenky"
+
+#: templates/product-event-printing-settings.php:98
+msgid "Oldest tickets first"
+msgstr "Nejdříve nejstarší vstupenky"
+
+#: templates/product-event-printing-settings.php:99
+msgid "Alphabetical by Attendee First Name"
+msgstr "Abecedně podle křestního jména účastníka"
+
+#: templates/product-event-printing-settings.php:100
+msgid "Alphabetical by Attendee Last Name"
+msgstr "Abecedně podle příjmení účastníka"
+
+#: templates/product-event-printing-settings.php:102
+msgid "Choose the sort order for how the selected stationery will be arranged when printed."
+msgstr "Zvolte pořadí řazení podle toho, jak budou vybrané šablony uspořádány při tisku."
+
+#: templates/product-event-printing-settings.php:109
+msgid "+ Expand Fields"
+msgstr "+ Rozbalte pole"
+
+#: templates/product-event-printing-settings.php:119
+msgid "Select the logo or other image that you would like to display in tickets."
+msgstr "Vyberte logo nebo jiný obrázek, který chcete zobrazovat na vstupenkách."
+
+#: templates/product-event-printing-settings.php:132
+#: templates/product-event-printing-settings.php:158
+#: templates/product-event-printing-settings.php:173
+#: templates/product-event-printing-settings.php:188
+#: templates/product-event-printing-settings.php:203
+#: templates/product-event-printing-settings.php:229
+#: templates/product-event-printing-settings.php:244
+#: templates/product-event-printing-settings.php:263
+#: templates/product-event-printing-settings.php:278
+#: templates/product-event-printing-settings.php:293
+#: templates/product-event-printing-settings.php:308
+#: templates/product-event-printing-settings.php:323
+#: templates/product-event-printing-settings.php:338
+#: templates/product-event-printing-settings.php:361
+#: templates/product-event-printing-settings.php:403
+#: templates/product-event-printing-settings.php:439
+#: templates/product-event-printing-settings.php:475
+#: templates/product-event-printing-settings.php:511
+#: templates/product-event-printing-settings.php:549
+#: templates/product-event-printing-settings.php:585
+#: templates/product-event-printing-settings.php:621
+#: templates/product-event-printing-settings.php:657
+#: templates/product-event-printing-settings.php:695
+#: templates/product-event-printing-settings.php:731
+#: templates/product-event-printing-settings.php:767
+#: templates/product-event-printing-settings.php:803
+#: templates/product-event-printing-settings.php:841
+#: templates/product-event-printing-settings.php:877
+#: templates/product-event-printing-settings.php:913
+#: templates/product-event-printing-settings.php:949
+msgid "Small regular text"
+msgstr "Small regular text"
+
+#: templates/product-event-printing-settings.php:133
+#: templates/product-event-printing-settings.php:159
+#: templates/product-event-printing-settings.php:174
+#: templates/product-event-printing-settings.php:189
+#: templates/product-event-printing-settings.php:204
+#: templates/product-event-printing-settings.php:230
+#: templates/product-event-printing-settings.php:245
+#: templates/product-event-printing-settings.php:264
+#: templates/product-event-printing-settings.php:279
+#: templates/product-event-printing-settings.php:294
+#: templates/product-event-printing-settings.php:309
+#: templates/product-event-printing-settings.php:324
+#: templates/product-event-printing-settings.php:339
+#: templates/product-event-printing-settings.php:362
+#: templates/product-event-printing-settings.php:404
+#: templates/product-event-printing-settings.php:440
+#: templates/product-event-printing-settings.php:476
+#: templates/product-event-printing-settings.php:512
+#: templates/product-event-printing-settings.php:550
+#: templates/product-event-printing-settings.php:586
+#: templates/product-event-printing-settings.php:622
+#: templates/product-event-printing-settings.php:658
+#: templates/product-event-printing-settings.php:696
+#: templates/product-event-printing-settings.php:732
+#: templates/product-event-printing-settings.php:768
+#: templates/product-event-printing-settings.php:804
+#: templates/product-event-printing-settings.php:842
+#: templates/product-event-printing-settings.php:878
+#: templates/product-event-printing-settings.php:914
+#: templates/product-event-printing-settings.php:950
+msgid "Small uppercase text"
+msgstr "Small uppercase text"
+
+#: templates/product-event-printing-settings.php:134
+#: templates/product-event-printing-settings.php:160
+#: templates/product-event-printing-settings.php:175
+#: templates/product-event-printing-settings.php:190
+#: templates/product-event-printing-settings.php:205
+#: templates/product-event-printing-settings.php:231
+#: templates/product-event-printing-settings.php:246
+#: templates/product-event-printing-settings.php:265
+#: templates/product-event-printing-settings.php:280
+#: templates/product-event-printing-settings.php:295
+#: templates/product-event-printing-settings.php:310
+#: templates/product-event-printing-settings.php:325
+#: templates/product-event-printing-settings.php:340
+#: templates/product-event-printing-settings.php:363
+#: templates/product-event-printing-settings.php:405
+#: templates/product-event-printing-settings.php:441
+#: templates/product-event-printing-settings.php:477
+#: templates/product-event-printing-settings.php:513
+#: templates/product-event-printing-settings.php:551
+#: templates/product-event-printing-settings.php:587
+#: templates/product-event-printing-settings.php:623
+#: templates/product-event-printing-settings.php:659
+#: templates/product-event-printing-settings.php:697
+#: templates/product-event-printing-settings.php:733
+#: templates/product-event-printing-settings.php:769
+#: templates/product-event-printing-settings.php:805
+#: templates/product-event-printing-settings.php:843
+#: templates/product-event-printing-settings.php:879
+#: templates/product-event-printing-settings.php:915
+#: templates/product-event-printing-settings.php:951
+msgid "Medium regular text"
+msgstr "Medium regular text"
+
+#: templates/product-event-printing-settings.php:135
+#: templates/product-event-printing-settings.php:161
+#: templates/product-event-printing-settings.php:176
+#: templates/product-event-printing-settings.php:191
+#: templates/product-event-printing-settings.php:206
+#: templates/product-event-printing-settings.php:232
+#: templates/product-event-printing-settings.php:247
+#: templates/product-event-printing-settings.php:266
+#: templates/product-event-printing-settings.php:281
+#: templates/product-event-printing-settings.php:296
+#: templates/product-event-printing-settings.php:311
+#: templates/product-event-printing-settings.php:326
+#: templates/product-event-printing-settings.php:341
+#: templates/product-event-printing-settings.php:364
+#: templates/product-event-printing-settings.php:406
+#: templates/product-event-printing-settings.php:442
+#: templates/product-event-printing-settings.php:478
+#: templates/product-event-printing-settings.php:514
+#: templates/product-event-printing-settings.php:552
+#: templates/product-event-printing-settings.php:588
+#: templates/product-event-printing-settings.php:624
+#: templates/product-event-printing-settings.php:660
+#: templates/product-event-printing-settings.php:698
+#: templates/product-event-printing-settings.php:734
+#: templates/product-event-printing-settings.php:770
+#: templates/product-event-printing-settings.php:806
+#: templates/product-event-printing-settings.php:844
+#: templates/product-event-printing-settings.php:880
+#: templates/product-event-printing-settings.php:916
+#: templates/product-event-printing-settings.php:952
+msgid "Medium uppercase text"
+msgstr "Medium uppercase text"
+
+#: templates/product-event-printing-settings.php:136
+#: templates/product-event-printing-settings.php:162
+#: templates/product-event-printing-settings.php:177
+#: templates/product-event-printing-settings.php:192
+#: templates/product-event-printing-settings.php:207
+#: templates/product-event-printing-settings.php:233
+#: templates/product-event-printing-settings.php:248
+#: templates/product-event-printing-settings.php:267
+#: templates/product-event-printing-settings.php:282
+#: templates/product-event-printing-settings.php:297
+#: templates/product-event-printing-settings.php:312
+#: templates/product-event-printing-settings.php:327
+#: templates/product-event-printing-settings.php:342
+#: templates/product-event-printing-settings.php:365
+#: templates/product-event-printing-settings.php:407
+#: templates/product-event-printing-settings.php:443
+#: templates/product-event-printing-settings.php:479
+#: templates/product-event-printing-settings.php:515
+#: templates/product-event-printing-settings.php:553
+#: templates/product-event-printing-settings.php:589
+#: templates/product-event-printing-settings.php:625
+#: templates/product-event-printing-settings.php:661
+#: templates/product-event-printing-settings.php:699
+#: templates/product-event-printing-settings.php:735
+#: templates/product-event-printing-settings.php:771
+#: templates/product-event-printing-settings.php:807
+#: templates/product-event-printing-settings.php:845
+#: templates/product-event-printing-settings.php:881
+#: templates/product-event-printing-settings.php:917
+#: templates/product-event-printing-settings.php:953
+msgid "Large regular text"
+msgstr "Large regular text"
+
+#: templates/product-event-printing-settings.php:137
+#: templates/product-event-printing-settings.php:163
+#: templates/product-event-printing-settings.php:178
+#: templates/product-event-printing-settings.php:193
+#: templates/product-event-printing-settings.php:208
+#: templates/product-event-printing-settings.php:234
+#: templates/product-event-printing-settings.php:249
+#: templates/product-event-printing-settings.php:268
+#: templates/product-event-printing-settings.php:283
+#: templates/product-event-printing-settings.php:298
+#: templates/product-event-printing-settings.php:313
+#: templates/product-event-printing-settings.php:328
+#: templates/product-event-printing-settings.php:343
+#: templates/product-event-printing-settings.php:366
+#: templates/product-event-printing-settings.php:408
+#: templates/product-event-printing-settings.php:444
+#: templates/product-event-printing-settings.php:480
+#: templates/product-event-printing-settings.php:516
+#: templates/product-event-printing-settings.php:554
+#: templates/product-event-printing-settings.php:590
+#: templates/product-event-printing-settings.php:626
+#: templates/product-event-printing-settings.php:662
+#: templates/product-event-printing-settings.php:700
+#: templates/product-event-printing-settings.php:736
+#: templates/product-event-printing-settings.php:772
+#: templates/product-event-printing-settings.php:808
+#: templates/product-event-printing-settings.php:846
+#: templates/product-event-printing-settings.php:882
+#: templates/product-event-printing-settings.php:918
+#: templates/product-event-printing-settings.php:954
+msgid "Large uppercase text"
+msgstr "Large uppercase text"
+
+#: templates/product-event-printing-settings.php:380
+msgid "Stationery layout"
+msgstr "Rozložení kancelářských potřeb"
+
+#: templates/product-event-printing-settings.php:384
+msgid "Drag the desired fields from above into the layout blocks below."
+msgstr "Přetáhněte požadovaná pole shora do bloků rozložení níže."
+
+#: templates/product-event-printing-settings.php:992
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: templates/product-event-printing-settings.php:993
+msgid "Print Items"
+msgstr "Tisknout položky"
+
+#: templates/product-event-settings.php:14
+msgid "Is this product an event?"
+msgstr "Je tento produkt událostí?"
+
+#: templates/product-event-settings.php:16
+msgid "This option enables event and ticketing functionality."
+msgstr "Tato možnost povoluje funkce událostí a vstupenek."
+
+#: templates/product-event-settings.php:22
+msgid "Event type:"
+msgstr "Typ události:"
+
+#: templates/product-event-settings.php:25
+msgid "Events that occur over multiple days and repeat for a set number of sequential days. Note: Requires the FooEvents Multi-day plugin."
+msgstr "Události, které probíhají několik dnů a opakují se po stanovený počet po sobě jdoucích dnů. Poznámka: Vyžaduje plugin FooEvents Multi-day."
+
+#: templates/product-event-settings.php:26
+msgid "Specific days"
+msgstr "Konkrétní dny"
+
+#: templates/product-event-settings.php:26
+msgid "Events that repeat over multiple calendar days. Note: Requires the FooEvents Multi-day plugin."
+msgstr "Události, které se opakují více kalendářních dnů. Poznámka: Vyžaduje plugin FooEvents Multi-day."
+
+#: templates/product-event-settings.php:27
+msgid "Events that require customers to select from available date and time slots (bookings and repeat events). Note: Requires the FooEvents Bookings plugin."
+msgstr "Události, které vyžadují, aby si zákazníci vybrali z dostupných datumů a časových úseků (rezervace a opakované události). Poznámka: Vyžaduje plugin FooEvents Bookings."
+
+#: templates/product-event-settings.php:28
+msgid "Events that include the ability for customers to select row and seat numbers from a seating chart. Note: Requires the FooEvents Seating plugin."
+msgstr "Události, které zahrnují možnost pro zákazníky vybrat si čísla řad a sedadel z tabulky sedadel. Poznámka: Vyžaduje plugin FooEvents Seating."
+
+#: templates/product-event-settings.php:38
+msgid "The date that the event is scheduled to take place. This is used as a label on your website and it's also used by the FooEvents Calendar to display the event."
+msgstr "Datum, kdy se má událost konat. Používá se jako štítek na vašem webu a také jej používá kalendář FooEvents k zobrazení události."
+
+#: templates/product-event-settings.php:62
+msgid "The time that the event is scheduled to start."
+msgstr "Čas, kdy je naplánováno zahájení události."
+
+#: templates/product-event-settings.php:85
+msgid "The time that the event is scheduled to end."
+msgstr "Čas, kdy má  událost končit."
+
+#: templates/product-event-settings.php:90
+msgid "Time zone:"
+msgstr "Časové pásmo:"
+
+#: templates/product-event-settings.php:97
+msgid "The time zone where the event is taking place. If no time zone is set then the attendee's local time zone will be used for the 'Add to Calendar' functionality in the ticket email."
+msgstr "Časové pásmo, kde se událost odehrává. Pokud není nastaveno žádné časové pásmo, bude pro funkci „Přidat do kalendáře“ v e-mailu s tiketem použito místní časové pásmo účastníka."
+
+#: templates/product-event-settings.php:103
+msgid "Venue Details"
+msgstr "Podrobnosti místa"
+
+#: templates/product-event-settings.php:109
+msgid "The venue where the event will be hosted."
+msgstr "Místo, kde se akce bude konat."
+
+#: templates/product-event-settings.php:114
+msgid "GPS coordinates:"
+msgstr "GPS souřadnice:"
+
+#: templates/product-event-settings.php:116
+msgid "GPS coordinates for the venue."
+msgstr "GPS souřadnice místa konání."
+
+#: templates/product-event-settings.php:121
+msgid "Google coordinates:"
+msgstr "Google souřadnice:"
+
+#: templates/product-event-settings.php:123
+msgid "GPS coordinates that are used to calculate the pin position for Google Maps on the event page. A valid Google Maps API key must first be saved in FooEvents settings."
+msgstr "GPS souřadnice, které se používají k výpočtu pozice špendlíku pro Google Maps na stránce události. Platný klíč API Map Google musí být nejprve uložen v nastavení FooEvents."
+
+#: templates/product-event-settings.php:125
+msgid "Google Maps API key not set."
+msgstr "Klíč Google Maps API není nastaven."
+
+#: templates/product-event-settings.php:133
+msgid "Directions to the venue."
+msgstr "Cesta k místu konání."
+
+#: templates/product-event-settings.php:136
+msgid "Organizer Contact Details"
+msgstr "Kontaktní údaje pořadatele"
+
+#: templates/product-event-settings.php:139 templates/tickets-add-ticket.php:78
+msgid "Phone number:"
+msgstr "Telefonní číslo:"
+
+#: templates/product-event-settings.php:141
+msgid "Event organizer's contact number."
+msgstr "Kontaktní číslo pořadatele akce."
+
+#: templates/product-event-settings.php:146
+msgid "Email address:"
+msgstr "Emailová adresa:"
+
+#: templates/product-event-settings.php:148
+msgid "Event organizer's email address."
+msgstr "Kontaktní email pořadatele akce."
+
+#: templates/product-event-settings.php:151
+msgid "Custom Messages"
+msgstr "Vlastní zprávy"
+
+#: templates/product-event-settings.php:155
+msgid "Thank-you page text:"
+msgstr "Text na stránce s poděkováním za objednávku:"
+
+#: templates/product-event-settings.php:155
+msgid "The copy that will be displayed on the thank-you page after ticket purchase."
+msgstr "Kopie, která se zobrazí na stránce s poděkováním po zakoupení vstupenky."
+
+#: templates/product-event-settings.php:161
+msgid "Event details tab text:"
+msgstr "Text karty Detaily události:"
+
+#: templates/product-event-settings.php:161
+msgid "The copy that will be displayed in the event details tab."
+msgstr "Kopie, která se zobrazí na kartě Podrobnosti události."
+
+#: templates/product-event-settings.php:165
+msgid "Calendar Colors"
+msgstr "Barvy kalendáře"
+
+#: templates/product-event-settings.php:169
+msgid "Calendar background color:"
+msgstr "Barva pozadí kalendáře:"
+
+#: templates/product-event-settings.php:171
+msgid "Color of the calendar background for the event. Also changes the background color of the date icon in the FooEvents Check-ins app."
+msgstr "Barva pozadí kalendáře pro událost. Také změní barvu pozadí ikony data v aplikaci FooEvents Check-ins."
+
+#: templates/product-event-settings.php:176
+msgid "Calendar text color:"
+msgstr "Barva textu kalendáře:"
+
+#: templates/product-event-settings.php:178
+msgid "Color of the calendar text for the event. Also changes the font color of the date icon in the FooEvents Check-ins app."
+msgstr "Barva textu kalendáře pro událost. Také změní barvu písma ikony data v aplikaci FooEvents Check-ins."
+
+#: templates/product-event-settings.php:187
+msgid "FooEvents does not currently support capturing individual attendee details using the new WooCommerce Checkout block. Billing details will be used for all attendees instead. To capture separate attendee information, please use the classic shortcode-based WooCommerce Checkout experience."
+msgstr "FooEvents v současné době nepodporuje zachycování individuálních údajů účastníků pomocí nového bloku WooCommerce Checkout. Místo toho budou použity fakturační údaje pro všechny účastníky. Pro zachycení samostatných informací o účastnících použijte klasický zážitek z WooCommerce Checkout založený na zkratce."
+
+#: templates/product-event-settings.php:197
+msgid "Capture attendee full name? "
+msgstr "Zaznamenat celé jméno účastníka? "
+
+#: templates/product-event-settings.php:199
+msgid "This will add an attendee full name field to the attendee capture fields on the checkout screen."
+msgstr "Tím se do polí pro zaznamenání účastníků na obrazovce pokladny přidá pole celého jména účastníka."
+
+#: templates/product-event-settings.php:204
+msgid "Capture attendee email address? "
+msgstr "Zaznamenat e-mailovou adresu účastníka? "
+
+#: templates/product-event-settings.php:206
+msgid "This will add an attendee email field to the attendee capture fields on the checkout screen."
+msgstr "Tím přidáte pole e-mailu účastníka do polí zaznamenání účastníků na obrazovce pokladny."
+
+#: templates/product-event-settings.php:211
+msgid "Capture attendee phone number?"
+msgstr "Zaznamenat telefonní číslo účastníka?"
+
+#: templates/product-event-settings.php:213
+msgid "This will add a telephone number field to the attendee capture fields on the checkout screen."
+msgstr "Tím přidáte pole telefonního čísla do polí pro zachycení účastníků na obrazovce pokladny."
+
+#: templates/product-event-settings.php:218
+msgid "Capture attendee company name?"
+msgstr "Zaznamenat název společnosti účastníka?"
+
+#: templates/product-event-settings.php:220
+msgid "This will add a company field to the attendee capture fields on the checkout screen."
+msgstr "Tím se do polí pro zaznamenání účastníků na obrazovce pokladny přidá pole společnosti."
+
+#: templates/product-event-settings.php:225
+msgid "Capture attendee designation?"
+msgstr "Zaznamenat označení účastníka?"
+
+#: templates/product-event-settings.php:227
+msgid "This will add a designation field to the attendee capture fields on the checkout screen."
+msgstr "Tím přidáte pole označení do polí pro zaznamenání účastníků na obrazovce pokladny."
+
+#: templates/product-event-settings.php:232
+msgid "Validate unique attendee email addresses at checkout?"
+msgstr "Ověřit jedinečné e-mailové adresy účastníků při placení?"
+
+#: templates/product-event-settings.php:234
+msgid "Enable this option to require a unique email address for each attendee in a WooCommerce order before checkout. Note: This setting applies per event product, allowing the same email address for tickets to different events within the same order."
+msgstr "Povolte tuto možnost, aby byla vyžadována jedinečná e-mailová adresa pro každého účastníka v objednávce WooCommerce před pokladnou. Poznámka: Toto nastavení platí pro každý produkt události, umožňuje stejnou e-mailovou adresu pro vstupenky na různé události v rámci téže objednávky."
+
+#: templates/product-event-settings.php:240
+msgid "Seating Display"
+msgstr "Zobrazení sezení"
+
+#: templates/product-event-settings.php:244
+msgid "FooEvents does not currently support modifying seating selections using the new WooCommerce Checkout block. When using the Checkout block, seating can only be selected directly and modified on the event/product pages."
+msgstr "FooEvents v současné době nepodporuje úpravu výběru sedadel pomocí nového bloku pokladny WooCommerce. Při použití bloku Pokladna lze sedadla vybírat pouze přímo a upravovat na stránkách události/produktu."
+
+#: templates/product-event-settings.php:254
+msgid "Display seating options on product pages?"
+msgstr "Zobrazit možnosti sezení na produktových stránkách?"
+
+#: templates/product-event-settings.php:256
+msgid "This will display the seating options on the product page and make it required to select seats before proceeding to check out. Before enabling this option, please ensure that you have setup a seating chart on the Event Seating tab."
+msgstr "Tím se zobrazí možnosti sedadel na stránce produktu a bude nutné vybrat sedadla, než budete pokračovat k platbě. Před povolením této možnosti se prosím ujistěte, že jste nastavili tabulku sedadel na kartě Event Seating."
+
+#: templates/product-event-settings.php:261
+msgid "Display seating chart on checkout page?"
+msgstr "Zobrazit tabulku sedadel na stránce pokladny?"
+
+#: templates/product-event-settings.php:263
+msgid "This will display a 'View seating chart' link on the checkout page. Before enabling this option, please ensure that you have setup a seating chart on the Event Seating tab."
+msgstr "Tím se na stránce pokladny zobrazí odkaz „Zobrazit tabulku sedadel“. Před povolením této možnosti se prosím ujistěte, že jste nastavili tabulku sedadel na kartě Event Seating."
+
+#: templates/product-event-settings.php:268
+msgid "Display seats that are mapped to other variations?"
+msgstr "Zobrazit sedadla, která jsou přiřazena k jiným variantám?"
+
+#: templates/product-event-settings.php:270
+msgid "This will display all seats, even if the seat row is not mapped to the current variation selected. Enabling this setting might give a more accurate representation of the venue layout."
+msgstr "Toto zobrazí všechna místa, i když řada sedadel není přiřazena k aktuální vybrané variantě. Zapnutím této možnosti může být poskytnuto přesnější zobrazení rozložení místa."
+
+#: templates/product-event-settings.php:279
+msgid "Booking Display"
+msgstr "Zobrazení rezervací"
+
+#: templates/product-event-settings.php:283
+msgid "FooEvents does not currently support capturing or modifying bookings through the new WooCommerce Checkout block. When using the Checkout block, bookings can only be selected directly on the event/product pages."
+msgstr "FooEvents v současné době nepodporuje zachytávání nebo úpravu rezervací prostřednictvím nového bloku pokladny WooCommerce. Při použití bloku Pokladna mohou být rezervace vybrány pouze přímo na stránkách události/produktu."
+
+#: templates/product-event-settings.php:293
+msgid "Hide booking time in slot drop-down?"
+msgstr "Skrýt čas rezervace v rozevíracím seznamu slotů?"
+
+#: templates/product-event-settings.php:295
+msgid "This will hide the time of the booking in the selected slot drop-down."
+msgstr "Tím se skryje čas rezervace ve vybraném rozevíracím seznamu slotu."
+
+#: templates/product-event-settings.php:301
+msgid "Hide booking slot in calendar?"
+msgstr "Skrýt rezervační slot v kalendáři?"
+
+#: templates/product-event-settings.php:303
+msgid "This will hide the booking slot in the FooEvents Calendar."
+msgstr "Tím se slot pro rezervaci skryje v kalendáři FooEvents."
+
+#: templates/product-event-settings.php:309
+msgid "Hide stock availability notice?"
+msgstr "Skrýt upozornění na skladovou dostupnost?"
+
+#: templates/product-event-settings.php:311
+msgid "Hide the stock availability notice. This is typically used when offering unlimited stock."
+msgstr "Skryjte upozornění na skladovou dostupnost. To se obvykle používá při nabízení neomezených zásob."
+
+#: templates/product-event-settings.php:316
+msgid "Show stock availability in the date and slot drop-downs?"
+msgstr "Zobrazit dostupnost v rozbalovacích seznamech data a slotu?"
+
+#: templates/product-event-settings.php:318
+msgid "This will include the amount of remaining stock for a specific date and slot combination within the drop-down selectors."
+msgstr "To bude zahrnovat množství zbývajících zásob pro konkrétní datum a kombinaci slotů v rozevíracím seznamu."
+
+#: templates/product-event-settings.php:323
+msgid "Show out of stock booking dates?"
+msgstr "Zobrazit data rezervace, která nejsou dostupná?"
+
+#: templates/product-event-settings.php:325
+msgid "Show dates that have no stock."
+msgstr "Zobrazit data, která nejsou dostupná."
+
+#: templates/product-event-settings.php:330
+msgid "Hide the booking date in combined drop-down?"
+msgstr "Skrýt datum rezervace v kombinovaném rozbalovacím seznamu?"
+
+#: templates/product-event-settings.php:332
+msgid "This will hide the date of the booking and only display the slot label in the combined date/slot drop-down. Please note that the combined drop-down options will only display when multiple slots are set for the same date OR a single slot is set that has multiple dates."
+msgstr "Tím se skryje datum rezervace a zobrazí se pouze štítek slotu v kombinovaném rozevíracím seznamu datum/slot. Vezměte prosím na vědomí, že kombinované rozbalovací možnosti se zobrazí pouze v případě, že je pro stejné datum nastaveno více časových úseků NEBO je nastaven jeden časový úsek s více daty."
+
+#: templates/product-event-settings.php:337
+msgid "Bookings selection order"
+msgstr "Pořadí výběru rezervací"
+
+#: templates/product-event-settings.php:339
+msgid "Slot -> Date"
+msgstr "Slot -> Datum"
+
+#: templates/product-event-settings.php:340
+msgid "Date -> Slot"
+msgstr "Datum -> Slot"
+
+#: templates/product-event-settings.php:342
+msgid "Displays the order of bookings drop-down selectors as either Slot then Date OR Date then Slot."
+msgstr "Zobrazuje pořadí rozbalovacích selektorů rezervací buď jako Slot, pak Datum NEBO Datum a potom Slot."
+
+#: templates/product-event-settings.php:347
+msgid "Display booking slots and dates on:"
+msgstr "Zobrazit rezervační sloty a termíny na:"
+
+#: templates/product-event-settings.php:349
+msgid "Checkout Page"
+msgstr "Stránka s platbou"
+
+#: templates/product-event-settings.php:350
+msgid "Product Page"
+msgstr "Stránka produktu"
+
+#: templates/product-event-settings.php:351
+msgid "Checkout Page and Product Page"
+msgstr "Stránka pokladny a stránka produktu"
+
+#: templates/product-event-settings.php:353
+msgid "This will display the booking date and slot drop-down options on the checkout, product page or checkout and product page."
+msgstr "Tím se zobrazí datum rezervace a rozevírací možnosti slotu na pokladně, stránce produktu nebo stránce pokladny a produktu."
+
+#: templates/product-event-settings.php:359
+msgid "Order Email"
+msgstr "Objednávkový e-mail"
+
+#: templates/product-event-settings.php:363
+msgid "Display event details in WooCommerce Order emails?"
+msgstr "Zobrazit podrobnosti události v e-mailech s objednávkou WooCommerce?"
+
+#: templates/product-event-settings.php:365
+msgid "This will display the event details in the WooCommerce Order transactional emails which WooCommerce sends to the store admin as well as the customer."
+msgstr "Toto zobrazí podrobnosti o události v transakčních e-mailech objednávek WooCommerce, které WooCommerce odesílá správci obchodu i zákazníkovi."
+
+#: templates/product-event-settings.php:370
+msgid "Display attendee details in WooCommerce Order emails?"
+msgstr "Zobrazit podrobnosti účastníka v e-mailech s objednávkou WooCommerce?"
+
+#: templates/product-event-settings.php:372
+msgid "This will display the attendee details in the WooCommerce Order transactional emails which WooCommerce sends to the store admin as well as the customer."
+msgstr "Toto zobrazí údaje o účastnících ve transakčních e-mailech objednávky WooCommerce, které WooCommerce odesílá správci obchodu i zákazníkovi."
+
+#: templates/product-event-settings.php:378
+msgid "Display booking details in WooCommerce Order emails?"
+msgstr "Zobrazit detaily rezervace v e-mailech s objednávkou WooCommerce?"
+
+#: templates/product-event-settings.php:380
+msgid "This will display the booking details in the WooCommerce Order transactional emails which WooCommerce sends to the store admin as well as the customer."
+msgstr "Toto zobrazí informace o rezervaci ve transakčních e-mailech objednávky WooCommerce, které WooCommerce odesílá správci obchodu i zákazníkovi."
+
+#: templates/product-event-settings.php:387
+msgid "Display seating details in WooCommerce Order emails?"
+msgstr "Zobrazit detaily o sezení v e-mailech s objednávkou WooCommerce?"
+
+#: templates/product-event-settings.php:389
+msgid "This will display the seating details in the WooCommerce Order transactional emails which WooCommerce sends to the store admin as well as the customer."
+msgstr "Toto zobrazí informace o sedadlech ve transakčních e-mailech objednávek WooCommerce, které WooCommerce odesílá správci obchodu i zákazníkovi."
+
+#: templates/product-event-settings.php:395
+msgid "Display custom attendee details in WooCommerce Order emails?"
+msgstr "Zobrazit vlastní údaje účastníka v e-mailech s objednávkou WooCommerce?"
+
+#: templates/product-event-settings.php:397
+msgid "This will display the custom attendee details in the WooCommerce Order transactional emails which WooCommerce sends to the store admin as well as the customer."
+msgstr "Toto zobrazí vlastní údaje účastníka ve WooCommerce objednávkových transakčních e-mailech, které WooCommerce odesílá správci obchodu i zákazníkovi."
+
+#: templates/product-event-terminology-settings.php:20
+msgid "Attendee:"
+msgstr "Účastník:"
+
+#: templates/product-event-terminology-settings.php:23
+msgid "Change 'Attendee' to your own custom text for this event."
+msgstr "Změňte „Účastník“ na svůj vlastní text pro tuto událost."
+
+#: templates/product-event-terminology-settings.php:28
+msgid "Event Details:"
+msgstr "Detaily události:"
+
+#: templates/product-event-terminology-settings.php:30
+msgid "Change 'Event Details' to your own custom text for this event."
+msgstr "Změňte text \"Podrobnosti o události\" na vlastní text pro tuto událost."
+
+#: templates/product-event-terminology-settings.php:35
+msgid "Book ticket:"
+msgstr "Koupit vstupenku:"
+
+#: templates/product-event-terminology-settings.php:38
+msgid "Change 'Book ticket' to your own custom text for this event."
+msgstr "Změňte 'Koupit vstupenku' na svůj vlastní text pro tuto událost."
+
+#: templates/product-listing-filter-options.php:11
+msgid "All Products Types"
+msgstr "Všechny typy produktů"
+
+#: templates/product-listing-filter-options.php:17
+msgid "All Events"
+msgstr "Všechny události"
+
+#: templates/product-listing-filter-options.php:24
+msgid "Single Day Events"
+msgstr "Denní události"
+
+#: templates/product-listing-filter-options.php:31
+msgid "Multi-day Events (Sequential)"
+msgstr "Vícedenní události (sekvenční)"
+
+#: templates/product-listing-filter-options.php:38
+msgid "Multi-day Events (Selected Days)"
+msgstr "Vícedenní akce (vybrané dny)"
+
+#: templates/product-listing-filter-options.php:45
+msgid "Bookable Events"
+msgstr "Rezervovatelné akce"
+
+#: templates/product-listing-filter-options.php:52
+msgid "Seating Events"
+msgstr "Akce k sezení"
+
+#: templates/product-listing-filter-options.php:59
+msgid "Non-events"
+msgstr "Ne-události"
+
+#: templates/product-ticket-settings.php:14
+msgid "HTML ticket theme:"
+msgstr "Šablona vstupenky:"
+
+#: templates/product-ticket-settings.php:20
+msgid "Select the ticket theme that will be used to style the embedded HTML tickets within ticket emails."
+msgstr "Vyberte motiv vstupenky, který bude použit pro úpravu vložených vstupenek HTML v e-mailech obsahující vstupenky."
+
+#: templates/product-ticket-settings.php:27
+msgid "Ticket logo:"
+msgstr "Logo na vstupence:"
+
+#: templates/product-ticket-settings.php:33
+msgid "Full URL that links to the logo that will be used in the ticket (JPG or PNG format)."
+msgstr "Úplná adresa URL, která odkazuje na logo, které bude použito v tiketu (formát JPG nebo PNG)."
+
+#: templates/product-ticket-settings.php:39
+msgid "Ticket header image:"
+msgstr "Obrázek záhlaví vstupenky:"
+
+#: templates/product-ticket-settings.php:45
+msgid "Full URL that links to the image that will be used as the ticket header (JPG or PNG format)."
+msgstr "Úplná adresa URL, která odkazuje na obrázek, který bude použit jako záhlaví vstupenky (formát JPG nebo PNG)."
+
+#: templates/product-ticket-settings.php:52
+msgid "Ticket accent:"
+msgstr "Akcent vstupenky:"
+
+#: templates/product-ticket-settings.php:54
+msgid "This color is used for the ticket border or background."
+msgstr "Tato barva se používá pro okraj nebo pozadí lístku."
+
+#: templates/product-ticket-settings.php:61
+msgid "Ticket button:"
+msgstr "Tlačítko vstupenky:"
+
+#: templates/product-ticket-settings.php:70
+msgid "Ticket button text:"
+msgstr "Text tlačítka vstupenky:"
+
+#: templates/product-ticket-settings.php:72
+msgid "Color of the ticket button text."
+msgstr "Barva textu tlačítka vstupenky."
+
+#: templates/product-ticket-settings.php:75
+msgid "Email Settings"
+msgstr "Nastavení e-mailu"
+
+#: templates/product-ticket-settings.php:79
+msgid "Ticket email subject:"
+msgstr "Předmět e-mailu vstupenky:"
+
+#: templates/product-ticket-settings.php:81
+msgid "The subject line used in ticket emails. Use {OrderNumber} to display the proper order number."
+msgstr "Předmět používaný v e-mailech se vstupenkami. Pomocí {OrderNumber} zobrazte správné číslo objednávky."
+
+#: templates/product-ticket-settings.php:86
+msgid "Email copy of tickets to other recipients:"
+msgstr "E-mailové kopie vstupenek ostatním příjemcům:"
+
+#: templates/product-ticket-settings.php:88
+msgid "Sends a copy when a ticket is generated for this event to the specified email address. Use a comma separated list to send to multiple email addresses. Note: This setting overrides the global recipients if entered in General settings for this event only."
+msgstr "Odešle kopii při vygenerování lístku pro tuto událost na zadanou e-mailovou adresu. K odeslání na více e-mailových adres použijte seznam oddělený čárkami. Poznámka: Toto nastavení přepíše globální příjemce, pokud je zadáno v Obecných nastaveních pouze pro tuto událost."
+
+#: templates/product-ticket-settings.php:94
+msgid "Email tickets?"
+msgstr "E-mail vstupenky?"
+
+#: templates/product-ticket-settings.php:96
+msgid "This will email the event tickets to the attendee or purchaser once the order has been completed."
+msgstr "Jakmile bude objednávka dokončena, odešle se e-mailem vstupenka na akci účastníkovi nebo kupujícímu."
+
+#: templates/product-ticket-settings.php:101
+msgid "Email ticket to attendee rather than purchaser?"
+msgstr "Poslat vstupenku e-mailem účastníkovi, nikoli kupujícímu?"
+
+#: templates/product-ticket-settings.php:103
+msgid "This will email the ticket to the attendee instead of the ticket purchaser."
+msgstr "Tím se vstupenka odešle e-mailem účastníkovi místo kupujícímu vstupenky."
+
+#: templates/product-ticket-settings.php:108
+msgid "Attach calendar ICS file to the ticket email?"
+msgstr "Připojit ICS soubor kalendáře k e-mailu se vstupenkou?"
+
+#: templates/product-ticket-settings.php:110
+msgid "Attach an ICS file to the ticket email so that the event details automatically appear in certain calendar clients."
+msgstr "K e-mailu lístku připojte soubor ICS, aby se podrobnosti o události automaticky objevily v určitých kalendářových klientech."
+
+#: templates/product-ticket-settings.php:116
+msgid "Display \"Add to calendar\" option on ticket?"
+msgstr "Zobrazit na tiketu možnost \"Přidat do kalendáře\"?"
+
+#: templates/product-ticket-settings.php:118
+msgid "Display an 'Add to calendar' button on the ticket which will generate an ICS file containing the event details when clicked."
+msgstr "Zobrazte na tiketu tlačítko „Přidat do kalendáře“, které po kliknutí vygeneruje soubor ICS obsahující podrobnosti o události."
+
+#: templates/product-ticket-settings.php:124
+msgid "\"Add to calendar\" reminder alerts:"
+msgstr "Upozornění na připomenutí „Přidat do kalendáře“:"
+
+#: templates/product-ticket-settings.php:150
+msgid "+ New reminder"
+msgstr "+ Nová připomínka"
+
+#: templates/product-ticket-settings.php:151
+msgid "Add calendar alerts at specified intervals to remind attendees about the event. These alerts will automatically appear in the attendee's calendar client after clicking the 'Add to calendar' button on the ticket."
+msgstr "Přidejte upozornění kalendáře v určených intervalech, abyste účastníkům připomněli událost. Tato upozornění se automaticky zobrazí v klientovi kalendářním klientovi po kliknutí na tlačítko 'Přidat do kalendáře' na tiketu."
+
+#: templates/product-ticket-settings.php:157
+msgid "Ticket email body:"
+msgstr "Tělo e-mailu vstupenky:"
+
+#: templates/product-ticket-settings.php:157
+msgid "The copy that will be displayed in the main body of the ticket email."
+msgstr "Kopie, která se zobrazí v hlavní části e-mailu s tiketem."
+
+#: templates/product-ticket-settings.php:161
+msgid "Display Options"
+msgstr "Možnosti zobrazení"
+
+#: templates/product-ticket-settings.php:167
+msgid "Display purchaser or attendee details on ticket?"
+msgstr "Zobrazit na lístku podrobnosti o kupujícím nebo účastníkovi?"
+
+#: templates/product-ticket-settings.php:169
+msgid "Display the purchaser/attendee's name and details on the ticket."
+msgstr "Zobrazte na vstupence jméno a podrobnosti kupujícího/účastníka."
+
+#: templates/product-ticket-settings.php:175
+msgid "Display date and time on ticket?"
+msgstr "Zobrazit datum a čas na lístku?"
+
+#: templates/product-ticket-settings.php:177
+msgid "Display the time and date of the event on the ticket."
+msgstr "Zobrazit čas a datum akce na vstupence."
+
+#: templates/product-ticket-settings.php:182
+msgid "Display barcode/QR code on ticket?"
+msgstr "Zobrazit čárový kód/QR kód na vstupence?"
+
+#: templates/product-ticket-settings.php:184
+msgid "Display a barcode/QR code on the ticket which is used for check-ins."
+msgstr "Zobrazit na vstupence čárový kód/QR kód, který se používá pro ověření."
+
+#: templates/product-ticket-settings.php:189
+msgid "Display price on ticket?"
+msgstr "Zobrazit cenu na lístku?"
+
+#: templates/product-ticket-settings.php:191
+msgid "Display the ticket price on the ticket."
+msgstr "Na lístku zobrazí cenu lístku."
+
+#: templates/product-ticket-settings.php:196
+msgid "Display booking details on ticket?"
+msgstr "Zobrazit podrobnosti události na vstupence?"
+
+#: templates/product-ticket-settings.php:198
+msgid "Display the booking details on the ticket."
+msgstr "Zobrazit podrobnosti rezervace na tiketu."
+
+#: templates/product-ticket-settings.php:203
+msgid "Display Zoom meeting/webinar details on ticket?"
+msgstr "Zobrazit podrobnosti o schůzce/webináři Zoom na vstupence?"
+
+#: templates/product-ticket-settings.php:205
+msgid "Display all the Zoom meeting/webinar details such as the Meeting ID and Join link on the ticket."
+msgstr "Zobrazte všechny podrobnosti o schůzce/webináři Zoom, jako je ID schůzky a odkaz Připojit se na vstupence."
+
+#: templates/product-ticket-settings.php:211
+msgid "Display multi-day details on ticket?"
+msgstr "Zobrazit vícedenní podrobnosti na vstupence?"
+
+#: templates/product-ticket-settings.php:213
+msgid "Display multi-day details on the ticket."
+msgstr "Zobrazit vícedenní podrobnosti na vstupence."
+
+#: templates/product-ticket-settings.php:220
+msgid "Incrementing Ticket Numbers"
+msgstr "Zvyšování čísel vstupenek"
+
+#: templates/product-ticket-settings.php:223
+msgid "Ticket identifier:"
+msgstr "Identifikátor vstupenky:"
+
+#: templates/product-ticket-settings.php:225
+msgid "Ticket ID"
+msgstr "ID vstupenky"
+
+#: templates/product-ticket-settings.php:226
+msgid "Incremental ticket number"
+msgstr "Přírůstkové číslo vstupenky"
+
+#: templates/product-ticket-settings.php:228
+msgid "This option selects whether the traditional ticket ID (default) or auto-incrementing ticket number should be used as the ticket identifier."
+msgstr "Tato možnost určuje, zda se má jako identifikátor tipu použít tradiční ID tipu (výchozí nastavení) nebo automaticky se zvyšující číslo tipu."
+
+#: templates/product-ticket-settings.php:233
+msgid "Ticket character number:"
+msgstr "Počet znaků čísla vstupenky:"
+
+#: templates/product-ticket-settings.php:235
+msgid "1 character"
+msgstr "1 znak"
+
+#: templates/product-ticket-settings.php:236
+msgid "2 characters"
+msgstr "2 znaky"
+
+#: templates/product-ticket-settings.php:237
+msgid "3 characters"
+msgstr "3 znaky"
+
+#: templates/product-ticket-settings.php:238
+msgid "4 characters"
+msgstr "4 znaky"
+
+#: templates/product-ticket-settings.php:239
+msgid "5 characters"
+msgstr "5 znaků"
+
+#: templates/product-ticket-settings.php:240
+msgid "6 characters"
+msgstr "6 znaků"
+
+#: templates/product-ticket-settings.php:241
+msgid "7 characters"
+msgstr "7 znaků"
+
+#: templates/product-ticket-settings.php:242
+msgid "8 characters"
+msgstr "8 znaků"
+
+#: templates/product-ticket-settings.php:243
+msgid "9 characters"
+msgstr "9 znaků"
+
+#: templates/product-ticket-settings.php:244
+msgid "10 characters"
+msgstr "10 znaků"
+
+#: templates/product-ticket-settings.php:246
+msgid "This option selects how many characters the auto-incrementing ticket number should output. Note: This has no effect on the default Ticket ID number, only the incremental ticket number (if selected)."
+msgstr "Tato možnost určuje, kolik znaků má automatické zvyšování čísla tipu vypsat. Poznámka: Tato volba nemá žádný vliv na výchozí číslo ID tipu, pouze na přírůstkové číslo tipu (je-li zvoleno)."
+
+#: templates/product-ticket-settings.php:251
+msgid "Ticket number prefix:"
+msgstr "Prefix vstupenky:"
+
+#: templates/product-ticket-settings.php:253
+msgid "This is an alphanumeric prefix displayed before the auto-incrementing ticket number (e.g. AA0001). Note: This has no effect on the default Ticket ID number, only the incremental ticket number (if selected)."
+msgstr "Jedná se o alfanumerický prefix zobrazený před automaticky zvyšovaným číslem tipu (např. AA0001_). Poznámka: Toto nemá žádný vliv na výchozí číslo ID tipu, pouze na přírůstkové číslo tipu (je-li zvoleno)."
+
+#: templates/product-ticket-settings.php:258
+msgid "Ticket number suffix:"
+msgstr "Suffix vstupenky:"
+
+#: templates/product-ticket-settings.php:260
+msgid "This is an alphanumeric prefix displayed before the auto-incrementing ticket number (e.g. 0001ZA). Note: This has no effect on the default Ticket ID number, only the incremental ticket number (if selected)."
+msgstr "Jedná se o alfanumerický suffix, který se zobrazuje před automaticky zvyšovaným číslem tipu (např. _0001ZA). Poznámka: Toto nemá žádný vliv na výchozí číslo ID tipu, pouze na přírůstkové číslo tipu (je-li zvoleno)."
+
+#: templates/reports-event-listing.php:12
+msgid "Event Reports"
+msgstr "Report o události"
+
+#: templates/reports-report-page.php:13
+msgid "Back to Reports"
+msgstr "Zpět na Reporty"
+
+#: templates/reports-report-page.php:20
+msgid "From"
+msgstr "Od"
+
+#: templates/reports-report-page.php:24
+msgid "To"
+msgstr "Do"
+
+#: templates/reports-report-page.php:29
+msgid "30 Days"
+msgstr "30 dní"
+
+#: templates/reports-report-page.php:30
+msgid "90 Days"
+msgstr "90 dní"
+
+#: templates/reports-report-page.php:31
+msgid "Year"
+msgstr "Rok"
+
+#: templates/reports-report-page.php:35
+msgid "Canceled tickets"
+msgstr "Zrušené vstupenky"
+
+#: templates/reports-report-page.php:52 templates/reports-report-page.php:81
+msgid "Net Revenue"
+msgstr "Čistý zisk"
+
+#: templates/reports-report-page.php:67
+msgid "Check-ins"
+msgstr "Odbavení"
+
+#: templates/reports-report-page.php:72
+msgid "Check-outs"
+msgstr "Odbavení"
+
+#: templates/reports-report-page.php:106
+msgid "Check-ins (By Date Range)"
+msgstr "Odbavení (podle časového období)"
+
+#: templates/reports-report-page.php:114
+msgid "Check-ins (Past 24 Hours)"
+msgstr "Odbavení (za posledních 24 hodin)"
+
+#: templates/reports-report-page.php:123
+msgid "Check-outs (By Date Range)"
+msgstr "Odbavení (podle časového období)"
+
+#: templates/reports-report-page.php:131
+msgid "Check-outs (Past 24 Hours)"
+msgstr "Odbavení (za posledních 24 hodin)"
+
+#: templates/reports-report-page.php:142
+msgid "Attendee Check-in Details"
+msgstr "Podrobnosti o přihlášení účastníků"
+
+#: templates/ticket-filter-options.php:11
+msgid "All Products"
+msgstr "Všechno zboží"
+
+#: templates/ticket-themes-viewer.php:20
+msgid "Upload your Ticket Theme ZIP file:"
+msgstr "Nahrajte soubor ZIP s šablonou vstupenky:"
+
+#: templates/ticket-themes-viewer.php:22
+msgid "Upload Ticket Theme"
+msgstr "Nahrajte šablonu vstupenky"
+
+#: templates/ticket-themes-viewer.php:36
+msgid "Send preview to:"
+msgstr "Odeslat náhled na:"
+
+#: templates/ticket-themes-viewer.php:40
+msgid "Send Ticket Preview"
+msgstr "Odeslat náhled vstupenky"
+
+#: templates/tickets-add-ticket-event-details.php:17
+#: templates/tickets-edit-ticket.php:87
+msgid "Date: "
+msgstr "Datum: "
+
+#: templates/tickets-add-ticket-event-details.php:25
+msgid "Start time: "
+msgstr "Čas začátku: "
+
+#: templates/tickets-add-ticket-event-details.php:33
+msgid "End time: "
+msgstr "Čas ukončení: "
+
+#: templates/tickets-add-ticket-event-details.php:41
+#: templates/tickets-edit-ticket.php:103
+msgid "Venue: "
+msgstr "Místo: "
+
+#: templates/tickets-add-ticket-event-details.php:49
+msgid "GPS Coordinates: "
+msgstr "GPS souřadnice: "
+
+#: templates/tickets-add-ticket-event-details.php:57
+#: templates/tickets-edit-ticket.php:204
+msgid "Phone: "
+msgstr "Telefon: "
+
+#: templates/tickets-add-ticket-event-details.php:65
+#: templates/tickets-edit-ticket.php:214
+msgid "Email: "
+msgstr "Email: "
+
+#: templates/tickets-add-ticket.php:16
+msgid "Select Event:"
+msgstr "Vyberte událost:"
+
+#: templates/tickets-add-ticket.php:18
+msgid "Please select..."
+msgstr "Prosím vyberte..."
+
+#: templates/tickets-add-ticket.php:28 templates/tickets-edit-ticket.php:180
+msgid "Purchaser Details"
+msgstr "Detaily kupujícího"
+
+#: templates/tickets-add-ticket.php:31
+msgid "Select Existing User:"
+msgstr "Vyberte existujícího uživatele:"
+
+#: templates/tickets-add-ticket.php:33
+msgid "Select..."
+msgstr "Vyberte…"
+
+#: templates/tickets-add-ticket.php:41
+msgid "Username:"
+msgstr "Uživatelské jméno:"
+
+#: templates/tickets-add-ticket.php:50 templates/tickets-add-ticket.php:66
+#: templates/tickets-edit-ticket.php:24
+msgid "First Name:"
+msgstr "Křestní jméno:"
+
+#: templates/tickets-add-ticket.php:54 templates/tickets-add-ticket.php:70
+#: templates/tickets-edit-ticket.php:28
+msgid "Last Name:"
+msgstr "Příjmení:"
+
+#: templates/tickets-add-ticket.php:58
+msgid "Display Name:"
+msgstr "Zobrazit název:"
+
+#: templates/tickets-add-ticket.php:82
+msgid "Company name:"
+msgstr "Název společnosti:"
+
+#: templates/tickets-edit-ticket-status.php:14
+msgid "Set Status:"
+msgstr "Nastavit stav:"
+
+#: templates/tickets-edit-ticket.php:122
+msgid "View"
+msgstr "Zobrazit"
+
+#: templates/tickets-edit-ticket.php:127
+msgid "Order Details"
+msgstr "Detaily objednávky"
+
+#: templates/tickets-edit-ticket.php:134 templates/tickets-edit-ticket.php:171
+msgid "Type: "
+msgstr "Typ:"
+
+#: templates/tickets-edit-ticket.php:137 templates/tickets-edit-ticket.php:174
+msgid "Imported ticket"
+msgstr "Importovaný lístek"
+
+#: templates/tickets-edit-ticket.php:143
+msgid "Order ID: "
+msgstr "ID objednávky: "
+
+#: templates/tickets-edit-ticket.php:151
+msgid "Order Status: "
+msgstr "Stav objednávky: "
+
+#: templates/tickets-edit-ticket.php:161
+msgid "Order Amount: "
+msgstr "Částka objednávky: "
+
+#: templates/tickets-edit-ticket.php:186
+msgid "Guest customer"
+msgstr "Hosté zákazníci"
+
+#: templates/tickets-edit-ticket.php:193
+msgid "Name: "
+msgstr "Jméno: "
+
+#: templates/tickets-import-tickets-confirmation.php:21
+#: templates/tickets-import-tickets-field-selection.php:21
+#: templates/tickets-import-tickets-log.php:21
+#: templates/tickets-import-tickets.php:21
+msgid "Upload CSV file"
+msgstr "Nahrát soubor CSV"
+
+#: templates/tickets-import-tickets-confirmation.php:22
+#: templates/tickets-import-tickets-field-selection.php:22
+#: templates/tickets-import-tickets-log.php:22
+#: templates/tickets-import-tickets.php:22
+msgid "Column Mapping"
+msgstr "Mapování sloupců"
+
+#: templates/tickets-import-tickets-confirmation.php:23
+#: templates/tickets-import-tickets-confirmation.php:29
+#: templates/tickets-import-tickets-confirmation.php:121
+#: templates/tickets-import-tickets-field-selection.php:23
+#: templates/tickets-import-tickets-log.php:23
+#: templates/tickets-import-tickets.php:23
+msgid "Confirm Import"
+msgstr "Potvrzení importu"
+
+#: templates/tickets-import-tickets-confirmation.php:24
+#: templates/tickets-import-tickets-field-selection.php:24
+#: templates/tickets-import-tickets-log.php:24
+#: templates/tickets-import-tickets.php:24
+msgid "Done!"
+msgstr "Hotovo!"
+
+#: templates/tickets-import-tickets-confirmation.php:30
+msgid "Please check that all data displays in the appropriate fields and that no errors have been identified. If you do come across any errors, please correct the data in your CSV and re-upload the CSV file."
+msgstr "Prosím zkontrolujte, zda se všechna data zobrazují v příslušných polích a nebyly identifikovány žádné chyby. Pokud narazíte na nějaké chyby, prosím opravte data ve vašem CSV souboru a znovu nahrajte CSV soubor."
+
+#: templates/tickets-import-tickets-confirmation.php:44
+#: templates/tickets-import-tickets-field-selection.php:69
+msgid "Event ID"
+msgstr "ID Události"
+
+#: templates/tickets-import-tickets-confirmation.php:46
+#: templates/tickets-import-tickets-field-selection.php:72
+msgid "Variation ID"
+msgstr "ID varianty"
+
+#: templates/tickets-import-tickets-confirmation.php:49
+#: templates/tickets-import-tickets-field-selection.php:73
+msgid "Order ID"
+msgstr "Číslo objednávky"
+
+#: templates/tickets-import-tickets-confirmation.php:64
+#: templates/tickets-import-tickets-field-selection.php:70
+msgid "Booking Date ID"
+msgstr "ID datumu rezervace"
+
+#: templates/tickets-import-tickets-confirmation.php:65
+#: templates/tickets-import-tickets-field-selection.php:71
+msgid "Booking Slot ID"
+msgstr "ID rezervačního slotu"
+
+#: templates/tickets-import-tickets-confirmation.php:74
+#: templates/tickets-import-tickets-field-selection.php:62
+msgid "Custom Attendee Field"
+msgstr "Vlastní pole pro účastníky"
+
+#: templates/tickets-import-tickets-field-selection.php:29
+msgid "Map CSV fields to ticket fields"
+msgstr "Přiřaďte pole CSV k polím vstupenek"
+
+#: templates/tickets-import-tickets-field-selection.php:30
+msgid "Select fields from your CSV file to map against ticket fields."
+msgstr "Vyberte pole ze svého CSV souboru, která chcete namapovat na pole vstupenek."
+
+#: templates/tickets-import-tickets-field-selection.php:33
+#, php-format
+msgid "CSV Import (%1$s):  %2$s of %3$s"
+msgstr "Import CSV (%1$s):  %2$s z %3$s"
+
+#: templates/tickets-import-tickets-field-selection.php:35
+#, php-format
+msgid "Your CSV file contains more than %1$s tickets. The FooEvents Ticket Importer processes tickets in batches of tickets in order to ensure reliable results. Once you have completed importing the current batch, please repeat the process until all tickets have been imported."
+msgstr "Váš CSV soubor obsahuje více než %1$s vstupenek. Importér vstupenek FooEvents zpracovává vstupenky po dávkách, aby zajistil spolehlivé výsledky. Jakmile dokončíte importování aktuální dávky, opakujte proces, dokud nebudou všechny vstupenky importovány."
+
+#: templates/tickets-import-tickets-field-selection.php:47
+msgid "CSV Column name"
+msgstr "Název sloupce CSV"
+
+#: templates/tickets-import-tickets-field-selection.php:50
+msgid "Map to ticket field"
+msgstr "Mapování na pole vstupenky"
+
+#: templates/tickets-import-tickets-field-selection.php:61
+msgid "Meta field"
+msgstr "Pole Meta"
+
+#: templates/tickets-import-tickets-field-selection.php:82
+msgid "Run the importer"
+msgstr "Spustit import"
+
+#: templates/tickets-import-tickets-log.php:29
+#, php-format
+msgid "Import %1$s of %2$s Complete"
+msgstr "Import %1$s z %2$s dokončen"
+
+#: templates/tickets-import-tickets-log.php:30
+msgid "The following tickets have been successfully imported."
+msgstr "Následující vstupenky byly úspěšně importovány."
+
+#: templates/tickets-import-tickets-log.php:38
+msgid "Imported"
+msgstr "Importováno"
+
+#: templates/tickets-import-tickets-log.php:46
+#, php-format
+msgid "%1$s tickets have been imported."
+msgstr "%1$s vstupenek bylo importováno."
+
+#: templates/tickets-import-tickets-log.php:48
+msgid "Please repeat the import process until all tickets have been imported."
+msgstr "Proces importu opakujte, dokud nebudou importovány všechny vstupenky."
+
+#: templates/tickets-import-tickets-log.php:52
+msgid "Import"
+msgstr "Import"
+
+#: templates/tickets-import-tickets.php:29
+msgid "Import tickets from a CSV file"
+msgstr "Importovat vstupenky z CSV souboru"
+
+#: templates/tickets-import-tickets.php:33
+#, php-format
+msgid "This tool allows you to import tickets to your store from a CSV file. For more information on how to structure your CSV, please refer to %1$sthis help guide%2$s."
+msgstr "Tento nástroj vám umožňuje importovat vstupenky do vašeho obchodu z CSV souboru. Pro více informací o struktuře vašeho CSV se prosím podívejte na %1$stento návod%2$s."
+
+#: templates/tickets-import-tickets.php:42
+msgid "Choose a CSV file from your computer:"
+msgstr "Vyberte soubor CSV z vašeho počítače:"
+
+#: templates/tickets-import-tickets.php:51
+msgid "Continue"
+msgstr "Pokračovat"

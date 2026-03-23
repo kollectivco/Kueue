@@ -1,0 +1,184 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FooEvents Custom Attendee Fields\n"
+"POT-Creation-Date: 2025-10-27 11:27+0200\n"
+"PO-Revision-Date: 2025-10-27 11:27+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-custom-attendee-fields.php:68
+#: templates/custom-attendee-fields-add-ticket.php:11
+#: templates/custom-attendee-fields-options.php:11
+#: templates/custom-attendee-ticket-detail.php:2
+msgid "Custom Attendee Fields"
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:160
+msgid "The FooEvents Custom Attendee Fields plugin requires FooEvents for WooCommerce to be installed."
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:194
+msgid "Attendee"
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:548
+#: class-fooevents-custom-attendee-fields.php:595
+#, php-format
+msgid "%s is a required field."
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:745
+#, php-format
+msgid " is required for %1$s attendee %2$d"
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:755
+#, php-format
+msgid " is not a valid email address for %s attendee %d"
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:763
+#, php-format
+msgid " is not a valid URL for %s attendee %d"
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:771
+#, php-format
+msgid " is not a valid number for %s attendee %d"
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:779
+#, php-format
+msgid " needs to contain only alphabet characters for %s attendee %d"
+msgstr ""
+
+#: class-fooevents-custom-attendee-fields.php:787
+#, php-format
+msgid " needs to contain only alphabet or number characters for %s attendee %d"
+msgstr ""
+
+#: classes/updatehelper.php:214
+msgid "Important:"
+msgstr ""
+
+#: classes/updatehelper.php:227
+msgid "Please backup your files and database before updates!"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:15
+msgid "FooEvents does not currently support capturing custom attendee field details using the new WooCommerce Checkout block. To enable this functionality, please switch to the classic shortcode-based WooCommerce Checkout experience."
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:17
+msgid "Learn more"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:28
+msgid "Label"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:29
+msgid "Type"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:30
+msgid "Options"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:31
+msgid "Default"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:32
+msgid "Required"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:59
+msgid "Text"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:60
+msgid "Textarea"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:61
+msgid "Select"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:62
+msgid "Checkbox"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:63
+msgid "Radio"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:64
+msgid "Country"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:65
+msgid "Date"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:66
+msgid "Time"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:67
+msgid "Email"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:68
+msgid "URL"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:69
+msgid "Numbers"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:70
+msgid "Alphabet"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:71
+msgid "Alphanumeric"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:82
+msgid "Yes"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:83
+msgid "No"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:101
+msgid "No Custom Attendee Fields found."
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:103
+msgid "New field"
+msgstr ""
+
+#: templates/custom-attendee-fields-options.php:104
+msgid "When using the 'Select' or 'Radio' options, seperate the options using a pipe symbol. Example: Small|Medium|Large."
+msgstr ""
+
+#: templates/include-custom-attendee-details-options.php:3
+#: templates/product-custom-attendee-options.php:3
+msgid "Display custom attendee details on ticket?"
+msgstr ""
+
+#: templates/include-custom-attendee-details-options.php:5
+#: templates/product-custom-attendee-options.php:5
+msgid "This will display custom attendee fields on the ticket."
+msgstr ""

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "woocommerce-events/fooevents-event-listing",
+  "version": "1.0.0",
+  "title": "FooEvents Event Listing",
+  "category": "woocommerce",
+  "icon": "tickets",
+  "description": "Display events in a list, tile or compact format.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "fooevents-event-listing",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "numberOfItems": {
+      "type": "number",
+      "default": 20
+    },
+    "numberOfTileColumns": {
+      "type": "number",
+      "default": 3
+    },
+    "columns": {
+      "type": "number",
+      "default": 1
+    },
+    "displayDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayTimes": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayImage": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayAvailability": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayExcerpt": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayLocation": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayMonthSeperators": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayIcons": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayBookButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayPrice": {
+      "type": "boolean",
+      "default": true
+    },
+    "orderEventBy": {
+      "type": "string",
+      "default": "desc"
+    },
+    "eventListingLayout": {
+      "type": "string",
+      "default": "list"
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "medium"
+    },
+    "imageAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "eventTypes": {
+      "type": "string",
+      "default": "all"
+    },
+    "hashtags": {
+      "type": "array",
+      "default": []
+    },
+    "productIDs": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

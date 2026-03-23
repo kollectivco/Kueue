@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: fooevents_pdf_tickets\n"
+"POT-Creation-Date: 2025-01-16 22:40-0800\n"
+"PO-Revision-Date: 2025-01-16 22:40-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: af\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-pdf-tickets.php:211
+msgid "The FooEvents PDF Tickets plugin requires FooEvents for WooCommerce to be installed."
+msgstr "Die FooEvents PDF-tickets invoegtoepassing vereis dat FooEvents vir WooCommerce geïnstalleer is."
+
+#: class-fooevents-pdf-tickets.php:223
+msgid "GD libraries is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "GD-biblioteke is nie geaktiveer op jou bediener nie. Dit is 'n vereiste vir FooEvents PDF-kaartjies. Kontak asseblief jou gasheer om dit te aktiveer."
+
+#: class-fooevents-pdf-tickets.php:229
+msgid "The setting allow_url_fopen is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Die instelling allow_url_fopen is nie geaktiveer op jou bediener nie. Dit is 'n vereiste vir FooEvents PDF-kaartjies. Kontak asseblief jou gasheer om dit te aktiveer."
+
+#: class-fooevents-pdf-tickets.php:235
+msgid "The PHP MBstring module is not enabled on your server. This is a requirement for FooEvents PDF tickets. Please contact your host to enable this."
+msgstr "Die PHP MBstring-module is nie geaktiveer op jou bediener nie. Dit is 'n vereiste vir FooEvents PDF-kaartjies. Kontak asseblief jou gasheer om dit te aktiveer."
+
+#: class-fooevents-pdf-tickets.php:262
+msgid " PDF Tickets"
+msgstr "PDF Kaartjies"
+
+#: class-fooevents-pdf-tickets.php:586 templates/my-account-ticket-list.php:10
+msgid "Tickets"
+msgstr "Kaartjies"
+
+#: classes/updatehelper.php:300
+msgid "Important:"
+msgstr "Belangrik:"
+
+#: classes/updatehelper.php:313
+msgid "Please backup your files and database before updates!"
+msgstr "Maak asseblief 'n rugsteun van jou lêers en databasis voor opdaterings!"
+
+#: templates/global-settings-pdf.php:13
+msgid "PDF Tickets"
+msgstr "PDF Kaartjies"
+
+#: templates/global-settings-pdf.php:18
+msgid "Enable PDF tickets"
+msgstr "Stel PDF-kaartjies in"
+
+#: templates/global-settings-pdf.php:21
+msgid "Adds PDF ticket attachments to ticket emails."
+msgstr "Voeg PDF-kaartjie-aanhegsels by kaartjie-e-posse."
+
+#: templates/global-settings-pdf.php:25
+msgid "Enable PDF ticket downloads"
+msgstr "Stel PDF-kaartjie aflaai in werking"
+
+#: templates/global-settings-pdf.php:28
+msgid "Allows purchasers to download a copy of their PDF tickets from the My Account page."
+msgstr "Laat kopers toe om 'n afskrif van hul PDF-kaartjies af te laai vanaf die My Rekening bladsy."
+
+#: templates/global-settings-pdf.php:32
+msgid "Attach PDF ticket to HTML ticket email"
+msgstr "Voeg PDF-kaartjie by HTML-kaartjie-e-pos"
+
+#: templates/global-settings-pdf.php:35
+msgid "Attaches the PDF ticket to the HTML ticket email when sent."
+msgstr "Voeg die PDF-kaartjie by die HTML-kaartjie-e-pos wanneer dit gestuur word."
+
+#: templates/global-settings-pdf.php:39
+msgid "Enable RTL character support"
+msgstr "Stel RTL-karakterondersteuning in"
+
+#: templates/global-settings-pdf.php:42
+msgid "Displays righ-to-left characters (e.g. Arabic, Hebrew) in PDF tickets"
+msgstr "Toon reg-na-links karakters (bv. Arabies, Hebreeus) in PDF-kaartjies"
+
+#: templates/global-settings-pdf.php:46
+msgid "Font"
+msgstr "Lettertipe"
+
+#: templates/global-settings-pdf.php:52
+msgid "DejaVu Sans is the default PDF font. Firefly Sung supports CJK (Chinese, Japanese, Korean) characters. Noto Sans JP supports Japanese characters."
+msgstr "DejaVu Sans is die verstek PDF-lettertipe. Firefly Sung ondersteun CJK (Chinese, Japanse, Koreaanse) karakters. Noto Sans JP ondersteun Japanse karakters."
+
+#: templates/my-account-ticket-list.php:25
+msgid "Download"
+msgstr "Aflaai"
+
+#: templates/product-pdf-ticket-options.php:10
+msgid "PDF Settings"
+msgstr "PDF-instellings"
+
+#: templates/product-pdf-ticket-options.php:13
+msgid "Email text:"
+msgstr "E-pos teks:"
+
+#: templates/product-pdf-ticket-options.php:19
+msgid "Ticket footer text:"
+msgstr "Kaartjie voetskrif teks:"
+
+#: templates/product-pdf-ticket-theme-options.php:12
+msgid "PDF ticket theme:"
+msgstr "PDF kaart tema:"
+
+#: templates/product-pdf-ticket-theme-options.php:18
+msgid "Select the PDF compatible ticket theme that will be used to style the PDF tickets that are attached to ticket emails."
+msgstr "Kies die PDF-verenigbare kaartjie-tema wat gebruik sal word om die PDF-kaartjies te styl wat aan kaartjie-e-posse geheg is."
+
+#: templates/tickets-edit-ticket-pdf-link.php:12
+msgid "Download PDF Ticket"
+msgstr "Laai PDF-kaartjie af"

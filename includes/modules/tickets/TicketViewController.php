@@ -17,6 +17,8 @@ class TicketViewController {
         add_rewrite_rule( 'kq-ticket/([^/]+)/?', 'index.php?kq_ticket_token=$matches[1]', 'top' );
         // Also support PDF download
         add_rewrite_rule( 'kq-ticket/([^/]+)/pdf/?', 'index.php?kq_ticket_token=$matches[1]&kq_pdf=1', 'top' );
+        // Also support Apple Wallet
+        add_rewrite_rule( 'kq-ticket/([^/]+)/pkpass/?', 'index.php?kq_ticket_token=$matches[1]&kq_wallet=apple', 'top' );
     }
 
     /**
@@ -25,6 +27,7 @@ class TicketViewController {
     public function register_query_vars( $vars ) {
         $vars[] = 'kq_ticket_token';
         $vars[] = 'kq_pdf';
+        $vars[] = 'kq_wallet';
         return $vars;
     }
 
@@ -45,6 +48,12 @@ class TicketViewController {
         // Handle PDF request
         if ( get_query_var( 'kq_pdf' ) === '1' ) {
             PDFGenerator::generate_and_output( $ticket );
+            exit;
+        }
+
+        // Handle Wallet request
+        if ( get_query_var( 'kq_wallet' ) === 'apple' ) {
+            WalletGenerator::generate_apple_pass( $ticket );
             exit;
         }
 

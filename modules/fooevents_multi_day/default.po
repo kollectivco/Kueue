@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FooEvents Multi Day\n"
+"POT-Creation-Date: 2025-08-26 14:19+0200\n"
+"PO-Revision-Date: 2025-08-26 14:19+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class-fooevents-multiday-events.php:84
+#: class-fooevents-multiday-events.php:244
+#: class-fooevents-multiday-events.php:410
+#: class-fooevents-multiday-events.php:466
+#: class-fooevents-multiday-events.php:570
+#: class-fooevents-multiday-events.php:824
+msgid "Day"
+msgstr ""
+
+#: class-fooevents-multiday-events.php:89
+msgid "Done"
+msgstr ""
+
+#: class-fooevents-multiday-events.php:90
+msgid "Today"
+msgstr ""
+
+#: class-fooevents-multiday-events.php:93
+msgid "Show a different month"
+msgstr ""
+
+#: class-fooevents-multiday-events.php:101
+msgid "Start time"
+msgstr ""
+
+#: class-fooevents-multiday-events.php:102
+msgid "End time"
+msgstr ""
+
+#: class-fooevents-multiday-events.php:517
+#, php-format
+msgid "Day %s"
+msgstr ""
+
+#: classes/updatehelper.php:236
+msgid "Important:"
+msgstr ""
+
+#: classes/updatehelper.php:249
+msgid "Please backup your files and database before updates!"
+msgstr ""
+
+#: templates/display-multiday-express-check-in-options.php:15
+msgid "Check-in Day"
+msgstr ""
+
+#: templates/end-date-option.php:12
+msgid "End date:"
+msgstr ""
+
+#: templates/end-date-option.php:14
+msgid ""
+"The date that the event is scheduled to end. This is used as a label on your "
+"website and it's also used by the FooEvents Calendar to display a multi-day "
+"event."
+msgstr ""
+
+#: templates/multiday-select-date-container.php:20
+msgid "Start time:"
+msgstr ""
+
+#: templates/multiday-select-date-container.php:40
+msgid "End time:"
+msgstr ""
+
+#: templates/multiday-select-date-container.php:66
+msgid "Set start/end times globally?"
+msgstr ""
+
+#: templates/multiday-select-date-container.php:68
+msgid ""
+"Enable this option to use the same start and end times for each day of a "
+"multi-day event."
+msgstr ""
+
+#: templates/multiday-term-option.php:13
+msgid "Day:"
+msgstr ""
+
+#: templates/multiday-term-option.php:16
+msgid "Change 'Day' to your own custom text for this event."
+msgstr ""
+
+#: templates/num-days-option.php:12
+msgid "Number of days:"
+msgstr ""
+
+#: templates/num-days-option.php:18
+msgid ""
+"Select the number of days for multi-day events. This setting is used by the "
+"Event Check-ins apps to manage daily check-ins."
+msgstr ""

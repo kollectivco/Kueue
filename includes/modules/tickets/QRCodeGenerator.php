@@ -27,16 +27,16 @@ class QRCodeGenerator {
     }
 
     /**
-     * Get Local QR Path (SVG).
+     * Generate localized Data URI (Base64) for QR code.
+     * Useful for PDF generation without remote dependencies.
      */
-    public static function get_svg_image( $token ) {
-        // 1. Try Local Generator (SimpleQR)
+    public static function generate_data_uri( $token, $size = 200 ) {
         if ( class_exists( '\KueueEvents\Core\Vendor\SimpleQR' ) ) {
-            return \KueueEvents\Core\Vendor\SimpleQR::generate_svg( $token );
+            $svg = \KueueEvents\Core\Vendor\SimpleQR::generate_svg( $token, $size );
+            return 'data:image/svg+xml;base64,' . base64_encode( $svg );
         }
 
-        // 2. Fallback to Remote API
-        $url = self::generate_svg_url( $token );
-        return '<img src="' . esc_attr( $url ) . '" alt="QR Code" />';
+        // Fallback to remote PNG if local fails
+        return self::generate_png_url( $token, $size );
     }
 }

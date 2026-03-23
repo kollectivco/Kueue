@@ -79,6 +79,16 @@ class GatewayManager {
                 'name'    => 'WhatsApp Cloud API',
                 'channel' => 'whatsapp',
                 'class'   => '\\KueueEvents\\Core\\Modules\\Gateways\\WhatsApp\\WhatsAppCloudAPIProvider'
+            ],
+            'twilio' => [
+                'name'    => 'Twilio',
+                'channel' => 'sms',
+                'class'   => '\\KueueEvents\\Core\\Modules\\Gateways\\SMS\\TwilioProvider'
+            ],
+            'nexmo' => [
+                'name'    => 'Nexmo (Vonage)',
+                'channel' => 'sms',
+                'class'   => '\\KueueEvents\\Core\\Modules\\Gateways\\SMS\\NexmoProvider'
             ]
         ];
     }

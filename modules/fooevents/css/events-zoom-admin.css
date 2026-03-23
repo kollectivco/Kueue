@@ -1,0 +1,76 @@
+table.fooevents-zoom-meeting-info-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fooevents-zoom-occurrence-deleted {
+  text-decoration: line-through;
+}
+.fooevents-zoom-occurrences-container {
+  max-height: 120px;
+  overflow: auto;
+  background-color: #f7f7f7;
+  padding: 5px 15px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 10px;
+}
+span.fooevents-zoom-day-override-title {
+  font-size: 14px;
+  padding: 0;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+  display: block;
+  font-weight: bold;
+}
+a.fooevents-zoom-show-hide-meeting-details-link {
+  outline: none;
+  box-shadow: none;
+  white-space: nowrap;
+}
+a.fooevents-zoom-show-hide-meeting-details-link
+  span.toggle-indicator.fooevents-zoom-show-hide-meeting-details::before {
+  position: relative;
+  top: 5px;
+  content: "\f140" !important;
+}
+a.fooevents-zoom-show-hide-meeting-details-link.show
+  span.toggle-indicator.fooevents-zoom-show-hide-meeting-details::before {
+  content: "\f142" !important;
+}
+#fooevents_zoom_meeting_multi
+  p.form-field.fooevents-zoom-multi-meeting-details {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+#fooevents_zoom_meeting_multi
+  p.form-field.fooevents-zoom-multi-meeting-details:last-child {
+  margin-bottom: 9px !important;
+  padding-bottom: 5px !important;
+}
+#fooevents_zoom_meeting_multi .fooevents-zoom-multi-meeting-details-container {
+  display: block;
+  border-left: 10px solid #eee;
+  padding-left: 10px;
+}
+.woocommerce_options_panel #fooevents_zoom_meeting_single .select2-container,
+.woocommerce_options_panel #fooevents_zoom_meeting_multi .select2-container {
+  width: 100% !important;
+  max-width: 70% !important;
+}
+.woocommerce_options_panel input.button.fooevents-zoom-integration-button {
+  margin-left: 0;
+}
+#fooevents_zoom_reload_users {
+  display: block;
+  clear: left;
+}
+#globalWooCommerceEventsZoomUsersContainer .select2-container {
+  min-width: 160px;
+}
+.fooevents-zoom-duration-label {
+  margin: 0 10px 0;
+  float: left;
+}

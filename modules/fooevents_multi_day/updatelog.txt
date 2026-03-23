@@ -1,0 +1,250 @@
+
+UPDATE LOG
+
+------------------
+1.7.9
+FIXED: Various date format fixes.
+FIXED: Various other small bugs and performance updates.
+FIXED: CSV export bug.
+TESTED ON: WordPress 6.8.2 and WooCommerce 10.1.1.
+
+1.7.7
+FIXED: Wordpress 6.7 load text domain compatibility.
+FIXED: Various other small bugs and performance updates.
+TESTED ON: WordPress 6.7.1 and WooCommerce 9.4.2.
+
+1.7.6
+FIXED: Various small bugs.
+TESTED ON: Wordpress 6.6.2 and WooCommerce 9.3.3.
+
+1.7.5
+FIXED: Various small bugs.
+TESTED ON: WordPress 6.6.1 and WooCommerce 9.2.3.
+
+1.7.4
+FIXED: Event settings global time display bug.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.5.4 and WooCommerce 8.9.3.
+
+1.7.2
+UPDATED: Product event settings look and feel. 
+FIXED: Various small bugs.
+TESTED ON: WordPress 6.5.3 and WooCommerce 8.9.1.
+
+1.7.1
+FIXED: Various small bugs.
+TESTED ON: WordPress 6.4.3 and WooCommerce 8.6.1.
+
+1.7.0
+ADDED: New plugin translations.
+FIXED: Various other small bugs.
+TESTED ON: WordPress 6.4.2 and WooCommerce 8.5.1.
+
+1.6.17
+FIXED: Various small bugs.
+TESTED ON: WordPress 6.4.2 and WooCommerce 8.3.1.
+
+1.6.16
+FIXED: Various small bugs
+TESTED ON: WordPress 6.3.2 and WooCommerce 8.2.1
+
+1.6.12
+FIXED: German language date bugs
+FIXED: Dutch language date bugs
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.2.2 and WooCommerce 7.7.2
+
+1.6.10
+FIXED: Various small bugs
+TESTED ON: WordPress 6.2 and WooCommerce 7.6.0
+
+1.6.8
+FIXED: Non-English calendar end date bug
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.4.1
+
+1.6.6
+FIXED: j. n. Y date format support
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.3.0
+
+1.6.5
+FIXED: Various small bugs
+TESTED ON: WordPress 6.1.1 and WooCommerce 7.1.0
+
+1.6.4
+FIXED: Support for Lithuanian month names
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.1.0 and WooCommerce 7.0.1
+
+1.6.3
+FIXED: Terminology bug on edit ticket screen
+FIXED: Various other small bugs
+TESTED ON: WordPress 6.0.2 and WooCommerce 6.9.4
+
+1.6.2 
+FIXED: Various small bugs
+TESTED ON: WordPress 6.0.0 and WooCommerce 6.6.0
+
+1.6.0
+ADDED: Support for Follow-Up Emails plugin
+FIXED: Update message on plugin page even though running latest version
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9.3 and WooCommerce 6.5.1
+
+1.5.7
+FIXED: Update service optimizations
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9.2 and WooCommerce 6.3.1
+
+1.5.6
+FIXED: Global start/end time bugs
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9.1 and WooCommerce 6.2.1
+
+1.5.5
+ADDED: Multi-day start/end time options
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.9 and WooCommerce 6.2.0
+
+1.5.3
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.8.2 and WooCommerce 5.9.0
+
+1.5.2
+FIXED: Various small bugs
+TESTED ON: WordPress 5.8.1 and WooCommerce 5.8.0
+
+1.5.0
+UPDATED: Various security updates
+FIXED: Various small bugs
+TESTED ON: WordPress 5.8.1 and WooCommerce 5.6.0
+
+1.4.11
+FIXED: Support for D F j date format
+FIXED: Various small bugs
+TESTED ON: WordPress 5.8 and WooCommerce 5.6.0
+
+1.4.9 
+ADDED: Support for check-ins logging updates
+FIXED: Various other small bugs
+TESTED ON: WordPress 5.7.2 and WooCommerce 5.3.0
+
+1.4.8
+FIXED: Various other small bugs
+UPDATED: Use wp_remote_post() instead of CURL
+TESTED ON: WordPress 5.7 and WooCommerce 5.1.0
+
+1.4.6
+FIXED: Multi-day select not working on non-event
+TESTED ON: WordPress 5.7 and WooCommerce 5.1.0
+
+1.4.5
+FIXED: Various small bugs
+TESTED ON: WordPress 5.7 and WooCommerce 5.1.0
+
+1.4.4
+FIXED: Various small bugs
+TESTED ON: WordPress 5.6.1 and WooCommerce 5.0.0
+
+1.4.1
+FIXED: Various small bugs
+TESTED ON: WordPress 5.6 and WooCommerce 4.8.0
+
+1.4.0
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5.3 and WooCommerce 4.6.1
+
+1.2.12
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5.1 and WooCommerce 4.5.2
+
+1.2.11
+FIXED: French month name translation
+FIXED: Plugins page view details update log
+FIXED: Various small bugs
+TESTED ON: WordPress 5.5 and WooCommerce 4.3.2
+
+1.2.9
+FIXED: Various small bugs
+TESTED ON: WordPress 5.4.1 and WooCommerce 4.2.0
+
+1.2.8
+FIXED: Various small bugs
+TESTED ON: WordPress 5.4.1 and WooCommerce 4.2.0
+
+1.2.6
+FIXED: Various small bugs
+TESTED ON: WordPress 5.4 and WooCommerce 4.0.1
+
+1.2.3
+FIXED: Date end format
+FIXED: Various other small bugs
+
+1.2.0
+NEW: Support for new reporting features
+FIXED: Various small bugs
+
+1.1.25
+FIXED: Multi-day calendar bug
+FIXED: Various other small bugs
+
+1.1.24
+FIXED: Multi-day Express Check-in bug
+FIXED: Various other small bugs
+
+1.1.22
+FIXED: Multi-day check-in bug
+
+1.1.21
+FIXED: Fixed bug with FooEvents Express Check-ins
+
+1.1.19
+FIXED: Various small bugs
+
+1.1.18
+ADDED: Various compliance updates
+
+1.1.17
+ADDED: Support for new FooEvents Calendar features
+UPDATED: Localizations 
+FIXED: Various small bugs
+
+1.1.15
+FIXED: Initial selection bug 
+FIXED: Various other small bugs
+
+1.1.14
+UPDATED: Documentation
+UPDATED: Plugin option clean-up on delete 
+FIXED: Various small bugs
+
+1.1.12
+FIXED: Terminology new site bug
+FIXED: Various other small bugs
+
+1.1.8
+FIXED: Terminology bug
+
+1.1.7
+FIXED: Update notification bug
+
+1.1.5
+ADDED: Multi-day check-ins to CSV
+FIXED: Various small bugs
+
+1.1.4:
+ADDED: Support for selected multi-day event days
+
+1.0.4
+FIXED: Calendar end date bug
+
+1.0.3
+ADDED: Plugin update notification script
+
+1.0.2
+UPDATED documentation
+
+1.0.1
+Public release
+
