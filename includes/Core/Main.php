@@ -114,16 +114,9 @@ class Main {
             $checkout->run();
         }
 
-        // 6) Public Frontend
+        // 6) Public Frontend (Events & Dashboard)
         $frontend = new \KueueEvents\Core\Modules\Frontend\FrontendController();
         $frontend->run();
-
-        $events_front = new \KueueEvents\Core\Modules\Frontend\EventsController();
-        $events_front->run();
-
-        // 7) Organizer Dashboard
-        $dashboard = new \KueueEvents\Core\Modules\Dashboard\FrontendDashboard();
-        $dashboard->run();
 
         // 8) Self-Update System
         $updater = new \KueueEvents\Core\Core\GitHubUpdater();

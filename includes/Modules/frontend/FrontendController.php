@@ -7,13 +7,8 @@ class FrontendController {
     public function run() {
         // Register shortcodes (with Aliases)
         add_shortcode( 'kq_events', [ $this, 'render_events_list' ] );
-        add_shortcode( 'kq_events_list', [ $this, 'render_events_list' ] );
-
         add_shortcode( 'kq_event', [ $this, 'render_event_single' ] );
-        add_shortcode( 'kq_event_page', [ $this, 'render_event_single' ] );
-
         add_shortcode( 'kq_dashboard', [ $this, 'render_organizer_dashboard' ] );
-        add_shortcode( 'kq_organizer_dashboard', [ $this, 'render_organizer_dashboard' ] );
 
         add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_assets' ] );
 
@@ -52,9 +47,16 @@ class FrontendController {
      * Render Events List
      */
     public function render_events_list( $atts ) {
-        $events = get_posts( [ 'post_type' => 'kq_event', 'posts_per_page' => -1 ] );
+        // Use standard get_posts for safety
+        $events = get_posts( [ 'post_type' => 'kq_event', 'posts_per_page' => -1, 'post_status' => 'publish' ] );
+
         ob_start();
-        include KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/events-list.php';
+        $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/events-list.php';
+        if ( file_exists( $view_path ) ) {
+            include $view_path;
+        } else {
+            echo '<p>Events list view not found.</p>';
+        }
         return ob_get_clean();
     }
 
@@ -62,14 +64,24 @@ class FrontendController {
      * Render Single Event Page
      */
     public function render_event_single( $atts ) {
-        $id = $atts['id'] ?? get_the_ID();
-        $event = get_post( $id );
-        if ( ! $event || $event->post_type !== 'kq_event' ) return 'Event not found.';
+        $a = shortcode_atts( [ 'id' => 0 ], $atts );
+        $event_id = (int) $a['id'] ?: get_the_ID();
+        
+        $event = get_post( $event_id );
+        if ( ! $event || $event->post_type !== 'kq_event' ) {
+            return '<p>' . __( 'Event not found.', 'kueue-events-core' ) . '</p>';
+        }
 
-        $ticket_types = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_event( $id );
+        // Corrected repository method name (get_by_event_id instead of get_by_event)
+        $ticket_types = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_event_id( $event_id );
         
         ob_start();
-        include KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/event-single.php';
+        $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/event-single.php';
+        if ( file_exists( $view_path ) ) {
+            include $view_path;
+        } else {
+            echo '<p>Event single view not found.</p>';
+        }
         return ob_get_clean();
     }
 
@@ -127,20 +139,39 @@ class FrontendController {
      */
     public function render_organizer_dashboard() {
         if ( ! is_user_logged_in() ) {
-            return '<p>Please log in to view dashboard.</p>';
+            return '<p>' . __( 'Please log in to view dashboard.', 'kueue-events-core' ) . '</p>';
         }
 
         $user_id = get_current_user_id();
         $organizer = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_by_user_id( $user_id );
         if ( ! $organizer ) {
-            return '<p>Organizer profile not found.</p>';
+            return '<p>' . __( 'Organizer profile not found.', 'kueue-events-core' ) . '</p>';
         }
 
         $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary( $organizer->id );
         $payouts = \KueueEvents\Core\Modules\Payouts\PayoutRepository::get_by_organizer($organizer->id);
         
+        // Fetch events for this organizer
+        $events = get_posts( [
+            'post_type'  => 'kq_event',
+            'meta_key'   => '_kq_organizer_id',
+            'meta_value' => $organizer->id,
+            'numberposts' => -1
+        ] );
+
         ob_start();
-        include KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/organizer-dashboard.php';
+        $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/organizer-dashboard.php';
+        if ( file_exists( $view_path ) ) {
+            include $view_path;
+        } else {
+            // Check alt path (Dashboard module)
+            $alt_path = KQ_PLUGIN_DIR . 'includes/Modules/Dashboard/views/dashboard-view.php';
+            if ( file_exists( $alt_path ) ) {
+                include $alt_path;
+            } else {
+                echo '<p>Organizer dashboard view not found.</p>';
+            }
+        }
         return ob_get_clean();
     }
 

@@ -6,7 +6,9 @@ class TicketTypeAdmin {
 
     public function render_list() {
         $action = isset( $_GET['action'] ) ? $_GET['action'] : 'list';
-        $organizer_id = ! current_user_can( 'manage_options' ) ? \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_by_user_id( get_current_user_id() )->id : null;
+        $is_admin = current_user_can( 'manage_options' );
+        $organizer = ! $is_admin ? \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_by_user_id( get_current_user_id() ) : null;
+        $organizer_id = $organizer ? $organizer->id : null;
 
         if ( 'delete' === $action && isset( $_GET['id'] ) ) {
             check_admin_referer( 'kq_delete_ticket_type_' . $_GET['id'] );

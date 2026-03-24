@@ -298,97 +298,167 @@ class AdminController {
      * Render Dashboard
      */
     public function render_dashboard() {
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php';
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Dashboard</div>';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php';
+        if ( file_exists( $path ) ) {
+            include_once $path;
+        } else {
+            echo '<div class="notice notice-error"><p>Dashboard view not found at: ' . esc_html($path) . '</p></div>';
+        }
     }
 
     /**
      * Render Organizers CRUD
      */
     public function render_organizers() {
-        $module = new \KueueEvents\Core\Modules\Vendors\OrganizerAdmin();
-        $module->render_list();
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Organizers</div>';
+        if ( class_exists( '\KueueEvents\Core\Modules\Vendors\OrganizerAdmin' ) ) {
+            $module = new \KueueEvents\Core\Modules\Vendors\OrganizerAdmin();
+            $module->render_list();
+        } else {
+            echo '<div class="notice notice-error"><p>OrganizerAdmin class not found.</p></div>';
+        }
     }
 
     /**
      * Render Ticket Types
      */
     public function render_ticket_types() {
-        $module = new \KueueEvents\Core\Modules\Tickets\TicketTypeAdmin();
-        $module->render_list();
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Ticket Types</div>';
+        if ( class_exists( '\KueueEvents\Core\Modules\Tickets\TicketTypeAdmin' ) ) {
+            $module = new \KueueEvents\Core\Modules\Tickets\TicketTypeAdmin();
+            $module->render_list();
+        } else {
+            echo '<div class="notice notice-error"><p>TicketTypeAdmin class not found.</p></div>';
+        }
     }
 
     /**
      * Render Attendees
      */
     public function render_attendees() {
-        $module = new \KueueEvents\Core\Modules\Attendees\AttendeeAdmin();
-        $module->render_list();
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Attendees</div>';
+        if ( class_exists( '\KueueEvents\Core\Modules\Attendees\AttendeeAdmin' ) ) {
+            $module = new \KueueEvents\Core\Modules\Attendees\AttendeeAdmin();
+            $module->render_list();
+        } else {
+            echo '<div class="notice notice-error"><p>AttendeeAdmin class not found.</p></div>';
+        }
     }
 
     /**
      * Render Issued Tickets
      */
     public function render_tickets() {
-        $module = new \KueueEvents\Core\Modules\Tickets\TicketAdmin();
-        $module->render_list();
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Tickets</div>';
+        if ( class_exists( '\KueueEvents\Core\Modules\Tickets\TicketAdmin' ) ) {
+            $module = new \KueueEvents\Core\Modules\Tickets\TicketAdmin();
+            $module->render_list();
+        } else {
+            echo '<div class="notice notice-error"><p>TicketAdmin class not found.</p></div>';
+        }
     }
 
     /**
      * Render POS / Box Office
      */
     public function render_pos() {
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering POS</div>';
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/POS/views/pos-view.php';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/POS/views/pos-view.php';
+        if ( file_exists( $path ) ) {
+            include_once $path;
+        } else {
+            echo '<div class="notice notice-error"><p>POS view not found.</p></div>';
+        }
     }
 
     /**
      * Render Gateway Accounts CRUD
      */
     public function render_gateway_accounts() {
-        // This will be handled by the Gateways Module Controller
-        $module = new \KueueEvents\Core\Modules\Gateways\GatewayAdminController();
-        $module->render_list();
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Gateways</div>';
+        if ( class_exists( '\KueueEvents\Core\Modules\Gateways\GatewayAdminController' ) ) {
+            $module = new \KueueEvents\Core\Modules\Gateways\GatewayAdminController();
+            $module->render_list();
+        } else {
+            echo '<div class="notice notice-error"><p>GatewayAdminController class not found.</p></div>';
+        }
     }
 
     /**
      * Render Seating Management
      */
     public function render_seating() {
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Seating/views/seating-view.php';
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Seating</div>';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/Seating/views/seating-view.php';
+        if ( file_exists( $path ) ) {
+            include_once $path;
+        } else {
+            echo '<div class="notice notice-error"><p>Seating view not found.</p></div>';
+        }
     }
 
     /**
      * Render Bookings Management
      */
     public function render_bookings() {
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Bookings</div>';
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Bookings/views/bookings-view.php';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/Bookings/views/bookings-view.php';
+        if ( file_exists( $path ) ) {
+            include_once $path;
+        } else {
+            echo '<div class="notice notice-error"><p>Bookings view not found.</p></div>';
+        }
     }
 
     /**
      * Render Reports Dashboard
      */
     public function render_reports() {
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Reports</div>';
         $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary();
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/reports-view.php';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/reports-view.php';
+        if ( file_exists( $path ) ) {
+            include_once $path;
+        } else {
+            echo '<div class="notice notice-error"><p>Reports view not found.</p></div>';
+        }
     }
 
     /**
      * Render Finance Dashboard
      */
     public function render_finance() {
-        $stats = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_global_stats();
-        $commissions = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_paged( 1, 50 ); // Load top 50
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Finance</div>';
+        $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary(); // Fallback to global summary if commission repo missing
+        if ( class_exists( '\KueueEvents\Core\Modules\Finance\CommissionRepository' ) ) {
+            $stats = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_global_stats();
+            $commissions = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_paged( 1, 50 );
+        }
         $payout_requests = \KueueEvents\Core\Modules\Payouts\PayoutRepository::get_all_pending();
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Finance/views/finance-view.php';
+        
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/Finance/views/finance-view.php';
+        if ( file_exists( $path ) ) {
+            include_once $path;
+        } else {
+            echo '<div class="notice notice-error"><p>Finance view not found.</p></div>';
+        }
     }
 
     /**
      * Render Check-in Logs
      */
     public function render_checkin_logs() {
+        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Check-in Logs</div>';
         $logs = \KueueEvents\Core\Modules\Checkins\CheckinRepository::get_all( 100 );
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Checkins/views/checkin-log-list.php';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/Checkins/views/checkin-log-list.php';
+        if ( file_exists( $path ) ) {
+            include_once $path;
+        } else {
+            echo '<div class="notice notice-error"><p>Check-in logs view not found.</p></div>';
+        }
     }
 
     /**

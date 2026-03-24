@@ -24,7 +24,8 @@
             $venue = get_post_meta( $event->ID, '_kq_venue_name', true );
             $start_date = get_post_meta( $event->ID, '_kq_start_date', true );
             $min_price = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_min_price( $event->ID );
-            $category = get_the_terms($event->ID, 'kq_event_category')[0]->name ?? 'Event';
+            $terms = get_the_terms($event->ID, 'kq_event_category');
+            $category = ( ! empty( $terms ) && ! is_wp_error( $terms ) ) ? $terms[0]->name : 'Event';
         ?>
         <div class="kq-event-card">
             <a href="<?php echo get_permalink( $event->ID ); ?>">
@@ -47,7 +48,7 @@
             <div class="kq-event-footer">
                 <div class="kq-event-price">
                     <small style="color: #888; font-weight: 500; font-size: 12px; display: block; margin-bottom: -4px;">Starting from</small>
-                    <?php echo wc_price( $min_price ); ?>
+                    <?php echo function_exists('wc_price') ? wc_price( $min_price ) : $min_price; ?>
                 </div>
                 <a href="<?php echo get_permalink( $event->ID ); ?>" class="kq-btn kq-btn-primary" style="padding: 8px 18px; font-size: 14px;">Select Tickets</a>
             </div>

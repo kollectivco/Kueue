@@ -29,12 +29,20 @@ class EventRepository {
     }
 
     /**
-     * Get allowed gateway accounts for organizer/event.
+     * Get all active events.
      */
-    public static function get_allowed_gateways( $post_id, $channel = 'sms' ) {
-        $org_id = self::get_event_organizer_id( $post_id );
-        // For now, return all enabled gateways for the channel, 
-        // in advanced phases we might filter by organizer_id field in gateway_accounts table.
-        return \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( $channel );
+    public static function get_all_active() {
+        return get_posts( [
+            'post_type'   => 'kq_event',
+            'post_status' => 'publish',
+            'numberposts' => -1,
+            'meta_query'  => [
+                [
+                    'key'     => '_kq_event_status',
+                    'value'   => 'active',
+                    'compare' => '='
+                ]
+            ]
+        ] );
     }
 }

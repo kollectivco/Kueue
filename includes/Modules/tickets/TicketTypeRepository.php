@@ -67,4 +67,14 @@ class TicketTypeRepository {
         $table = $wpdb->prefix . 'kq_ticket_types';
         return $wpdb->delete( $table, [ 'id' => $id ] );
     }
+    
+    /**
+     * Get minimum price for an event.
+     */
+    public static function get_min_price( $event_id ) {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_ticket_types';
+        $min = $wpdb->get_var( $wpdb->prepare( "SELECT MIN(price) FROM $table WHERE event_id = %d AND status = 'active'", $event_id ) );
+        return (float) $min;
+    }
 }

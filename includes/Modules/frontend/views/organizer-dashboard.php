@@ -3,7 +3,7 @@
     
     <!-- Welcome Section -->
     <div style="margin-bottom: 40px;">
-        <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 8px;">Welcome, <?php echo esc_html( $organizer->company_name ); ?></h2>
+        <h2 style="font-size: 32px; font-weight: 800; margin-bottom: 8px;">Welcome, <?php echo esc_html( $organizer->organizer_name ?? 'Organizer' ); ?></h2>
         <p style="color: #888;">Manage your events, sales, and payouts in one central hub.</p>
     </div>
 
@@ -11,15 +11,15 @@
     <div class="kq-grid">
         <div class="kq-card">
             <span class="kq-stat-label">Gross Revenue</span>
-            <span class="kq-stat-value"><?php echo kq_price( $stats->gross ?? 0 ); ?></span>
+            <span class="kq-stat-value"><?php echo function_exists('wc_price') ? wc_price( $stats->gross ?? 0 ) : ($stats->gross ?? 0); ?></span>
         </div>
         <div class="kq-card">
             <span class="kq-stat-label">Commission Fee</span>
-            <span class="kq-stat-value" style="color: #ff3131;">-<?php echo kq_price( $stats->commission ?? 0 ); ?></span>
+            <span class="kq-stat-value" style="color: #ff3131;">-<?php echo function_exists('wc_price') ? wc_price( $stats->commission ?? 0 ) : ($stats->commission ?? 0); ?></span>
         </div>
         <div class="kq-card">
             <span class="kq-stat-label">Net Earnings</span>
-            <span class="kq-stat-value" style="color: #4cd137;"><?php echo kq_price( $stats->net ?? 0 ); ?></span>
+            <span class="kq-stat-value" style="color: #4cd137;"><?php echo function_exists('wc_price') ? wc_price( $stats->net ?? 0 ) : ($stats->net ?? 0); ?></span>
         </div>
     </div>
 
@@ -71,10 +71,10 @@
             <?php if ( ! empty( $payouts ) ) : foreach ( $payouts as $p ) : ?>
             <div style="background: #1a1a1c; padding: 16px; border-radius: 12px; margin-bottom: 12px;">
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <span style="font-weight: 700;"><?php echo kq_price( $p->amount ); ?></span>
-                    <span style="font-size: 11px; text-transform: uppercase; color: #aaa;"><?php echo $p->status; ?></span>
+                    <span style="font-weight: 700;"><?php echo function_exists('wc_price') ? wc_price( $p->amount ) : $p->amount; ?></span>
+                    <span style="font-size: 11px; text-transform: uppercase; color: #aaa;"><?php echo esc_html( $p->status ); ?></span>
                 </div>
-                <div style="font-size: 12px; color: #666; margin-top: 4px;"><?php echo date_i18n( get_option('date_format'), strtotime($p->created_at) ); ?></div>
+                <div style="font-size: 12px; color: #666; margin-top: 4px;"><?php echo date_i18n( get_option('date_format'), strtotime($p->created_at ?? 'now') ); ?></div>
             </div>
             <?php endforeach; else : ?>
             <div style="text-align: center; padding: 20px; border: 1px dashed #333; border-radius: 12px; color: #666;">
