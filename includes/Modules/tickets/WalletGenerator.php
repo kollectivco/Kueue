@@ -9,12 +9,15 @@ class WalletGenerator {
      */
     public static function generate_apple_pass( $ticket ) {
         $library_path = KQ_PLUGIN_DIR . 'includes/Vendor/php-pkpass/src/PKPass.php';
-        if ( ! file_exists( $library_path ) ) {
+        if ( file_exists( $library_path ) ) {
+            require_once $library_path;
+            $exception_path = KQ_PLUGIN_DIR . 'includes/Vendor/php-pkpass/src/PKPassException.php';
+            if ( file_exists( $exception_path ) ) {
+                require_once $exception_path;
+            }
+        } else {
             return false;
         }
-
-        require_once $library_path;
-        require_once KQ_PLUGIN_DIR . 'includes/Vendor/php-pkpass/src/PKPassException.php';
         // PKPass also needs its other files, but PKPass.php might not use an autoloader.
         // The Vendor/php-pkpass/src/ folder has them.
         

@@ -19,8 +19,9 @@ class PDFGenerator {
         $html = $renderer->render( $template_path );
 
         // Fallback for missing library - Load from vendor if exists
-        if ( file_exists( KQ_PLUGIN_DIR . 'includes/Vendor/dompdf/autoload.inc.php' ) ) {
-            require_once KQ_PLUGIN_DIR . 'includes/Vendor/dompdf/autoload.inc.php';
+        $autoload_path = KQ_PLUGIN_DIR . 'includes/Vendor/dompdf/autoload.inc.php';
+        if ( file_exists( $autoload_path ) ) {
+            require_once $autoload_path;
         }
 
         if ( class_exists( '\Dompdf\Dompdf' ) ) {

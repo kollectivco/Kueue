@@ -106,9 +106,14 @@ class GoogleWalletService {
             return false;
         }
 
-        // Load JWT Library
-        require_once KQ_PLUGIN_DIR . 'includes/Vendor/firebase-php-jwt/JWT.php';
-        require_once KQ_PLUGIN_DIR . 'includes/Vendor/firebase-php-jwt/Key.php';
+        // Load JWT Library with case-sensitive check
+        $jwt_path = KQ_PLUGIN_DIR . 'includes/Vendor/firebase-php-jwt/JWT.php';
+        $key_path = KQ_PLUGIN_DIR . 'includes/Vendor/firebase-php-jwt/Key.php';
+
+        if ( file_exists( $jwt_path ) ) {
+            require_once $jwt_path;
+            require_once $key_path;
+        }
 
         try {
             $key_data = json_decode( file_get_contents( $this->service_account_path ), true );

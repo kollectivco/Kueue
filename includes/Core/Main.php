@@ -29,10 +29,21 @@ class Main {
     }
 
     /**
-     * Initialize core components
+     * Initialize core components with case-sensitive safety for Linux.
      */
     private function init_core() {
-        require_once KQ_PLUGIN_DIR . 'includes/Core/Helpers.php';
+        $helpers = [
+            KQ_PLUGIN_DIR . 'includes/Core/Helpers.php',
+            KQ_PLUGIN_DIR . 'includes/core/Helpers.php',
+            KQ_PLUGIN_DIR . 'includes/Core/helpers.php'
+        ];
+
+        foreach ( $helpers as $path ) {
+            if ( file_exists( $path ) ) {
+                require_once $path;
+                break;
+            }
+        }
     }
 
     /**
@@ -83,9 +94,15 @@ class Main {
         $ajax_handler = new \KueueEvents\Core\Core\AjaxHandler();
         $ajax_handler->run();
 
-        // WP-CLI
+        // WP-CLI with case-sensitive check
         if ( defined( 'WP_CLI' ) && WP_CLI ) {
-            require_once KQ_PLUGIN_DIR . 'includes/Core/CliCommands.php';
+            $cli_path = KQ_PLUGIN_DIR . 'includes/Core/CliCommands.php';
+            if ( ! file_exists( $cli_path ) ) {
+                $cli_path = KQ_PLUGIN_DIR . 'includes/core/CliCommands.php';
+            }
+            if ( file_exists( $cli_path ) ) {
+                require_once $cli_path;
+            }
         }
 
         // 5) Payments & Checkout
