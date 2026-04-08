@@ -1,56 +1,17 @@
-<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
-<?php
-$post_id = $post->ID;
-
-// Pre-fetch all meta to avoid multiple calls and lint warnings
-$event_type = get_post_meta($post_id, '_kq_event_type', true);
-$organizer_id = get_post_meta($post_id, '_kq_organizer_id', true);
-$event_status = get_post_meta($post_id, '_kq_event_status', true);
-$visibility = get_post_meta($post_id, '_kq_visibility', true);
-
-$start_date = get_post_meta($post_id, '_kq_start_date', true);
-$end_date = get_post_meta($post_id, '_kq_end_date', true);
-$start_time = get_post_meta($post_id, '_kq_start_time', true);
-$end_time = get_post_meta($post_id, '_kq_end_time', true);
-$timezone = get_post_meta($post_id, '_kq_timezone', true) ?: 'UTC';
-
-$venue_name = get_post_meta($post_id, '_kq_venue_name', true);
-$venue_address = get_post_meta($post_id, '_kq_venue_address', true);
-$venue_city = get_post_meta($post_id, '_kq_venue_city', true);
-$venue_country = get_post_meta($post_id, '_kq_venue_country', true);
-
-$enable_sales = get_post_meta($post_id, '_kq_enable_sales', true);
-$sales_start = get_post_meta($post_id, '_kq_sales_start_datetime', true);
-$sales_end = get_post_meta($post_id, '_kq_sales_end_datetime', true);
-$max_tickets = get_post_meta($post_id, '_kq_max_tickets_per_order', true);
-
-$enable_email = get_post_meta($post_id, '_kq_enable_email_delivery', true);
-$enable_whatsapp = get_post_meta($post_id, '_kq_enable_whatsapp_delivery', true);
-$enable_sms = get_post_meta($post_id, '_kq_enable_sms_delivery', true);
-
-$whatsapp_acc_id = get_post_meta($post_id, '_kq_whatsapp_gateway_account_id', true);
-$sms_acc_id = get_post_meta($post_id, '_kq_sms_gateway_account_id', true);
-
-// Advanced Addons
-$enable_bookings = get_post_meta($post_id, '_kq_enable_bookings', true);
-$enable_seating = get_post_meta($post_id, '_kq_enable_seating', true);
-$booking_mode = get_post_meta($post_id, '_kq_booking_mode', true) ?: 'slots';
-$seating_map_id = get_post_meta($post_id, '_kq_seating_map_id', true);
-$enable_wallets = get_post_meta($post_id, '_kq_enable_wallets', true);
-$allow_reentry = get_post_meta($post_id, '_kq_allow_reentry', true);
-
-$seating_maps = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_all_maps();
-?>
 <style>
-    .kq-meta-section { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 15px; }
-    .kq-meta-section h3 { margin-top: 0; }
-    .kq-meta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-    .kq-meta-field { margin-bottom: 10px; }
-    .kq-meta-field label { display: block; font-weight: bold; margin-bottom: 5px; }
-    .kq-meta-field input[type="text"], .kq-meta-field input[type="date"], .kq-meta-field input[type="time"], .kq-meta-field input[type="datetime-local"], .kq-meta-field select { width: 100%; }
+    .kq-meta-section { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+    .kq-meta-section:last-child { border-bottom:none; }
+    .kq-meta-section h3 { margin-top: 0; font-size: 16px; border-left: 4px solid #ff3131; padding-left: 10px; margin-bottom: 20px; }
+    .kq-meta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .kq-meta-field { margin-bottom: 15px; }
+    .kq-meta-field label { display: block; font-weight: 700; margin-bottom: 8px; font-size: 13px; color: #333; }
+    .kq-meta-field input[type="text"], .kq-meta-field input[type="number"], .kq-meta-field input[type="date"], .kq-meta-field input[type="time"], .kq-meta-field input[type="datetime-local"], .kq-meta-field select { width: 100%; padding: 8px; border: 1px solid #ccd0d4; border-radius: 4px; box-shadow: inset 0 1px 2px rgba(0,0,0,.07); }
+    .kq-meta-field input[type="checkbox"] { margin-right: 8px; vertical-align: middle; }
+    .kq-meta-field .description { display: block; font-size: 11px; color: #888; margin-top: 5px; font-style: italic; }
 </style>
 
-<div class="kq-meta-container">
+<div class="kq-meta-container" style="padding: 10px;">
+    <!-- General Section -->
     <div class="kq-meta-section">
         <h3><?php _e( 'General Settings', 'kueue-events-core' ); ?></h3>
         <div class="kq-meta-grid">
@@ -125,16 +86,17 @@ $seating_maps = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_all_map
         </div>
     </div>
 
+    <!-- Venue Section -->
     <div class="kq-meta-section">
-        <h3><?php _e( 'Venue', 'kueue-events-core' ); ?></h3>
+        <h3><?php _e( 'Venue & Location', 'kueue-events-core' ); ?></h3>
         <div class="kq-meta-grid">
             <div class="kq-meta-field">
                 <label for="venue_name"><?php _e( 'Venue Name', 'kueue-events-core' ); ?></label>
-                <input type="text" name="venue_name" id="venue_name" value="<?php echo esc_attr( $venue_name ); ?>">
+                <input type="text" name="venue_name" id="venue_name" value="<?php echo esc_attr( $venue_name ); ?>" placeholder="e.g. Cairo International Stadium">
             </div>
             <div class="kq-meta-field">
                 <label for="venue_address"><?php _e( 'Venue Address', 'kueue-events-core' ); ?></label>
-                <input type="text" name="venue_address" id="venue_address" value="<?php echo esc_attr( $venue_address ); ?>">
+                <input type="text" name="venue_address" id="venue_address" value="<?php echo esc_attr( $venue_address ); ?>" placeholder="Full street address">
             </div>
             <div class="kq-meta-field">
                 <label for="venue_city"><?php _e( 'City', 'kueue-events-core' ); ?></label>
@@ -147,77 +109,106 @@ $seating_maps = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_all_map
         </div>
     </div>
 
+    <!-- Branding Section -->
     <div class="kq-meta-section">
-        <h3><?php _e( 'Sales Settings', 'kueue-events-core' ); ?></h3>
+        <h3><?php _e( 'Event Branding', 'kueue-events-core' ); ?></h3>
         <div class="kq-meta-grid">
             <div class="kq-meta-field">
-                <label><input type="checkbox" name="enable_sales" value="1" <?php checked( $enable_sales, 1 ); ?>> <?php _e( 'Enable Sales', 'kueue-events-core' ); ?></label>
+                <label for="event_logo_id"><?php _e( 'Event Logo (Media ID)', 'kueue-events-core' ); ?></label>
+                <input type="number" name="event_logo_id" id="event_logo_id" value="<?php echo esc_attr( $event_logo_id ); ?>">
+                <span class="description"><?php _e( 'The round/square logo for lists.', 'kueue-events-core' ); ?></span>
             </div>
             <div class="kq-meta-field">
-                <label for="sales_start_datetime"><?php _e( 'Sales Start', 'kueue-events-core' ); ?></label>
-                <input type="datetime-local" name="sales_start_datetime" id="sales_start_datetime" value="<?php echo esc_attr( $sales_start ); ?>">
+                <label for="cover_image_id"><?php _e( 'Cover Image (Media ID)', 'kueue-events-core' ); ?></label>
+                <input type="number" name="cover_image_id" id="cover_image_id" value="<?php echo esc_attr( $cover_image_id ); ?>">
+                <span class="description"><?php _e( 'Large banner image for event page.', 'kueue-events-core' ); ?></span>
             </div>
             <div class="kq-meta-field">
-                <label for="sales_end_datetime"><?php _e( 'Sales End', 'kueue-events-core' ); ?></label>
-                <input type="datetime-local" name="sales_end_datetime" id="sales_end_datetime" value="<?php echo esc_attr( $sales_end ); ?>">
+                <label for="accent_color"><?php _e( 'Accent Color', 'kueue-events-core' ); ?></label>
+                <input type="color" name="accent_color" id="accent_color" value="<?php echo esc_attr( $accent_color ); ?>" style="height: 40px;">
+                <span class="description"><?php _e( 'Primary theme color for buttons and highlights.', 'kueue-events-core' ); ?></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales Settings -->
+    <div class="kq-meta-section">
+        <h3><?php _e( 'Sales & Tickets Settings', 'kueue-events-core' ); ?></h3>
+        <div class="kq-meta-grid">
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="enable_sales" value="1" <?php checked( $enable_sales, 1 ); ?>> <?php _e( 'Open Sales Publicly', 'kueue-events-core' ); ?></label>
+                <span class="description"><?php _e( 'Check this to allow users to buy tickets.', 'kueue-events-core' ); ?></span>
             </div>
             <div class="kq-meta-field">
                 <label for="max_tickets_per_order"><?php _e( 'Max Tickets Per Order', 'kueue-events-core' ); ?></label>
                 <input type="number" name="max_tickets_per_order" id="max_tickets_per_order" value="<?php echo esc_attr( $max_tickets ); ?>">
             </div>
+            <div class="kq-meta-field">
+                <label for="sales_start_datetime"><?php _e( 'Sales Start Date/Time', 'kueue-events-core' ); ?></label>
+                <input type="datetime-local" name="sales_start_datetime" id="sales_start_datetime" value="<?php echo esc_attr( $sales_start ); ?>">
+            </div>
+            <div class="kq-meta-field">
+                <label for="sales_end_datetime"><?php _e( 'Sales End Date/Time', 'kueue-events-core' ); ?></label>
+                <input type="datetime-local" name="sales_end_datetime" id="sales_end_datetime" value="<?php echo esc_attr( $sales_end ); ?>">
+            </div>
         </div>
     </div>
 
+    <!-- Communication -->
     <div class="kq-meta-section">
-        <h3><?php _e( 'Communication', 'kueue-events-core' ); ?></h3>
-        <div class="kq-meta-field">
-            <label><input type="checkbox" name="enable_email_delivery" value="1" <?php checked( $enable_email, 1 ); ?>> <?php _e( 'Enable Email Delivery', 'kueue-events-core' ); ?></label>
-        </div>
-        <div class="kq-meta-field">
-            <label><input type="checkbox" name="enable_whatsapp_delivery" value="1" <?php checked( $enable_whatsapp, 1 ); ?>> <?php _e( 'Enable WhatsApp Delivery', 'kueue-events-core' ); ?></label>
-            <select name="whatsapp_gateway_account_id">
-                <option value=""><?php _e( '-- Select WhatsApp Account --', 'kueue-events-core' ); ?></option>
-                <?php foreach ( $whatsapp_accounts as $acc ) : ?>
-                    <option value="<?php echo (int) $acc->id; ?>" <?php selected( $whatsapp_acc_id, $acc->id ); ?>><?php echo esc_html( $acc->account_name ); ?></option>
-                <?php endforeach; ?>
-            </select>
-        </div>
-        <div class="kq-meta-field">
-            <label><input type="checkbox" name="enable_sms_delivery" value="1" <?php checked( $enable_sms, 1 ); ?>> <?php _e( 'Enable SMS Delivery', 'kueue-events-core' ); ?></label>
-            <select name="sms_gateway_account_id">
-                <option value=""><?php _e( '-- Select SMS Account --', 'kueue-events-core' ); ?></option>
-                <?php foreach ( $sms_accounts as $acc ) : ?>
-                    <option value="<?php echo (int) $acc->id; ?>" <?php selected( $sms_acc_id, $acc->id ); ?>><?php echo esc_html( $acc->account_name ); ?></option>
-                <?php endforeach; ?>
-            </select>
-        </div>
-    </div>
-
-    <div class="kq-meta-section">
-        <h3><?php _e( 'Addons & Advanced', 'kueue-events-core' ); ?></h3>
+        <h3><?php _e( 'Automatic Delivery Channels', 'kueue-events-core' ); ?></h3>
         <div class="kq-meta-grid">
             <div class="kq-meta-field">
-                <label><input type="checkbox" name="enable_bookings" value="1" <?php checked( $enable_bookings, 1 ); ?>> <?php _e( 'Enable Online Bookings / Slots', 'kueue-events-core' ); ?></label>
+                <label><input type="checkbox" name="enable_email_delivery" value="1" <?php checked( $enable_email, 1 ); ?>> <?php _e( 'Email Tickets', 'kueue-events-core' ); ?></label>
+            </div>
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="enable_whatsapp_delivery" value="1" <?php checked( $enable_whatsapp, 1 ); ?>> <?php _e( 'WhatsApp Tickets', 'kueue-events-core' ); ?></label>
+                <select name="whatsapp_gateway_account_id">
+                    <option value=""><?php _e( '-- Select Account --', 'kueue-events-core' ); ?></option>
+                    <?php foreach ( $whatsapp_accounts as $acc ) : ?>
+                        <option value="<?php echo (int) $acc->id; ?>" <?php selected( $whatsapp_acc_id, $acc->id ); ?>><?php echo esc_html( $acc->account_name ); ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="enable_sms_delivery" value="1" <?php checked( $enable_sms, 1 ); ?>> <?php _e( 'SMS Tickets', 'kueue-events-core' ); ?></label>
+                <select name="sms_gateway_account_id">
+                    <option value=""><?php _e( '-- Select Account --', 'kueue-events-core' ); ?></option>
+                    <?php foreach ( $sms_accounts as $acc ) : ?>
+                        <option value="<?php echo (int) $acc->id; ?>" <?php selected( $sms_acc_id, $acc->id ); ?>><?php echo esc_html( $acc->account_name ); ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Addons & Advanced -->
+    <div class="kq-meta-section">
+        <h3><?php _e( 'Advanced Addons & Re-entry', 'kueue-events-core' ); ?></h3>
+        <div class="kq-meta-grid">
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="enable_bookings" value="1" <?php checked( $enable_bookings, 1 ); ?>> <?php _e( 'Enable Bookings / Slots', 'kueue-events-core' ); ?></label>
                 <select name="booking_mode">
-                    <option value="slots" <?php selected( $booking_mode, 'slots' ); ?>><?php _e( 'Time Slots', 'kueue-events-core' ); ?></option>
+                    <option value="slots" <?php selected( $booking_mode, 'slots' ); ?>><?php _e( 'By Time Slots', 'kueue-events-core' ); ?></option>
                     <option value="daily" <?php selected( $booking_mode, 'daily' ); ?>><?php _e( 'Daily Capacity', 'kueue-events-core' ); ?></option>
                 </select>
             </div>
             <div class="kq-meta-field">
-                <label><input type="checkbox" name="enable_seating" value="1" <?php checked( $enable_seating, 1 ); ?>> <?php _e( 'Enable Assigned Seating', 'kueue-events-core' ); ?></label>
+                <label><input type="checkbox" name="enable_seating" value="1" <?php checked( $enable_seating, 1 ); ?>> <?php _e( 'Enable Seating Map', 'kueue-events-core' ); ?></label>
                 <select name="seating_map_id">
-                    <option value=""><?php _e( '-- Select Seating Map --', 'kueue-events-core' ); ?></option>
+                    <option value=""><?php _e( '-- Select Map --', 'kueue-events-core' ); ?></option>
                     <?php foreach ( $seating_maps as $map ) : ?>
                         <option value="<?php echo (int) $map->id; ?>" <?php selected( $seating_map_id, $map->id ); ?>><?php echo esc_html( $map->map_name ); ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>
             <div class="kq-meta-field">
-                <label><input type="checkbox" name="enable_wallets" value="1" <?php checked( $enable_wallets, 1 ); ?>> <?php _e( 'Enable Apple/Google Wallets', 'kueue-events-core' ); ?></label>
+                <label><input type="checkbox" name="enable_wallets" value="1" <?php checked( $enable_wallets, 1 ); ?>> <?php _e( 'Google/Apple Wallets', 'kueue-events-core' ); ?></label>
             </div>
             <div class="kq-meta-field">
                 <label><input type="checkbox" name="allow_reentry" value="1" <?php checked( $allow_reentry, 1 ); ?>> <?php _e( 'Allow Scanner Re-entry', 'kueue-events-core' ); ?></label>
             </div>
         </div>
     </div>
+</div>
 </div>

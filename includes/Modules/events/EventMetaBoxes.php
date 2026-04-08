@@ -23,41 +23,58 @@ class EventMetaBoxes {
     public function render_events_meta_box( $post ) {
         wp_nonce_field( 'kq_save_event_meta', 'kq_event_meta_nonce' );
 
-        $meta = get_post_custom( $post->ID );
-        $get_meta = function( $key ) use ( $meta ) {
-            return isset( $meta[$key][0] ) ? $meta[$key][0] : '';
-        };
-
-        $organizer_id = $get_meta( '_kq_organizer_id' );
-        $event_status = $get_meta( '_kq_event_status' );
-        $visibility = $get_meta( '_kq_visibility' );
+        $post_id = $post->ID;
         
-        $start_date = $get_meta( '_kq_start_date' );
-        $end_date = $get_meta( '_kq_end_date' );
-        $start_time = $get_meta( '_kq_start_time' );
-        $end_time = $get_meta( '_kq_end_time' );
-        $timezone = $get_meta( '_kq_timezone' );
+        // Fetch All Data (Ensures no undefined variables in view)
+        $data = [
+            'event_type'        => get_post_meta( $post_id, '_kq_event_type', true ) ?: 'simple_event',
+            'organizer_id'      => get_post_meta( $post_id, '_kq_organizer_id', true ),
+            'event_status'      => get_post_meta( $post_id, '_kq_event_status', true ) ?: 'draft',
+            'visibility'        => get_post_meta( $post_id, '_kq_visibility', true ) ?: 'public',
+            
+            'start_date'        => get_post_meta( $post_id, '_kq_start_date', true ),
+            'end_date'          => get_post_meta( $post_id, '_kq_end_date', true ),
+            'start_time'        => get_post_meta( $post_id, '_kq_start_time', true ),
+            'end_time'          => get_post_meta( $post_id, '_kq_end_time', true ),
+            'timezone'          => get_post_meta( $post_id, '_kq_timezone', true ) ?: 'UTC',
+            
+            'venue_name'        => get_post_meta( $post_id, '_kq_venue_name', true ),
+            'venue_address'     => get_post_meta( $post_id, '_kq_venue_address', true ),
+            'venue_city'        => get_post_meta( $post_id, '_kq_venue_city', true ),
+            'venue_country'     => get_post_meta( $post_id, '_kq_venue_country', true ),
+            
+            'event_logo_id'     => get_post_meta( $post_id, '_kq_event_logo_id', true ),
+            'cover_image_id'    => get_post_meta( $post_id, '_kq_cover_image_id', true ),
+            'accent_color'      => get_post_meta( $post_id, '_kq_accent_color', true ) ?: '#ff3131',
+            
+            'enable_sales'      => get_post_meta( $post_id, '_kq_enable_sales', true ),
+            'sales_start'       => get_post_meta( $post_id, '_kq_sales_start_datetime', true ),
+            'sales_end'         => get_post_meta( $post_id, '_kq_sales_end_datetime', true ),
+            'max_tickets'       => get_post_meta( $post_id, '_kq_max_tickets_per_order', true ) ?: 10,
+            
+            'enable_email'      => get_post_meta( $post_id, '_kq_enable_email_delivery', true ),
+            'enable_whatsapp'   => get_post_meta( $post_id, '_kq_enable_whatsapp_delivery', true ),
+            'enable_sms'        => get_post_meta( $post_id, '_kq_enable_sms_delivery', true ),
+            'whatsapp_acc_id'   => get_post_meta( $post_id, '_kq_whatsapp_gateway_account_id', true ),
+            'sms_acc_id'        => get_post_meta( $post_id, '_kq_sms_gateway_account_id', true ),
+            
+            'enable_bookings'   => get_post_meta( $post_id, '_kq_enable_bookings', true ),
+            'enable_seating'    => get_post_meta( $post_id, '_kq_enable_seating', true ),
+            'booking_mode'      => get_post_meta( $post_id, '_kq_booking_mode', true ) ?: 'slots',
+            'seating_map_id'    => get_post_meta( $post_id, '_kq_seating_map_id', true ),
+            'enable_wallets'    => get_post_meta( $post_id, '_kq_enable_wallets', true ),
+            'allow_reentry'     => get_post_meta( $post_id, '_kq_allow_reentry', true ),
+        ];
 
-        $venue_name = $get_meta( '_kq_venue_name' );
-        $venue_address = $get_meta( '_kq_venue_address' );
-        $venue_city = $get_meta( '_kq_venue_city' );
-        $venue_country = $get_meta( '_kq_venue_country' );
+        // Fetch Global Data
+        $organizers = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_all() ?: [];
+        $sms_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'sms' ) ?: [];
+        $whatsapp_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'whatsapp' ) ?: [];
+        $seating_maps = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_all_maps() ?: [];
 
-        $enable_sales = $get_meta( '_kq_enable_sales' );
-        $max_tickets = $get_meta( '_kq_max_tickets_per_order' );
+        extract( $data );
 
-        $enable_email_delivery = $get_meta( '_kq_enable_email_delivery' );
-        $enable_whatsapp_delivery = $get_meta( '_kq_enable_whatsapp_delivery' );
-        $enable_sms_delivery = $get_meta( '_kq_enable_sms_delivery' );
-
-        // Fetch organizers
-        $organizers = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_all();
-        
-        // Allowed gateway accounts
-        $sms_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'sms' );
-        $whatsapp_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'whatsapp' );
-
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Events/views/event-meta-box.php';
+        include KQ_PLUGIN_DIR . 'includes/Modules/Events/views/event-meta-box.php';
     }
 
     public function save_events_meta( $post_id, $post ) {
@@ -77,6 +94,7 @@ class EventMetaBoxes {
             'event_type', 'organizer_id', 'event_status', 'visibility',
             'start_date', 'end_date', 'start_time', 'end_time', 'timezone',
             'venue_name', 'venue_address', 'venue_city', 'venue_country',
+            'event_logo_id', 'cover_image_id', 'accent_color',
             'enable_sales', 'sales_start_datetime', 'sales_end_datetime', 'max_tickets_per_order',
             'enable_email_delivery', 'enable_whatsapp_delivery', 'enable_sms_delivery',
             'whatsapp_gateway_account_id', 'sms_gateway_account_id',
@@ -87,17 +105,7 @@ class EventMetaBoxes {
         // Validation for active events
         if ( isset( $_POST['event_status'] ) && $_POST['event_status'] === 'active' ) {
             if ( empty( $_POST['start_date'] ) ) {
-                // In a real plugin, we'd use translatable error messages or admin notices
-                // For now, we revert status to draft if invalid
                 $_POST['event_status'] = 'draft';
-            }
-        }
-
-        // Validation for sales dates
-        if ( !empty( $_POST['sales_start_datetime'] ) && !empty( $_POST['sales_end_datetime'] ) ) {
-            if ( strtotime( $_POST['sales_end_datetime'] ) <= strtotime( $_POST['sales_start_datetime'] ) ) {
-                // Invalid range; clear end date or handle error
-                $_POST['sales_end_datetime'] = '';
             }
         }
 
@@ -106,17 +114,16 @@ class EventMetaBoxes {
         
         foreach ( $fields as $field ) {
             $key = '_kq_' . $field;
+            
             if ( isset( $_POST[$field] ) ) {
                 $value = $_POST[$field];
                 
-                // Extra security for organizer_id
+                // Security for organizer_id
                 if ( $field === 'organizer_id' ) {
                     if ( ! current_user_can( 'manage_options' ) ) {
-                        // Regular organizer can only assign their own ID
                         if ( $current_user_organizer ) {
                             $value = $current_user_organizer->id;
                         } else {
-                            // If they have the role but no record? Should not happen if well managed
                             continue; 
                         }
                     }
@@ -124,11 +131,13 @@ class EventMetaBoxes {
 
                 if ( is_array( $value ) ) {
                     update_post_meta( $post_id, $key, array_map( 'sanitize_text_field', $value ) );
+                } elseif ( $field === 'accent_color' ) {
+                    update_post_meta( $post_id, $key, sanitize_hex_color( $value ) );
                 } else {
                     update_post_meta( $post_id, $key, sanitize_text_field( $value ) );
                 }
             } else {
-                // Checkboxes might be empty, so we unset or set to empty
+                // Handle checkboxes
                 $checkboxes = [
                     'enable_sales', 'enable_email_delivery', 'enable_whatsapp_delivery', 
                     'enable_sms_delivery', 'enable_bookings', 'enable_seating', 
