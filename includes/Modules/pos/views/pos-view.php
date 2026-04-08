@@ -103,25 +103,138 @@
         const restUrl = '<?php echo esc_url_raw( rest_url( "kq/v1/pos" ) ); ?>';
         const nonce = '<?php echo wp_create_nonce( "wp_rest" ); ?>';
 
-        // 1. Fetch Ticket Types when Event changes
+        // 1. Fetch Ticket Types and Event Settings when Event changes
         $('#event-select').on('change', function() {
             const eventId = $(this).val();
             if (!eventId) {
-                $('#ticket-types-section').hide();
+                $('#ticket-types-section, #addons-section').hide();
                 return;
             }
 
             $('#loader').css('display', 'flex');
-            $.ajax({
+            
+            // Fetch Ticket Types
+            const fetchTickets = $.ajax({
                 url: '<?php echo esc_url_raw( rest_url( "kq/v1/tickets/types" ) ); ?>?event_id=' + eventId,
-                beforeSend: function(xhr) { xhr.setRequestHeader('X-WP-Nonce', nonce); },
-                success: function(response) {
-                    $('#loader').hide();
-                    renderTicketTypes(response);
-                    $('#ticket-types-section').show();
-                }
+                beforeSend: function(xhr) { xhr.setRequestHeader('X-WP-Nonce', nonce); }
+            });
+
+            // Fetch Event Settings (Addons)
+            const fetchSettings = $.ajax({
+                url: '<?php echo esc_url_raw( rest_url( "kq/v1/pos/event-settings" ) ); ?>?event_id=' + eventId,
+                beforeSend: function(xhr) { xhr.setRequestHeader('X-WP-Nonce', nonce); }
+            });
+
+            $.when(fetchTickets, fetchSettings).done(function(ticketsRes, settingsRes) {
+                $('#loader').hide();
+                
+                renderTicketTypes(ticketsRes[0]);
+                $('#ticket-types-section').show();
+
+                renderAddons(settingsRes[0], eventId);
             });
         });
+
+        function renderAddons(settings, eventId) {
+            const $addons = $('#addons-section');
+            const $bookingTarget = $('#booking-slots-container');
+            const $seatingTarget = $('#seating-container');
+
+            $bookingTarget.empty();
+            $seatingTarget.empty();
+
+            if (!settings.enable_bookings && !settings.enable_seating) {
+                $addons.hide();
+                return;
+            }
+
+            $addons.show();
+
+            if (settings.enable_bookings) {
+                let html = '<h4><?php _e( 'Booking Selection', 'kueue-events-core' ); ?></h4>';
+                html += '<div style="display:flex; gap:10px;">';
+                html += '<select id="pos-booking-date" style="flex:1;"><option value="">-- Select Date --</option>';
+                settings.booking_dates.forEach(d => {
+                    html += `<option value="${d.id}">${d.event_date}</option>`;
+                });
+                html += '</select>';
+                html += '<select id="pos-booking-slot" style="flex:1;" disabled><option value="">-- Select Date First --</option></select>';
+                html += '</div>';
+                $bookingTarget.html(html);
+
+                $('#pos-booking-date').on('change', function() {
+                    const dateId = $(this).val();
+                    if (!dateId) {
+                        $('#pos-booking-slot').prop('disabled', true).html('<option value="">-- Select Date First --</option>');
+                        return;
+                    }
+                    
+                    $.ajax({
+                        url: '<?php echo admin_url("admin-ajax.php"); ?>',
+                        type: 'POST',
+                        data: { action: 'kq_get_slots', date_id: dateId, nonce: '<?php echo wp_create_nonce("kq-nonce"); ?>' },
+                        success: function(res) {
+                            if (res.success) {
+                                let sHtml = '<option value="">-- Select Slot --</option>';
+                                res.data.forEach(s => {
+                                    sHtml += `<option value="${s.id}">${s.start_time} - ${s.end_time} (${s.capacity - s.sold_count} open)</option>`;
+                                });
+                                $('#pos-booking-slot').html(sHtml).prop('disabled', false);
+                            }
+                        }
+                    });
+                });
+            }
+
+            if (settings.enable_seating && settings.seating_map) {
+                let html = '<h4><?php _e( 'Assigned Seating', 'kueue-events-core' ); ?></h4>';
+                html += '<div id="pos-seating-grid" style="background:#f4f4f4; padding:15px; border-radius:8px; border:1px solid #ddd;">';
+                html += '<p style="margin:0 0 10px; font-size:12px; color:#666;">Click "Refresh Map" to see current availability.</p>';
+                html += '<button type="button" class="button" id="pos-refresh-seating">Refresh Seating Map</button>';
+                html += '<div id="pos-map-viewer" style="margin-top:15px; display:grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap:5px;"></div>';
+                html += '</div>';
+                html += '<input type="hidden" id="pos-selected-seat-id" value="">';
+                html += '<div id="pos-seat-indicator" style="margin-top:10px; font-weight:bold; color:#0073aa;"></div>';
+                $seatingTarget.html(html);
+
+                $('#pos-refresh-seating').on('click', function() {
+                     const $viewer = $('#pos-map-viewer');
+                     $viewer.html('<span class="spinner is-active"></span>');
+                     
+                     $.ajax({
+                        url: '<?php echo admin_url("admin-ajax.php"); ?>',
+                        type: 'POST',
+                        data: { action: 'kq_get_seating_data', event_id: eventId, nonce: '<?php echo wp_create_nonce("kq-nonce"); ?>' },
+                        success: function(res) {
+                            if (res.success) {
+                                $viewer.empty();
+                                res.data.sections.forEach(sec => {
+                                    sec.rows.forEach(row => {
+                                        row.seats.forEach(seat => {
+                                            const statusClass = seat.status === 'available' ? 'seat-avail' : 'seat-sold';
+                                            const $seatEl = $(`<div title="${seat.seat_label}" class="seat-node ${statusClass}" data-id="${seat.id}" style="width:30px; height:30px; border-radius:4px; border:1px solid #ccc; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:10px; background:${seat.status === 'available' ? '#fff' : '#ddd'};">${seat.seat_label}</div>`);
+                                            
+                                            if (seat.status === 'available') {
+                                                $seatEl.on('click', function() {
+                                                    $('.seat-node').css('border-color', '#ccc').css('background', '#fff');
+                                                    $('.seat-sold').css('background', '#ddd');
+                                                    $(this).css('border-color', '#0073aa').css('background', '#e0f0ff');
+                                                    $('#pos-selected-seat-id').val(seat.id);
+                                                    $('#pos-seat-indicator').text('Selected Seat: ' + seat.seat_label);
+                                                });
+                                            } else {
+                                                $seatEl.css('cursor', 'not-allowed').css('opacity', '0.5');
+                                            }
+                                            $viewer.append($seatEl);
+                                        });
+                                    });
+                                });
+                            }
+                        }
+                     });
+                });
+            }
+        }
 
         function renderTicketTypes(types) {
             const container = $('#ticket-types-container');
@@ -179,6 +292,8 @@
                     email: $('#cust-email').val(),
                     phone: $('#cust-phone').val()
                 },
+                booking_slot_id: $('#pos-booking-slot').val(),
+                seat_id: $('#pos-selected-seat-id').val(),
                 auto_checkin: $('#auto-checkin').is(':checked') ? 'yes' : 'no'
             };
 

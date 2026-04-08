@@ -166,7 +166,7 @@ class WooCommerceService {
             <h2 style="margin-bottom: 20px;"><?php _e( 'Your Event Tickets', 'kueue-events-core' ); ?></h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                 <?php foreach ( $tickets as $t ) : 
-                    $view_url = KQ_PLUGIN_URL . 'includes/Modules/Tickets/views/ticket-web-view.php?id=' . $t->id;
+                    $view_url = home_url( '/kq-ticket/' . $t->secure_token . '/' );
                     $attendee = $wpdb->get_row($wpdb->prepare("SELECT first_name, last_name FROM {$wpdb->prefix}kq_attendees WHERE id = %d", $t->attendee_id));
                 ?>
                 <div style="background: #fff; border: 1px solid #eee; padding: 20px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
@@ -201,7 +201,7 @@ class WooCommerceService {
         
         echo '<ul>';
         foreach ( $tickets as $t ) {
-            $view_url = KQ_PLUGIN_URL . 'includes/Modules/Tickets/views/ticket-web-view.php?id=' . $t->id;
+            $view_url = home_url( '/kq-ticket/' . $t->secure_token . '/' );
             $attendee = $wpdb->get_row($wpdb->prepare("SELECT first_name, last_name FROM {$wpdb->prefix}kq_attendees WHERE id = %d", $t->attendee_id));
             echo '<li><strong>' . esc_html( $attendee->first_name . ' ' . $attendee->last_name ) . ':</strong> <a href="' . esc_url( $view_url ) . '">' . __( 'Download Ticket', 'kueue-events-core' ) . '</a></li>';
         }

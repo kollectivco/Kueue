@@ -9,7 +9,7 @@ namespace KueueEvents\Core\Vendor;
 class SimpleQR {
 
     public static function generate_svg( $data, $size = 200 ) {
-        $lib_path = KQ_PLUGIN_DIR . 'includes/Vendor/phpqrcode/qrlib.php';
+        $lib_path = KQ_PLUGIN_DIR . 'includes/Vendor/Phpqrcode/qrlib.php';
         if ( ! file_exists( $lib_path ) ) {
             return '<svg>Library Missing</svg>';
         }

@@ -49,6 +49,16 @@ class TicketGenerator {
             // Update sold quantity for ticket type
             self::update_sold_quantity( $ticket_type->id );
             
+            // 3. Increment Slot capacity
+            if ( !empty($data['booking_slot_id']) ) {
+                \KueueEvents\Core\Modules\Bookings\BookingRepository::increment_sold_count( $data['booking_slot_id'] );
+            }
+
+            // 4. Mark Seat as Sold
+            if ( !empty($data['seat_id']) ) {
+                \KueueEvents\Core\Modules\Seating\SeatingRepository::mark_seat_sold( $data['seat_id'] );
+            }
+
             // Queue Delivery
             self::queue_ticket_delivery( $ticket_id );
             

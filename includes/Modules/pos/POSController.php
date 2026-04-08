@@ -23,6 +23,34 @@ class POSController {
                 'permission_callback' => [ $this, 'permissions_check' ],
             ],
         ] );
+
+        register_rest_route( 'kq/v1', '/pos/event-settings', [
+            [
+                'methods'             => \WP_REST_Server::READABLE,
+                'callback'            => [ $this, 'get_event_settings' ],
+                'permission_callback' => [ $this, 'permissions_check' ],
+            ],
+        ] );
+    }
+
+    /**
+     * Get event settings for POS (bookings/seating).
+     */
+    public function get_event_settings( $request ) {
+        $event_id = $request->get_param( 'event_id' );
+        if ( ! $event_id ) return [];
+
+        $enable_bookings = get_post_meta( $event_id, '_kq_enable_bookings', true );
+        $enable_seating = get_post_meta( $event_id, '_kq_enable_seating', true );
+
+        $data = [
+            'enable_bookings' => (bool) $enable_bookings,
+            'enable_seating'  => (bool) $enable_seating,
+            'booking_dates'   => $enable_bookings ? \KueueEvents\Core\Modules\Bookings\BookingRepository::get_dates( $event_id ) : [],
+            'seating_map'     => $enable_seating ? \KueueEvents\Core\Modules\Seating\SeatingRepository::get_map_by_event( $event_id ) : null
+        ];
+
+        return $data;
     }
 
     /**
@@ -32,11 +60,11 @@ class POSController {
         $event_id = $request->get_param( 'event_id' );
         if ( ! $event_id ) return [];
 
-        $types = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_event( $event_id );
+        $types = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_event_id( $event_id );
         
         // Add currency for the UI
         foreach ( $types as &$t ) {
-            $t->currency = 'EGP'; // Default for Cairo context, could be setting-based
+            $t->currency = 'EGP'; // Default for Cairo context
         }
 
         return $types;
@@ -64,7 +92,7 @@ class POSController {
         $attendee_repo = new \KueueEvents\Core\Modules\Attendees\AttendeeRepository();
         $attendee_id = $attendee_repo->create( [
             'event_id'       => $event_id,
-            'organizer_id'   => get_current_user_id(), // simplified, normally fetch organizer from user
+            'organizer_id'   => \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_organizer_id_by_event($event_id),
             'ticket_type_id' => $ticket_type_id,
             'first_name'     => $attendee_data['first_name'] ?? 'Guest',
             'last_name'      => $attendee_data['last_name'] ?? 'POS',
@@ -74,7 +102,7 @@ class POSController {
             'source'         => 'pos'
         ] );
 
-        // 2. Issue Ticket
+        // 2. Issue Ticket (Handles capacity/seats inside)
         $ticket_id = \KueueEvents\Core\Modules\Tickets\TicketGenerator::issue_ticket( $attendee_id, $ticket_type_id, [
             'booking_slot_id' => $booking_slot_id,
             'seat_id'         => $seat_id,
@@ -87,18 +115,14 @@ class POSController {
         // 3. Record Commission
         $ticket_type = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_id( $ticket_type_id );
         if ( $ticket_type ) {
-             \KueueEvents\Core\Modules\Finance\CommissionService::record_sale( $event_id, get_current_user_id(), $ticket_type->price );
+             \KueueEvents\Core\Modules\Finance\CommissionService::record_sale( 
+                 $event_id, 
+                 \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_organizer_id_by_event($event_id), 
+                 $ticket_type->price 
+             );
         }
 
-        // 4. Handle Seat/Slot capacity
-        if ( $booking_slot_id ) {
-             \KueueEvents\Core\Modules\Bookings\BookingRepository::increment_sold_count( $booking_slot_id );
-        }
-        if ( $seat_id ) {
-             \KueueEvents\Core\Modules\Seating\SeatingRepository::mark_seat_sold( $seat_id );
-        }
-
-        // 5. Auto Check-in if requested
+        // 4. Auto Check-in if requested
         if ( $auto_checkin ) {
              $ticket = \KueueEvents\Core\Modules\Tickets\TicketRepository::get_by_id( $ticket_id );
              \KueueEvents\Core\Modules\Checkins\CheckinService::process_scan( $ticket->secure_token, get_current_user_id() );

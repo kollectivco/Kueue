@@ -48,7 +48,7 @@
             <div class="kq-event-footer">
                 <div class="kq-event-price">
                     <small style="color: #888; font-weight: 500; font-size: 12px; display: block; margin-bottom: -4px;">Starting from</small>
-                    <?php echo function_exists('wc_price') ? wc_price( $min_price ) : $min_price; ?>
+                    <?php echo kq_price( $min_price ); ?>
                 </div>
                 <a href="<?php echo get_permalink( $event->ID ); ?>" class="kq-btn kq-btn-primary" style="padding: 8px 18px; font-size: 14px;">Select Tickets</a>
             </div>

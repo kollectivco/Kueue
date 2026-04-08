@@ -8,7 +8,7 @@ class GitHubUpdater {
     private $cache_key = 'kq_gh_release_latest';
 
     public function run() {
-        $library_path = KQ_PLUGIN_DIR . 'includes/Vendor/plugin-update-checker/plugin-update-checker.php';
+        $library_path = KQ_PLUGIN_DIR . 'includes/Vendor/Plugin-update-checker/plugin-update-checker.php';
         
         if ( file_exists( $library_path ) ) {
             require_once $library_path;
@@ -19,8 +19,8 @@ class GitHubUpdater {
                 'kueue-events-core'
             );
 
-            // Optional: Set the branch that contains the stable code
-            $update_checker->setBranch('main');
+            // Fetch releases/tags only (STABLE)
+            // No setBranch('main') here to stick to releases.
         } else {
             // Fallback: use manual implementation if library is missing
             add_filter( 'pre_set_site_transient_update_plugins', [ $this, 'inject_update_info' ] );
@@ -28,7 +28,50 @@ class GitHubUpdater {
             add_filter( 'upgrader_source_selection', [ $this, 'upgrader_source_selection' ], 10, 3 );
             add_action( 'upgrader_process_complete', [ $this, 'clear_transients' ], 10, 2 );
         }
+
+        // Add "Check for updates" link natively to the plugin row
+        add_filter( 'plugin_row_meta', [ $this, 'add_check_for_updates_link' ], 10, 2 );
+        add_filter( 'plugin_action_links_' . KQ_PLUGIN_BASENAME, [ $this, 'add_action_links' ] );
+        add_action( 'admin_init', [ $this, 'handle_manual_check' ] );
     }
+
+    /**
+     * Add "Check for updates" link to plugin row meta.
+     */
+    public function add_check_for_updates_link( $links, $file ) {
+        if ( $file === KQ_PLUGIN_BASENAME ) {
+            $url = add_query_arg( [
+                'kq_check_updates' => 1,
+                'nonce' => wp_create_nonce( 'kq_check_updates' )
+            ], admin_url( 'plugins.php' ) );
+            
+            $links[] = sprintf( '<a href="%s">%s</a>', esc_url( $url ), __( 'Check for updates', 'kueue-events-core' ) );
+        }
+        return $links;
+    }
+
+    /**
+     * Add action links.
+     */
+    public function add_action_links( $links ) {
+        $settings_link = '<a href="' . admin_url( 'admin.php?page=kq-settings' ) . '">' . __( 'Settings', 'kueue-events-core' ) . '</a>';
+        array_unshift( $links, $settings_link );
+        return $links;
+    }
+
+    /**
+     * Handle manual check trigger.
+     */
+    public function handle_manual_check() {
+        if ( isset( $_GET['kq_check_updates'] ) && check_admin_referer( 'kq_check_updates', 'nonce' ) ) {
+            delete_site_transient( $this->cache_key );
+            delete_site_transient( 'update_plugins' );
+            
+            wp_redirect( add_query_arg( 'puc_check_for_updates', 1, admin_url( 'plugins.php' ) ) );
+            exit;
+        }
+    }
+
 
     /**
      * Manual Fallback Implementation below
@@ -128,12 +171,13 @@ class GitHubUpdater {
         $res->name = 'Kueue Events Core';
         $res->slug = $plugin_dir;
         $res->version = ltrim( $remote->tag_name, 'v' );
-        $res->author = '<a href="https://antigravity.ai">Antigravity</a>';
+        $res->author = '<a href="https://kollectiv.co">Kollectiv</a>';
         $res->homepage = 'https://github.com/' . $this->repo;
         $res->download_link = $remote->zipball_url;
-        $res->tested = get_bloginfo( 'version' );
+        $res->tested = get_bloginfo( 'version' ); // Or a hardcoded compatible version
         $res->requires = '5.8';
         $res->requires_php = '7.4';
+        $res->last_updated = $remote->published_at;
         
         $changelog = nl2br( esc_html( $remote->body ?? 'Latest stable release.' ) );
 

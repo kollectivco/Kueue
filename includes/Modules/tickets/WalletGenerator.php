@@ -8,10 +8,10 @@ class WalletGenerator {
      * Generate Apple Wallet Pass
      */
     public static function generate_apple_pass( $ticket ) {
-        $library_path = KQ_PLUGIN_DIR . 'includes/Vendor/php-pkpass/src/PKPass.php';
+        $library_path = KQ_PLUGIN_DIR . 'includes/Vendor/Php-pkpass/src/PKPass.php';
         if ( file_exists( $library_path ) ) {
             require_once $library_path;
-            $exception_path = KQ_PLUGIN_DIR . 'includes/Vendor/php-pkpass/src/PKPassException.php';
+            $exception_path = KQ_PLUGIN_DIR . 'includes/Vendor/Php-pkpass/src/PKPassException.php';
             if ( file_exists( $exception_path ) ) {
                 require_once $exception_path;
             }
@@ -23,7 +23,7 @@ class WalletGenerator {
         
         try {
             $cert_path = KQ_PLUGIN_DIR . 'assets/certs/pass.p12';
-            $wwdr_path = KQ_PLUGIN_DIR . 'includes/Vendor/php-pkpass/src/Certificate/AppleWWDRCA.pem';
+            $wwdr_path = KQ_PLUGIN_DIR . 'includes/Vendor/Php-pkpass/src/Certificate/AppleWWDRCA.pem';
 
             if ( ! file_exists( $cert_path ) ) {
                 wp_die( __( 'Apple Wallet certificates not configured. Please contact the administrator.', 'kueue-events-core' ) );
@@ -42,6 +42,9 @@ class WalletGenerator {
             
             if ( file_exists( $icon ) ) $pass->addFile( $icon, 'icon.png' );
             if ( file_exists( $logo ) ) $pass->addFile( $logo, 'logo.png' );
+
+            $attendee = \KueueEvents\Core\Modules\Attendees\AttendeeRepository::get_by_id( $ticket->attendee_id );
+            $attendee_name = $attendee ? ($attendee->first_name . ' ' . $attendee->last_name) : 'Guest';
 
             $data = [
                 'description' => 'Event Ticket',
@@ -65,7 +68,7 @@ class WalletGenerator {
                         [
                             'key' => 'attendee',
                             'label' => 'ATTENDEE',
-                            'value' => 'Attendee Name' // Should ideally match the ticket's attendee
+                            'value' => $attendee_name
                         ],
                         [
                             'key' => 'date',
@@ -99,11 +102,10 @@ class WalletGenerator {
     }
 
     /**
-     * Generate Google Wallet Link/Object (Logic placeholder using REST samples)
+     * Generate Google Wallet Link/Object
      */
     public static function generate_google_wallet_save_link( $ticket ) {
-        // This usually involves JWT signing and returning a URL
-        // Reference: includes/Vendor/google-wallet/php/demo_eventticket.php
-        return "https://pay.google.com/gp/v/save/TICKET_JWT_STUB";
+        $service = new GoogleWalletService();
+        return $service->get_save_url( $ticket );
     }
 }

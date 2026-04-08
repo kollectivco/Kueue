@@ -53,10 +53,14 @@ class GoogleWalletService {
      * This uses the 'savetowallet' type which creates Classes/Objects on-the-fly.
      */
     private function create_jwt_payload( $ticket ) {
-        $issuer_email = json_decode( file_get_contents( $this->service_account_path ), true )['client_email'];
+        $key_json = file_exists($this->service_account_path) ? json_decode( file_get_contents( $this->service_account_path ), true ) : [];
+        $issuer_email = $key_json['client_email'] ?? '';
         $event_name = get_the_title( $ticket->event_id );
         $class_id = "{$this->issuer_id}.{$this->class_id}";
         $object_id = "{$this->issuer_id}.{$ticket->ticket_number}";
+
+        $attendee = \KueueEvents\Core\Modules\Attendees\AttendeeRepository::get_by_id( $ticket->attendee_id );
+        $attendee_name = $attendee ? ($attendee->first_name . ' ' . $attendee->last_name) : 'Guest';
 
         return [
             'iss' => $issuer_email,
@@ -89,7 +93,7 @@ class GoogleWalletService {
                         'reservationInfo' => [
                             'confirmationCode' => $ticket->ticket_number
                         ],
-                        'ticketHolderName' => 'Attendee Name',
+                        'ticketHolderName' => $attendee_name,
                         'ticketNumber' => $ticket->ticket_number
                     ]
                 ]
@@ -107,8 +111,8 @@ class GoogleWalletService {
         }
 
         // Load JWT Library with case-sensitive check
-        $jwt_path = KQ_PLUGIN_DIR . 'includes/Vendor/firebase-php-jwt/JWT.php';
-        $key_path = KQ_PLUGIN_DIR . 'includes/Vendor/firebase-php-jwt/Key.php';
+        $jwt_path = KQ_PLUGIN_DIR . 'includes/Vendor/Firebase-php-jwt/JWT.php';
+        $key_path = KQ_PLUGIN_DIR . 'includes/Vendor/Firebase-php-jwt/Key.php';
 
         if ( file_exists( $jwt_path ) ) {
             require_once $jwt_path;

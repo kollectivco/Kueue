@@ -126,9 +126,11 @@ class CheckoutHandler {
                 $last_name = isset($parts[1]) ? implode(' ', array_slice($parts, 1)) : '';
 
                 $attendee_data[] = [
-                    'first_name' => $first_name,
-                    'last_name'  => $last_name,
-                    'email'      => $email,
+                    'first_name'      => $first_name,
+                    'last_name'       => $last_name,
+                    'email'           => $email,
+                    'booking_slot_id' => $values['_kq_booking_slot_id'] ?? null,
+                    'seat_id'         => $values['_kq_seat_id'] ?? null,
                 ];
             }
 

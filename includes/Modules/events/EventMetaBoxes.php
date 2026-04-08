@@ -79,7 +79,9 @@ class EventMetaBoxes {
             'venue_name', 'venue_address', 'venue_city', 'venue_country',
             'enable_sales', 'sales_start_datetime', 'sales_end_datetime', 'max_tickets_per_order',
             'enable_email_delivery', 'enable_whatsapp_delivery', 'enable_sms_delivery',
-            'whatsapp_gateway_account_id', 'sms_gateway_account_id'
+            'whatsapp_gateway_account_id', 'sms_gateway_account_id',
+            'enable_bookings', 'enable_seating', 'booking_mode', 'seating_map_id',
+            'enable_wallets', 'allow_reentry'
         ];
 
         // Validation for active events
@@ -127,7 +129,12 @@ class EventMetaBoxes {
                 }
             } else {
                 // Checkboxes might be empty, so we unset or set to empty
-                if ( in_array( $field, [ 'enable_sales', 'enable_email_delivery', 'enable_whatsapp_delivery', 'enable_sms_delivery' ] ) ) {
+                $checkboxes = [
+                    'enable_sales', 'enable_email_delivery', 'enable_whatsapp_delivery', 
+                    'enable_sms_delivery', 'enable_bookings', 'enable_seating', 
+                    'enable_wallets', 'allow_reentry'
+                ];
+                if ( in_array( $field, $checkboxes ) ) {
                    update_post_meta( $post_id, $key, '' );
                 }
             }

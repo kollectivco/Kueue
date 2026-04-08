@@ -19,6 +19,131 @@ class FrontendController {
         // GDPR Hooks
         add_filter( 'wp_privacy_personal_data_exporters', [ $this, 'register_gdpr_exporter' ], 10 );
         add_filter( 'wp_privacy_personal_data_erasers', [ $this, 'register_gdpr_eraser' ], 10 );
+
+        // AJAX for payout request
+        add_action( 'wp_ajax_kq_request_payout', [ $this, 'handle_request_payout' ] );
+
+        // AJAX for fetching slots
+        add_action( 'wp_ajax_kq_get_slots', [ $this, 'handle_get_slots' ] );
+        add_action( 'wp_ajax_nopriv_kq_get_slots', [ $this, 'handle_get_slots' ] );
+
+        // AJAX for fetching seating data
+        add_action( 'wp_ajax_kq_get_seating_data', [ $this, 'handle_get_seating_data' ] );
+        add_action( 'wp_ajax_nopriv_kq_get_seating_data', [ $this, 'handle_get_seating_data' ] );
+
+        // AJAX for ticket management
+        add_action( 'wp_ajax_kq_resend_ticket', [ $this, 'handle_resend_ticket' ] );
+        add_action( 'wp_ajax_kq_cancel_ticket', [ $this, 'handle_cancel_ticket' ] );
+    }
+
+    /**
+     * Handle Resend Ticket via AJAX
+     */
+    public function handle_resend_ticket() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) {
+            wp_send_json_error( [ 'message' => 'Security check failed.' ] );
+        }
+
+        $ticket_id = isset( $_POST['id'] ) ? (int) $_POST['id'] : 0;
+        if ( ! $ticket_id ) {
+            wp_send_json_error( [ 'message' => 'Invalid ticket ID.' ] );
+        }
+
+        // Logic to verify if user owns this ticket through organizer profile
+        $user_id = get_current_user_id();
+        $ticket = \KueueEvents\Core\Modules\Tickets\TicketRepository::get_by_id( $ticket_id );
+        $organizer = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_by_user_id( $user_id );
+
+        if ( ! $ticket || ! $organizer || (int) $ticket->organizer_id !== (int) $organizer->id ) {
+            wp_send_json_error( [ 'message' => 'Access denied.' ] );
+        }
+
+        \KueueEvents\Core\Modules\Tickets\TicketGenerator::queue_ticket_delivery( $ticket_id );
+        wp_send_json_success( [ 'message' => 'Ticket delivery queued.' ] );
+    }
+
+    /**
+     * Handle Cancel Ticket via AJAX
+     */
+    public function handle_cancel_ticket() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) {
+            wp_send_json_error( [ 'message' => 'Security check failed.' ] );
+        }
+
+        $ticket_id = isset( $_POST['id'] ) ? (int) $_POST['id'] : 0;
+        if ( ! $ticket_id ) {
+            wp_send_json_error( [ 'message' => 'Invalid ticket ID.' ] );
+        }
+
+        $user_id = get_current_user_id();
+        $ticket = \KueueEvents\Core\Modules\Tickets\TicketRepository::get_by_id( $ticket_id );
+        $organizer = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_by_user_id( $user_id );
+
+        if ( ! $ticket || ! $organizer || (int) $ticket->organizer_id !== (int) $organizer->id ) {
+            wp_send_json_error( [ 'message' => 'Access denied.' ] );
+        }
+
+        $result = \KueueEvents\Core\Modules\Tickets\TicketRepository::cancel_ticket( $ticket_id );
+        if ( $result ) {
+            wp_send_json_success( [ 'message' => 'Ticket cancelled successfully.' ] );
+        } else {
+            wp_send_json_error( [ 'message' => 'Failed to cancel ticket.' ] );
+        }
+    }
+
+    /**
+     * Handle Get Slots via AJAX
+     */
+    public function handle_get_slots() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) {
+            wp_send_json_error( [ 'message' => 'Security check failed.' ] );
+        }
+
+        $date_id = isset( $_POST['date_id'] ) ? (int) $_POST['date_id'] : 0;
+        if ( ! $date_id ) {
+            wp_send_json_error( [ 'message' => 'Invalid date.' ] );
+        }
+
+        $slots = \KueueEvents\Core\Modules\Bookings\BookingRepository::get_slots( $date_id );
+        
+        // Filter to available slots only
+        $available_slots = array_filter( $slots, function( $slot ) {
+             return $slot->sold_count < $slot->capacity;
+        });
+
+        wp_send_json_success( array_values( $available_slots ) );
+    }
+
+    /**
+     * Handle Get Seating Data via AJAX
+     */
+    public function handle_get_seating_data() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) {
+            wp_send_json_error( [ 'message' => 'Security check failed.' ] );
+        }
+
+        $event_id = isset( $_POST['event_id'] ) ? (int) $_POST['event_id'] : 0;
+        if ( ! $event_id ) {
+            wp_send_json_error( [ 'message' => 'Invalid event.' ] );
+        }
+
+        $map = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_map_by_event( $event_id );
+        if ( ! $map ) {
+            wp_send_json_error( [ 'message' => 'No map found.' ] );
+        }
+
+        $sections = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_sections( $map->id );
+        foreach ( $sections as &$section ) {
+            $section->rows = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_rows( $section->id );
+            foreach ( $section->rows as &$row ) {
+                $row->seats = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_seats( $row->id );
+            }
+        }
+
+        wp_send_json_success( [
+            'map'      => $map,
+            'sections' => $sections
+        ] );
     }
 
     /**
@@ -72,9 +197,15 @@ class FrontendController {
             return '<p>' . __( 'Event not found.', 'kueue-events-core' ) . '</p>';
         }
 
-        // Corrected repository method name (get_by_event_id instead of get_by_event)
         $ticket_types = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_event_id( $event_id );
         
+        // Advanced Data
+        $enable_bookings = get_post_meta( $event_id, '_kq_enable_bookings', true );
+        $enable_seating = get_post_meta( $event_id, '_kq_enable_seating', true );
+        
+        $booking_dates = $enable_bookings ? \KueueEvents\Core\Modules\Bookings\BookingRepository::get_dates( $event_id ) : [];
+        $seating_map = $enable_seating ? \KueueEvents\Core\Modules\Seating\SeatingRepository::get_map_by_event( $event_id ) : null;
+
         ob_start();
         $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/event-single.php';
         if ( file_exists( $view_path ) ) {
@@ -100,6 +231,8 @@ class FrontendController {
         $ticket_type_id = isset( $_POST['ticket_type_id'] ) ? (int) $_POST['ticket_type_id'] : 0;
         $qty = isset( $_POST['qty'] ) ? (int) $_POST['qty'] : 1;
         $attendee_data = isset( $_POST['attendees'] ) ? (array) $_POST['attendees'] : [];
+        $booking_slot_id = isset( $_POST['booking_slot_id'] ) ? (int) $_POST['booking_slot_id'] : null;
+        $seat_id = isset( $_POST['seat_id'] ) ? (int) $_POST['seat_id'] : null;
 
         $tt = \KueueEvents\Core\Modules\Tickets\TicketTypeRepository::get_by_id( $ticket_type_id );
         if ( ! $tt || ! $tt->wc_product_id ) {
@@ -120,9 +253,13 @@ class FrontendController {
         $cart_item_data = [
             '_kq_ticket_type_id' => $tt->id,
             '_kq_attendee_data'  => $sanitized_attendees,
+            '_kq_booking_slot_id' => $booking_slot_id,
+            '_kq_seat_id'         => $seat_id,
         ];
 
         try {
+            // Clear existing Kueue items to ensure one ticket type / session if needed
+            // Or just allow multiple. We'll allow multiple but ensure meta is distinct.
             $cart_id = WC()->cart->add_to_cart( $tt->wc_product_id, $qty, 0, [], $cart_item_data );
             if ( $cart_id ) {
                 wp_send_json_success( [ 'redirect_url' => wc_get_checkout_url() ] );
@@ -131,6 +268,54 @@ class FrontendController {
             }
         } catch ( \Exception $e ) {
             wp_send_json_error( [ 'message' => $e->getMessage() ] );
+        }
+    }
+
+    /**
+     * Handle Request Payout via AJAX
+     */
+    public function handle_request_payout() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) {
+            wp_send_json_error( [ 'message' => 'Security check failed.' ] );
+        }
+
+        if ( ! is_user_logged_in() ) {
+            wp_send_json_error( [ 'message' => 'Please log in.' ] );
+        }
+
+        $user_id = get_current_user_id();
+        $organizer = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_by_user_id( $user_id );
+        if ( ! $organizer ) {
+            wp_send_json_error( [ 'message' => 'Organizer profile not found.' ] );
+        }
+
+        $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary( $organizer->id );
+        $available_balance = (float) ( $stats->net ?? 0 );
+
+        // Check if there's enough balance (minimal 100 EGP for demo)
+        if ( $available_balance < 100 ) {
+            wp_send_json_error( [ 'message' => 'Minimum payout amount is 100 EGP.' ] );
+        }
+
+        // Check for pending requests
+        $existing = \KueueEvents\Core\Modules\Payouts\PayoutRepository::get_by_organizer( $organizer->id );
+        foreach ( $existing as $p ) {
+            if ( $p->status === 'pending' ) {
+                wp_send_json_error( [ 'message' => 'You already have a pending withdrawal request.' ] );
+            }
+        }
+
+        $result = \KueueEvents\Core\Modules\Payouts\PayoutRepository::create([
+            'organizer_id'   => $organizer->id,
+            'amount'         => $available_balance,
+            'payment_method' => 'manual',
+            'notes'          => 'Auto-generated request from dashboard.'
+        ]);
+
+        if ( $result ) {
+            wp_send_json_success( [ 'message' => 'Payout request submitted successfully.' ] );
+        } else {
+            wp_send_json_error( [ 'message' => 'Failed to create payout request.' ] );
         }
     }
 

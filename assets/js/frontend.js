@@ -14,7 +14,11 @@
             const ticketTypeId = $btn.data('ticket-id');
             const qty = $('#kq-qty-' + ticketTypeId).val() || 1;
             
-            // Collect attendee data if form exists
+            // Collect booking/seat data
+            const bookingSlotId = $('#kq-booking-slot').val();
+            const seatId = $('#kq-selected-seat-id').val();
+
+            // Collect attendee data
             let attendeeData = [];
             $('.kq-attendee-row-' + ticketTypeId).each(function() {
                 attendeeData.push({
@@ -34,7 +38,9 @@
                     nonce: kq_ajax.nonce,
                     ticket_type_id: ticketTypeId,
                     qty: qty,
-                    attendees: attendeeData
+                    attendees: attendeeData,
+                    booking_slot_id: bookingSlotId,
+                    seat_id: seatId
                 },
                 success: function(response) {
                     if (response.success) {
@@ -49,6 +55,51 @@
                     $btn.prop('disabled', false).text('Add to Cart');
                 }
             });
+        });
+
+        // Booking Date -> Slot change
+        $(document).on('change', '#kq-booking-date', function() {
+             const dateId = $(this).val();
+             const $slotSelect = $('#kq-booking-slot');
+             
+             if (!dateId) {
+                 $slotSelect.prop('disabled', true).html('<option value="">-- Select Date First --</option>');
+                 return;
+             }
+
+             $slotSelect.prop('disabled', true).html('<option value="">Loading slots...</option>');
+
+             $.ajax({
+                 url: kq_ajax.ajax_url,
+                 type: 'POST',
+                 data: {
+                     action: 'kq_get_slots',
+                     nonce: kq_ajax.nonce,
+                     date_id: dateId
+                 },
+                 success: function(response) {
+                     if (response.success) {
+                         let html = '<option value="">-- Select Time Slot --</option>';
+                         response.data.forEach(slot => {
+                             html += `<option value="${slot.id}">${slot.start_time} - ${slot.end_time} (${slot.capacity - slot.sold_count} left)</option>`;
+                         });
+                         $slotSelect.html(html).prop('disabled', false);
+                     } else {
+                         $slotSelect.html('<option value="">Error loading slots</option>');
+                     }
+                 }
+             });
+        });
+
+        // Seating Map Toggle (Simplified)
+        $(document).on('click', '#kq-open-seating-map', function() {
+            // For now, prompt for a seat ID as a simulation of map selection
+            // In real app, this would open a modal with the SVG/Grid map
+            const seatId = prompt('Enter Seat ID (DEBUG MODE):');
+            if (seatId) {
+                $('#kq-selected-seat-id').val(seatId);
+                $('#kq-selected-seat-display').text('Selected Seat: ' + seatId).show();
+            }
         });
 
         // Dynamic attendee fields based on quantity
@@ -76,6 +127,69 @@
             } else if (qty < currentRows) {
                 $container.find('.kq-attendee-row').slice(qty).remove();
             }
+        });
+
+        // Handle Payout Request
+        $(document).on('click', '#kq-request-payout', function(e) {
+            e.preventDefault();
+            const $btn = $(this);
+
+            if (!confirm('Are you sure you want to request a withdrawal of your current earnings?')) return;
+
+            $btn.prop('disabled', true).text('Processing...');
+
+            $.post(kq_ajax.ajax_url, {
+                action: 'kq_request_payout',
+                nonce: kq_ajax.nonce
+            }, function(response) {
+                if (response.success) {
+                    alert(response.data.message);
+                    location.reload();
+                } else {
+                    alert(response.data.message || 'Error submitting request');
+                    $btn.prop('disabled', false).text('Request Payout');
+                }
+            });
+        });
+
+        // Handle Resend Ticket
+        $(document).on('click', '.kq-resend-ticket', function() {
+            const id = $(this).data('id');
+            const $btn = $(this);
+            
+            $btn.prop('disabled', true).html('<i class="fa fa-spinner fa-spin"></i>');
+            
+            $.post(kq_ajax.ajax_url, {
+                action: 'kq_resend_ticket',
+                id: id,
+                nonce: kq_ajax.nonce
+            }, function(response) {
+                alert(response.data.message);
+                $btn.prop('disabled', false).html('<i class="fa fa-paper-plane"></i>');
+            });
+        });
+
+        // Handle Cancel Ticket
+        $(document).on('click', '.kq-cancel-ticket', function() {
+            const id = $(this).data('id');
+            const $btn = $(this);
+            
+            if (!confirm('Are you sure you want to cancel this ticket? This will release the seat/slot.')) return;
+            
+            $btn.prop('disabled', true).html('<i class="fa fa-spinner fa-spin"></i>');
+            
+            $.post(kq_ajax.ajax_url, {
+                action: 'kq_cancel_ticket',
+                id: id,
+                nonce: kq_ajax.nonce
+            }, function(response) {
+                if (response.success) {
+                    location.reload();
+                } else {
+                    alert(response.data.message);
+                    $btn.prop('disabled', false).html('<i class="fa fa-times-circle"></i>');
+                }
+            });
         });
 
     });

@@ -50,6 +50,11 @@ class GatewayManager {
      * Get instance of provider for given account.
      */
     public static function get_provider( $account_id ) {
+        // Special case: System Email (ID 0)
+        if ( $account_id === 0 ) {
+            return new \KueueEvents\Core\Modules\Gateways\Email\WPMailProvider();
+        }
+
         global $wpdb;
         $table = $wpdb->prefix . 'kq_gateway_accounts';
         

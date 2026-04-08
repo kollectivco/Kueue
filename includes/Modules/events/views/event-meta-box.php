@@ -31,6 +31,15 @@ $enable_sms = get_post_meta($post_id, '_kq_enable_sms_delivery', true);
 $whatsapp_acc_id = get_post_meta($post_id, '_kq_whatsapp_gateway_account_id', true);
 $sms_acc_id = get_post_meta($post_id, '_kq_sms_gateway_account_id', true);
 
+// Advanced Addons
+$enable_bookings = get_post_meta($post_id, '_kq_enable_bookings', true);
+$enable_seating = get_post_meta($post_id, '_kq_enable_seating', true);
+$booking_mode = get_post_meta($post_id, '_kq_booking_mode', true) ?: 'slots';
+$seating_map_id = get_post_meta($post_id, '_kq_seating_map_id', true);
+$enable_wallets = get_post_meta($post_id, '_kq_enable_wallets', true);
+$allow_reentry = get_post_meta($post_id, '_kq_allow_reentry', true);
+
+$seating_maps = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_all_maps();
 ?>
 <style>
     .kq-meta-section { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 15px; }
@@ -181,6 +190,34 @@ $sms_acc_id = get_post_meta($post_id, '_kq_sms_gateway_account_id', true);
                     <option value="<?php echo (int) $acc->id; ?>" <?php selected( $sms_acc_id, $acc->id ); ?>><?php echo esc_html( $acc->account_name ); ?></option>
                 <?php endforeach; ?>
             </select>
+        </div>
+    </div>
+
+    <div class="kq-meta-section">
+        <h3><?php _e( 'Addons & Advanced', 'kueue-events-core' ); ?></h3>
+        <div class="kq-meta-grid">
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="enable_bookings" value="1" <?php checked( $enable_bookings, 1 ); ?>> <?php _e( 'Enable Online Bookings / Slots', 'kueue-events-core' ); ?></label>
+                <select name="booking_mode">
+                    <option value="slots" <?php selected( $booking_mode, 'slots' ); ?>><?php _e( 'Time Slots', 'kueue-events-core' ); ?></option>
+                    <option value="daily" <?php selected( $booking_mode, 'daily' ); ?>><?php _e( 'Daily Capacity', 'kueue-events-core' ); ?></option>
+                </select>
+            </div>
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="enable_seating" value="1" <?php checked( $enable_seating, 1 ); ?>> <?php _e( 'Enable Assigned Seating', 'kueue-events-core' ); ?></label>
+                <select name="seating_map_id">
+                    <option value=""><?php _e( '-- Select Seating Map --', 'kueue-events-core' ); ?></option>
+                    <?php foreach ( $seating_maps as $map ) : ?>
+                        <option value="<?php echo (int) $map->id; ?>" <?php selected( $seating_map_id, $map->id ); ?>><?php echo esc_html( $map->map_name ); ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="enable_wallets" value="1" <?php checked( $enable_wallets, 1 ); ?>> <?php _e( 'Enable Apple/Google Wallets', 'kueue-events-core' ); ?></label>
+            </div>
+            <div class="kq-meta-field">
+                <label><input type="checkbox" name="allow_reentry" value="1" <?php checked( $allow_reentry, 1 ); ?>> <?php _e( 'Allow Scanner Re-entry', 'kueue-events-core' ); ?></label>
+            </div>
         </div>
     </div>
 </div>

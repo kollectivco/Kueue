@@ -40,7 +40,7 @@
             ?>
             <tr>
                 <td>#<?php echo esc_html( $p->id ); ?></td>
-                <td><?php echo $org ? esc_html( $org->company_name ) : '—'; ?></td>
+                <td><?php echo $org ? esc_html( $org->organizer_name ) : '—'; ?></td>
                 <td><strong><?php echo kq_price( $p->amount ); ?></strong></td>
                 <td><?php echo esc_html( strtoupper($p->payment_method) ); ?></td>
                 <td><?php echo date_i18n( get_option('date_format'), strtotime( $p->created_at ) ); ?></td>
@@ -78,7 +78,7 @@
             ?>
             <tr>
                 <td>#<?php echo esc_html( $c->order_id ); ?></td>
-                <td><?php echo $org ? esc_html( $org->company_name ) : '—'; ?></td>
+                <td><?php echo $org ? esc_html( $org->organizer_name ) : '—'; ?></td>
                 <td><?php echo $event ? esc_html( $event->post_title ) : '—'; ?></td>
                 <td><?php echo kq_price( $c->gross_amount ); ?></td>
                 <td><?php echo kq_price( $c->commission_amount ); ?></td>

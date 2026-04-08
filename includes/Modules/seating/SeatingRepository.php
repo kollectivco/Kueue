@@ -72,4 +72,13 @@ class SeatingRepository {
             $seat_id
         ) );
     }
+
+    /**
+     * Get all seating maps.
+     */
+    public static function get_all_maps() {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_seating_maps';
+        return $wpdb->get_results( "SELECT * FROM $table ORDER BY map_name ASC" );
+    }
 }

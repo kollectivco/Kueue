@@ -12,6 +12,9 @@ class AdminController {
         add_action( 'admin_menu', [ $this, 'register_menus' ] );
         add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_assets' ] );
         
+        // Admin Payout AJAX
+        add_action( 'wp_ajax_kq_process_payout', [ $this, 'handle_payout_action' ] );
+        
         $settings = new \KueueEvents\Core\Admin\SettingsController();
         $settings->run();
 
@@ -114,6 +117,16 @@ class AdminController {
         
         // FontAwesome for icons
         wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', [], '6.4.0' );
+
+        // Chart.js for reports
+        wp_enqueue_script( 'chart-js', 'https://cdn.jsdelivr.net/npm/chart.js', [], '4.3.0', true );
+
+        // Admin JS
+        wp_enqueue_script( 'kq-admin-js', KQ_PLUGIN_URL . 'assets/js/admin.js', ['jquery'], KQ_VERSION, true );
+        wp_localize_script( 'kq-admin-js', 'kq_admin', [
+            'ajax_url' => admin_url( 'admin-ajax.php' ),
+            'nonce'    => wp_create_nonce( 'kq-admin-nonce' )
+        ]);
     }
 
     /**
@@ -499,5 +512,33 @@ class AdminController {
      */
     public function render_placeholder() {
         echo '<div class="wrap"><h1>Coming Soon</h1><p>Feature under development.</p></div>';
+    }
+
+    /**
+     * Handle Payout Approval/Rejection via AJAX
+     */
+    public function handle_payout_action() {
+        if ( ! check_ajax_referer( 'kq-admin-nonce', 'nonce', false ) ) {
+            wp_send_json_error( [ 'message' => 'Security check failed.' ] );
+        }
+
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( [ 'message' => 'Unauthorized.' ] );
+        }
+
+        $payout_id = isset( $_POST['id'] ) ? (int) $_POST['id'] : 0;
+        $status = isset( $_POST['status'] ) ? sanitize_text_field( $_POST['status'] ) : '';
+
+        if ( ! $payout_id || ! in_array( $status, [ 'paid', 'rejected' ] ) ) {
+            wp_send_json_error( [ 'message' => 'Invalid parameters.' ] );
+        }
+
+        $result = \KueueEvents\Core\Modules\Payouts\PayoutRepository::update_status( $payout_id, $status, 'Processed via Admin.' );
+
+        if ( $result ) {
+            wp_send_json_success( [ 'message' => "Payout marked as $status." ] );
+        } else {
+            wp_send_json_error( [ 'message' => 'Failed to update payout status.' ] );
+        }
     }
 }

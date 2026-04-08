@@ -54,6 +54,42 @@
 
         <!-- Sidebar / Ticket Selection -->
         <div class="kq-sidebar">
+            
+            <?php if ( $enable_bookings || $enable_seating ) : ?>
+            <div class="kq-card" style="padding: 30px; margin-bottom: 20px; border-left: 5px solid var(--kq-primary);">
+                <h3 style="margin-top:0; margin-bottom: 15px;"><?php _e( 'Selection Required', 'kueue-events-core' ); ?></h3>
+                
+                <?php if ( $enable_bookings ) : ?>
+                <div class="kq-booking-selector" style="margin-bottom: 20px;">
+                    <label style="display:block; font-weight:700; margin-bottom:8px;"><?php _e( 'Select Date', 'kueue-events-core' ); ?></label>
+                    <select id="kq-booking-date" class="kq-input" style="width:100%;">
+                        <option value=""><?php _e( '-- Choose Date --', 'kueue-events-core' ); ?></option>
+                        <?php foreach ( $booking_dates as $bd ) : ?>
+                            <option value="<?php echo (int) $bd->id; ?>"><?php echo date_i18n( get_option('date_format'), strtotime($bd->event_date) ); ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    
+                    <label style="display:block; font-weight:700; margin-bottom:8px; margin-top:15px;"><?php _e( 'Select Time Slot', 'kueue-events-core' ); ?></label>
+                    <select id="kq-booking-slot" class="kq-input" style="width:100%;" disabled>
+                        <option value=""><?php _e( '-- Select Date First --', 'kueue-events-core' ); ?></option>
+                    </select>
+                </div>
+                <?php endif; ?>
+
+                <?php if ( $enable_seating && $seating_map ) : ?>
+                <div class="kq-seating-selector">
+                    <label style="display:block; font-weight:700; margin-bottom:8px;"><?php _e( 'Choose Your Seat', 'kueue-events-core' ); ?></label>
+                    <div id="kq-seating-container" style="background:#f9f9f9; padding:15px; border-radius:12px; border:1px dashed #ddd; text-align:center;">
+                        <p style="font-size:13px; color:#888; margin:0;"><?php _e( 'Click to open interactive seating map', 'kueue-events-core' ); ?></p>
+                        <button type="button" class="kq-btn kq-btn-outline" id="kq-open-seating-map" style="margin-top:10px; font-size:12px;"><?php _e( 'Open Map', 'kueue-events-core' ); ?></button>
+                    </div>
+                    <input type="hidden" id="kq-selected-seat-id" value="">
+                    <div id="kq-selected-seat-display" style="margin-top:10px; font-weight:bold; color:var(--kq-primary); display:none;"></div>
+                </div>
+                <?php endif; ?>
+            </div>
+            <?php endif; ?>
+
             <div class="kq-card" style="padding: 30px; border: 2px solid var(--kq-primary);">
                 <h3 style="margin-top:0; margin-bottom: 24px;">Get Tickets</h3>
                 
@@ -62,7 +98,7 @@
                     <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
                         <div>
                             <strong style="display: block; font-size: 18px;"><?php echo esc_html( $tt->name ); ?></strong>
-                            <span style="color: #ff3131; font-weight: 700; font-size: 16px;"><?php echo wc_price( $tt->price ); ?></span>
+                            <span style="color: #ff3131; font-weight: 700; font-size: 16px;"><?php echo kq_price( $tt->price ); ?></span>
                         </div>
                     </div>
                     

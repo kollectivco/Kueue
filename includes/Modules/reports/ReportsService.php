@@ -63,8 +63,41 @@ class ReportsService {
                 SUM(net_amount) as net
              FROM $commissions_table 
              WHERE $where",
-            $params
+            ...$params
         ) );
+    }
+
+    /**
+     * Get daily revenue for the last 30 days.
+     */
+    public static function get_daily_revenue( $days = 30 ) {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_commissions';
+        
+        $results = $wpdb->get_results( $wpdb->prepare(
+            "SELECT DATE(created_at) as date, SUM(gross_amount) as total 
+             FROM $table 
+             WHERE created_at >= DATE_SUB(NOW(), INTERVAL %d DAY) 
+             GROUP BY DATE(created_at) 
+             ORDER BY date ASC",
+            $days
+        ) );
+
+        $data = [];
+        foreach ( $results as $row ) {
+            $data[$row->date] = (float) $row->total;
+        }
+
+        $final = [];
+        for ( $i = $days; $i >= 0; $i-- ) {
+            $date = date( 'Y-m-d', strtotime( "-$i days" ) );
+            $final[] = [
+                'date'  => $date,
+                'total' => $data[$date] ?? 0
+            ];
+        }
+
+        return $final;
     }
 
     /**
