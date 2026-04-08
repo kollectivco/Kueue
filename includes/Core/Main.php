@@ -81,6 +81,10 @@ class Main {
         $event_perms = new \KueueEvents\Core\Modules\Events\EventPermissions();
         $event_perms->run();
 
+        // Venues
+        $venue_cpt = new \KueueEvents\Core\Modules\Venues\VenuePostType();
+        $venue_cpt->run();
+
         // Tickets Engine
         new \KueueEvents\Core\Modules\Tickets\TicketTypeAdmin();
         new \KueueEvents\Core\Modules\Attendees\AttendeeAdmin();
@@ -117,6 +121,9 @@ class Main {
         // 6) Public Frontend (Events & Dashboard)
         $frontend = new \KueueEvents\Core\Modules\Frontend\FrontendController();
         $frontend->run();
+
+        $templates = new \KueueEvents\Core\Modules\Frontend\TemplateManager();
+        $templates->run();
 
         // 8) Self-Update System
         $updater = new \KueueEvents\Core\Core\GitHubUpdater();

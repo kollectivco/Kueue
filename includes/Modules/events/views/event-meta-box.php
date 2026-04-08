@@ -89,13 +89,24 @@
     <!-- Venue Section -->
     <div class="kq-meta-section">
         <h3><?php _e( 'Venue & Location', 'kueue-events-core' ); ?></h3>
+        <div class="kq-meta-field" style="margin-bottom: 20px;">
+            <label for="venue_id"><?php _e( 'Linked Venue', 'kueue-events-core' ); ?></label>
+            <select name="venue_id" id="venue_id">
+                <option value=""><?php _e( '-- Use Custom Venue (or None) --', 'kueue-events-core' ); ?></option>
+                <?php foreach ( $venues as $v ) : ?>
+                    <option value="<?php echo (int) $v->ID; ?>" <?php selected( $venue_id, $v->ID ); ?>><?php echo esc_html( $v->post_title ); ?></option>
+                <?php endforeach; ?>
+            </select>
+            <span class="description"><?php _e( 'Linking to a native Venue will override the custom address below on the public page.', 'kueue-events-core' ); ?></span>
+        </div>
+
         <div class="kq-meta-grid">
             <div class="kq-meta-field">
-                <label for="venue_name"><?php _e( 'Venue Name', 'kueue-events-core' ); ?></label>
+                <label for="venue_name"><?php _e( 'Custom Venue Name', 'kueue-events-core' ); ?></label>
                 <input type="text" name="venue_name" id="venue_name" value="<?php echo esc_attr( $venue_name ); ?>" placeholder="e.g. Cairo International Stadium">
             </div>
             <div class="kq-meta-field">
-                <label for="venue_address"><?php _e( 'Venue Address', 'kueue-events-core' ); ?></label>
+                <label for="venue_address"><?php _e( 'Custom Venue Address', 'kueue-events-core' ); ?></label>
                 <input type="text" name="venue_address" id="venue_address" value="<?php echo esc_attr( $venue_address ); ?>" placeholder="Full street address">
             </div>
             <div class="kq-meta-field">

@@ -38,6 +38,7 @@ class EventMetaBoxes {
             'end_time'          => get_post_meta( $post_id, '_kq_end_time', true ),
             'timezone'          => get_post_meta( $post_id, '_kq_timezone', true ) ?: 'UTC',
             
+            'venue_id'          => get_post_meta( $post_id, '_kq_venue_id', true ),
             'venue_name'        => get_post_meta( $post_id, '_kq_venue_name', true ),
             'venue_address'     => get_post_meta( $post_id, '_kq_venue_address', true ),
             'venue_city'        => get_post_meta( $post_id, '_kq_venue_city', true ),
@@ -71,6 +72,7 @@ class EventMetaBoxes {
         $sms_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'sms' ) ?: [];
         $whatsapp_accounts = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_accounts( 'whatsapp' ) ?: [];
         $seating_maps = \KueueEvents\Core\Modules\Seating\SeatingRepository::get_all_maps() ?: [];
+        $venues = get_posts([ 'post_type' => 'kq_venue', 'numberposts' => -1 ]) ?: [];
 
         extract( $data );
 
@@ -93,7 +95,7 @@ class EventMetaBoxes {
         $fields = [
             'event_type', 'organizer_id', 'event_status', 'visibility',
             'start_date', 'end_date', 'start_time', 'end_time', 'timezone',
-            'venue_name', 'venue_address', 'venue_city', 'venue_country',
+            'venue_id', 'venue_name', 'venue_address', 'venue_city', 'venue_country',
             'event_logo_id', 'cover_image_id', 'accent_color',
             'enable_sales', 'sales_start_datetime', 'sales_end_datetime', 'max_tickets_per_order',
             'enable_email_delivery', 'enable_whatsapp_delivery', 'enable_sms_delivery',

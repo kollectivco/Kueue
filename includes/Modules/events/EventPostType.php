@@ -29,17 +29,18 @@ class EventPostType {
 
         $args = [
             'labels'             => $labels,
-            'public'             => false,
-            'publicly_queryable' => false,
+            'public'             => true,
+            'publicly_queryable' => true,
             'show_ui'            => true,
             'show_in_menu'       => 'kq-events-dashboard',
             'query_var'          => true,
-            'rewrite'            => [ 'slug' => 'kq_event' ],
+            'rewrite'            => [ 'slug' => 'events', 'with_front' => false ],
             'capability_type'    => 'post',
-            'has_archive'        => false,
+            'has_archive'        => 'events',
             'hierarchical'       => false,
             'menu_position'      => null,
-            'supports'           => [ 'title', 'editor', 'thumbnail' ],
+            'supports'           => [ 'title', 'editor', 'thumbnail', 'excerpt' ],
+            'show_in_rest'       => true,
         ];
 
         register_post_type( 'kq_event', $args );
