@@ -209,7 +209,7 @@
                 <select name="seating_map_id">
                     <option value=""><?php _e( '-- Select Map --', 'kueue-events-core' ); ?></option>
                     <?php foreach ( $seating_maps as $map ) : ?>
-                        <option value="<?php echo (int) $map->id; ?>" <?php selected( $seating_map_id, $map->id ); ?>><?php echo esc_html( $map->map_name ); ?></option>
+                        <option value="<?php echo (int) $map->id; ?>" <?php selected( $seating_map_id, $map->id ); ?>><?php echo esc_html( $map->name ); ?></option>
                     <?php endforeach; ?>
                 </select>
             </div>
@@ -221,5 +221,4 @@
             </div>
         </div>
     </div>
-</div>
 </div>

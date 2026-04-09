@@ -3,7 +3,7 @@
  * Plugin Name:       Kueue Events Core
  * Plugin URI:        https://kueue.com/
  * Description:       Full event marketplace system for ticket management, bookings, and multi-vendor support.
- * Version:           1.4.0
+ * Version:           1.4.1
  * Author:            Kollectiv
  * Author URI:        https://kollectiv.co/
  * Update URI:        false
@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Define Plugin Constants
-define( 'KQ_VERSION', '1.4.0' );
+define( 'KQ_VERSION', '1.4.1' );
 define( 'KQ_PLUGIN_FILE', __FILE__ );
 define( 'KQ_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'KQ_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
