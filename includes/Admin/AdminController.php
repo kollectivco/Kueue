@@ -311,7 +311,6 @@ class AdminController {
      * Render Dashboard
      */
     public function render_dashboard() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Dashboard</div>';
         
         // Casing safety: standard isized capitalized Module, lowercase 'views'
         $path = dirname( __FILE__ ) . '/../Modules/Reports/views/dashboard.php';
@@ -327,7 +326,6 @@ class AdminController {
      * Render Organizers CRUD
      */
     public function render_organizers() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Organizers</div>';
         if ( class_exists( '\KueueEvents\Core\Modules\Vendors\OrganizerAdmin' ) ) {
             $module = new \KueueEvents\Core\Modules\Vendors\OrganizerAdmin();
             $module->render_list();
@@ -340,7 +338,6 @@ class AdminController {
      * Render Ticket Types
      */
     public function render_ticket_types() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Ticket Types</div>';
         if ( class_exists( '\KueueEvents\Core\Modules\Tickets\TicketTypeAdmin' ) ) {
             $module = new \KueueEvents\Core\Modules\Tickets\TicketTypeAdmin();
             $module->render_list();
@@ -353,7 +350,6 @@ class AdminController {
      * Render Attendees
      */
     public function render_attendees() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Attendees</div>';
         if ( class_exists( '\KueueEvents\Core\Modules\Attendees\AttendeeAdmin' ) ) {
             $module = new \KueueEvents\Core\Modules\Attendees\AttendeeAdmin();
             $module->render_list();
@@ -366,7 +362,6 @@ class AdminController {
      * Render Issued Tickets
      */
     public function render_tickets() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Tickets</div>';
         if ( class_exists( '\KueueEvents\Core\Modules\Tickets\TicketAdmin' ) ) {
             $module = new \KueueEvents\Core\Modules\Tickets\TicketAdmin();
             $module->render_list();
@@ -379,7 +374,6 @@ class AdminController {
      * Render POS / Box Office
      */
     public function render_pos() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering POS</div>';
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
         $path = dirname( __FILE__ ) . '/../Modules/POS/views/pos-view.php';
         if ( file_exists( $path ) ) {
@@ -397,7 +391,6 @@ class AdminController {
         if ( $rendered ) return;
         $rendered = true;
 
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Gateways</div>';
         if ( class_exists( '\KueueEvents\Core\Modules\Gateways\GatewayAdminController' ) ) {
             $module = new \KueueEvents\Core\Modules\Gateways\GatewayAdminController();
             $module->render_list();
@@ -410,7 +403,6 @@ class AdminController {
      * Render Seating Management
      */
     public function render_seating() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Seating</div>';
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Seating/views/seating-view.php';
         if ( file_exists( $path ) ) {
             include_once $path;
@@ -423,7 +415,6 @@ class AdminController {
      * Render Bookings Management
      */
     public function render_bookings() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Bookings</div>';
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Bookings/views/bookings-view.php';
         if ( file_exists( $path ) ) {
@@ -437,7 +428,6 @@ class AdminController {
      * Render Reports Dashboard
      */
     public function render_reports() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Reports</div>';
         $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary();
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/reports-view.php';
         if ( file_exists( $path ) ) {
@@ -451,7 +441,6 @@ class AdminController {
      * Render Finance Dashboard
      */
     public function render_finance() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Finance</div>';
         $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary(); // Fallback to global summary if commission repo missing
         if ( class_exists( '\KueueEvents\Core\Modules\Finance\CommissionRepository' ) ) {
             $stats = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_global_stats();
@@ -471,7 +460,6 @@ class AdminController {
      * Render Check-in Logs
      */
     public function render_checkin_logs() {
-        echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Check-in Logs</div>';
         $logs = \KueueEvents\Core\Modules\Checkins\CheckinRepository::get_all( 100 );
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Checkins/views/checkin-log-list.php';
         if ( file_exists( $path ) ) {
@@ -518,7 +506,7 @@ class AdminController {
      * Render Placeholder
      */
     public function render_placeholder() {
-        echo '<div class="wrap"><h1>Coming Soon</h1><p>Feature under development.</p></div>';
+        // Placeholder for future development
     }
 
     /**

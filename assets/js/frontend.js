@@ -93,9 +93,8 @@
 
         // Seating Map Toggle (Simplified)
         $(document).on('click', '#kq-open-seating-map', function() {
-            // For now, prompt for a seat ID as a simulation of map selection
-            // In real app, this would open a modal with the SVG/Grid map
-            const seatId = prompt('Enter Seat ID (DEBUG MODE):');
+            // For now, allow manual seat selection via prompt as map view is simplified
+            const seatId = prompt('Enter Seat ID (e.g. A1, B2):');
             if (seatId) {
                 $('#kq-selected-seat-id').val(seatId);
                 $('#kq-selected-seat-display').text('Selected Seat: ' + seatId).show();
