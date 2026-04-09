@@ -25,7 +25,12 @@ class GatewayAdminController {
         }
 
         $accounts = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table WHERE channel = %s", $channel ) );
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Gateways/views/gateway-list.php';
+        $view_path = dirname( __FILE__ ) . '/views/gateway-list.php';
+        if ( file_exists( $view_path ) ) {
+            include $view_path;
+        } else {
+            echo '<div class="notice notice-error"><p>Gateway list view not found at: ' . esc_html($view_path) . '</p></div>';
+        }
     }
 
     private function render_form( $action, $channel ) {

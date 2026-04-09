@@ -102,19 +102,25 @@ class TicketRepository {
         $ticket = self::get_by_id( $id );
         if ( ! $ticket ) return false;
 
+        if ( $ticket->ticket_status === 'cancelled' ) return true;
+
         // Release slot if exists
         if ( $ticket->booking_slot_id ) {
-            $slots_table = $wpdb->prefix . 'kq_booking_slots';
-            $wpdb->query( $wpdb->prepare( "UPDATE $slots_table SET sold_count = sold_count - 1 WHERE id = %d", $ticket->booking_slot_id ) );
+            \KueueEvents\Core\Modules\Bookings\BookingRepository::decrement_sold_count( $ticket->booking_slot_id );
         }
 
         // Release seat if exists
         if ( $ticket->seat_id ) {
-            $seats_table = $wpdb->prefix . 'kq_seating_seats';
-            $wpdb->update( $seats_table, [ 'status' => 'available' ], [ 'id' => $ticket->seat_id ] );
+            \KueueEvents\Core\Modules\Seating\SeatingRepository::release_seat( $ticket->seat_id );
         }
 
-        return $wpdb->update( $table, [ 'ticket_status' => 'cancelled' ], [ 'id' => $id ] );
+        $result = $wpdb->update( $table, [ 'ticket_status' => 'cancelled' ], [ 'id' => $id ] );
+        
+        if ( $result ) {
+            \KueueEvents\Core\Core\AuditLogger::info( 'ticket_cancelled', 'ticket', $id, "Ticket #{$ticket->ticket_number} cancelled." );
+        }
+
+        return $result;
     }
 
     /**

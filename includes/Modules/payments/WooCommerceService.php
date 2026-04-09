@@ -6,6 +6,7 @@ class WooCommerceService {
 
     public function run() {
         // Hook into WooCommerce order status changes
+        add_action( 'woocommerce_payment_complete', [ $this, 'process_tickets_on_completion' ], 10, 1 );
         add_action( 'woocommerce_order_status_completed', [ $this, 'process_tickets_on_completion' ], 10, 1 );
         add_action( 'woocommerce_order_status_processing', [ $this, 'process_tickets_on_completion' ], 10, 1 );
         
@@ -41,55 +42,64 @@ class WooCommerceService {
 
         $tickets_created = 0;
 
-        foreach ( $order->get_items() as $item_id => $item ) {
-            $product_id = $item->get_product_id();
-            $ticket_type = $this->get_ticket_type_by_product( $product_id );
+        try {
+            foreach ( $order->get_items() as $item_id => $item ) {
+                $product_id = $item->get_product_id();
+                $ticket_type = $this->get_ticket_type_by_product( $product_id );
 
-            if ( ! $ticket_type ) continue;
+                if ( ! $ticket_type ) continue;
 
-            $qty = $item->get_quantity();
-            $attendee_data = $item->get_meta( '_kq_attendee_data' );
+                $qty = $item->get_quantity();
+                $attendee_data = $item->get_meta( '_kq_attendee_data' );
 
-            for ( $i = 0; $i < $qty; $i++ ) {
-                $meta = $attendee_data[$i] ?? [];
-                
-                // 1. Create Attendee
-                $attendee_repo = new \KueueEvents\Core\Modules\Attendees\AttendeeRepository();
-                $attendee_id = $attendee_repo->create( [
-                    'event_id'       => $ticket_type->event_id,
-                    'organizer_id'   => \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_organizer_id_by_event($ticket_type->event_id),
-                    'ticket_type_id' => $ticket_type->id,
-                    'order_id'       => $order->get_id(),
-                    'order_item_id'  => $item->get_id(),
-                    'first_name'     => $meta['first_name'] ?? $order->get_billing_first_name(),
-                    'last_name'      => $meta['last_name'] ?? $order->get_billing_last_name(),
-                    'email'          => $meta['email'] ?? $order->get_billing_email(),
-                    'phone'          => $meta['phone'] ?? $order->get_billing_phone(),
-                    'status'         => 'confirmed',
-                    'source'         => 'woocommerce'
-                ] );
-
-                // 2. Issue Ticket
-                if ( $attendee_id ) {
-                    \KueueEvents\Core\Modules\Tickets\TicketGenerator::issue_ticket( $attendee_id, $ticket_type->id, [
-                        'booking_slot_id' => $meta['booking_slot_id'] ?? null,
-                        'seat_id'         => $meta['seat_id'] ?? null,
+                for ( $i = 0; $i < $qty; $i++ ) {
+                    $meta = $attendee_data[$i] ?? [];
+                    
+                    // 1. Create Attendee
+                    $attendee_repo = new \KueueEvents\Core\Modules\Attendees\AttendeeRepository();
+                    $attendee_id = $attendee_repo->create( [
+                        'event_id'       => $ticket_type->event_id,
+                        'organizer_id'   => \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_organizer_id_by_event($ticket_type->event_id),
+                        'ticket_type_id' => $ticket_type->id,
+                        'order_id'       => $order->get_id(),
+                        'order_item_id'  => $item->get_id(),
+                        'first_name'     => $meta['first_name'] ?? $order->get_billing_first_name(),
+                        'last_name'      => $meta['last_name'] ?? $order->get_billing_last_name(),
+                        'email'          => $meta['email'] ?? $order->get_billing_email(),
+                        'phone'          => $meta['phone'] ?? $order->get_billing_phone(),
+                        'status'         => 'confirmed',
+                        'source'         => 'woocommerce'
                     ] );
-                    $tickets_created++;
+
+                    // 2. Issue Ticket
+                    if ( $attendee_id ) {
+                        $ticket_id = \KueueEvents\Core\Modules\Tickets\TicketGenerator::issue_ticket( $attendee_id, $ticket_type->id, [
+                            'booking_slot_id' => $meta['booking_slot_id'] ?? null,
+                            'seat_id'         => $meta['seat_id'] ?? null,
+                        ] );
+                        
+                        if ( $ticket_id ) {
+                            $tickets_created++;
+                        }
+                    }
                 }
+
+                // 3. Record Commission
+                \KueueEvents\Core\Modules\Finance\CommissionService::record_sale( 
+                    $ticket_type->event_id, 
+                    \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_organizer_id_by_event($ticket_type->event_id), 
+                    $item->get_total(),
+                    $order->get_id()
+                );
             }
 
-            // 3. Record Commission (Once per line item or total order? Typically per item is better for logic)
-            \KueueEvents\Core\Modules\Finance\CommissionService::record_sale( 
-                $ticket_type->event_id, 
-                \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_organizer_id_by_event($ticket_type->event_id), 
-                $item->get_total(),
-                $order->get_id()
-            );
-        }
-
-        if ( $tickets_created > 0 ) {
-            update_post_meta( $order_id, '_kq_tickets_processed', '1' );
+            if ( $tickets_created > 0 ) {
+                update_post_meta( $order_id, '_kq_tickets_processed', '1' );
+                \KueueEvents\Core\Core\AuditLogger::info( 'payment_processed', 'order', $order_id, "Successfully generated $tickets_created tickets." );
+            }
+        } catch ( \Exception $e ) {
+            \KueueEvents\Core\Core\AuditLogger::error( 'payment_processing_failed', 'order', $order_id, $e->getMessage() );
+            $order->add_order_note( sprintf( __( 'Kueue Error: %s', 'kueue-events-core' ), $e->getMessage() ) );
         }
     }
 

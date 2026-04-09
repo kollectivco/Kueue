@@ -89,7 +89,7 @@ class EventMetaBoxes {
             extract( $data );
 
             // 5. Check if view file exists
-            $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Events/views/event-meta-box.php';
+            $view_path = dirname( __FILE__ ) . '/views/event-meta-box.php';
             if ( file_exists( $view_path ) ) {
                 include $view_path;
             } else {

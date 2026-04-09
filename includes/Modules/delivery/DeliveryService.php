@@ -99,7 +99,7 @@ class DeliveryService {
         if ( ! $attendee || ! $attendee->phone ) return false;
 
         $event_id = $ticket->event_id;
-        $gateway_id = get_post_meta( $event_id, '_kq_whatsapp_gateway_id', true );
+        $gateway_id = get_post_meta( $event_id, '_kq_whatsapp_gateway_account_id', true );
 
         if ( ! $gateway_id ) {
             $default_account = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_default_account( 'whatsapp' );
@@ -130,7 +130,7 @@ class DeliveryService {
         if ( ! $attendee || ! $attendee->phone ) return false;
 
         $event_id = $ticket->event_id;
-        $gateway_id = get_post_meta( $event_id, '_kq_sms_gateway_id', true );
+        $gateway_id = get_post_meta( $event_id, '_kq_sms_gateway_account_id', true );
 
         if ( ! $gateway_id ) {
             $default_account = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_default_account( 'sms' );

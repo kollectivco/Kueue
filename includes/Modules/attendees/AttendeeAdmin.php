@@ -24,7 +24,12 @@ class AttendeeAdmin {
         }
 
         $attendees = AttendeeRepository::get_all( $organizer_id );
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Attendees/views/attendee-list.php';
+        $view_path = dirname( __FILE__ ) . '/views/attendee-list.php';
+        if ( file_exists( $view_path ) ) {
+            include $view_path;
+        } else {
+            echo '<div class="notice notice-error"><p>Attendee list view not found at: ' . esc_html($view_path) . '</p></div>';
+        }
     }
 
     private function render_form( $action, $organizer_id ) {

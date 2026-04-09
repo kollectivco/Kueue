@@ -314,17 +314,12 @@ class AdminController {
         echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Dashboard</div>';
         
         // Casing safety: standard isized capitalized Module, lowercase 'views'
-        $path = KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php';
+        $path = dirname( __FILE__ ) . '/../Modules/Reports/views/dashboard.php';
         
-        if ( ! file_exists( $path ) ) {
-            // Fallback for case-sensitive environments that might have lowercase folder
-            $path = KQ_PLUGIN_DIR . 'includes/modules/reports/views/dashboard.php';
-        }
-
         if ( file_exists( $path ) ) {
-            include_once $path;
+            include $path;
         } else {
-            echo '<div class="notice notice-error"><p>Dashboard view not found at primary or secondary path: ' . esc_html(KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php') . '</p></div>';
+            echo '<div class="notice notice-error"><p>Dashboard view not found at: ' . esc_html($path) . '</p></div>';
         }
     }
 
@@ -386,11 +381,11 @@ class AdminController {
     public function render_pos() {
         echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering POS</div>';
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
-        $path = KQ_PLUGIN_DIR . 'includes/Modules/POS/views/pos-view.php';
+        $path = dirname( __FILE__ ) . '/../Modules/POS/views/pos-view.php';
         if ( file_exists( $path ) ) {
             include $path;
         } else {
-            echo '<div class="notice notice-error"><p>POS view not found.</p></div>';
+            echo '<div class="notice notice-error"><p>POS view not found at: ' . esc_html($path) . '</p></div>';
         }
     }
 
@@ -398,6 +393,10 @@ class AdminController {
      * Render Gateway Accounts CRUD
      */
     public function render_gateway_accounts() {
+        static $rendered = false;
+        if ( $rendered ) return;
+        $rendered = true;
+
         echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Gateways</div>';
         if ( class_exists( '\KueueEvents\Core\Modules\Gateways\GatewayAdminController' ) ) {
             $module = new \KueueEvents\Core\Modules\Gateways\GatewayAdminController();

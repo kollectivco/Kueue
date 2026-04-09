@@ -62,6 +62,15 @@ class SeatingRepository {
     }
 
     /**
+     * Release seat (mark as available).
+     */
+    public static function release_seat( $seat_id ) {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_seating_seats';
+        return $wpdb->update( $table, [ 'status' => 'available' ], [ 'id' => $seat_id ] );
+    }
+
+    /**
      * Get a specific seat.
      */
     public static function get_seat( $seat_id ) {

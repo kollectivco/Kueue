@@ -26,6 +26,10 @@ class Main {
 
         // 4) Core Hooks
         add_action( 'init', [ $this, 'init_plugin' ] );
+        
+        // 5) Cron Hooks
+        add_filter( 'cron_schedules', [ $this, 'add_cron_schedules' ] );
+        add_action( 'kq_delivery_cron_hook', [ '\KueueEvents\Core\Modules\Delivery\DeliveryManager', 'process_queue' ] );
     }
 
     /**
@@ -44,6 +48,17 @@ class Main {
                 break;
             }
         }
+    }
+
+    /**
+     * Add custom cron schedules
+     */
+    public function add_cron_schedules( $schedules ) {
+        $schedules['every_minute'] = [
+            'interval' => 60,
+            'display'  => __( 'Every Minute', 'kueue-events-core' )
+        ];
+        return $schedules;
     }
 
     /**

@@ -43,26 +43,53 @@ class TicketGenerator {
             'issued_at'      => current_time( 'mysql' ),
         ];
 
-        $ticket_id = TicketRepository::save( $data );
+        // 1. Atomic Inventory Check & Claim
+        // Attempt to claim seat if requested
+        if ( ! empty( $meta['seat_id'] ) ) {
+            $seat_claimed = \KueueEvents\Core\Modules\Seating\SeatingRepository::mark_seat_sold( $meta['seat_id'] );
+            if ( ! $seat_claimed ) {
+                return false; // Already taken or invalid
+            }
+        }
 
-        if ( $ticket_id ) {
-            // Update sold quantity for ticket type
-            self::update_sold_quantity( $ticket_type->id );
-            
-            // 3. Increment Slot capacity
-            if ( !empty($data['booking_slot_id']) ) {
-                \KueueEvents\Core\Modules\Bookings\BookingRepository::increment_sold_count( $data['booking_slot_id'] );
+        // Attempt to claim slot capacity
+        if ( ! empty( $meta['booking_slot_id'] ) ) {
+            $slot_claimed = \KueueEvents\Core\Modules\Bookings\BookingRepository::increment_sold_count( $meta['booking_slot_id'] );
+            if ( ! $slot_claimed ) {
+                // Refund seat if we claimed one
+                if ( ! empty( $meta['seat_id'] ) ) {
+                    \KueueEvents\Core\Modules\Seating\SeatingRepository::release_seat( $meta['seat_id'] );
+                }
+                return false;
+            }
+        }
+
+        try {
+            $ticket_id = TicketRepository::save( $data );
+
+            if ( $ticket_id ) {
+                // Update sold quantity for ticket type (analytics)
+                self::update_sold_quantity( $ticket_type->id );
+                
+                // Queue Delivery
+                self::queue_ticket_delivery( $ticket_id );
+                
+                \KueueEvents\Core\Core\AuditLogger::info( 'ticket_generated', 'ticket', $ticket_id, "Ticket #{$ticket_number} generated for attendee {$attendee_id}" );
+
+                return $ticket_id;
+            } else {
+                throw new \Exception( 'Failed to save ticket record.' );
+            }
+        } catch ( \Exception $e ) {
+            // Rollback inventory if ticket record failed
+            if ( ! empty( $meta['seat_id'] ) ) {
+                \KueueEvents\Core\Modules\Seating\SeatingRepository::release_seat( $meta['seat_id'] );
+            }
+            if ( ! empty( $meta['booking_slot_id'] ) ) {
+                \KueueEvents\Core\Modules\Bookings\BookingRepository::decrement_sold_count( $meta['booking_slot_id'] );
             }
 
-            // 4. Mark Seat as Sold
-            if ( !empty($data['seat_id']) ) {
-                \KueueEvents\Core\Modules\Seating\SeatingRepository::mark_seat_sold( $data['seat_id'] );
-            }
-
-            // Queue Delivery
-            self::queue_ticket_delivery( $ticket_id );
-            
-            return $ticket_id;
+            \KueueEvents\Core\Core\AuditLogger::error( 'ticket_generation_failed', 'attendee', $attendee_id, $e->getMessage() );
         }
 
         return false;

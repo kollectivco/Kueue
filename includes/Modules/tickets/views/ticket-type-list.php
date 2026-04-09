@@ -43,10 +43,18 @@
                                 <?php endif; ?>
                             </td>
                             <td>
-                                <div style="font-weight: 800; color: var(--kq-primary);"><?php echo wc_price( $tt->price ); ?></div>
+                                <div style="font-weight: 800; color: var(--kq-primary);">
+                                    <?php 
+                                    if ( function_exists( 'wc_price' ) ) {
+                                        echo wc_price( $tt->price ); 
+                                    } else {
+                                        echo esc_html( $tt->price ) . ' EGP';
+                                    }
+                                    ?>
+                                </div>
                             </td>
                             <td>
-                                <div style="font-weight: 600;"><?php echo (int) $tt->stock_limit; ?></div>
+                                <div style="font-weight: 600;"><?php echo (int) $tt->stock_quantity; ?></div>
                                 <div style="font-size: 11px; color: #888;">Maximum Capacity</div>
                             </td>
                             <td>
@@ -61,7 +69,7 @@
                             </td>
                             <td style="text-align: right;">
                                 <a href="<?php echo admin_url( 'admin.php?page=kq-ticket-types&action=edit&id=' . $tt->id ); ?>" class="kq-btn kq-btn-outline" style="padding: 4px 12px; font-size: 12px;"><?php _e( 'Edit', 'kueue-events-core' ); ?></a>
-                                <a href="<?php echo wp_nonce_url( admin_url( 'admin.php?page=kq-ticket-types&action=delete&id=' . $tt->id ), 'kq_delete_tt_' . $tt->id ); ?>" 
+                                <a href="<?php echo wp_nonce_url( admin_url( 'admin.php?page=kq-ticket-types&action=delete&id=' . $tt->id ), 'kq_delete_ticket_type_' . $tt->id ); ?>" 
                                    class="kq-btn" 
                                    style="padding: 4px 12px; font-size: 12px; color: #ff3131;" 
                                    onclick="return confirm('<?php _e( 'Are you sure?', 'kueue-events-core' ); ?>')"><?php _e( 'Delete', 'kueue-events-core' ); ?></a>

@@ -51,4 +51,16 @@ class BookingRepository {
             $count, $slot_id, $count
         ) );
     }
+
+    /**
+     * Decrement sold count (for refunds/rollbacks).
+     */
+    public static function decrement_sold_count( $slot_id, $count = 1 ) {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_booking_slots';
+        return $wpdb->query( $wpdb->prepare(
+            "UPDATE $table SET sold_count = GREATEST(0, sold_count - %d) WHERE id = %d",
+            $count, $slot_id
+        ) );
+    }
 }

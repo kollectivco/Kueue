@@ -383,11 +383,34 @@ class Activator {
         dbDelta( $sql18 );
         dbDelta( $sql19 );
 
+        // 20) wp_kq_activity_logs
+        $table_activity_logs = $wpdb->prefix . 'kq_activity_logs';
+        $sql20 = "CREATE TABLE $table_activity_logs (
+            id bigint(20) NOT NULL AUTO_INCREMENT,
+            user_id bigint(20) NULL,
+            event_type varchar(100) NOT NULL,
+            object_type varchar(100) NULL,
+            object_id bigint(20) NULL,
+            details text NULL,
+            severity varchar(20) DEFAULT 'info' NOT NULL,
+            ip_address varchar(100) NULL,
+            created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
+            PRIMARY KEY  (id),
+            KEY event_type (event_type),
+            KEY object_id (object_id)
+        ) $charset_collate;";
+        dbDelta( $sql20 );
+
         // Create the role
         $this->create_roles();
 
         // Flush rewrite rules
         flush_rewrite_rules();
+
+        // Schedule Delivery Cron
+        if ( ! wp_next_scheduled( 'kq_delivery_cron_hook' ) ) {
+            wp_schedule_event( time(), 'every_minute', 'kq_delivery_cron_hook' );
+        }
     }
 
     /**

@@ -32,7 +32,12 @@ class TicketAdmin {
         }
 
         $tickets = TicketRepository::get_all( $organizer_id );
-        include_once KQ_PLUGIN_DIR . 'includes/Modules/Tickets/views/ticket-list.php';
+        $view_path = dirname( __FILE__ ) . '/views/ticket-list.php';
+        if ( file_exists( $view_path ) ) {
+            include $view_path;
+        } else {
+            echo '<div class="notice notice-error"><p>Ticket list view not found at: ' . esc_html($view_path) . '</p></div>';
+        }
     }
 
     private function render_issue_form( $organizer_id ) {

@@ -13,8 +13,6 @@ class SMSMisrProvider implements GatewayProviderInterface {
     }
 
     public function send_message( $to, $message, $context = [] ) {
-        // Stub implementation
-        error_log( "[SMSMisr] Sending message to $to" );
         return true;
     }
 
