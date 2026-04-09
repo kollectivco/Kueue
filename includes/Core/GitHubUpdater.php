@@ -18,6 +18,8 @@ class GitHubUpdater {
                 KQ_PLUGIN_FILE,
                 'kueue-events-core'
             );
+            
+            $update_checker->setBranch('main');
 
             // Fetch releases/tags only (STABLE)
             // No setBranch('main') here to stick to releases.
