@@ -109,6 +109,10 @@ class Main {
             }
         }
 
+        // Wallet System
+        $wallet = new \KueueEvents\Core\Modules\Wallet\WalletController();
+        $wallet->run();
+
         // 5) Payments & Checkout
         if ( class_exists( 'WooCommerce' ) ) {
             $wc = new \KueueEvents\Core\Modules\Payments\WooCommerceService();

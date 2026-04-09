@@ -9,6 +9,7 @@ class FrontendController {
         add_shortcode( 'kq_events', [ $this, 'render_events_list' ] );
         add_shortcode( 'kq_event', [ $this, 'render_event_single' ] );
         add_shortcode( 'kq_dashboard', [ $this, 'render_organizer_dashboard' ] );
+        add_shortcode( 'kq_wallet', [ $this, 'render_wallet_page' ] );
 
         add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_assets' ] );
 
@@ -354,8 +355,26 @@ class FrontendController {
             if ( file_exists( $alt_path ) ) {
                 include $alt_path;
             } else {
-                echo '<p>Organizer dashboard view not found.</p>';
+                echo '<p>Organizer dashboard view not found at primary or secondary location.</p>';
             }
+        }
+        return ob_get_clean();
+    }
+
+    /**
+     * Render User Wallet Page
+     */
+    public function render_wallet_page() {
+        if ( ! is_user_logged_in() ) {
+            return '<p>' . __( 'Please log in to view your wallet.', 'kueue-events-core' ) . '</p>';
+        }
+
+        ob_start();
+        $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Wallet/views/frontend-wallet.php';
+        if ( file_exists( $view_path ) ) {
+            include $view_path;
+        } else {
+            echo '<p>Wallet view not found.</p>';
         }
         return ob_get_clean();
     }

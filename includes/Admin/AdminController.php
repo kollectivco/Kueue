@@ -312,11 +312,19 @@ class AdminController {
      */
     public function render_dashboard() {
         echo '<div style="padding:10px;background:#f0f0f0;border-bottom:1px solid #ccc;font-size:11px;color:#666">DEBUG: Rendering Dashboard</div>';
+        
+        // Casing safety: standard isized capitalized Module, lowercase 'views'
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php';
+        
+        if ( ! file_exists( $path ) ) {
+            // Fallback for case-sensitive environments that might have lowercase folder
+            $path = KQ_PLUGIN_DIR . 'includes/modules/reports/views/dashboard.php';
+        }
+
         if ( file_exists( $path ) ) {
             include_once $path;
         } else {
-            echo '<div class="notice notice-error"><p>Dashboard view not found at: ' . esc_html($path) . '</p></div>';
+            echo '<div class="notice notice-error"><p>Dashboard view not found at primary or secondary path: ' . esc_html(KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php') . '</p></div>';
         }
     }
 
@@ -380,7 +388,7 @@ class AdminController {
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
         $path = KQ_PLUGIN_DIR . 'includes/Modules/POS/views/pos-view.php';
         if ( file_exists( $path ) ) {
-            include_once $path;
+            include $path;
         } else {
             echo '<div class="notice notice-error"><p>POS view not found.</p></div>';
         }
@@ -468,7 +476,7 @@ class AdminController {
         $logs = \KueueEvents\Core\Modules\Checkins\CheckinRepository::get_all( 100 );
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Checkins/views/checkin-log-list.php';
         if ( file_exists( $path ) ) {
-            include_once $path;
+            include $path;
         } else {
             echo '<div class="notice notice-error"><p>Check-in logs view not found.</p></div>';
         }

@@ -344,6 +344,45 @@ class Activator {
         dbDelta( $sql16 );
         dbDelta( $sql17 );
 
+        // 18) wp_kq_wallets
+        $table_wallets = $wpdb->prefix . 'kq_wallets';
+        $sql18 = "CREATE TABLE $table_wallets (
+            id bigint(20) NOT NULL AUTO_INCREMENT,
+            user_id bigint(20) NOT NULL,
+            current_balance decimal(10,2) DEFAULT 0.00 NOT NULL,
+            currency varchar(10) DEFAULT 'EGP' NOT NULL,
+            created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
+            updated_at datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,
+            PRIMARY KEY  (id),
+            UNIQUE KEY user_id (user_id)
+        ) $charset_collate;";
+
+        // 19) wp_kq_wallet_transactions
+        $table_wallet_transactions = $wpdb->prefix . 'kq_wallet_transactions';
+        $sql19 = "CREATE TABLE $table_wallet_transactions (
+            id bigint(20) NOT NULL AUTO_INCREMENT,
+            wallet_id bigint(20) NOT NULL,
+            user_id bigint(20) NOT NULL,
+            type varchar(50) NOT NULL,
+            amount decimal(10,2) NOT NULL,
+            balance_before decimal(10,2) NOT NULL,
+            balance_after decimal(10,2) NOT NULL,
+            reference_type varchar(50) NULL,
+            reference_id bigint(20) NULL,
+            note text NULL,
+            status varchar(50) DEFAULT 'completed' NOT NULL,
+            created_at datetime DEFAULT CURRENT_TIMESTAMP NOT NULL,
+            PRIMARY KEY  (id),
+            KEY wallet_id (wallet_id),
+            KEY user_id (user_id),
+            KEY type (type),
+            KEY reference_type (reference_type),
+            KEY reference_id (reference_id)
+        ) $charset_collate;";
+
+        dbDelta( $sql18 );
+        dbDelta( $sql19 );
+
         // Create the role
         $this->create_roles();
 

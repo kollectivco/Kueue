@@ -148,6 +148,21 @@
                     <?php _e( 'Request Payout', 'kueue-events-core' ); ?>
                 </button>
             </div>
+
+            <!-- Wallet Card -->
+            <?php 
+            $wallet_service = new \KueueEvents\Core\Modules\Wallet\WalletService();
+            $wallet_balance = $wallet_service->get_balance( get_current_user_id() );
+            ?>
+            <div class="kq-card" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: #fff; margin-bottom: 30px;">
+                <h3 style="margin-top:0; color: #fff;"><?php _e( 'My Wallet', 'kueue-events-core' ); ?></h3>
+                <div style="font-size: 32px; font-weight: 800; margin: 15px 0;">
+                    <?php echo wc_price( $wallet_balance ); ?>
+                </div>
+                <a href="<?php echo home_url( '/wallet/' ); ?>" class="kq-btn" style="width: 100%; background: rgba(255,255,255,0.2); color: #fff; text-align: center; text-decoration: none; display: block; padding: 10px 0; border-radius: 8px;">
+                    <?php _e( 'View History', 'kueue-events-core' ); ?>
+                </a>
+            </div>
             
             <!-- Quick Actions -->
             <div class="kq-card">

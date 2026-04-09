@@ -22,6 +22,10 @@ class WooCommerceService {
 
         // Ticket links in emails
         add_action( 'woocommerce_email_after_order_table', [ $this, 'display_order_tickets_in_email' ], 20, 4 );
+
+        // Admin: Add Refund to Wallet button
+        add_action( 'woocommerce_admin_order_actions', [ $this, 'add_refund_to_wallet_action' ], 10, 2 );
+        add_action( 'admin_init', [ $this, 'handle_refund_to_wallet_request' ] );
     }
 
     /**
@@ -206,5 +210,70 @@ class WooCommerceService {
             echo '<li><strong>' . esc_html( $attendee->first_name . ' ' . $attendee->last_name ) . ':</strong> <a href="' . esc_url( $view_url ) . '">' . __( 'Download Ticket', 'kueue-events-core' ) . '</a></li>';
         }
         echo '</ul>';
+    }
+
+    /**
+     * Add Refund to Wallet action button in Admin Orders list.
+     */
+    public function add_refund_to_wallet_action( $actions, $order ) {
+        if ( $order->has_status( [ 'completed', 'processing' ] ) ) {
+            $actions['kq_refund_wallet'] = [
+                'url'    => wp_nonce_url( admin_url( 'admin-ajax.php?action=kq_refund_to_wallet&order_id=' . $order->get_id() ), 'kq_refund_wallet' ),
+                'name'   => __( 'Refund to Wallet', 'kueue-events-core' ),
+                'action' => 'kq-refund-wallet', // CSS class
+            ];
+        }
+        return $actions;
+    }
+
+    /**
+     * Handle Refund to Wallet request.
+     */
+    public function handle_refund_to_wallet_request() {
+        if ( ! isset( $_GET['action'] ) || $_GET['action'] !== 'kq_refund_to_wallet' ) {
+            // Check AJAX or regular request
+            if ( ! isset( $_REQUEST['action'] ) || $_REQUEST['action'] !== 'kq_refund_to_wallet' ) {
+                return;
+            }
+        }
+
+        $order_id = isset( $_REQUEST['order_id'] ) ? (int) $_REQUEST['order_id'] : 0;
+        if ( ! $order_id || ! current_user_can( 'manage_options' ) ) {
+            return;
+        }
+
+        check_admin_referer( 'kq_refund_wallet' );
+
+        $order = wc_get_order( $order_id );
+        if ( ! $order ) return;
+
+        $user_id = $order->get_user_id();
+        if ( ! $user_id ) {
+            wp_die( __( 'Cannot refund to wallet for guest checkout.', 'kueue-events-core' ) );
+        }
+
+        $amount = $order->get_total();
+        
+        $wallet_service = new \KueueEvents\Core\Modules\Wallet\WalletService();
+        $success = $wallet_service->refund_to_wallet( 
+            $user_id, 
+            $amount, 
+            'order', 
+            $order_id, 
+            sprintf( __( 'Refund for order #%s', 'kueue-events-core' ), $order_id ) 
+        );
+
+        if ( $success ) {
+            // Cancel tickets
+            $this->handle_cancellation( $order_id );
+            
+            // Mark order as refunded in WooCommerce
+            $order->update_status( 'refunded', __( 'Refunded to Kueue wallet.', 'kueue-events-core' ) );
+            
+            wp_redirect( admin_url( 'edit.php?post_type=shop_order&message=refunded_to_wallet' ) );
+            exit;
+        } else {
+            wp_die( __( 'Failed to refund to wallet.', 'kueue-events-core' ) );
+        }
     }
 }
