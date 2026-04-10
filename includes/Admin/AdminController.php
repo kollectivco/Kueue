@@ -311,9 +311,7 @@ class AdminController {
      * Render Dashboard
      */
     public function render_dashboard() {
-        
-        // Casing safety: standard isized capitalized Module, lowercase 'views'
-        $path = dirname( __FILE__ ) . '/../Modules/Reports/views/dashboard.php';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/dashboard.php';
         
         if ( file_exists( $path ) ) {
             include $path;
@@ -375,7 +373,7 @@ class AdminController {
      */
     public function render_pos() {
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
-        $path = dirname( __FILE__ ) . '/../Modules/POS/views/pos-view.php';
+        $path = KQ_PLUGIN_DIR . 'includes/Modules/POS/views/pos-view.php';
         if ( file_exists( $path ) ) {
             include $path;
         } else {
@@ -405,9 +403,9 @@ class AdminController {
     public function render_seating() {
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Seating/views/seating-view.php';
         if ( file_exists( $path ) ) {
-            include_once $path;
+            include $path;
         } else {
-            echo '<div class="notice notice-error"><p>Seating view not found.</p></div>';
+            echo '<div class="notice notice-error"><p>Seating view not found at: ' . esc_html($path) . '</p></div>';
         }
     }
 
@@ -418,9 +416,9 @@ class AdminController {
         $events = get_posts( [ 'post_type' => 'kq_event', 'numberposts' => -1 ] );
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Bookings/views/bookings-view.php';
         if ( file_exists( $path ) ) {
-            include_once $path;
+            include $path;
         } else {
-            echo '<div class="notice notice-error"><p>Bookings view not found.</p></div>';
+            echo '<div class="notice notice-error"><p>Bookings view not found at: ' . esc_html($path) . '</p></div>';
         }
     }
 
@@ -431,9 +429,9 @@ class AdminController {
         $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary();
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Reports/views/reports-view.php';
         if ( file_exists( $path ) ) {
-            include_once $path;
+            include $path;
         } else {
-            echo '<div class="notice notice-error"><p>Reports view not found.</p></div>';
+            echo '<div class="notice notice-error"><p>Reports view not found at: ' . esc_html($path) . '</p></div>';
         }
     }
 
@@ -441,7 +439,7 @@ class AdminController {
      * Render Finance Dashboard
      */
     public function render_finance() {
-        $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary(); // Fallback to global summary if commission repo missing
+        $stats = \KueueEvents\Core\Modules\Reports\ReportsService::get_global_summary();
         if ( class_exists( '\KueueEvents\Core\Modules\Finance\CommissionRepository' ) ) {
             $stats = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_global_stats();
             $commissions = \KueueEvents\Core\Modules\Finance\CommissionRepository::get_paged( 1, 50 );
@@ -450,9 +448,9 @@ class AdminController {
         
         $path = KQ_PLUGIN_DIR . 'includes/Modules/Finance/views/finance-view.php';
         if ( file_exists( $path ) ) {
-            include_once $path;
+            include $path;
         } else {
-            echo '<div class="notice notice-error"><p>Finance view not found.</p></div>';
+            echo '<div class="notice notice-error"><p>Finance view not found at: ' . esc_html($path) . '</p></div>';
         }
     }
 
@@ -465,7 +463,7 @@ class AdminController {
         if ( file_exists( $path ) ) {
             include $path;
         } else {
-            echo '<div class="notice notice-error"><p>Check-in logs view not found.</p></div>';
+            echo '<div class="notice notice-error"><p>Check-in logs view not found at: ' . esc_html($path) . '</p></div>';
         }
     }
 

@@ -6,19 +6,25 @@
     <div class="kq-finance-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 20px;">
         <div class="stat-box" style="background:#fff; padding:20px; border-radius:10px; border:1px solid #ddd;">
             <h3><?php _e( 'Total Gross', 'kueue-events-core' ); ?></h3>
-            <div class="value" style="font-size:2em; font-weight:bold; color:#333;"><?php echo kq_price( $stats->total_gross ?? 0 ); ?></div>
+            <div class="value" style="font-size:2em; font-weight:bold; color:#333;"><?php echo kq_price( $stats->gross ?? 0 ); ?></div>
         </div>
         <div class="stat-box" style="background:#fff; padding:20px; border-radius:10px; border:1px solid #ddd;">
             <h3><?php _e( 'Total Commissions', 'kueue-events-core' ); ?></h3>
-            <div class="value" style="font-size:2em; font-weight:bold; color:#ff3131;"><?php echo kq_price( $stats->total_commission ?? 0 ); ?></div>
+            <div class="value" style="font-size:2em; font-weight:bold; color:#ff3131;"><?php echo kq_price( $stats->commission ?? 0 ); ?></div>
         </div>
         <div class="stat-box" style="background:#fff; padding:20px; border-radius:10px; border:1px solid #ddd;">
             <h3><?php _e( 'Total Net (Organizers)', 'kueue-events-core' ); ?></h3>
-            <div class="value" style="font-size:2em; font-weight:bold; color:#28a745;"><?php echo kq_price( $stats->total_net ?? 0 ); ?></div>
+            <div class="value" style="font-size:2em; font-weight:bold; color:#28a745;"><?php echo kq_price( $stats->net ?? 0 ); ?></div>
         </div>
         <div class="stat-box" style="background:#fff; padding:20px; border-radius:10px; border:1px solid #ddd;">
             <h3><?php _e( 'Pending Payouts', 'kueue-events-core' ); ?></h3>
-            <div class="value" style="font-size:2em; font-weight:bold; color:#ffc107;"><?php echo kq_price( $stats->pending_payouts ?? 0 ); ?></div>
+            <div class="value" style="font-size:2em; font-weight:bold; color:#ffc107;"><?php 
+                $pending_total = 0;
+                if (!empty($payout_requests)) {
+                    foreach($payout_requests as $pr) $pending_total += $pr->amount;
+                }
+                echo kq_price( $pending_total ); 
+            ?></div>
         </div>
     </div>
 

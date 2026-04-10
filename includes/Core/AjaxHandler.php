@@ -23,6 +23,13 @@ class AjaxHandler {
         add_action( 'wp_ajax_kq_request_payout', [ $this, 'request_payout' ] );
         add_action( 'wp_ajax_kq_resend_ticket', [ $this, 'resend_ticket' ] );
         add_action( 'wp_ajax_kq_cancel_ticket', [ $this, 'cancel_ticket' ] );
+
+        // Admin Search & Quick Create
+        add_action( 'wp_ajax_kq_search_venues', [ $this, 'search_venues' ] );
+        add_action( 'wp_ajax_kq_search_organizers', [ $this, 'search_organizers' ] );
+        add_action( 'wp_ajax_kq_create_venue', [ $this, 'create_venue' ] );
+        add_action( 'wp_ajax_kq_create_organizer', [ $this, 'create_organizer' ] );
+        add_action( 'wp_ajax_kq_gateway_test_send', [ $this, 'gateway_test_send' ] );
     }
 
     public function get_slots() {
@@ -152,5 +159,163 @@ class AjaxHandler {
         $event_id = (int) $_POST['event_id'];
         $attendees = \KueueEvents\Core\Modules\Attendees\AttendeeRepository::get_by_event_id( $event_id );
         wp_send_json_success( $attendees );
+    }
+
+    /**
+     * Search Venues (CPT kq_venue)
+     */
+    public function search_venues() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) wp_send_json_error();
+        if ( ! current_user_can( 'edit_posts' ) ) wp_send_json_error();
+
+        $term = sanitize_text_field( $_POST['term'] ?? '' );
+        
+        $args = [
+            'post_type'      => 'kq_venue',
+            's'              => $term,
+            'posts_per_page' => 20,
+            'post_status'    => 'publish'
+        ];
+
+        $venues = get_posts( $args );
+        $results = [];
+
+        foreach ( $venues as $v ) {
+            $results[] = [
+                'id'   => $v->ID,
+                'text' => $v->post_title . ' (' . get_post_meta( $v->ID, '_kq_venue_city', true ) . ')'
+            ];
+        }
+
+        wp_send_json_success( $results );
+    }
+
+    /**
+     * Search Organizers (Custom Table)
+     */
+    public function search_organizers() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) wp_send_json_error();
+        if ( ! current_user_can( 'edit_posts' ) ) wp_send_json_error();
+
+        $term = sanitize_text_field( $_POST['term'] ?? '' );
+        $results = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::search( $term );
+        
+        $formatted = [];
+        foreach ( $results as $r ) {
+            $formatted[] = [
+                'id'   => $r->id,
+                'text' => $r->organizer_name . ' (' . $r->email . ')'
+            ];
+        }
+
+        wp_send_json_success( $formatted );
+    }
+
+    /**
+     * Quick Create Venue
+     */
+    public function create_venue() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) wp_send_json_error();
+        if ( ! current_user_can( 'edit_posts' ) ) wp_send_json_error();
+
+        $name = sanitize_text_field( $_POST['name'] ?? '' );
+        if ( empty( $name ) ) wp_send_json_error( [ 'message' => 'Name required.' ] );
+
+        $post_id = wp_insert_post([
+            'post_type'    => 'kq_venue',
+            'post_title'   => $name,
+            'post_status'  => 'publish',
+            'post_content' => sanitize_textarea_field( $_POST['description'] ?? '' )
+        ]);
+
+        if ( is_wp_error( $post_id ) ) wp_send_json_error( [ 'message' => $post_id->get_error_message() ] );
+
+        update_post_meta( $post_id, '_kq_venue_address', sanitize_text_field( $_POST['address'] ?? '' ) );
+        update_post_meta( $post_id, '_kq_venue_city', sanitize_text_field( $_POST['city'] ?? '' ) );
+        update_post_meta( $post_id, '_kq_venue_country', sanitize_text_field( $_POST['country'] ?? '' ) );
+        update_post_meta( $post_id, '_kq_venue_google_maps_url', esc_url_raw( $_POST['maps_url'] ?? '' ) );
+        update_post_meta( $post_id, '_kq_venue_lat', sanitize_text_field( $_POST['lat'] ?? '' ) );
+        update_post_meta( $post_id, '_kq_venue_lng', sanitize_text_field( $_POST['lng'] ?? '' ) );
+
+        wp_send_json_success([
+            'id'   => $post_id,
+            'text' => $name
+        ]);
+    }
+
+    /**
+     * Quick Create Organizer
+     */
+    public function create_organizer() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) wp_send_json_error();
+        if ( ! current_user_can( 'edit_posts' ) ) wp_send_json_error();
+
+        $name = sanitize_text_field( $_POST['name'] ?? '' );
+        $email = sanitize_email( $_POST['email'] ?? '' );
+        if ( empty( $name ) || empty( $email ) ) wp_send_json_error( [ 'message' => 'Name and email required.' ] );
+
+        $data = [
+            'organizer_name'   => $name,
+            'organizer_slug'   => sanitize_title( $name ),
+            'email'            => $email,
+            'phone'            => sanitize_text_field( $_POST['phone'] ?? '' ),
+            'status'           => sanitize_text_field( $_POST['status'] ?? 'active' ),
+            'commission_type'  => sanitize_text_field( $_POST['commission_type'] ?? 'percentage' ),
+            'commission_value' => (float) ($_POST['commission_value'] ?? 0),
+            'user_id'          => !empty($_POST['user_id']) ? (int) $_POST['user_id'] : null
+        ];
+
+        $id = \KueueEvents\Core\Modules\Vendors\OrganizerRepository::save( $data );
+        if ( ! $id ) wp_send_json_error( [ 'message' => 'Failed to save.' ] );
+
+        wp_send_json_success([
+            'id'   => $id,
+            'text' => $name
+        ]);
+    }
+
+    /**
+     * Gateway Test Send (SMS / WhatsApp)
+     */
+    public function gateway_test_send() {
+        if ( ! check_ajax_referer( 'kq-nonce', 'nonce', false ) ) {
+            wp_send_json_error( [ 'message' => 'Security check failed.' ] );
+        }
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( [ 'message' => 'Unauthorized.' ] );
+        }
+
+        $account_id = (int) ( $_POST['account_id'] ?? 0 );
+        $channel    = sanitize_text_field( $_POST['channel'] ?? '' );
+        $phone      = sanitize_text_field( $_POST['phone'] ?? '' );
+        $message    = sanitize_text_field( $_POST['message'] ?? 'Kueue test message.' );
+
+        if ( ! $account_id || ! $phone ) {
+            wp_send_json_error( [ 'message' => 'Account ID and phone number are required.' ] );
+        }
+
+        $provider = \KueueEvents\Core\Modules\Gateways\GatewayManager::get_provider( $account_id );
+
+        if ( ! $provider ) {
+            wp_send_json_error( [ 'message' => 'Provider could not be loaded. Check account credentials are saved.' ] );
+        }
+
+        try {
+            if ( $channel === 'sms' ) {
+                $result = $provider->send_sms( $phone, $message );
+            } elseif ( $channel === 'whatsapp' ) {
+                $result = $provider->send_message( $phone, $message );
+            } else {
+                wp_send_json_error( [ 'message' => 'Unknown channel.' ] );
+            }
+
+            if ( $result ) {
+                wp_send_json_success( [ 'message' => 'Test message sent successfully.' ] );
+            } else {
+                wp_send_json_error( [ 'message' => 'Provider returned a failure. Check your credentials.' ] );
+            }
+        } catch ( \Exception $e ) {
+            wp_send_json_error( [ 'message' => $e->getMessage() ] );
+        }
     }
 }

@@ -62,4 +62,17 @@ class OrganizerRepository {
         $table = $wpdb->prefix . 'kq_organizers';
         return $wpdb->delete( $table, [ 'id' => $id ] );
     }
+
+    /**
+     * Search organizers.
+     */
+    public static function search( $term ) {
+        global $wpdb;
+        $table = $wpdb->prefix . 'kq_organizers';
+        $like = '%' . $wpdb->esc_like( $term ) . '%';
+        return $wpdb->get_results( $wpdb->prepare(
+            "SELECT id, organizer_name, email FROM $table WHERE organizer_name LIKE %s OR email LIKE %s LIMIT 20",
+            $like, $like
+        ) );
+    }
 }

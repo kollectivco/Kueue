@@ -5,11 +5,15 @@ namespace KueueEvents\Core\Modules\Gateways;
 class GatewayAdminController {
 
     public function render_list() {
+        if ( ! current_user_can( 'manage_options' ) ) {
+            wp_die( __( 'You do not have permission to access this page.', 'kueue-events-core' ) );
+        }
+
         global $wpdb;
         $table = $wpdb->prefix . 'kq_gateway_accounts';
 
         $action = isset( $_GET['action'] ) ? $_GET['action'] : 'list';
-        $page = $_GET['page'];
+        $page   = $_GET['page'];
         $channel = ( $page === 'kq-sms-accounts' ) ? 'sms' : 'whatsapp';
 
         if ( 'delete' === $action && isset( $_GET['id'] ) ) {
@@ -24,12 +28,12 @@ class GatewayAdminController {
             return;
         }
 
-        $accounts = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table WHERE channel = %s", $channel ) );
-        $view_path = dirname( __FILE__ ) . '/views/gateway-list.php';
+        $accounts  = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $table WHERE channel = %s", $channel ) );
+        $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Gateways/views/gateway-list.php';
         if ( file_exists( $view_path ) ) {
             include $view_path;
         } else {
-            echo '<div class="notice notice-error"><p>Gateway list view not found at: ' . esc_html($view_path) . '</p></div>';
+            echo '<div class="notice notice-error"><p>Gateway list view not found at: ' . esc_html( $view_path ) . '</p></div>';
         }
     }
 
@@ -62,7 +66,7 @@ class GatewayAdminController {
         $is_enabled = isset( $_POST['is_enabled'] ) ? 1 : 0;
         $is_default = isset( $_POST['is_default'] ) ? 1 : 0;
         
-        $config = $_POST['config']; // Credentials
+        $config = isset( $_POST['config'] ) ? (array) $_POST['config'] : [];
         
         // If editing, merge with old config first to preserve existing values if they are masked in UI
         if ( $id ) {

@@ -56,15 +56,18 @@ class ReportsService {
             $params[] = $organizer_id;
         }
 
-        return $wpdb->get_row( $wpdb->prepare(
-            "SELECT 
+        $query = "SELECT 
                 SUM(gross_amount) as gross,
                 SUM(commission_amount) as commission,
                 SUM(net_amount) as net
              FROM $commissions_table 
-             WHERE $where",
-            ...$params
-        ) );
+             WHERE $where";
+
+        if ( empty( $params ) ) {
+            return $wpdb->get_row( $query );
+        }
+
+        return $wpdb->get_row( $wpdb->prepare( $query, ...$params ) );
     }
 
     /**

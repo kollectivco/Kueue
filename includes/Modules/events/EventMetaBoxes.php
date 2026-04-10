@@ -7,6 +7,16 @@ class EventMetaBoxes {
     public function run() {
         add_action( 'add_meta_boxes', [ $this, 'add_events_meta_box' ] );
         add_action( 'save_post_kq_event', [ $this, 'save_events_meta' ], 10, 2 );
+        add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_media_scripts' ] );
+    }
+
+    public function enqueue_media_scripts( $hook ) {
+        if ( $hook === 'post.php' || $hook === 'post-new.php' ) {
+            $post = get_post();
+            if ( $post && $post->post_type === 'kq_event' ) {
+                wp_enqueue_media();
+            }
+        }
     }
 
     public function add_events_meta_box() {
@@ -68,6 +78,11 @@ class EventMetaBoxes {
                 'seating_map_id'    => get_post_meta( $post_id, '_kq_seating_map_id', true ),
                 'enable_wallets'    => get_post_meta( $post_id, '_kq_enable_wallets', true ),
                 'allow_reentry'     => get_post_meta( $post_id, '_kq_allow_reentry', true ),
+                'logo_url'          => ( get_post_meta( $post_id, '_kq_event_logo_id', true ) ) ? wp_get_attachment_image_url( get_post_meta( $post_id, '_kq_event_logo_id', true ), 'medium' ) : '',
+                'cover_url'         => ( get_post_meta( $post_id, '_kq_cover_image_id', true ) ) ? wp_get_attachment_image_url( get_post_meta( $post_id, '_kq_cover_image_id', true ), 'large' ) : '',
+                'venue_name_display' => ( $v_id = get_post_meta( $post_id, '_kq_venue_id', true ) ) ? get_the_title( $v_id ) : '',
+                'organizer_name_display' => ( $o_id = get_post_meta( $post_id, '_kq_organizer_id', true ) ) ? ( \KueueEvents\Core\Modules\Vendors\OrganizerRepository::get_by_id( $o_id )->organizer_name ?? '' ) : '',
+                'event_layout'      => get_post_meta( $post_id, '_kq_event_layout', true ) ?: 'layout_1',
             ];
 
             // 3. Dependency Checks (Use class_exists to avoid fatal errors if modules missing)
@@ -123,7 +138,7 @@ class EventMetaBoxes {
             'enable_email_delivery', 'enable_whatsapp_delivery', 'enable_sms_delivery',
             'whatsapp_gateway_account_id', 'sms_gateway_account_id',
             'enable_bookings', 'enable_seating', 'booking_mode', 'seating_map_id',
-            'enable_wallets', 'allow_reentry'
+            'enable_wallets', 'allow_reentry', 'event_layout'
         ];
 
         // Validation for active events

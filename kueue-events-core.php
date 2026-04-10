@@ -3,7 +3,7 @@
  * Plugin Name:       Kueue Events Core
  * Plugin URI:        https://kueue.com/
  * Description:       Full event marketplace system for ticket management, bookings, and multi-vendor support.
- * Version:           1.4.3
+ * Version:           1.4.4
  * Author:            Kollectiv
  * Author URI:        https://kollectiv.co/
  * Update URI:        false
@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Define Plugin Constants
-define( 'KQ_VERSION', '1.4.3' );
+define( 'KQ_VERSION', '1.4.4' );
 define( 'KQ_PLUGIN_FILE', __FILE__ );
 define( 'KQ_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'KQ_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -64,18 +64,18 @@ spl_autoload_register( function ( $class ) {
  * Load global helpers with safety checks.
  */
 function kq_load_helpers() {
-    $potential_paths = [
-        KQ_PLUGIN_DIR . 'includes/Helpers/GeneralHelpers.php',
-        KQ_PLUGIN_DIR . 'includes/helpers/GeneralHelpers.php'
+    $helper_files = [
+        'includes/Core/Helpers.php',
+        'includes/Helpers/GeneralHelpers.php'
     ];
     
-    foreach ( $potential_paths as $p ) {
+    foreach ( $helper_files as $file ) {
+        $p = KQ_PLUGIN_DIR . $file;
         if ( file_exists( $p ) ) {
             require_once $p;
-            return true;
         }
     }
-    return false;
+    return true;
 }
 
 if ( ! kq_load_helpers() ) {

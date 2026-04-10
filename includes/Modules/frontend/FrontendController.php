@@ -73,13 +73,22 @@ class FrontendController {
         
         $booking_dates = $enable_bookings ? \KueueEvents\Core\Modules\Bookings\BookingRepository::get_dates( $event_id ) : [];
         $seating_map = $enable_seating ? \KueueEvents\Core\Modules\Seating\SeatingRepository::get_map_by_event( $event_id ) : null;
+        $layout = get_post_meta( $event_id, '_kq_event_layout', true ) ?: 'layout_1';
 
         ob_start();
-        $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/event-single.php';
+        $view_name = ( $layout === 'layout_2' ) ? 'single-event-layout-2.php' : 'single-event-layout-1.php';
+        $view_path = KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/' . $view_name;
+
         if ( file_exists( $view_path ) ) {
             include $view_path;
         } else {
-            echo '<p>Event single view not found.</p>';
+            // Final fallback to original generic name if somehow layouts are missing
+            $fallback_path = KQ_PLUGIN_DIR . 'includes/Modules/Frontend/views/event-single.php';
+            if ( file_exists( $fallback_path ) ) {
+                include $fallback_path;
+            } else {
+                echo '<p>Event layout view not found.</p>';
+            }
         }
         return ob_get_clean();
     }
